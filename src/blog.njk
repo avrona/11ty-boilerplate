@@ -19,7 +19,7 @@ pagination:
 
 
 {%- for post in collections.featured | reverse -%}
-  {% include "partials/blog-header.njk" %}
+  {% include "partials/blog-featured.njk" %}
 {%- endfor -%}
 
 {%- for post in collections.blog | reverse -%}
