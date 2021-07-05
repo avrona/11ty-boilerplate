@@ -1,0 +1,37 @@
+{% extends "layouts/base.njk" %} 
+
+{% block content %}
+
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <article>
+        <div class="section">
+          
+                <div class="columns is-centered">
+                    <div class="column is-three-quarter">
+                        <div class="block">
+                            <h1 class="title is-3 has-text-centered">{{ title }}</h1>
+                            <H2 class="subtitle is-4 has-text-centered">{{ subtitle }}</H2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns is-centered cotent">
+                  <div class="column is-four-fifths">
+                    <img src="{{coverImage}}" alt="{{coverImageAlt}}">
+                  </div>
+                </div>
+
+<div class='content'>
+
+{{ content | safe }}
+
+</div>
+
+
+  </div>
+      </article>
+        </div>
+        </div>
+
+{% endblock %}

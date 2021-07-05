@@ -1,0 +1,22 @@
+    <div class="column is-one-quarter">
+      <div class="card">
+        <div class="column is-centered is-two-thirds-mobile is-offset-2-mobile is-two-thirds-desktop is-offset-2-desktop ">
+        <div class="card-image">
+          <figure class="image">
+            <img src=" {{ item.image }}" alt="{{ item.imagealt }}">
+          </figure>
+        </div>
+        </div>
+        <div class="card-content">
+            <div class="media-content">
+              <p class="title is-4 has-text-centered-mobile">{{ item.title }}</p>
+              <p class="subtitle is-6 has-text-centered-mobile has-text-weight-semibold">{{ item.subtitle }}</p>
+            </div>
+          </div>
+      
+          <div class="content p-4">
+            {{ item.text }}
+            <a href="#">En savoir plus...</a>
+          </div>
+        </div>
+      </div>

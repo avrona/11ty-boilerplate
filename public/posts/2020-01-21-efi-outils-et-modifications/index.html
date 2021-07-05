@@ -1,0 +1,75 @@
+<h3>Disclaimer:</h3>
+<p>Cet article et ces outils permettent des modifications profondes de l'ordinateur, incluant la possibilité de le rendre inutilisable. Nous ne saurions être tenus pour responsable d'une quelconque conséquences de l'utilisation des outils et conseils de cet article.</p>
+<h1>L'EFI, c'est quoi ?</h1>
+<p>L'EFI, pour <em><strong>Extensible Firmware Interface</strong></em> est un standard sous forme de  solution technique logicielle, basée sur un firmware, qui vise à remplacer l'ancien BIOS. Son rôle est donc de faire la traduction entre le matériel, et le logiciel (l'OS) pour permettre aux deux de fonctionner de concert. C'est le premier &quot;logiciel&quot; à se lancer, au démarrage, pour faire des vérifications matérielles et permettre à l'OS de se lancer par la suite. Il à été défini en premier par Intel, et aujourd'hui utilisé comme standard, sous le nom d'UEFI, sur quasiment tous les PC, quelque soit leur architecture et leur OS.</p>
+<p>L'EFI, en théorie, ne peut pas être modifié par l'utilisateur, pour des raisons évidentes de sécurité, et d'intégrité de la machine. Malgré tout, y accéder et y faire des modifications, pour un technicien, permet des choses impossibles par ailleurs.</p>
+<p>On peut ajouter des drivers, comme le drivers natif des disques NVMe sur les Macs plus anciens. Cela permet d'installer un SSD standard M2 NVMe dans un MacBook Pro ou MacBook Air d'avant 2015 (mais après 2012), tout en conservant toutes les fonctionnalités. Aujourd'hui, sans cette manipulation, votre MBPr de 2014 aura des problèmes de veille prolongée avec un SSD non-natif. En faisant cette modification de l'EFI, vous pourrez ajouter passe en veille profonde sans plantages.</p>
+<p>On peut enlever le mot de passer EFI d'un Mac. L'utilisateur qui met en place ce mot de passe ne réalise pas toujours qu'il ne lui sera demandé que rarement (pour booter sur un disque externe par exemple) et qu'il devra donc s'en souvenir absolument. Modifier l'EFI permet de retirer ce mot de passe sur un Mac.</p>
+<h1>Accéder à l'EFI et modifier le Firmware</h1>
+<h2>Le matériel nécessaire</h2>
+<p>On ne peut pas télécharger le firmware du Mac sans un peu de matériel. L'objectif ici, est de lire et écrire le firmware du Mac, en accédant directement à la puce EPROM soudée sur la carte mère. Il n'y a pas d'autre moyen de faire que celui-ci, étant donné que le Mac protège son firmware.</p>
+<p>On à donc besoin:</p>
+<ul>
+<li>Programmeur Bus SPI
+<ul>
+<li>Un CH341a venu d'eBay fera l'affaire. Si vous avez mieux, c'est mieux</li>
+</ul>
+</li>
+<li>Un pince SOIC8 ou un connecteur SPI adapté
+<ul>
+<li>Pour accéder à la puce sur un Mac non-retina, ou au port SPI/JTAG sur un retina</li>
+</ul>
+</li>
+<li>Un logiciel de lecture/écriture de ROM
+<ul>
+<li>Nous utilisons flashrom, dans le Terminal de Mac OS</li>
+</ul>
+</li>
+<li>Un ou des logiciel pour naviguer dans l'EFI
+<ul>
+<li>Hexfind pour naviguer dans l'EFI en Hexadécimal</li>
+<li>UefiTool pour voir les différent &quot;morceaux&quot; de l'UEFI, et le copier/coller</li>
+</ul>
+</li>
+<li>Un peu de temps...</li>
+</ul>
+<h2>Lire l'EFI d'un Mac</h2>
+<p>Il faut se connecteur à la puce, en ouvrant le Mac d'abord. Si c'est un MacBook Pro non retina, vous avez accès à la puce grâce à une pince SOIC8. Si c'est un MacBook Air ou un Retina, il vous faut un connecteur spécifique pour vous brancher.</p>
+<ol>
+<li>Ouvrir le Mac</li>
+<li>Débrancher la batterie et le chargeur si ce n'est déjà fait</li>
+<li>Brancher la pince ou le connecteur</li>
+<li>Brancher le lecteur SPI à votre Mac</li>
+<li>Lancer la commande de lecture de Flashrom:
+<ul>
+<li>flashrom -p <em>ch341a_spi</em> -r <em>nomdufichier</em></li>
+</ul>
+</li>
+</ol>
+<p>Rappel de commande de Flashrom:</p>
+<ul>
+<li>-p : Pour choisir le type de programmeur SPI</li>
+<li>- r, -v,-w: Pour <em>read</em>, <em>verify</em>, ou <em>write</em></li>
+</ul>
+<p>Il faut faire plusieurs dump de votre EFI, c'est essentiel. Il faut également vérifier que votre dump est exact, en comparant la taille de chaque fichier, voir en comparant le checksum MD5. Il faut également comparer le dump et le contenu de l'EFI avec la commande suivant:</p>
+<ul>
+<li>
+<ul>
+<li>flashrom -p ch341a_spi -v <em>nomduficher</em></li>
+</ul>
+</li>
+</ul>
+<h2>Modifier le contenu de l'EFI</h2>
+<p>Pour enlever le mot de passe EFI, on utiliser Hexfind.</p>
+<p>Il faut ouvrir le fichier dump de votre EFI, et rechercher la chaîne de caractères <em>$SVS</em>. Un fois trouvée, il faut remplacer ce qui se trouve entre les deux <em>$SVS</em> (et pas effacer, mais bien remplacer, pour garder la même longueur de fichier). On vérifiera avant, et après, que le contenu se termine bien à la même ligne, c'est à dire, que le fichier à EXACTEMENT la même longeur.</p>
+<p><img src="images/hexfind.jpg" alt="Modification de l'EFI sous Hexfind"></p>
+<p>A la fin, il suffit de récrire le fichier grâce à flashrom:</p>
+<ul>
+<li>
+<ul>
+<li>flashrom -p <em>ch341a_spi</em> -r <em>nomdufichier</em></li>
+</ul>
+</li>
+</ul>
+<p><em><strong>Attention:</strong></em> Sur les macs plus récents, l'accès à la ROM de l'EFI est mieux protégée. Il faut, en fait, allumer le mac, puis l'éteindre, en restant appuyé sur le bouton <em>Power</em>. Ne pas enlever son doigt du bouton <em>Power</em>, et lancer le commandes que vous voulez (lecture, vérification, écriture). Gardez votre doigt sur <em>Power</em> pendant toutes les manipulations...</p>
+<p>L'autre chose possible est de re-flasher votre EFI. Et ce sera complété bientôt dans cet article... Soyez patient.</p>

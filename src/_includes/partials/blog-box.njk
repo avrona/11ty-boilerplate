@@ -1,0 +1,29 @@
+
+
+ <!-- Blog page header
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <div class="columns is-centered">
+      <div class="column is-8 ">
+    
+        <div class="box">
+          <article class="media">
+            <figure class="media-left">
+              <p class="image is-64x64">
+                <img src="{{ post.data.coverImage }}">
+              </p>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong><a href="{{ post.url | url }}">{{ post.data.title }}</a></strong>
+                  <br>
+                  {{ post.data.excerpt }}
+                  <br>
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>

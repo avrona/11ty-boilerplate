@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Batterie non-reconnue et ISL6259</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="js/home.js" defer="defer"></script>
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link href="css/all.css" rel="stylesheet"> <!--load fontawesome icons -->
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+   
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <header>
+    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://6337.fr">
+            <img src="images/Logo6337-400.png" style="max-height: 60px">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+
+            
+            <a class="navbar-item" href="/" >Accueil</a>
+            
+            <a class="navbar-item" href="/about/" >Réparation</a>
+            
+            <a class="navbar-item" href="/work/" >FAQ</a>
+            
+            
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Plus...
+              </a>
+              <div class="navbar-dropdown">
+                  
+                  <a class="navbar-item" href="/a-propos-de-6337" >A propos</a>
+
+                  
+                  <a class="navbar-item" href="/blog.html" >Blog</a>
+
+                  
+                  <a class="navbar-item" href="/" >Contact</a>
+
+                  
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>Recherche</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+</header>
+  <main>
+    
+
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <article>
+        <div class="section">
+          
+                <div class="columns is-centered">
+                    <div class="column is-three-quarter">
+                        <div class="block">
+                            <h1 class="title is-3 has-text-centered">Batterie non-reconnue et ISL6259</h1>
+                            <H2 class="subtitle is-4 has-text-centered"></H2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns is-centered cotent">
+                  <div class="column is-four-fifths">
+                    <img src="../images/ISL6259.png" alt="">
+                  </div>
+                </div>
+
+<div class='content'>
+
+<p>Ce Macbook Pro Retina, modèle A1398, ne reconnaissait et ne chargeait pas sa batterie, pourtant en bon état.</p>
+<p><strong>Modèle:</strong> Macbook pro Retina 15 Fin 2013 <strong>Numéro de modèle:</strong> A1398 <strong>Numéro de carte mère:</strong> 820-3787 <strong>Symptômes:</strong> Ne charge pas la batterie. Ne reconnait pas la batterie <strong>Solution:</strong> Remplacer ISL6259</p>
+<h2>S'il ne reconnait pas la batterie, il ne peut pas la charger...</h2>
+<p>Un constat simple et pourtant. Il faut savoir faire la différence entre un problème de charge, et un problème de reconnaissance de batterie.</p>
+<h3>Une batterie qui ne charge pas, ou...</h3>
+<p>Dans le premier cas, la batterie est présent et reconnue. Dans <em>A propos de ce Mac</em> -&gt; <em>Rapport Système</em>, on voit clairement un numéro de série et toutes infos de niveau de charge, de nombres de cycles et d'état de la batterie dans l'onglet <em>Alimentation</em>, pourtant la charge ne fonctionne pas. On branche le magsafe, il passe à l'orange, et le pourcentage de batterie continue de descendre.</p>
+<p>C'est un symptôme classique, et que nous connaissons bien. Le problème vient plus probablement d'un capteur de courant, qui donne une mauvais information au SMC (System Management Control) ou à ISL6259, la puce en charge de la gestion de la batterie. Ce ne sont donc, en général, aucune des ces puces qui sont fautives mais plutôt une des résistances autour d'elles.</p>
+<p>L'erreur de débutant consisterait à remplacer une puce, plutôt que de concentrer le diagnostic sur les résistances capteurs de courant, ou les résistances qui sont sur le lignes menant aux capteur de courant.</p>
+<h3>...Une batterie non-reconnue</h3>
+<p>Si la batterie de votre MacBook Pro n'est pas reconnue, vous verrez que rien ne s'affiche dans l'onglet <em>Alimentation</em> du rapport système. Les <em>informations sur la batterie</em> sont vides. Pas de numéro de série, pas de nombre de cycles, et donc pas de niveau de charge. Ici, il y a un problème de communication avec la batterie.</p>
+<p>C'est sur ce point que doit se concentrer le diagnostic: Votre carte-mère n'arrive pas à communiquer avec la batterie, et donc croit qu'elle n'est pas présente.</p>
+<p>[caption id=&quot;attachment_900&quot; align=&quot;aligncenter&quot; width=&quot;1514&quot;]<img src="images/ISL6259.png" alt="Puce de gestion de batterie et charge sur macbook pro ISL6259 U7100"> ISL6259 avec toutes ces entrées-sorties[/caption]</p>
+<h3>Il y a de l'intelligence dans la batterie d'un Mac</h3>
+<p>Toute batterie d'ordinateur portable contient une part d'intelligence. Il faut gérer la niveau de charge, le nombre de cycles, la température et quelques autres facteurs. Selon le fabricant, l'architecture est différent. Sur Mac, un bus I2C permet à la batterie de transmettre toutes ces infos (ainsi que son numéro de série). C'est seulement une fois que la batterie est reconnue et identifiée que la charge peut commencer.</p>
+<p>Et donc, si votre batterie n'est pas reconnue, votre diagnostic doit se concentrer sur ce bus, et c'est que nous avons fait pour notre MacBook Pro A1398.</p>
+<h2>D'abord, vérifier la connection I2C de la batterie</h2>
+<p>La première chose à faire, est de vérifier que la connection se fait bien. Il faut vérifier la continuité sur ce fameux bus I2C, entre ISL, responsable de la gestion de la charge, et la batterie elle-même. Il y a également, sur ce bus, comme sur tout bus I2C, des résistances dites de <em>pull-up.</em> Elle permettent de mettre à niveau la tension nécessaire pour une communication initiale. Un élément qui souhaite communiquer sur le bus, viendra court-circuiter la ligne (la &quot;tirer vers le bas&quot;= pull-down).</p>
+<p>Dans notre cas, les deux lignes SDL et SDA du bus I2C communiquaient bien. Toutes les résistances avaient la bonne valeur.</p>
+<h2>Si ce n'est toi, c'est donc l'autre...</h2>
+<p>Ce n'est pas la batterie, ce n'est pas le bus I2C ni les résistances sur ce circuit, il ne reste qu'une option ISL...</p>
+<h3>Mais qui est tu, ISL6259 ?</h3>
+<p>ISL6259 est la puce, en charge de la gestion de charge et de batterie. C'est donc à elle qu'incombe le lourde de tâche de reconnaître la batterie, gérer sa charge, donner l'ordre de basculer du chargeur vers la batterie, ou inversement. Elle répond aux ordres de la machine, qui sait quand un Magsafe est branché (d'ailleurs même, quelle est la puissance du Magsafe branché), quand l'ordinateur s'allume, quand il est en veille, etc...</p>
+<p>Si votre Mac ne charge pas, et que vous avez épuisé toutes les autres solutions, il y a de grandes chances qu'ISL soit votre fautif.</p>
+<p>On ne trouve pas cette puce chez les revendeurs habituels, mais elle est assez courante ailleurs sur eBay ou Aliexpress, et donc les puces vendues sont de relativement bonne qualité.</p>
+<h2>MacBook Pro Retina 15 réparé</h2>
+<p>En changeant ISL, on a retrouvé une batterie reconnue sur notre 820-3787. On en a profité pour laisser la batterie charger (pour qu'elle ne reste pas trop longtemps vide).</p>
+<p>Un autre problème est, par contre, venu s'inviter à la fête... Le précédent réparateur de ce Mac, qui à probablement échoué sur ce problème de charge, avait endommagé la nappe de trackpad.</p>
+<p>Le clavier marchait en arrivant, mais notre démontage à été celui de trop. Cette nappe de trackpad partiellement endommagée à crée un problème de clavier... Mais tout cela fera l'objet d'un autre post.</p>
+
+
+</div>
+
+
+  </div>
+      </article>
+        </div>
+        </div>
+
+
+  </main>
+    <footer class="footer">
+    <div class="content has-text-centered">
+      <p class="has-text-centered	">
+      © Copyright 2021 - <strong>6337 - Réparation Macbook</strong> - Point The Gap SAS - <a href="https://www.6337.fr/cgv-cgu/">Mentions légales - CGV & CGU</a>
+      </p>
+      <a href="https://www.facebook.com/6337.fr/"><span class="icon is-small"><i class="fab fa-facebook-f"></i></span></a>
+      <a href="https://twitter.com/6337mac?lang=fr"><span class="icon is-small"><i class="fab fa-twitter"></i></span></a>
+      <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TCswTUrOLjYwYLRSNagwMU8zSU2yMDZMSU62SEoytzKoSLI0NEk1TbZMsjQxNLa0TPZiMTM2NgcAB6oQWw&q=6337&oq=6337&aqs=chrome.2.69i60j69i59j46i175i199j0l2j69i60j69i61l2.3461j0j9&sourceid=chrome&ie=UTF-8#lrd=0x47f4eb831dcc8bb7:0xb914e5c9b941399c,1,,,"><span class="icon is-small"><i class="fab fa-google"></i></span></a>
+      <a href="https://www.instagram.com/6337atelier/"><span class="icon is-small"><i class="fab fa-instagram"></i></span></a>
+    </div>
+  </footer>
+</body>
+</html>

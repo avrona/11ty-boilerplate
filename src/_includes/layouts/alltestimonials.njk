@@ -1,0 +1,42 @@
+ {% extends "layouts/base.njk" %} 
+
+
+{% block content %}
+
+<!---- Page title-->
+  <section class="hero is-small">
+    <div class="hero-body">
+        <div class="container has-text-centered is-primary">
+        <p class="title">
+            Tous les Avis de nos clients
+        </p>
+        <p class="subtitle">
+            Sans exception, sans filtre !
+        </p>
+        </div>
+    </div>
+  </section>
+
+<!---- Testimonials -->
+<div class="container">
+  <div class="columns is-multiline is-mobile is-centered">
+
+
+{# looping by batch of 3 testimonials - for each slide-entry #}
+{%- for items in reviews_data.reviews | batch(8)  %}
+    
+        <div class="column is-one-quarter-widescreen is-one-third-desktop is-half-tablet is-four-fifths-mobile">
+
+{# looping each testimonial from the list #}
+{%- for item in items  %}
+            {% include "partials/testimonials-all.njk" %}
+{%- endfor %}
+        </div>
+           
+           
+{%- endfor %}
+</div>
+    </div>
+{% endblock %}
+
+
