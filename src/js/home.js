@@ -578,21 +578,13 @@ slideshow.addEventListener("touchmove", moveTouch, false);
 
 // ------------------  Accordeon slider for FAQ page (depends on bulma-accordion.min.js) ------------------------------
 //------------------------------------------------------------------
-document.addEventListener('DOMContentLoaded', () => {
-  var collapsible = Array.prototype.slice.call(document.querySelectorAll('.collapsible-header'));
-  collapsible.forEach(el => {
-    el.addEventListener('click', (e) => {
-      var target = document.getElementById(el.dataset.controls);
-      target.classList.toggle('is-active');
-      el.classList.toggle('is-active');
-      var body = document.querySelector("#" + el.dataset.controls + " .collapsible-body");
-      var setHeight = document.querySelector("#" + el.dataset.controls + " .collapsible-content").getBoundingClientRect().height;
-      if (target.classList.contains('is-active')) {
-        body.style.height = setHeight + "px";
-      } else {
-        body.style.height = 0;
-      }
-    })
-  })
-})
+document.addEventListener('DOMContentLoaded', function() {
+	let cardHeaders = document.getElementsByClassName('card-header');
+	for (let i = 0; i < cardHeaders.length; i++) {
+		cardHeaders[i].addEventListener('click', e => {
+			e.currentTarget.parentElement.childNodes[3].classList.toggle('is-hidden');
+		});
+	}
+});
+
 

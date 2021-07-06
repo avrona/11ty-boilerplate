@@ -19,30 +19,18 @@
   </section>
 
  <!---- FAQ Accordion -->
-<div class='section'>
-  <div class='container'>
-    <div class='collapsible' id='c-1'>
-      <div class='collapsible-header is-clickable' data-controls='c-1'>
-        <h3 class='is-size-3'>Click Here!</h3>
-        <i class='fa fa-chevron-down fa-2x collapsible-toggle'></i>
-      </div>
-      <div class='collapsible-body'>
-        <div class='collapsible-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-      </div>
-    </div>
-    <div class='collapsible' id='c-2'>
-      <div class='collapsible-header is-clickable' data-controls='c-2'>
-        <h3 class='is-size-3'>Or Here!</h3>
-        <i class='fa fa-chevron-down fa-2x collapsible-toggle'></i>
-      </div>
-      <div class='collapsible-body'>
-        <div class='collapsible-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-      </div>
-    </div>
-  </div>
-</div>
+<section class="section">
+	<div class="container">
+
+
+{% for item in faqlist.items %}
+{% include "partials/faq-template.njk"%}
+{% endfor %}
+
+	</div>
+</section>
  
- {# {% include "partials/faq-template.njk" %} #}
+
 
 
  {% endblock %}
