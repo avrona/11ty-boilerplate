@@ -1,6 +1,21 @@
  {% extends "layouts/base.njk" %} 
 
+
 {% block content %}
+ <!-- Title of the page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section class="hero is-medium">
+    <div class="hero-body">
+      <h1 class="title is-3 has-text-left is-capitalized">
+      Le blog de 6337
+      </h1>
+      <h2 class="subtitle is-5 has-text-left is-capitalized">
+      Des infos, nos techniques, nos astuces et quelques indiscrétions sur les Mac et la réparation
+      </h2>
+</div>
+</section>
+
+
 {{ content | safe }}
  {% endblock %}
 
