@@ -5,7 +5,7 @@ layout: 'layouts/cgv-cgu.njk'
 permalink: "cgv-cgu/"
 ---
 
-### [Télécharger les Conditions Générales de Vente](./images/CGV.pdf)
+### [Télécharger les Conditions Générales de Vente](../images/CGV.pdf)
 
 ## Qui sommes-nous ?
 
