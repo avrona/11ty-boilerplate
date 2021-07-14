@@ -207,8 +207,11 @@
         <div class="is-two-thirds column pt-0">
     
   <!-- Issues blocks from issues list-->
+  <!-- Alternating left right using cycler and cls.next() inwide issues.njk-->
+
+{% set cls = cycler(" ", " is-flex-direction-row-reverse") %}
 {% for item in issuelist.issue %}
-{% include "partials/issues.njk"%}
+{% include 'partials/issues.njk' %}
 {% endfor %}
 
         </div>
@@ -277,7 +280,7 @@
 
 <div class="level">
   <div class="level-item">
-    <a class="is-5 has-text-weight-semibold" href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TCswTUrOLjYwYLRSNagwMU8zSU2yMDZMSU62SEoytzKoSLI0NEk1TbZMsjQxNLa0TPZiMTM2NgcAB6oQWw&q=6337&oq=6337&aqs=chrome.2.69i60j69i59j46i175i199j0l2j69i60j69i61l2.3461j0j9&sourceid=chrome&ie=UTF-8#lrd=0x47f4eb831dcc8bb7:0xb914e5c9b941399c,1,,,">Voir plus d'avis...</a>
+    <a class="is-5 has-text-weight-semibold" href="./nos-avis/">Voir plus d'avis...</a>
   </div>
 </div>
 
