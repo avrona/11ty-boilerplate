@@ -4,7 +4,8 @@
           <H2 class="title is-5 has-text-centered mb-1">{{ item.title }}</H2>
         </div>
       </div>
-      <div class="columns is-centered is-vcentered">
+
+      <div class="columns is-centered is-vcentered {{ cls.next() }}">
         <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile is-offset-one-quarter-mobile">
           <figure class="image">
           <img src="{{ item.image }}">
