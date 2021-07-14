@@ -21,12 +21,21 @@
  <!---- FAQ Accordion -->
 <section class="section">
 	<div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8 ">
 
 
-{% for item in faqlist.items %}
-{% include "partials/faq-template.njk"%}
+{%- for faq in collections.faq -%}
+
+
+ <!-- Single FAQ Card
+
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ {% include "partials/faq-template.njk"%}
+
 {% endfor %}
-
+            </div>
+        </div>
 	</div>
 </section>
  

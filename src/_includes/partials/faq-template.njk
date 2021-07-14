@@ -3,14 +3,15 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<div class="card">
 			<header class="card-header is-clickable">
-				<p class="card-header-title">{{ item.title }}</p>
 				<a class="card-header-icon card-toggle">
-					<i class="fa fa-angle-down"></i>
+					<i class="fa fa-angle-right icon-toggle"></i>
 				</a>
+				<p class="card-header-title">{{ faq.data.title }}</p>
+
 			</header>
 			<div class="card-content is-hidden">
 				<div class="content">
-					{{ item.text }}
+					{{ faq.templateContent | safe }}
 				</div>
 			</div>
 		</div>
