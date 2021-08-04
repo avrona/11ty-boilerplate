@@ -1,0 +1,164 @@
+ {% extends "layouts/base.njk" %} 
+ 
+ {% block content %}
+ <!---- Page title-->
+  <section class="hero is-small">
+    <div class="hero-body">
+        <div class="container has-text-centered is-primary">
+        <p class="title">
+            Contactez-nous
+        </p>
+        <p class="subtitle">
+            On répond toujours !
+        </p>
+        </div>
+    </div>
+  </section>
+
+  <!---- Contact Form -->
+    
+   <section class="hero is-halfheight">
+      <div class="columns">
+          <div class="column is-half-desktop is-offset-one-quarter-desktop is-10-mobile is-offset-1-mobile is-8-tablet is-offset-2-tablet">
+              <form>
+                  <div class="field is-horizontal">
+                      <div class="field-label is-normal">
+                          <label class="label" for="name">Nom</label>
+                      </div>
+                      <div class="field-body">
+                          <div class="field is-expanded">
+                              <p class="control is-expanded has-icons-left has-icons-right">
+                                  <input type="text" class="input inputLastNameField" placeholder="Nom" id="inputLastName" />
+                                  <span class="icon is-small is-left">
+                                      <i class="fas fa-user"></i>
+                                  </span>
+                                  <span class="icon is-small is-right">
+                                    <i id='lastNameCheckIcon' class="fas fa-exclamation-triangle"></i>
+                                </span>
+                              </p>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                          <label class="label" for="name">Prénom</label>
+                      </div>
+                      <div class="field-body">
+                          <div class="field is-expanded">
+                              <p class="control is-expanded has-icons-left has-icons-right">
+                                  <input type="text" class="input inputFirstNameField" placeholder="Prénom" id="inputFirstName" />
+                                  <span class="icon is-small is-left">
+                                      <i class="fas fa-user"></i>
+                                  </span>
+                                  <span class="icon is-small is-right">
+                                    <i id='firstNameCheckIcon' class="fas fa-exclamation-triangle"></i>
+                                </span>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                            <label class="label">E-mail</label>
+                    </div>
+                          <div class="field-body">
+                              <div class="field is-expanded mr-0">
+                                  <p class="control is-expanded has-icons-left has-icons-right">
+                                      <input type="e-mail" placeholder="jean@dupont.fr" class="input inputEmailField" id="inputEmailField">
+                                      <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                      </span>
+                                      
+                                      <span class="icon is-small is-right">
+                                        <i  id="emailCheckIcon" class="fas fa-check"></i>
+                                      </span>
+                                      <p class="help is-danger" id="wrongEmailMessage">Veuillez entrer un email valide</p>
+                                  </p>
+                              </div>
+                              
+                          </div>
+                      </div>
+                  
+
+                  <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                      <label class="label">Sujet</label>
+                    </div>
+                    <div class="field-body">
+                      <div class="field">
+                        <div class="control">
+                          <input class="input inputTextField" type="text" placeholder="e.g. Proposition de partenariat">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                      <label class="label">Message</label>
+                    </div>
+                    <div class="field-body">
+                      <div class="field">
+                        <div class="control">
+                          <textarea class="textarea" placeholder="Dites-nous comment on peut vous aider !"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                    <div class="field is-horizontal">
+                        <div class="field-label">
+                        <!-- Left empty for horizontal spacing -->
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
+                                        <input class="is-small" type="checkbox">
+                                        Je reconnais avoir lu les <a href="#">Conditions d'utilisation</a> de 6337.fr
+                                    </label>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label">
+                            <!-- Left empty for horizontal spacing -->
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                <button class="button is-primary" id="submitButton" onclick="sendForm()">
+                                    Envoyer
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+
+
+
+                </form>
+<!-- Success Message -->
+                <article class="message" id="successMessage">
+                    <div class="message-header">
+                        <p>Merci de votre message !</p>
+                        <button class="delete" aria-label="delete"></button>
+                    </div>
+                    <div class="message-body">
+                        Si votre requête concerne une réparation, elle sera traitée plus rapidement en passant par notre formulaire de prise en charge.
+                        Nous vous répondrons rapidement et ferons de notre mieux pour vous apporter une solution.
+                    </div>
+                </article>
+
+          </div>
+
+      </div>
+
+  </section>
+
+
+{% endblock %}
