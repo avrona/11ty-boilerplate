@@ -6,7 +6,7 @@
       },
       {
         "text": "Réparation",
-        "url": "/about/"
+        "url": "/prise-en-charge/"
       },
       {
         "text": "FAQ",
@@ -24,7 +24,7 @@
         },
         {
           "text": "Contact",
-          "url": "/"
+          "url": "/contact/"
         }
       ]
   }
