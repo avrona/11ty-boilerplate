@@ -3,6 +3,7 @@ title: "Conditions et confidentialité"
 date: "2019-05-15"
 layout: 'layouts/cgv-cgu.njk'
 permalink: "cgv-cgu/"
+jsfile: ["../js/navbarmanagement.js" ]
 ---
 
 ### [Télécharger les Conditions Générales de Vente](../images/CGV.pdf)
