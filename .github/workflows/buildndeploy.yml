@@ -1,0 +1,21 @@
+name: Eleventy Build
+on: workflow_dispatch
+
+jobs:
+  build_deployftp:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@master
+      - name: Build
+        uses: TartanLlama/actions-eleventy@v1.1
+      - uses: actions/checkout@v2
+      - name: Upload ftp
+        uses: genietim/ftp-action@releases/v4
+        with:
+         args: --output _dist
+         install_dependencies: true
+         host: ${{ secrets.FTP_SERVER }}
+         user: ${{ secrets.FTP_USERNAME }}
+         password: ${{ secrets.FTP_PASSWORD }}
+         localDir: "public"
+         remoteDir: "/lamp0/web/vhosts/crm.6337.fr/htdocs"
