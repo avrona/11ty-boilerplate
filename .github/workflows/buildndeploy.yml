@@ -11,3 +11,11 @@ jobs:
         with:
          args: --output public
          install_dependencies: true
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      - upload:
+      - name: Upload build to hosting environment
+        uses: Atyn/Simple-SFTP
+        with:
+          url: ${{ secrets.SFTP_USER_PASS_ADRESS }}/lamp0/web/vhosts/crm.6337.fr/htdocs/
+          local-directory: ./public/
