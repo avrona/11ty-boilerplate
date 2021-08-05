@@ -7,12 +7,12 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Build
-      - uses: TartanLlama/actions-eleventy@v1.1
+        uses: TartanLlama/actions-eleventy@v1.1
         with:
          args: --output _dist
          install_dependencies: true
       - name: deployftp
-      - uses: dennisameling/ftp-upload-action@v1
+        uses: dennisameling/ftp-upload-action@v1
         with:
          server: ${{ secrets.FTP_SERVER }}
          username: ${{ secrets.FTP_USER }}
