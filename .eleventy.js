@@ -14,7 +14,7 @@ dataTemplateEngine: 'njk',
 htmlTemplateEngine: 'njk',
       dir: {
         input: "src",
-        output: "public",
+        output: "dist",
       },
     };
   };
