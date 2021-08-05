@@ -13,7 +13,6 @@ jobs:
          install_dependencies: true
       - name: Checkout
         uses: actions/checkout@v2.3.4
-      - upload:
       - name: Upload build to hosting environment
         uses: Atyn/Simple-SFTP
         with:
