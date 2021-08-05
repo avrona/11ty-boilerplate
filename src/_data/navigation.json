@@ -6,11 +6,11 @@
       },
       {
         "text": "Réparation",
-        "url": "/about/"
+        "url": "/prise-en-charge/"
       },
       {
         "text": "FAQ",
-        "url": "/work/"
+        "url": "/questions-frequentes/"
       }
     ] ,
     "itemsmore": [
@@ -20,11 +20,11 @@
         },
         {
           "text": "Blog",
-          "url": "/blog.html"
+          "url": "/blog/"
         },
         {
           "text": "Contact",
-          "url": "/"
+          "url": "/contact/"
         }
       ]
   }

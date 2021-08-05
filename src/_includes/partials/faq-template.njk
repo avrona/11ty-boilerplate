@@ -1,0 +1,17 @@
+
+ <!-- Single FAQ Card
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div class="card">
+			<header class="card-header is-clickable">
+				<a class="card-header-icon card-toggle">
+					<i class="fa fa-angle-right icon-toggle"></i>
+				</a>
+				<p class="card-header-title">{{ faq.data.title }}</p>
+
+			</header>
+			<div class="card-content is-hidden">
+				<div class="content">
+					{{ faq.templateContent | safe }}
+				</div>
+			</div>
+		</div>

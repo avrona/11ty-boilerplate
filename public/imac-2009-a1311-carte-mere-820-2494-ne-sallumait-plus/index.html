@@ -9,13 +9,17 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
+   <!-- PREVENT INDEXING
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="robots" content="noindex, nofollow">
+
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script type="text/javascript" src="js/home.js" defer="defer"></script>
+  <script type="text/javascript" src="../js/home.js" defer="defer"></script>
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -23,15 +27,16 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link href="css/all.css" rel="stylesheet"> <!--load fontawesome icons -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/home.css">
+   <link rel="stylesheet" href="../css/faq.css">
+  <link rel="stylesheet" href="../css/all.css" > <!--load fontawesome icons -->
   <!-- Bulma CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-   
+  <link rel="stylesheet" href="../css/styles.css">
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
 
 </head>
 <body>
@@ -40,17 +45,17 @@
     <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="https://6337.fr">
-            <img src="images/Logo6337-400.png" style="max-height: 60px">
+            <img src="../images/Logo6337-400.png" style="max-height: 60px">
           </a>
       
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarmain">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
       
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div id="navbarmain" class="navbar-menu">
           <div class="navbar-start">
 
             
@@ -58,7 +63,7 @@
             
             <a class="navbar-item" href="/about/" >Réparation</a>
             
-            <a class="navbar-item" href="/work/" >FAQ</a>
+            <a class="navbar-item" href="/questions-frequentes/" >FAQ</a>
             
             
             <div class="navbar-item has-dropdown is-hoverable">
@@ -70,7 +75,7 @@
                   <a class="navbar-item" href="/a-propos-de-6337" >A propos</a>
 
                   
-                  <a class="navbar-item" href="/blog.html" >Blog</a>
+                  <a class="navbar-item" href="/blog/" >Blog</a>
 
                   
                   <a class="navbar-item" href="/" >Contact</a>
@@ -168,7 +173,7 @@
     <footer class="footer">
     <div class="content has-text-centered">
       <p class="has-text-centered	">
-      © Copyright 2021 - <strong>6337 - Réparation Macbook</strong> - Point The Gap SAS - <a href="https://www.6337.fr/cgv-cgu/">Mentions légales - CGV & CGU</a>
+      © Copyright 2021 - <strong>6337 - Réparation Macbook</strong> - Point The Gap SAS - <a href="../cgv-cgu/">Mentions légales - CGV & CGU</a>
       </p>
       <a href="https://www.facebook.com/6337.fr/"><span class="icon is-small"><i class="fab fa-facebook-f"></i></span></a>
       <a href="https://twitter.com/6337mac?lang=fr"><span class="icon is-small"><i class="fab fa-twitter"></i></span></a>

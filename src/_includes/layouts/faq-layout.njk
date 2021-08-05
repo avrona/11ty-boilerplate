@@ -1,0 +1,45 @@
+ {% extends "layouts/base.njk" %} 
+ 
+
+ {% block content %}
+
+
+ <!---- Page title-->
+  <section class="hero is-small">
+    <div class="hero-body">
+        <div class="container has-text-centered is-primary">
+        <p class="title">
+            Vos questions les plus fréquentes
+        </p>
+        <p class="subtitle">
+            ...et leurs réponses, bien sûr.
+        </p>
+        </div>
+    </div>
+  </section>
+
+ <!---- FAQ Accordion -->
+<section class="section">
+	<div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8 ">
+
+
+{%- for faq in collections.faq -%}
+
+
+ <!-- Single FAQ Card
+
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ {% include "partials/faq-template.njk"%}
+
+{% endfor %}
+            </div>
+        </div>
+	</div>
+</section>
+ 
+
+
+
+ {% endblock %}

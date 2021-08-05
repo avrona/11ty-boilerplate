@@ -7,18 +7,27 @@
   <section class="hero has-background is-transparent is-halfheight pb-O">
     <!--<img alt="Touchbar carte-mère" class="hero-background is-transparent" src="images/MBPtouchbarboard-export.jpg" />
     -->
-      <div class="hero-body has-text-centered has-background is-transparent pb-0">
+      <div class="hero-body has-text-centered-mobile has-background is-transparent pb-0">
       <div class="container">
         <div class="columns">
           
           <div class="column is-6 pl-6 is-align-items-center">
             <h1 class="title is-1 maintitle">Réparer l'irréparable</h1>
             <h2 class="subtitle is-3 is-spaced">Experts en réparations impossibles</h2>
-            <H1 class="subtitle is-3">Il reste un espoir pour votre</H1>  
-            <div>
-              <h1 class="nametag">MacBook Pro</h1>
-              <h1 class="nametag">MacBook Air</h1>
-              </div>
+               
+                  <div class="rotator-wrapper is-align-items-center">
+                    <h1 class="subtitle is-3">
+                      Il reste un espoir pour votre<br>
+                      <span class="rotator is-align-items-center">
+                        <span><br><h1 class="has-text-centered-mobile">MacBook Air</h1></span>
+                        <span><br><h1 class="has-text-centered-mobile">MacBook Pro Unibody</h1></span>
+                        <span><br><h1 class="has-text-centered-mobile">MacBook Pro Retina</h1></span>
+                        <span><br><h1 class="has-text-centered-mobile">MacBook Pro Touchbar</h1></span>
+                        <span><br><h1 class="has-text-centered-mobile">MacBook Pro M1</h1></span>
+                      </span>
+                    </h1>
+                  </div>
+   
           </div>
           <div class="column is-7">
             <img src="images/MBP-export.jpg">
@@ -48,10 +57,10 @@
           <!--Estimate Form Fancy -->
           <div class="column is-5 "> 
             
-            <div class="box mb-1">
-              <h2 class="subtitle is-size-4 has-text-centered has-text-weight-bold"> Un Devis en 3 clics !</h2>
+            <div class="box mb-1 has-background-primary">
+              <h2 class="subtitle is-size-4 has-text-centered has-text-weight-bold has-text-white"> Un Devis en 3 clics !</h2>
             </div>
-            <div class="box">
+            <div class="box has-background-primary-light">
               
             
                <!----------------- ESTIMATE FORM ---------------->
@@ -64,9 +73,9 @@
 
                  
                   <div class="buttons is-flex-direction-column is-centered">
-                    <button type="button" id="mba" class="button is-link is-outlined is-medium my-4 button-model">MacBook Air</button>
-                    <button type="button" id="mbp" class="button is-link is-outlined is-medium my-4 button-model">MacBook Pro</button>
-                    <button type="button" id="mb" class="button is-link is-outlined is-medium my-4 button-model">MacBook 12"</button>                  
+                    <button type="button" id="mba" class="button is-primary  is-outlined is-medium my-4 button-model">MacBook Air</button>
+                    <button type="button" id="mbp" class="button is-primary  is-outlined  is-medium my-4 button-model">MacBook Pro</button>
+                    <button type="button" id="mb" class="button is-primary  is-outlined  is-medium my-4 button-model">MacBook 12"</button>                  
                   </div>
                 
                 </div>
@@ -76,9 +85,9 @@
                 <h2 class="subtitle has-text-centered mb-0 has-text-weight-bold">Modèle</h2>
 
                 <div class="buttons is-flex-direction-column is-centered mb-1">
-                  <button type="button" id="mbpu" class="button is-link is-outlined is-medium my-4 button-model-pro mbp">MacBook Pro Unibody</button>
-                  <button type="button" id="mbpr" class="button is-link is-outlined is-medium my-4 button-model-pro mbp">MacBook Pro Retina</button>
-                  <button type="button" id="mbptb" class="button is-link is-outlined is-medium my-4 button-model-pro mbp">MacBook Pro Touchbar</button>                
+                  <button type="button" id="mbpu" class="button is-primary is-outlined is-medium my-4 button-model-pro mbp">MacBook Pro Unibody</button>
+                  <button type="button" id="mbpr" class="button is-primary is-outlined is-medium my-4 button-model-pro mbp">MacBook Pro Retina</button>
+                  <button type="button" id="mbptb" class="button is-primary is-outlined is-medium my-4 button-model-pro mbp">MacBook Pro Touchbar</button>                
                 </div>
               </div>
               
@@ -155,7 +164,7 @@
                   </div>
                   <nav class="level is-mobile">
                       <div class="level-left">
-                          <p class="level-item is-size-3 has-text-primary has-text-weight-bold" id="amount">
+                          <p class="level-item is-size-3 has-text-info has-text-weight-bold" id="amount">
                               250€ TTC
                           </p>
                       </div>
@@ -169,7 +178,7 @@
                   </nav>
                   <div class="level-right">
                     <p class="level-item">
-                      <button class="button is-link" onclick="formReset()">
+                      <button class="button is-primary is-outlined is-small" onclick="formReset()">
                         Recommencer
                         </button>
                     </p>
@@ -207,8 +216,11 @@
         <div class="is-two-thirds column pt-0">
     
   <!-- Issues blocks from issues list-->
+  <!-- Alternating left right using cycler and cls.next() inwide issues.njk-->
+
+{% set cls = cycler(" ", " is-flex-direction-row-reverse") %}
 {% for item in issuelist.issue %}
-{% include "partials/issues.njk"%}
+{% include 'partials/issues.njk' %}
 {% endfor %}
 
         </div>
@@ -277,7 +289,7 @@
 
 <div class="level">
   <div class="level-item">
-    <a class="is-5 has-text-weight-semibold" href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TCswTUrOLjYwYLRSNagwMU8zSU2yMDZMSU62SEoytzKoSLI0NEk1TbZMsjQxNLa0TPZiMTM2NgcAB6oQWw&q=6337&oq=6337&aqs=chrome.2.69i60j69i59j46i175i199j0l2j69i60j69i61l2.3461j0j9&sourceid=chrome&ie=UTF-8#lrd=0x47f4eb831dcc8bb7:0xb914e5c9b941399c,1,,,">Voir plus d'avis...</a>
+    <a class="is-5 has-text-weight-semibold" href="./nos-avis/">Voir plus d'avis...</a>
   </div>
 </div>
 

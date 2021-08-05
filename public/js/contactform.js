@@ -1,24 +1,33 @@
 const submit = document.getElementById('submitButton')
-const inputName = document.getElementById('inputName')
+const inputFirstName = document.getElementById('inputFirstName')
+const inputLastName = document.getElementById('inputLastName')
 const inputEmail = document.getElementById('inputEmailField')
-const iconName = document.getElementById('nameCheckIcon')
+const iconLastName = document.getElementById('lastNameCheckIcon')
+const iconFirstName = document.getElementById('firstNameCheckIcon')
 const iconEmail = document.getElementById('emailCheckIcon')
 const emailMessage = document.getElementById('wrongEmailMessage')
+const successMessage = document.getElementById('successMessage')
 const MAXCHARNAMEFIELD = 20
 const MINCHARNAMEFIELD = 3
 var nameValidated = false
 var emailValidated = false
 
 document.addEventListener("DOMContentLoaded", function() {
-emailMessage.style = 'display:none'
+emailMessage.style = 'display:none';
+successMessage.style = 'display:none';
+submit.disabled = true;
+submit.setAttribute("disabled")
+
 }
 )
 
 
 // EVENT LISTENERS
 document.addEventListener('change', event => {   
-    if (event.target.matches('.inputNameField')) {
-      validateName()
+    if (event.target.matches('.inputFirstNameField')) {
+      validateFirstName()
+    } else if (event.target.matches('.inputLastNameField')) {
+      validateLastName()
     } else if (event.target.matches('.inputEmailField')) {
       validateEmail(event.target.value)
     } else {
@@ -27,40 +36,83 @@ document.addEventListener('change', event => {
   }, false)
 
 
-// Name validation
-  function validateName() {
+// First Name validation
+  function validateFirstName() {
     var regexString = /^[a-z ,.'-]+$/i; //words separated by space
    
-    const iconName = document.getElementById('nameCheckIcon')
-    const conditions =
-      (inputName.value.length > MINCHARNAMEFIELD) &&
-      (inputName.value.length < MAXCHARNAMEFIELD) &&
-      (inputName.value != null) &&
-      (regexString.test(inputName.value))  //test for regex string
-    console.log(regexString.test(inputName.value))
-   
-    if (conditions) {
+    const iconFirstName = document.getElementById('firstNameCheckIcon')
+    const conditionsFirstName =
+      (inputFirstName.value.length > MINCHARNAMEFIELD) &&
+      (inputFirstName.value.length < MAXCHARNAMEFIELD) &&
+      (inputFirstName.value != null) &&
+      (regexString.test(inputFirstName.value))  //test for regex string
+    console.log(regexString.test(inputFirstName.value))
+
+    // First Name test condition and validation
+    if (conditionsFirstName) {
       // input box color
-      inputName.classList.remove('is-danger')
-      inputName.classList.add('is-success')
-      // icon type
-      iconName.classList.remove('fa-exclamation-triangle')
-      iconName.classList.add('fa-check')
-      console.log("icon :" + iconName.classList.value)
+      inputFirstName.classList.remove('is-danger')
+      inputFirstName.classList.add('is-success')
+
+      // icon first name type
+      iconFirstName.classList.remove('fa-exclamation-triangle')
+      iconFirstName.classList.add('fa-check')
+      console.log("icon :" + iconFirstName.classList.value)
    
       //now we call submit button test
-      nameValidated = true
-      submitCheck()
+      firstNameValidated = true
     } else {
       // input box color
-      inputName.classList.remove('is-sucess')
-      inputName.classList.add('is-danger')
-      // icon type
-      iconName.classList.remove('fa-check')
-      iconName.classList.add('fa-exclamation-triangle')
-   
-      nameValidated = false
+      inputFirstName.classList.remove('is-success')
+      inputFirstName.classList.add('is-danger')      
+      // icon first name type
+      iconFirstName.classList.remove('fa-check')
+      iconFirstName.classList.add('fa-exclamation-triangle')
+
+      firstNameValidated = false
     }
+  }
+
+  // Last Name validation
+  function validateLastName() {
+    var regexString = /^[a-z ,.'-]+$/i; //words separated by space
+   
+    const iconLastName = document.getElementById('lastNameCheckIcon')
+    const conditionsLastName =
+    (inputLastName.value.length > MINCHARNAMEFIELD) &&
+    (inputLastName.value.length < MAXCHARNAMEFIELD) &&
+    (inputLastName.value != null) &&
+    (regexString.test(inputLastName.value))  //test for regex string
+
+  // Last Name test condition and validation
+    if (conditionsLastName) {
+      // input box color
+      inputLastName.classList.remove('is-danger')
+      inputLastName.classList.add('is-success')
+
+      // icon Last name type
+      iconLastName.classList.remove('fa-exclamation-triangle')
+      iconLastName.classList.add('fa-check')
+      console.log("icon :" + iconLastName.classList.value)
+   
+      //now we call submit button test
+      lastNameValidated = true
+
+    } else {
+      // input box color
+      inputLastName.classList.remove('is-success')
+      inputLastName.classList.add('is-danger')
+      // icon last name type
+      iconLastName.classList.remove('fa-check')
+      iconLastName.classList.add('fa-exclamation-triangle')
+   
+      lastNameValidated = false
+    }
+    // If all validated launch SubmitCheck()
+    if (lastNameValidated) {
+      submitCheck()
+    }
+
   }
 
 // Validate email
@@ -99,8 +151,8 @@ document.addEventListener('change', event => {
 
 
   function submitCheck() {
-    console.log(nameValidated, emailValidated)
-    if (nameValidated && emailValidated) {
+    console.log(firstNameValidated, lastNameValidated, emailValidated)
+    if (firstNameValidated && lastNameValidated && emailValidated) {
    
       submit.disabled = false;              //button is no longer no-clickable
       submit.removeAttribute("disabled");   //detto
@@ -108,3 +160,36 @@ document.addEventListener('change', event => {
       emailParagraph.style = 'display:block'  //email warning shows up
     }
   }
+
+
+  function sendForm () {
+
+
+    // Show the success message tab: 
+    successMessage.style.display = "inline";
+
+
+    // Sending and receiving data in JSON format using POST method
+        //
+        var xhr = new XMLHttpRequest();
+        // formData
+        var formData = new FormData();
+            formData.append("zf_referrer_name:", "https://www.6337.fr/");
+            formData.append("zf_redirect_url", ""); 
+            formData.append("SingleLine", "Pas répondu");
+            formData.append("Name_First", valuesform.model);
+            formData.append("Name_Last", valuesform.screen);
+            formData.append("Email", inputEmail.value);
+            formData.append("SingleLine1", valuesform.problem);
+            formData.append("MultiLine", "d'une réparation ratée");
+
+            
+        // zoho forms endpoint
+        var formendpoint = "https://forms.zohopublic.eu/6337crm/form/Contact/formperma/DwK2shueytV3ItQEcyfK0WxrksEajmdp9ERVt0gTU7k/htmlRecords/submit"
+        xhr.open("POST", formendpoint);
+
+        //Envoie les informations du header adaptées avec la requête
+        //xhr.setRequestHeader("Content-Type", "multipart/form-data");
+        xhr.send(formData);
+
+}

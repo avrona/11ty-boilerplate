@@ -9,13 +9,26 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
+   <!-- PREVENT INDEXING
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="robots" content="noindex, nofollow">
+
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script type="text/javascript" src="js/home.js" defer="defer"></script>
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --_
+  <!-- navbar JS 
+  <script type="text/javascript" src="../js/navbarmanagement.js" defer="defer"></script>
+  <!-- Contact page JS 
+  <script type="text/javascript" src="../js/contactform.js" defer="defer"></script>
+  -->
+  {% if jsfile %}
+      {% for script in jsfile %}
+          <script type="text/javascript" src="{{script}}" defer="defer"></script>
+      {% endfor %}
+  {% endif %}
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -23,15 +36,16 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link href="css/all.css" rel="stylesheet"> <!--load fontawesome icons -->
-  <!-- Bulma CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-   
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/home.css">
+   <link rel="stylesheet" href="../css/faq.css">
+  <link rel="stylesheet" href="../css/all.css" > <!--load fontawesome icons -->
+  <!-- Bulma CSS
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">  -->
+  <link rel="stylesheet" href="../css/styles.css">
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
 
 </head>
 <body>
