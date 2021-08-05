@@ -11,8 +11,6 @@ jobs:
         with:
          args: --output public
          install_dependencies: true
-      - name: Checkout
-        uses: actions/checkout@v2.3.4
       - name: Upload build to hosting environment
         uses: Creepios/sftp-action@v1.0.1
         with:
