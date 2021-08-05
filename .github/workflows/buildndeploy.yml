@@ -18,5 +18,5 @@ jobs:
           port: 22
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localPath: './public'
+          localPath: './dist'
           remotePath: './lamp0/web/vhosts/crm.6337.fr/htdocs'
