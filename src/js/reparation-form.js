@@ -148,7 +148,8 @@ document.addEventListener("DOMContentLoaded", function(){
             console.log("contenu:" + event.target.innerHTML);
             console.log("target:" + event.target);
             console.log("button:" + button.id);
-            
+            //nextPrev(1);
+            showEstimate();
                 // Store clicked button value
                 valuesform.problem = event.target.innerHTML ;
                 valuesform.idproblem = event.target.id ;
@@ -175,11 +176,7 @@ function showTab(n) {
     } else {
       document.getElementById("resetBtn").style.display = "inline";
     }
-    if (n == (x.length - 1)) {
-      document.getElementById("estimateBtn").style.display = "inline";
-    } else {
-      document.getElementById("estimateBtn").style.display = "none";
-    }
+    
     // ... and run a function that displays the correct step indicator:
    
   }
@@ -272,14 +269,12 @@ return sum ;}
 
 function showEstimate () {
     var x = document.getElementsByClassName("buttontab");
-    var tab = document.getElementById("estimatetab");
+    var tab = document.getElementById("step6");
     var formbtn1 = document.getElementById("resetBtn");
-    var formbtn2 = document.getElementById("estimateBtn");
 
     // Hide the current tab:
     x[currentTab].style.display = "none";
     formbtn1.style.display = "none";
-    formbtn2.style.display = "none";
     // Show the results tab: 
     tab.style.display = "inline";
 
@@ -291,7 +286,14 @@ function showEstimate () {
     document.getElementById("mactitle").innerHTML = (valuesform.model);
     document.getElementById("macsubtitle").innerHTML = ("Ecran " + valuesform.screen + " - Année " + valuesform.year);
 
-    // Sending and receiving data in JSON format using POST method
+}
+
+
+
+
+
+function sendEstimate(){
+   // Sending and receiving data in JSON format using POST method
         //
         var xhr = new XMLHttpRequest();
         // formData
@@ -313,38 +315,7 @@ function showEstimate () {
         //xhr.setRequestHeader("Content-Type", "multipart/form-data");
 
         xhr.send(formData);
-
-
-
-
 }
-
-function sendEstimate(){
-   /*         // Sending and receiving data in JSON format using POST method
-        //
-        var xhr = new XMLHttpRequest();
-        // Payload
-        var payload = {"Dropdown":"MacBook Pro Retina","Dropdown4":"13 pouces","Dropdown4_group_name":"MacBook Pro retina","Dropdown5":"2013","Dropdown5_group_name":"MacBook Pro Retina","Dropdown1":"la réactivité est (très) faible","Dropdown2":"de liquide renversé","REFERRER_NAME":"https://www.6337.fr/","ZS_IF_DOMAIN":"https://www.6337.fr/"}
-        // TEST zoho forms
-        var formendpoint = "https://forms.zohopublic.eu/6337crm/form/TESTUndevisen3clics/formperma/tKHAtARvKUQ-8vW_LMK8Lw4gzmaVTvm00S-DsYVqAK8/records"
-        xhr.open("POST", formendpoint, true);
-
-        //Envoie les informations du header adaptées avec la requête
-        xhr.setRequestHeader("Content-Type", "application/json");
-
-        xhr.onreadystatechange = function() { //Appelle une fonction au changement d'état.
-            if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-        // Requête finie, traitement ici.
-            }
-        }
-        xhr.send("foo=bar&lorem=ipsum");
-        // xhr.send(new Int8Array());
-        // xhr.send(document);
-*/
-        // Redirect to the next steps form
-        window.location.href = "https://www.6337.fr/prise-en-charge/";
-}
-
 
 function validateForm() {
     return true ;}

@@ -18,113 +18,21 @@
   <!------------------------------------------ Multi-step contact Form ------------------------>
     
    <section class="hero is-halfheight">
-      <div class="columns">
-          <div class="column is-half-desktop is-offset-one-quarter-desktop is-10-mobile is-offset-1-mobile is-8-tablet is-offset-2-tablet">
-
-
-              <form>
-
-
-                  <div class="field is-horizontal">
-                      <div class="field-label is-normal">
-                          <label class="label" for="name">Nom</label>
-                      </div>
-                      <div class="field-body">
-                          <div class="field is-expanded">
-                              <p class="control is-expanded has-icons-left has-icons-right">
-                                  <input type="text" class="input inputNameField" placeholder="Nom" id="inputName" />
-                                  <span class="icon is-small is-left">
-                                      <i class="fas fa-user"></i>
-                                  </span>
-                                  <span class="icon is-small is-right">
-                                    <i id='nameCheckIcon' class="fas fa-exclamation-triangle"></i>
-                                </span>
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                            <label class="label">E-mail</label>
-                    </div>
-                          <div class="field-body">
-                              <div class="field is-expanded mr-0">
-                                  <p class="control is-expanded has-icons-left has-icons-right">
-                                      <input type="e-mail" placeholder="jean@dupont.fr" class="input inputEmailField" id="inputEmailField">
-                                      <span class="icon is-small is-left">
-                                        <i class="fas fa-envelope"></i>
-                                      </span>
-                                      <span class="icon is-small is-right">
-                                        <i  id="emailCheckIcon" class="fas fa-check"></i>
-                                      </span>
-                                  </p>
-                              </div>
-                              <p class="help is-danger" id="wrongEmailMessage">Veuillez entrer un email valide</p>
-                          </div>
-                      </div>
-                  
-
-                  <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                      <label class="label">Sujet</label>
-                    </div>
-                    <div class="field-body">
-                      <div class="field">
-                        <div class="control">
-                          <input class="input inputTextField" type="text" placeholder="e.g. Proposition de partenariat">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                      <label class="label">Message</label>
-                    </div>
-                    <div class="field-body">
-                      <div class="field">
-                        <div class="control">
-                          <textarea class="textarea" placeholder="Dites-nous comment on peut vous aider !"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                    <div class="field is-horizontal">
-                        <div class="field-label">
-                        <!-- Left empty for horizontal spacing -->
-                        </div>
-                        <div class="field-body">
-                            <div class="field">
-                                <div class="control">
-                                    <label class="checkbox">
-                                        <input class="is-small" type="checkbox">
-                                        Je reconnais avoir lu les <a href="#">Conditions d'utilisation</a> de 6337.fr
-                                    </label>
-                                </div>
-                            </div>
-                        </div>                    
-                    </div>
-                    <div class="field is-horizontal">
-                        <div class="field-label">
-                            <!-- Left empty for horizontal spacing -->
-                        </div>
-                        <div class="field-body">
-                            <div class="field">
-                                <div class="control">
-                                <button class="button is-primary">
-                                    Envoyer
-                                </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  
-<!----------------- ESTIMATE FORM ---------------->
+      <div class="columns is-centered">
+          
+          <!-- FORM -->
+          <div class="column is-half-desktop is-8 "> 
+            
+            <div class="box mb-1 has-background-primary">
+              <h2 class="subtitle is-size-4 has-text-centered has-text-weight-bold has-text-white"> Prise en charge</h2>
+            </div>
+            <div class="box has-background-primary-light">
+              
+            
+               <!----------------- Model selection ---------------->
                
 
-               
+               <form>
                  <!------ first step MODEL------>
                <div class="buttontab" id="step1">
                   <h2 class="subtitle has-text-centered mb-3 has-text-weight-bold">Modèle</h2>
@@ -199,140 +107,185 @@
 
             </div>
 
-            <!------ Step6 CONTACT DETAILS ------>
-
-            <div class="buttontab pb-6" id="step6">           
-              <h2 class="subtitle has-text-centered mb-1 has-text-weight-bold">Contact</h2>
-
-                  <div class="field is-horizontal">
-                      <div class="field-label is-normal">
-                          <label class="label" for="name">Nom</label>
-                      </div>
-                      <div class="field-body">
-                          <div class="field is-expanded">
-                              <p class="control is-expanded has-icons-left has-icons-right">
-                                  <input type="text" class="input inputNameField" placeholder="Nom" id="inputName" />
-                                  <span class="icon is-small is-left">
-                                      <i class="fas fa-user"></i>
-                                  </span>
-                                  <span class="icon is-small is-right">
-                                    <i id='nameCheckIcon' class="fas fa-exclamation-triangle"></i>
-                                </span>
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                            <label class="label">E-mail</label>
-                    </div>
-                          <div class="field-body">
-                              <div class="field is-expanded mr-0">
-                                  <p class="control is-expanded has-icons-left has-icons-right">
-                                      <input type="e-mail" placeholder="jean@dupont.fr" class="input inputEmailField" id="inputEmailField">
-                                      <span class="icon is-small is-left">
-                                        <i class="fas fa-envelope"></i>
-                                      </span>
-                                      <span class="icon is-small is-right">
-                                        <i  id="emailCheckIcon" class="fas fa-check"></i>
-                                      </span>
-                                  </p>
-                              </div>
-                              <p class="help is-danger" id="wrongEmailMessage">Veuillez entrer un email valide</p>
-                          </div>
-                      </div>
-                  
-
-
-                  
-                  <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                      <label class="label">Détails</label>
-                    </div>
-                    <div class="field-body">
-                      <div class="field">
-                        <div class="control">
-                          <textarea class="textarea" placeholder="Aidez-nous grâce aux descriptif du problème ou de son apparition !"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
             <!------ ESTIMATION ------>
 
-            <article class="media" id="estimatetab" style="display:none">
-              <div class="media-left">
-                  <figure class="image is-96x96">
-                      <img src="images/laptop-macbook-pro-svgrepo-com.svg" id="estimateimg" alt="Image"/>
-                  </figure>
-              </div>
-              <div class="media-content">
-                  <div class="content">
-                      <H4 class="title is-4  has-text-grey-dark" id="mactitle">MacBook Pro Retina</H4>
-                      <h5 class="subtitle is-5  has-text-grey" id="macsubtitle">Ecran 15 pouces - Année 2012</h5>
-                              Forfait réparation carte-mère qui inclut:
-                      </p>
-                      <ul>
-                        <li>Réparation de la carte-mère</li>
-                        <li>Envoi et retour par Chronopost avec assurance</li>
-                        <li>Garantie 180 jours</li>
-                      </ul>
+            <div class="buttontab" id="step6">
+              <div class="columns">
+                <div class="column is-one-third">
+
+                  
+
+                    <div class="card">
+                        <div class="card-image is-96x96 has-text-centered">
+                            <img src="../images/laptop-macbook-pro-svgrepo-com.svg" id="estimateimg" alt="Image"/>
+                        </div>
+
+                        <div class="card-content has-text-centered pt-1">
+                              <div class="content">
+                                  <H4 class="title is-4  has-text-grey-dark" id="mactitle">MacBook Pro Retina</H4>
+                                  <h5 class="subtitle is-5  has-text-grey" id="macsubtitle">Ecran 15 pouces - Année 2012</h5>
+                                          <p> Forfait réparation carte-mère estimé à:
+                                  </p>
+                              </div>
+                    
+                                <div class="level">
+                                    <p class="level-item has-text-centered is-size-5 has-text-info has-text-weight-bold" id="amount">
+                                        250€ TTC
+                                    </p>
+                                </div>
+
+                            
+                            
+                              <p class="level-item">
+                                <button class="button is-primary is-outlined is-small" onclick="formReset()">
+                                  Recommencer
+                                  </button>
+                              </p>                          
+                        </div>
+                    </div>
+
+                  
+
+                </div>
+
+                <div class="column is-two-thirds">
+                  <!----------------- Customer details ---------------->
+                    <!------ first step MODEL------>
+                      <div class="customerDetails" id="step6">
+                          <div class="field is-horizontal">
+                              <div class="field-label is-normal">
+                                  <label class="label" for="name">Nom</label>
+                              </div>
+                              <div class="field-body">
+                                  <div class="field is-expanded">
+                                      <p class="control is-expanded has-icons-left has-icons-right">
+                                          <input type="text" class="input inputLastNameField" placeholder="Nom" id="inputLastName" />
+                                          <span class="icon is-small is-left">
+                                              <i class="fas fa-user"></i>
+                                          </span>
+                                          <span class="icon is-small is-right">
+                                            <i id='lastNameCheckIcon' class="fas fa-exclamation-triangle"></i>
+                                        </span>
+                                      </p>
+                                  </div>
+                              </div>
+                            </div>
+
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                  <label class="label" for="name">Prénom</label>
+                              </div>
+                              <div class="field-body">
+                                  <div class="field is-expanded">
+                                      <p class="control is-expanded has-icons-left has-icons-right">
+                                          <input type="text" class="input inputFirstNameField" placeholder="Prénom" id="inputFirstName" />
+                                          <span class="icon is-small is-left">
+                                              <i class="fas fa-user"></i>
+                                          </span>
+                                          <span class="icon is-small is-right">
+                                            <i id='firstNameCheckIcon' class="fas fa-exclamation-triangle"></i>
+                                        </span>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                    <label class="label">E-mail</label>
+                            </div>
+                                  <div class="field-body">
+                                      <div class="field is-expanded mr-0">
+                                          <p class="control is-expanded has-icons-left has-icons-right">
+                                              <input type="e-mail" placeholder="jean@dupont.fr" class="input inputEmailField" id="inputEmailField">
+                                              <span class="icon is-small is-left">
+                                                <i class="fas fa-envelope"></i>
+                                              </span>
+                                              
+                                              <span class="icon is-small is-right">
+                                                <i  id="emailCheckIcon" class="fas fa-check"></i>
+                                              </span>
+                                              <p class="help is-danger" id="wrongEmailMessage">Veuillez entrer un email valide</p>
+                                          </p>
+                                      </div>
+                                      
+                                  </div>
+                              </div>
+                          
+                          <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                              <label class="label">Message</label>
+                            </div>
+                            <div class="field-body">
+                              <div class="field">
+                                <div class="control">
+                                  <textarea class="textarea" placeholder="Dites-nous comment on peut vous aider !"></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                            <div class="field is-horizontal">
+                                <div class="field-label">
+                                <!-- Left empty for horizontal spacing -->
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+                                            <label class="checkbox">
+                                                <input class="is-small" type="checkbox">
+                                                Je reconnais avoir lu les <a href="#">Conditions d'utilisation</a> de 6337.fr
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>                    
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label">
+                                    <!-- Left empty for horizontal spacing -->
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+                                        <button class="button is-primary" id="submitButton" onclick="sendForm()">
+                                            Demander un devis
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        </div>
+                      </div>
                   </div>
-                  <nav class="level is-mobile">
-                      <div class="level-left">
-                          <p class="level-item is-size-3 has-text-info has-text-weight-bold" id="amount">
-                              250€ TTC
-                          </p>
-                      </div>
-                      <div class="level-right">
-                          <p class="level-item">
-                              <button class="button is-primary" onclick="sendEstimate()">
-                                  Envoyer mon Mac
-                              </button>
-                          </p>
-                      </div>
-                  </nav>
-                  <div class="level-right">
-                    <p class="level-item">
-                      <button class="button is-primary is-outlined is-small" onclick="formReset()">
-                        Recommencer
+
+
+                    <div class="buttons mb-0">
+                      <button class="button is-ghost  pl-0 pb-0 mb-0 is-justify-content-center is-align-items-center" type="button" id="resetBtn" onclick="formReset()"><i class="fas fa-undo"></i>
                         </button>
-                    </p>
-                  </div>
-              </div>
-          </article>
+                    </div>
 
-            <div class="buttons is-centered has-addons">
-              <button class="button is-primary" type="button" id="estimateBtn" onclick="showEstimate()">Estimer</button>
+
+
+
+
+            </form>
+          
+
+          
             </div>
-            <div class="buttons mb-0">
-              <button class="button is-ghost  pl-0 pb-0 mb-0 is-justify-content-center is-align-items-center" type="button" id="resetBtn" onclick="formReset()"><i class="fas fa-undo"></i>
-                </button>
-            </div>
-
-         
-
-
-
-
-
-
-
-                </form>
-
+          </div>
 
 
 
 
           </div>
 
-      </div>
+      
 
   </section>
 
-    <!-- JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script type="text/javascript" src="js/contactform.js"></script>
 
 {% endblock %}
