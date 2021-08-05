@@ -18,8 +18,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script type="text/javascript" src="../js/home.js" defer="defer"></script>
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --_
+  <!-- navbar JS 
+  <script type="text/javascript" src="../js/navbarmanagement.js" defer="defer"></script>
+  <!-- Contact page JS 
+  <script type="text/javascript" src="../js/contactform.js" defer="defer"></script>
+  -->
+  
+      
+          <script type="text/javascript" src="../js/home.js" defer="defer"></script>
+      
+          <script type="text/javascript" src="../js/navbarmanagement.js" defer="defer"></script>
+      
+  
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -31,8 +42,8 @@
   <link rel="stylesheet" href="../css/home.css">
    <link rel="stylesheet" href="../css/faq.css">
   <link rel="stylesheet" href="../css/all.css" > <!--load fontawesome icons -->
-  <!-- Bulma CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <!-- Bulma CSS
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">  -->
   <link rel="stylesheet" href="../css/styles.css">
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -61,7 +72,7 @@
             
             <a class="navbar-item" href="/"  aria-current="page">Accueil</a>
             
-            <a class="navbar-item" href="/about/" >Réparation</a>
+            <a class="navbar-item" href="/prise-en-charge/" >Réparation</a>
             
             <a class="navbar-item" href="/questions-frequentes/" >FAQ</a>
             
@@ -78,7 +89,7 @@
                   <a class="navbar-item" href="/blog/" >Blog</a>
 
                   
-                  <a class="navbar-item" href="/"  aria-current="page">Contact</a>
+                  <a class="navbar-item" href="/contact/" >Contact</a>
 
                   
               </div>
@@ -118,7 +129,7 @@
                     <h1 class="subtitle is-3">
                       Il reste un espoir pour votre<br>
                       <span class="rotator is-align-items-center">
-                        <span><br><h1 class="has-text-centered-mobile" >MacBook Air</h1></span>
+                        <span><br><h1 class="has-text-centered-mobile">MacBook Air</h1></span>
                         <span><br><h1 class="has-text-centered-mobile">MacBook Pro Unibody</h1></span>
                         <span><br><h1 class="has-text-centered-mobile">MacBook Pro Retina</h1></span>
                         <span><br><h1 class="has-text-centered-mobile">MacBook Pro Touchbar</h1></span>
@@ -146,7 +157,7 @@
           <div class="column is-7"> <!--colonne features-->
 <!--features list-->
 
-<div class="box">
+<div class="box has-background-primary-light">
               <div class="feature columns is-centered is-vcentered">
                 <div class="column is-one-fifth-tablet is-half-mobile is-offset-one-quarter-mobile">
                   <div class="icon-text is-justify-content-center">
@@ -162,7 +173,7 @@
               </div>
             </div>
 
-<div class="box">
+<div class="box has-background-primary-light">
               <div class="feature columns is-centered is-vcentered">
                 <div class="column is-one-fifth-tablet is-half-mobile is-offset-one-quarter-mobile">
                   <div class="icon-text is-justify-content-center">
@@ -178,7 +189,7 @@
               </div>
             </div>
 
-<div class="box">
+<div class="box has-background-primary-light">
               <div class="feature columns is-centered is-vcentered">
                 <div class="column is-one-fifth-tablet is-half-mobile is-offset-one-quarter-mobile">
                   <div class="icon-text is-justify-content-center">
@@ -202,10 +213,10 @@
           <!--Estimate Form Fancy -->
           <div class="column is-5 "> 
             
-            <div class="box mb-1">
-              <h2 class="subtitle is-size-4 has-text-centered has-text-weight-bold"> Un Devis en 3 clics !</h2>
+            <div class="box mb-1 has-background-primary">
+              <h2 class="subtitle is-size-4 has-text-centered has-text-weight-bold has-text-white"> Un Devis en 3 clics !</h2>
             </div>
-            <div class="box">
+            <div class="box has-background-primary-light">
               
             
                <!----------------- ESTIMATE FORM ---------------->
@@ -218,9 +229,9 @@
 
                  
                   <div class="buttons is-flex-direction-column is-centered">
-                    <button type="button" id="mba" class="button is-link is-outlined is-medium my-4 button-model">MacBook Air</button>
-                    <button type="button" id="mbp" class="button is-link is-outlined is-medium my-4 button-model">MacBook Pro</button>
-                    <button type="button" id="mb" class="button is-link is-outlined is-medium my-4 button-model">MacBook 12"</button>                  
+                    <button type="button" id="mba" class="button is-primary  is-outlined is-medium my-4 button-model">MacBook Air</button>
+                    <button type="button" id="mbp" class="button is-primary  is-outlined  is-medium my-4 button-model">MacBook Pro</button>
+                    <button type="button" id="mb" class="button is-primary  is-outlined  is-medium my-4 button-model">MacBook 12"</button>                  
                   </div>
                 
                 </div>
@@ -230,9 +241,9 @@
                 <h2 class="subtitle has-text-centered mb-0 has-text-weight-bold">Modèle</h2>
 
                 <div class="buttons is-flex-direction-column is-centered mb-1">
-                  <button type="button" id="mbpu" class="button is-link is-outlined is-medium my-4 button-model-pro mbp">MacBook Pro Unibody</button>
-                  <button type="button" id="mbpr" class="button is-link is-outlined is-medium my-4 button-model-pro mbp">MacBook Pro Retina</button>
-                  <button type="button" id="mbptb" class="button is-link is-outlined is-medium my-4 button-model-pro mbp">MacBook Pro Touchbar</button>                
+                  <button type="button" id="mbpu" class="button is-primary is-outlined is-medium my-4 button-model-pro mbp">MacBook Pro Unibody</button>
+                  <button type="button" id="mbpr" class="button is-primary is-outlined is-medium my-4 button-model-pro mbp">MacBook Pro Retina</button>
+                  <button type="button" id="mbptb" class="button is-primary is-outlined is-medium my-4 button-model-pro mbp">MacBook Pro Touchbar</button>                
                 </div>
               </div>
               
@@ -309,7 +320,7 @@
                   </div>
                   <nav class="level is-mobile">
                       <div class="level-left">
-                          <p class="level-item is-size-3 has-text-primary has-text-weight-bold" id="amount">
+                          <p class="level-item is-size-3 has-text-info has-text-weight-bold" id="amount">
                               250€ TTC
                           </p>
                       </div>
@@ -323,7 +334,7 @@
                   </nav>
                   <div class="level-right">
                     <p class="level-item">
-                      <button class="button is-link" onclick="formReset()">
+                      <button class="button is-primary is-outlined is-small" onclick="formReset()">
                         Recommencer
                         </button>
                     </p>
@@ -365,7 +376,7 @@
 
 
 
-    <div class="box">
+    <div class="box has-background-primary-light">
       <div class="level mb-1">
         <div class="level-item">
           <H2 class="title is-5 has-text-centered mb-1">Dommage liquide</H2>
@@ -375,7 +386,7 @@
       <div class="columns is-centered is-vcentered  ">
         <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile is-offset-one-quarter-mobile">
           <figure class="image">
-          <img src="images/Mac-liquid-icone.png">
+          <img src="images/Mac-liquid-icone.svg">
         </figure>
         </div>
         <div class="column is-two-thirds">
@@ -400,7 +411,7 @@
     </div>
 
 
-    <div class="box">
+    <div class="box has-background-primary-light">
       <div class="level mb-1">
         <div class="level-item">
           <H2 class="title is-5 has-text-centered mb-1">Carte-mère HS</H2>
@@ -410,7 +421,7 @@
       <div class="columns is-centered is-vcentered  is-flex-direction-row-reverse">
         <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile is-offset-one-quarter-mobile">
           <figure class="image">
-          <img src="images/icone-carte-mère.png">
+          <img src="images/icone-carte-mere.svg">
         </figure>
         </div>
         <div class="column is-two-thirds">
@@ -435,7 +446,7 @@
     </div>
 
 
-    <div class="box">
+    <div class="box has-background-primary-light">
       <div class="level mb-1">
         <div class="level-item">
           <H2 class="title is-5 has-text-centered mb-1">Rétroéclairage en panne</H2>
@@ -445,7 +456,7 @@
       <div class="columns is-centered is-vcentered  ">
         <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile is-offset-one-quarter-mobile">
           <figure class="image">
-          <img src="images/mac-no-backlight.png">
+          <img src="images/mac-no-backlight.svg">
         </figure>
         </div>
         <div class="column is-two-thirds">
@@ -470,7 +481,7 @@
     </div>
 
 
-    <div class="box">
+    <div class="box has-background-primary-light">
       <div class="level mb-1">
         <div class="level-item">
           <H2 class="title is-5 has-text-centered mb-1">Connecteur arraché</H2>
@@ -480,7 +491,7 @@
       <div class="columns is-centered is-vcentered  is-flex-direction-row-reverse">
         <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile is-offset-one-quarter-mobile">
           <figure class="image">
-          <img src="images/icone-connecteur.png">
+          <img src="images/icone-connecteur.svg">
         </figure>
         </div>
         <div class="column is-two-thirds">
@@ -522,7 +533,7 @@
 
 
     <div class="column is-one-quarter">
-      <div class="card">
+      <div class="card has-background-primary-light">
         <div class="column is-centered is-two-thirds-mobile is-offset-2-mobile is-two-thirds-desktop is-offset-2-desktop ">
         <div class="card-image">
           <figure class="image">
@@ -545,7 +556,7 @@
       </div>
 
     <div class="column is-one-quarter">
-      <div class="card">
+      <div class="card has-background-primary-light">
         <div class="column is-centered is-two-thirds-mobile is-offset-2-mobile is-two-thirds-desktop is-offset-2-desktop ">
         <div class="card-image">
           <figure class="image">
@@ -568,7 +579,7 @@
       </div>
 
     <div class="column is-one-quarter">
-      <div class="card">
+      <div class="card has-background-primary-light">
         <div class="column is-centered is-two-thirds-mobile is-offset-2-mobile is-two-thirds-desktop is-offset-2-desktop ">
         <div class="card-image">
           <figure class="image">
@@ -617,7 +628,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -669,7 +680,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -721,7 +732,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -782,7 +793,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -834,7 +845,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -886,7 +897,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -947,7 +958,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -999,7 +1010,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1051,7 +1062,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1112,7 +1123,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1164,7 +1175,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1216,7 +1227,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1277,7 +1288,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1329,7 +1340,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1381,7 +1392,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1442,7 +1453,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1494,7 +1505,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1546,7 +1557,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1607,7 +1618,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1659,7 +1670,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1711,7 +1722,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1772,7 +1783,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1824,7 +1835,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1876,7 +1887,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
@@ -1937,7 +1948,7 @@
 
             
                   <div class="column">
-                    <div class="card equal-height">
+                    <div class="card equal-height has-background-primary-light">
                       <div class="card-content">
                       
                         <p>
