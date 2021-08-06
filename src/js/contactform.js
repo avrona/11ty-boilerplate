@@ -7,17 +7,18 @@ const iconFirstName = document.getElementById('firstNameCheckIcon')
 const iconEmail = document.getElementById('emailCheckIcon')
 const emailMessage = document.getElementById('wrongEmailMessage')
 const successMessage = document.getElementById('successMessage')
+const modalClose = document.getElementsByClassName('modal-close')
 const MAXCHARNAMEFIELD = 20
 const MINCHARNAMEFIELD = 3
-var nameValidated = false
+var firstNameValidated = false
+var lastNameValidated = false
 var emailValidated = false
 
 document.addEventListener("DOMContentLoaded", function() {
 emailMessage.style = 'display:none';
 successMessage.style = 'display:none';
 submit.disabled = true;
-submit.setAttribute("disabled")
-
+submit.setAttribute("disabled","")
 }
 )
 
@@ -35,6 +36,23 @@ document.addEventListener('change', event => {
     }
   }, false)
 
+  document.addEventListener(
+    "click",
+    function(event) {
+      // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
+      if (
+        event.target.matches(".modal-close") ||
+        !event.target.closest(".modal")
+      ) {
+        closeModal()
+      }
+    },
+    false
+  )
+  
+  function closeModal() {
+    document.querySelector(".modal").style.display = "none"
+  }
 
 // First Name validation
   function validateFirstName() {
@@ -157,7 +175,7 @@ document.addEventListener('change', event => {
       submit.disabled = false;              //button is no longer no-clickable
       submit.removeAttribute("disabled");   //detto
     } else {
-      emailParagraph.style = 'display:block'  //email warning shows up
+      emailMessage.style = 'display:block'  //email warning shows up
     }
   }
 
@@ -166,7 +184,7 @@ document.addEventListener('change', event => {
 
 
     // Show the success message tab: 
-    successMessage.style.display = "inline";
+    successMessage.style.display = "block";
 
 
     // Sending and receiving data in JSON format using POST method
@@ -177,10 +195,10 @@ document.addEventListener('change', event => {
             formData.append("zf_referrer_name:", "https://www.6337.fr/");
             formData.append("zf_redirect_url", ""); 
             formData.append("SingleLine", "Pas répondu");
-            formData.append("Name_First", valuesform.model);
-            formData.append("Name_Last", valuesform.screen);
+            formData.append("Name_First", inputFirstName.value);
+            formData.append("Name_Last", inputLastName.value);
             formData.append("Email", inputEmail.value);
-            formData.append("SingleLine1", valuesform.problem);
+            formData.append("SingleLine1", "");
             formData.append("MultiLine", "d'une réparation ratée");
 
             
