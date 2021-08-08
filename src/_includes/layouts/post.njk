@@ -37,9 +37,18 @@ jsfile: ["../js/navbarmanagement.js"]
   </div>
       </article>
         <!-- Comment Box Snippet for test -->
-        <div class="commentbox"></div>
-        <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-        <script>commentBox('5733825137082368-proj')</script>
+          <aside id="comment-sidecar"></aside>
+          <script type="text/javascript">
+              (function() {
+                  const scriptNode = document.createElement('script');
+                  scriptNode.type = 'text/javascript';
+                  scriptNode.async = true;
+                  scriptNode.src = 'http://crm.6337.fr/htdocs/comment-sidecar/comment-sidecar-js-delivery.php'; // adjust to the correct path
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(scriptNode);
+              })();
+          </script>
+
+
         </div>
         </div>
 
