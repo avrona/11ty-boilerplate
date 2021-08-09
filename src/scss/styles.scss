@@ -39,3 +39,7 @@ $title-color: $primary;
 @import "./node_modules/bulma/sass/grid/_all.sass";
 @import "./node_modules/bulma/sass/helpers/_all.sass";
 @import "./node_modules/bulma/sass/layout/_all.sass";
+
+
+// Import style for comment sidecar
+@import "../css/comment-sidecar-basic.css";
