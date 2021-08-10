@@ -4,7 +4,7 @@ date: "2020-02-19"
 tags: 
   - "blog"
 coverImage: "../images/MacBook-Air-boots-with-black-screen-624x468-1.jpeg"
-subtitle: ""
+subtitle: "Un écran noir ? Et si cela ne venait pas de la carte-mère ? On vous en dit plus sur ce problème rencontré maintes fois, et sur lequel même les 'genius' de l'AppleStore butte parfois... "
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---
