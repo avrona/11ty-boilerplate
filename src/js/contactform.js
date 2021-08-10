@@ -184,30 +184,30 @@ document.addEventListener('change', event => {
 
 
     // Show the success message tab: 
-    successMessage.style.display = "block";
+    
 
 
     // Sending and receiving data in JSON format using POST method
         //
         var xhr = new XMLHttpRequest();
-        // formData
-        var formData = new FormData();
-            formData.append("zf_referrer_name:", "https://www.6337.fr/");
-            formData.append("zf_redirect_url", ""); 
-            formData.append("SingleLine", "Pas répondu");
-            formData.append("Name_First", inputFirstName.value);
-            formData.append("Name_Last", inputLastName.value);
-            formData.append("Email", inputEmail.value);
-            formData.append("SingleLine1", "");
-            formData.append("MultiLine", "d'une réparation ratée");
+        // formData as a JSON
+        var formData = { zf_referrer_name: "https://www.6337.fr/",
+                        zf_redirect_url: "", 
+                        SingleLine:"Pas répondu",
+                        Name_First: inputFirstName.value,
+                        Name_Last: inputLastName.value,
+                        Email: inputEmail.value,
+                        SingleLine1: "",
+                        MultiLine: "test script d'Alex" }
 
             
-        // zoho forms endpoint
-        var formendpoint = "https://forms.6337.fr/6337crm/form/Contact/formperma/DwK2shueytV3ItQEcyfK0WxrksEajmdp9ERVt0gTU7k/htmlRecords/submit"
-        xhr.open("POST", formendpoint);
+        // PHP script
+        xhr.open("POST", "test.php");
 
-        //Envoie les informations du header adaptées avec la requête
-        xhr.setRequestHeader("Content-Type", "multipart/form-data");
-        xhr.send(formData);
+        xhr.onreadystatechange = function() { if (xhr.readyState === 4 && xhr.status === 200) { console.log(xhr.responseText);
+        successMessage.style.display = "block";
+        } }
+        xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
+        xhr.send(new URLSearchParams(formData).toString()); 
 
 }
