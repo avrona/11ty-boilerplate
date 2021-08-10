@@ -203,11 +203,11 @@ document.addEventListener('change', event => {
 
             
         // zoho forms endpoint
-        var formendpoint = "https://forms.zohopublic.eu/6337crm/form/Contact/formperma/DwK2shueytV3ItQEcyfK0WxrksEajmdp9ERVt0gTU7k/htmlRecords/submit"
+        var formendpoint = "https://forms.6337.fr/6337crm/form/Contact/formperma/DwK2shueytV3ItQEcyfK0WxrksEajmdp9ERVt0gTU7k/htmlRecords/submit"
         xhr.open("POST", formendpoint);
 
         //Envoie les informations du header adaptées avec la requête
-        //xhr.setRequestHeader("Content-Type", "multipart/form-data");
+        xhr.setRequestHeader("Content-Type", "multipart/form-data");
         xhr.send(formData);
 
 }
