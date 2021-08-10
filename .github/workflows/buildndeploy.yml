@@ -2,15 +2,20 @@ name: Eleventy Build
 on: workflow_dispatch
 
 jobs:
-  build_deployftp:
-    runs-on: ubuntu-18.04
+  build:
+
+    runs-on: ubuntu-latest
+
+
     steps:
-      - uses: actions/checkout@master
-      - name: Build
-        uses: TartanLlama/actions-eleventy@v1.1
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
         with:
-         args: --output public
-         install_dependencies: true
+          node-version: '15.x'
+      - run: npm ci
+      - run: npm run scss
+      - run: npm run build --if-present
       - name: Upload build to hosting environment
         uses: Creepios/sftp-action@v1.0.1
         with:
@@ -18,5 +23,5 @@ jobs:
           port: 22
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localPath: './public'
+          localPath: './dist'
           remotePath: './lamp0/web/vhosts/crm.6337.fr/htdocs'
