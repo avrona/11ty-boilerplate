@@ -7,24 +7,32 @@
       <div class="tile is-ancestor">
 
         <div class="tile is-parent is-6">
-          <article class="tile is-child box" style=" background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.8)), url( {{ lastposts[4].data.coverImage }}), no-repeat center center; background-size: cover;">
-            <p class="title pb-3">{{ lastposts[4].data.title }}</p>
-            <p class="subtitle mb-6 pb-6">{{ lastposts[4].data.subtitle }}</p>
-            <p class="has-text-weight-semibold has-text-grey ">{{ lastposts[4].date | readablePostDate }}</p>
-          </article>
+          
+          <div class="tile is-child box" style=" background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.8)), url( {{ lastposts[4].data.coverImage }}), no-repeat center center; background-size: cover;">
+            <a href="{{ lastposts[4].url | url }}">
+              <p class="title pb-3">{{ lastposts[4].data.title }}</p>
+              <p class="subtitle mb-3 pb-3">{{ lastposts[4].data.subtitle }}</p>
+              <p class="has-text-weight-semibold has-text-grey is-align-self-baseline ">{{ lastposts[4].date | readablePostDate }}</p>
+            </a>
+          </div>
+          
         </div>
         <div class="tile is-parent">
-          <article class="tile is-child box" style=" background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.8)), url( {{ lastposts[3].data.coverImage }}), no-repeat center center; background-size: cover;">
-            <p class="title pb-3">{{ lastposts[3].data.title }}</p>
-            <p class="subtitle mb-6 pb-6">{{ lastposts[3].data.subtitle }}</p>
-            <p class="has-text-weight-semibold has-text-grey ">{{ lastposts[3].date | readablePostDate }}</p>
-          </article>
+          <div class="tile is-child box" style=" background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.8)), url( {{ lastposts[3].data.coverImage }}), no-repeat center center; background-size: cover;">
+            <a href="{{ lastposts[3].url | url }}">
+              <p class="title pb-3">{{ lastposts[3].data.title }}</p>
+              <p class="subtitle mb-3 pb-3">{{ lastposts[3].data.subtitle }}</p>
+              <p class="has-text-weight-semibold has-text-grey ">{{ lastposts[3].date | readablePostDate }}</p>
+            </a>
+          </div>
         </div>
         <div class="tile is-parent">
           <article class="tile is-child box" style=" background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.8)), url( {{ lastposts[2].data.coverImage }}), no-repeat center center; background-size: cover; ">
-            <p class="title pb-3">{{ lastposts[2].data.title }}</p>
-            <p class="subtitle mb-6 pb-6">{{ lastposts[2].data.subtitle }}</p>
-            <p class="has-text-weight-semibold has-text-grey ">{{ lastposts[2].date | readablePostDate }}</p>
+            <a href="{{ lastposts[2].url | url }}">
+              <p class="title pb-3">{{ lastposts[2].data.title }}</p>
+              <p class="subtitle mb-3 pb-3">{{ lastposts[2].data.subtitle }}</p>
+              <p class="has-text-weight-semibold has-text-grey ">{{ lastposts[2].date | readablePostDate }}</p>
+            </a>
           </article>
         </div>
       </div>
@@ -33,21 +41,25 @@
 
         <div class="tile is-vertical is-8">
           <div class="tile is-parent">
-            <article class="tile is-child box" style=" background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.8)), url( {{ lastposts[1].data.coverImage }}), no-repeat center center; background-size: cover;">
-              <p class="title pb-3">{{ lastposts[1].data.title }}</p>
-              <p class="subtitle mb-6 pb-6">{{ lastposts[1].data.subtitle }}</p>
-              <p class="has-text-weight-semibold has-text-grey ">{{ lastposts[1].date | readablePostDate }}</p>
-            </article>
+            <div class="tile is-child box" style=" background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.8)), url( {{ lastposts[1].data.coverImage }}), no-repeat center center; background-size: cover;">
+              <a href="{{ lastposts[1].url | url }}">
+                <p class="title pb-3">{{ lastposts[1].data.title }}</p>
+                <p class="subtitle mb-6 pb-6">{{ lastposts[1].data.subtitle }}</p>
+                <p class="has-text-weight-semibold has-text-grey ">{{ lastposts[1].date | readablePostDate }}</p>
+              </a>
+            </div>
           </div>
         </div>
         <div class="tile is-parent">
-          <article class="tile is-child box" style=" background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.8)), url( {{ lastposts[0].data.coverImage }}) ,no-repeat center center; background-size: cover;">
+          <div class="tile is-child box" style=" background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.8)), url( {{ lastposts[0].data.coverImage }}) ,no-repeat center center; background-size: cover;">
             <div class="content">
-              <p class="title pb-3">{{ lastposts[0].data.title }}</p>
-              <p class="subtitle mb-6 pb-6">{{ lastposts[0].data.subtitle }}</p>
-              <p class="has-text-weight-semibold has-text-grey ">{{ lastposts[0].date | readablePostDate }}</p>
+              <a href="{{ lastposts[0].url | url }}">
+                <p class="title pb-3">{{ lastposts[0].data.title }}</p>
+                <p class="subtitle mb-6 pb-6">{{ lastposts[0].data.subtitle }}</p>
+                <p class="has-text-weight-semibold has-text-grey ">{{ lastposts[0].date | readablePostDate }}</p>
+              </a>
             </div>
-          </article>
+          </div>
         </div>
       </div>
     </div>
