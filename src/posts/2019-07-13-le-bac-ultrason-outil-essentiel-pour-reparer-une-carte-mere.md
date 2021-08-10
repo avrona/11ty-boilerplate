@@ -1,6 +1,6 @@
 ---
 title: "Le Bac Ultrason: Outil essentiel pour réparer une carte mère ?"
-date: "2019-07-13"
+date: "2019-05-04"
 tags: 
   - "blog"
   - "non-classe"

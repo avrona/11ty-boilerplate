@@ -1,7 +1,7 @@
 ---
 title: "iMac 2009 A1311 - Carte mère 820-2494: Mort? Pas tout à fait..."
 subtitle: ""
-date: "2019-07-13"
+date: "2019-04-13"
 tags: 
   - "blog"
   - "non-classe"

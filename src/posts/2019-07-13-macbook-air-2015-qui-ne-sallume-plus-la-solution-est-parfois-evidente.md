@@ -1,6 +1,6 @@
 ---
 title: "Macbook Air 2015 qui ne s'allume plus: La solution est parfois évidente"
-date: "2019-07-13"
+date: "2019-05-08"
 tags: 
   - "blog"
   - "featured"
