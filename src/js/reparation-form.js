@@ -29,7 +29,7 @@ const iconLastName = document.getElementById('lastNameCheckIcon')
 const iconFirstName = document.getElementById('firstNameCheckIcon')
 const iconEmail = document.getElementById('emailCheckIcon')
 const emailMessage = document.getElementById('wrongEmailMessage')
-const successMessage = document.getElementById('successMessage')
+//const successMessage = document.getElementById('successMessage')
 const modalClose = document.getElementsByClassName('modal-close')
 const MAXCHARNAMEFIELD = 20
 const MINCHARNAMEFIELD = 3
@@ -39,7 +39,7 @@ var emailValidated = false
 
 document.addEventListener("DOMContentLoaded", function() {
 emailMessage.style = 'display:none';
-successMessage.style = 'display:none';
+// successMessage.style = 'display:none';
 submit.disabled = true;
 submit.setAttribute("disabled","")
 }
