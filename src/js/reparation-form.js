@@ -297,24 +297,25 @@ function sendEstimate(){
         //
         var xhr = new XMLHttpRequest();
         // formData
-        var formData = new FormData();
-            formData.append("zf_referrer_name:", "https://www.6337.fr/");
-            formData.append("zf_redirect_url", ""); 
-            formData.append("zc_gad", "");
-            formData.append("Dropdown", valuesform.model);
-            formData.append("Dropdown4", valuesform.screen);
-            formData.append("Dropdown5", valuesform.year);
-            formData.append("Dropdown1", valuesform.problem);
-            formData.append("Dropdown2", "d'une réparation ratée");
+        var formData = {
+            zf_referrer_name: "https://www.6337.fr/",
+            zf_redirect_url: "", 
+            zc_gad: "",
+            Dropdown: valuesform.model,
+            Dropdown4: valuesform.screen,
+            Dropdown5: valuesform.year,
+            Dropdown1: valuesform.problem,
+            Dropdown2: "d'une réparation ratée"
+        }
 
-        // TEST zoho forms
-        var formendpoint = "https://forms.zohopublic.eu/6337crm/form/TESTUndevisen3clics/formperma/tKHAtARvKUQ-8vW_LMK8Lw4gzmaVTvm00S-DsYVqAK8/htmlRecords/submit"
-        xhr.open("POST", formendpoint);
+        // PHP script
+        xhr.open("POST", "../zformspost/prise-en-charge.php");
 
-        //Envoie les informations du header adaptées avec la requête
-        //xhr.setRequestHeader("Content-Type", "multipart/form-data");
-
-        xhr.send(formData);
+        xhr.onreadystatechange = function() { if (xhr.readyState === 4 && xhr.status === 200) { console.log(xhr.responseText);
+        } }
+        // xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.send(new URLSearchParams(formData).toString()); 
 }
 
 function validateForm() {
