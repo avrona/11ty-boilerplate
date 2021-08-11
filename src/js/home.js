@@ -3,6 +3,7 @@
 
 // ------------------  Form selection functions ------------------------------
 //------------------------------------------------------------------
+const modalForm = document.getElementById('modalform');
 var currentTab = 0; // Current tab is set to be the first tab (0)
 document.addEventListener('DOMContentLoaded', function() {
 showTab(currentTab); // Display the current tab
@@ -155,6 +156,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 valuesform.problem = event.target.innerHTML ;
                 valuesform.idproblem = event.target.id ;
                 console.log("résultat: " + valuesform.idmodel + valuesform.idscreen + valuesform.idyear + valuesform.idproblem);
+                showEstimate();
 
     // A ajouter --> Rappel des boutons précédemment cliqués (beadcrumb ou autre)
         });
@@ -178,9 +180,9 @@ function showTab(n) {
       document.getElementById("resetBtn").style.display = "inline";
     }
     if (n == (x.length - 1)) {
-      document.getElementById("estimateBtn").style.display = "inline";
+      // document.getElementById("estimateBtn").style.display = "inline";
     } else {
-      document.getElementById("estimateBtn").style.display = "none";
+     // document.getElementById("estimateBtn").style.display = "none";
     }
     // ... and run a function that displays the correct step indicator:
    
@@ -221,6 +223,9 @@ function formReset() {
         problem:"",
         idproblem:""
     }
+    var tab = document.getElementById("estimatetab");
+    tab.style.display = "none"; // Hide estimate tab
+    modalForm.classList.remove('is-active'); // Hide Modal with form
     currentTab = 0; // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
 }
@@ -276,12 +281,12 @@ function showEstimate () {
     var x = document.getElementsByClassName("buttontab");
     var tab = document.getElementById("estimatetab");
     var formbtn1 = document.getElementById("resetBtn");
-    var formbtn2 = document.getElementById("estimateBtn");
+    //var formbtn2 = document.getElementById("estimateBtn");
 
     // Hide the current tab:
     x[currentTab].style.display = "none";
     formbtn1.style.display = "none";
-    formbtn2.style.display = "none";
+    //formbtn2.style.display = "none";
     // Show the results tab: 
     tab.style.display = "inline";
 
@@ -292,7 +297,7 @@ function showEstimate () {
     // Modify the content accordingly
     document.getElementById("mactitle").innerHTML = (valuesform.model);
     document.getElementById("macsubtitle").innerHTML = ("Ecran " + valuesform.screen + " - Année " + valuesform.year);
-
+/*
     // Sending and receiving data in JSON format using POST method
         //
         var xhr = new XMLHttpRequest();
@@ -315,14 +320,12 @@ function showEstimate () {
         //xhr.setRequestHeader("Content-Type", "multipart/form-data");
 
         xhr.send(formData);
-
-
-
+*/
 
 }
-
+/*
 function sendEstimate(){
-   /*         // Sending and receiving data in JSON format using POST method
+            // Sending and receiving data in JSON format using POST method
         //
         var xhr = new XMLHttpRequest();
         // Payload
@@ -342,11 +345,11 @@ function sendEstimate(){
         xhr.send("foo=bar&lorem=ipsum");
         // xhr.send(new Int8Array());
         // xhr.send(document);
-*/
+
         // Redirect to the next steps form
         window.location.href = "https://www.6337.fr/prise-en-charge/";
 }
-
+*/
 
 function validateForm() {
     return true ;}
@@ -378,66 +381,29 @@ function filterSelection(buttontype, argument1, argument2) {
 }
    
 
-/*
-function filterSelection(argument1, argument2) {
-    var x, i;
-    x = document.getElementsByClassName("button");
-    
-    for (i = 0; i < x.length; i++) {
-        // element.style.display = "none";
-        if (x[i].className.indexOf(argument1) > -1) {
-            for (j = 0; j < x.length; j++){
-                if (x[j].className.indexOf(argument2) > -1) {
-                    x[j].style.display = "block";
-                    console.log("j" + x[j]);
-                } else { 
-                    x[i].style.display = "display";
-                    console.log("i" + x[i]);
-                        }
-            }
-        }
-    }
+function showModalForm(){
+
+  // Calculate the sum
+  var total = estimate();
+  // Fill in modal form values
+  document.getElementById("modalamount").innerHTML = (total + "€ TTC");
+  document.getElementById("modalmactitle").innerHTML = (valuesform.model);
+  document.getElementById("modalmacsubtitle").innerHTML = ("Ecran " + valuesform.screen + " - Année " + valuesform.year);
+  // Show the form modal
+  modalForm.classList.add('is-active');
+  const exits = modalForm.querySelectorAll('.modal-exit');
+  exits.forEach(function(exit) {
+    exit.addEventListener('click', function(event) {
+      event.preventDefault();
+      modalForm.classList.remove('is-active');
+    });
+  });
 }
-*/
-      
 
-      
-
-    /*
-  // This function deals with validation of the form fields
-  var x, y, i, valid = true;
-  x = document.getElementsByClassName("tab");
-  y = x[currentTab].getElementsByTagName("input");
-  // A loop that checks every input field in the current tab:
-  for (i = 0; i < y.length; i++) {
-    // If a field is empty...
-    if (y[i].value == "") {
-      // add an "invalid" class to the field:
-      y[i].className += " invalid";
-      // and set the current valid status to false:
-      valid = false;
-    }
-  }
-  // If the valid status is true, mark the step as finished and valid:
-  if (valid) {
-    document.getElementsByClassName("step")[currentTab].className += " finish";
-  }
-  return valid; // return the valid status
+function modalFormReset(){
+  modalForm.classList.remove('is-active');
+  formReset()
 }
-*/
-
-/*
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = document.getElementsByClassName("step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class to the current step:
-  x[n].className += " active";
-}
-*/
-
 
 // ------------------  testimonial carousel functions ------------------------------
 //------------------------------------------------------------------
