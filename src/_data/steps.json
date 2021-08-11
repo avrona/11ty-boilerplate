@@ -5,21 +5,21 @@
         "imagealt": "Devis confirmé",
         "title":"Devis & Envoi",
         "subtitle":"On s'occupe de (presque) tout !",
-        "text":"Recevez gratuitement une étiquette d’envoi pour votre Mac, après avoir rempli le formulaire de prise en charge et confirmé votre devis."
+        "text":"Recevez gratuitement une étiquette d’envoi pour votre Mac après avoir rempli le formulaire de prise en charge et confirmé votre devis. Il ne vous reste plus qu'à le déposer en bureau de Poste."
       },
       {
         "image": "images/Bug Fixed_Isometric.svg",
         "imagealt": "Réparation en cours",
         "title":"Réparation",
         "subtitle":"Diagnostic, soudure et tests",
-        "text":"On confirme la réception de votre Mac et on le répare. S’il n’est pas réparable, seuls les frais de retour sont à votre charge."
+        "text":"On confirme la réception de votre Mac et on le répare. S’il n’est pas réparable, seuls les frais de retour sont à votre charge. Il n'y a pas de mauvaise surprise."
       },
       {
         "image": "images/Logistics_Isometric (2).svg",
         "imagealt": "Retour du colis",
         "title":"Retour & Règlement",
         "subtitle":"Profitez de nouveau de votre Mac !",
-        "text":"Vous ne réglez qu’après la réparation. On vous renvoie gratuitement votre Mac, en colis sécurisé et assuré par nos soins."
+        "text":"Vous ne réglez qu’après la réparation. On vous renvoie gratuitement votre Mac, en colis sécurisé et assuré par nos soins, après l'avoir testé de fond en comble. La réparation est garantie 6 mois."
       }
     ]
 }
