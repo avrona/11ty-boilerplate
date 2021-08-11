@@ -221,19 +221,18 @@ document.addEventListener('change', event => {
     
 
 
-    // Sending and receiving data in JSON format using POST method
+// Sending and receiving data in JSON format using POST method
         //
         var xhr = new XMLHttpRequest();
         // formData as a JSON
-        var data = new FormData();
-        data.append('zf_referrer_name','https://www.6337.fr/');
-        data.append('zf_redirect_url',''); 
-        data.append('SingleLine','Pas répondu');
-        data.append('Name_First', toString(inputFirstName.value));
-        data.append('Name_Last', toString(inputLastName.value));
-        data.append('Email', toString(inputEmail.value));
-        data.append('SingleLine1','');
-        data.append('MultiLine','test script d\'Alex');
+        var formData = { zf_referrer_name: "https://www.6337.fr/",
+                        zf_redirect_url: "", 
+                        SingleLine:"Pas répondu",
+                        Name_First: inputFirstName.value,
+                        Name_Last: inputLastName.value,
+                        Email: inputEmail.value,
+                        SingleLine1: "",
+                        MultiLine: "test script d'Alex" }
 
             
         // PHP script
@@ -241,8 +240,9 @@ document.addEventListener('change', event => {
 
         xhr.onreadystatechange = function() { if (xhr.readyState === 4 && xhr.status === 200) { console.log(xhr.responseText);
         } }
-        //xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
-        xhr.send(data); 
+        xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
+        xhr.send(new URLSearchParams(formData).toString()); 
+
 }
 
 
