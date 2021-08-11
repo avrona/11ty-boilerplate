@@ -482,7 +482,7 @@ function sendEstimate(){
             Dropdown9: valuesform.screen,
             Dropdown1: valuesform.year,
             Dropdown3: valuesform.problem,
-            Dropdown2: "d'une réparation ratée",
+            Dropdown2: 'autre',
             MultiLine: inputMessage.value,
             Name_Last: inputLastName.value,
             Name_First: inputFirstName.value,
