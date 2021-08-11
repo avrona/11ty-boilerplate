@@ -36,23 +36,57 @@ document.addEventListener('change', event => {
     }
   }, false)
 
-  document.addEventListener(
-    "click",
-    function(event) {
-      // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
-      if (
-        event.target.matches(".modal-close") ||
-        !event.target.closest(".modal")
-      ) {
-        closeModal()
-      }
-    },
-    false
-  )
-  
-  function closeModal() {
-    document.querySelector(".modal").style.display = "none"
+ document.addEventListener('DOMContentLoaded', function () {
+
+  // Modals
+
+  var rootEl = document.documentElement;
+  var $modals = getAll('.modal');
+  var $modalButtons = getAll('.modal-button');
+  var $modalCloses = getAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button');
+
+  if ($modalButtons.length > 0) {
+    $modalButtons.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+        rootEl.classList.add('is-clipped');
+        $target.classList.add('is-active');
+      });
+    });
   }
+
+  if ($modalCloses.length > 0) {
+    $modalCloses.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+        closeModals();
+      });
+    });
+  }
+
+  document.addEventListener('keydown', function (event) {
+    var e = event || window.event;
+    if (e.keyCode === 27) {
+      closeModals();
+    }
+  });
+
+  function closeModals() {
+    rootEl.classList.remove('is-clipped');
+    $modals.forEach(function ($el) {
+      $el.classList.remove('is-active');
+    });
+  }
+
+  // Functions
+
+  function getAll(selector) {
+    return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+  }
+
+});
+  
+
 
 // First Name validation
   function validateFirstName() {
@@ -184,30 +218,31 @@ document.addEventListener('change', event => {
 
 
     // Show the success message tab: 
-    successMessage.style.display = "block";
+    
 
 
     // Sending and receiving data in JSON format using POST method
         //
         var xhr = new XMLHttpRequest();
-        // formData
-        var formData = new FormData();
-            formData.append("zf_referrer_name:", "https://www.6337.fr/");
-            formData.append("zf_redirect_url", ""); 
-            formData.append("SingleLine", "Pas répondu");
-            formData.append("Name_First", inputFirstName.value);
-            formData.append("Name_Last", inputLastName.value);
-            formData.append("Email", inputEmail.value);
-            formData.append("SingleLine1", "");
-            formData.append("MultiLine", "d'une réparation ratée");
+        // formData as a JSON
+        var formData = { zf_referrer_name: 'https://www.6337.fr/',
+                        zf_redirect_url: '', 
+                        SingleLine:'Pas répondu',
+                        Name_First: toString(inputFirstName.value),
+                        Name_Last: toString(inputLastName.value),
+                        Email: toString(inputEmail.value),
+                        SingleLine1: '',
+                        MultiLine: 'test script d\'Alex' }
 
             
-        // zoho forms endpoint
-        var formendpoint = "https://forms.zohopublic.eu/6337crm/form/Contact/formperma/DwK2shueytV3ItQEcyfK0WxrksEajmdp9ERVt0gTU7k/htmlRecords/submit"
-        xhr.open("POST", formendpoint);
+        // PHP script
+        xhr.open("POST", "../test.php");
 
-        //Envoie les informations du header adaptées avec la requête
-        //xhr.setRequestHeader("Content-Type", "multipart/form-data");
-        xhr.send(formData);
+        xhr.onreadystatechange = function() { if (xhr.readyState === 4 && xhr.status === 200) { console.log(xhr.responseText);
+        } }
+        xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
+        xhr.send(new URLSearchParams(formData).toString()); 
 
 }
+
+
