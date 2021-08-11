@@ -2,6 +2,8 @@ const submit = document.getElementById('submitButton')
 const inputFirstName = document.getElementById('inputFirstName')
 const inputLastName = document.getElementById('inputLastName')
 const inputEmail = document.getElementById('inputEmailField')
+const inputSubject = document.getElementById('inputSubjectField')
+const inputMessage = document.getElementById('inputMessageField')
 const iconLastName = document.getElementById('lastNameCheckIcon')
 const iconFirstName = document.getElementById('firstNameCheckIcon')
 const iconEmail = document.getElementById('emailCheckIcon')
@@ -231,8 +233,8 @@ document.addEventListener('change', event => {
                         Name_First: inputFirstName.value,
                         Name_Last: inputLastName.value,
                         Email: inputEmail.value,
-                        SingleLine1: "",
-                        MultiLine: "test script d'Alex" }
+                        SingleLine1: inputSubject.value,
+                        MultiLine: inputMessage.value }
 
             
         // PHP script
