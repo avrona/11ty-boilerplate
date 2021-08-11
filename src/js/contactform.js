@@ -240,8 +240,8 @@ document.addEventListener('change', event => {
 
         xhr.onreadystatechange = function() { if (xhr.readyState === 4 && xhr.status === 200) { console.log(xhr.responseText);
         } }
-        xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
-        xhr.send(new URLSearchParams(formData)); 
+        // xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
+        xhr.send(new URLSearchParams(formData).toString()); 
 
 }
 
