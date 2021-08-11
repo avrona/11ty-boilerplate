@@ -170,7 +170,7 @@
                       </div>
                       <div class="level-right">
                           <p class="level-item">
-                              <button class="button is-primary" onclick="sendEstimate()">
+                              <button class="button is-primary" onclick="showModalForm(); return false">
                                   Envoyer mon Mac
                               </button>
                           </p>
@@ -178,17 +178,18 @@
                   </nav>
                   <div class="level-right">
                     <p class="level-item">
-                      <button class="button is-primary is-outlined is-small" onclick="formReset()">
+                      <button class="button is-primary is-outlined is-small" onclick="formReset(); return false">
                         Recommencer
                         </button>
                     </p>
                   </div>
               </div>
           </article>
-
+            <!--
             <div class="buttons is-centered has-addons">
               <button class="button is-primary" type="button" id="estimateBtn" onclick="showEstimate()">Estimer</button>
             </div>
+            -->
             <div class="buttons mb-0">
               <button class="button is-ghost  pl-0 pb-0 mb-0 is-justify-content-center is-align-items-center" type="button" id="resetBtn" onclick="formReset()"><i class="fas fa-undo"></i>
                 </button>
@@ -205,6 +206,166 @@
         </div>
       </div>
   </div> 
+
+
+   <!------ Modal for form sending ------
+    -------------------------------------------------------->
+    <div class="modal" id="modalform">
+        <div class="modal-background modal-exit"></div>
+            <div class="modal-card">
+
+
+               <div class="modal-card-body">
+                <div class="columns">
+                  <div class="column is-one-third">
+
+                    <div class="card">
+                        <div class="card-image is-96x96 has-text-centered">
+                            <img src="../images/laptop-macbook-pro-svgrepo-com.svg" id="estimateimg" alt="Image"/>
+                        </div>
+
+                        <div class="card-content has-text-centered pt-1">
+                              <div class="content">
+                                  <H4 class="title is-4  has-text-grey-dark" id="modalmactitle">MacBook Pro Retina</H4>
+                                  <h5 class="subtitle is-5  has-text-grey" id="modalmacsubtitle">Ecran 15 pouces - Année 2012</h5>
+                                          <p> Forfait réparation carte-mère estimé à:
+                                  </p>
+                              </div>
+                    
+                                <div class="level">
+                                    <p class="level-item has-text-centered is-size-5 has-text-info has-text-weight-bold" id="modalamount">
+                                        250€ TTC
+                                    </p>
+                                </div>
+                          
+                              <p class="level-item">
+                                <button class="button is-primary is-outlined is-small" onclick="modalFormReset(); return false">
+                                  Recommencer
+                                  </button>
+                              </p>                          
+                        </div>
+                    </div>
+
+                  
+
+                  </div>
+
+                <div class="column is-two-thirds">
+                  <!----------------- Customer details ---------------->
+                    <!------ first step MODEL------>
+                      <div class="customerDetails" id="step6">
+                          <div class="field is-horizontal">
+                              <div class="field-label is-normal">
+                                  <label class="label" for="name">Nom</label>
+                              </div>
+                              <div class="field-body">
+                                  <div class="field is-expanded">
+                                      <p class="control is-expanded has-icons-left has-icons-right">
+                                          <input type="text" class="input inputLastNameField" placeholder="Nom" id="inputLastName" />
+                                          <span class="icon is-small is-left">
+                                              <i class="fas fa-user"></i>
+                                          </span>
+                                          <span class="icon is-small is-right">
+                                            <i id='lastNameCheckIcon' class="fas fa-exclamation-triangle"></i>
+                                        </span>
+                                      </p>
+                                  </div>
+                              </div>
+                            </div>
+
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                  <label class="label" for="name">Prénom</label>
+                              </div>
+                              <div class="field-body">
+                                  <div class="field is-expanded">
+                                      <p class="control is-expanded has-icons-left has-icons-right">
+                                          <input type="text" class="input inputFirstNameField" placeholder="Prénom" id="inputFirstName" />
+                                          <span class="icon is-small is-left">
+                                              <i class="fas fa-user"></i>
+                                          </span>
+                                          <span class="icon is-small is-right">
+                                            <i id='firstNameCheckIcon' class="fas fa-exclamation-triangle"></i>
+                                        </span>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                    <label class="label">E-mail</label>
+                            </div>
+                                  <div class="field-body">
+                                      <div class="field is-expanded mr-0">
+                                          <p class="control is-expanded has-icons-left has-icons-right">
+                                              <input type="e-mail" placeholder="jean@dupont.fr" class="input inputEmailField" id="inputEmailField">
+                                              <span class="icon is-small is-left">
+                                                <i class="fas fa-envelope"></i>
+                                              </span>
+                                              
+                                              <span class="icon is-small is-right">
+                                                <i  id="emailCheckIcon" class="fas fa-check"></i>
+                                              </span>
+                                              <p class="help is-danger" id="wrongEmailMessage">Veuillez entrer un email valide</p>
+                                          </p>
+                                      </div>
+                                      
+                                  </div>
+                              </div>
+                          
+                          <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                              <label class="label">Message</label>
+                            </div>
+                            <div class="field-body">
+                              <div class="field">
+                                <div class="control">
+                                  <textarea class="textarea" placeholder="Dites-nous comment on peut vous aider !" id="inputMessageField"></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                            <div class="field is-horizontal">
+                                <div class="field-label">
+                                <!-- Left empty for horizontal spacing -->
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+                                            <label class="checkbox">
+                                                <input class="is-small" type="checkbox">
+                                                Je reconnais avoir lu les <a href="#">Conditions d'utilisation</a> de 6337.fr
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>                    
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label">
+                                    <!-- Left empty for horizontal spacing -->
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+                                        <button class="button is-primary" id="submitButton" onclick="sendEstimate()" onsubmit="return false">
+                                            Demander un devis
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+        </div>
+    </div>
+
+
+
 
       <!-- problems section
   -------------------------------------------------------->
