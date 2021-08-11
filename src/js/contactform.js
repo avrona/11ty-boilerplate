@@ -92,7 +92,7 @@ document.addEventListener('change', event => {
 
 // First Name validation
   function validateFirstName() {
-    var regexString = /^[a-z ,.'-]+$/i; //words separated by space
+    var regexString = /^[a-z ,.' À-ž-]+$/i; //words separated by space with accents or some signs.
    
     const iconFirstName = document.getElementById('firstNameCheckIcon')
     const conditionsFirstName =
@@ -129,7 +129,7 @@ document.addEventListener('change', event => {
 
   // Last Name validation
   function validateLastName() {
-    var regexString = /^[a-z ,.'-]+$/i; //words separated by space
+    var regexString = /^[a-z ,.' À-ž-]+$/i; //words separated by space with accents or some signs
    
     const iconLastName = document.getElementById('lastNameCheckIcon')
     const conditionsLastName =
