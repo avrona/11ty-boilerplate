@@ -238,7 +238,7 @@ document.addEventListener('change', event => {
 
             
         // PHP script
-        xhr.open("POST", "../test.php");
+        xhr.open("POST", "../zformspost/contactform.php");
 
         xhr.onreadystatechange = function() { if (xhr.readyState === 4 && xhr.status === 200) { console.log(xhr.responseText);
         } }
