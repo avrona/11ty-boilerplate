@@ -457,6 +457,19 @@ function showEstimate () {
 
 
 function sendEstimate(){
+
+    // Show the success message modal
+     
+    
+    successMessage.classList.add('is-active');
+    const exits = successMessage.querySelectorAll('.modal-exit');
+    exits.forEach(function(exit) {
+      exit.addEventListener('click', function(event) {
+        event.preventDefault();
+        successMessage.classList.remove('is-active');
+      });
+    });
+
    // Sending and receiving data in JSON format using POST method
         //
         var xhr = new XMLHttpRequest();
