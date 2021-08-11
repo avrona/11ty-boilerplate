@@ -17,7 +17,7 @@
 
   <!---- Contact Form -->
     
-   <section class="hero is-halfheight">
+   <section class="hero is-large pb-6">
       <div class="columns">
           <div class="column is-half-desktop is-offset-one-quarter-desktop is-10-mobile is-offset-1-mobile is-8-tablet is-offset-2-tablet">
               <form onsubmit="return false">
@@ -142,20 +142,25 @@
 
 
                 </form>
-<!-- Success Message -->
+
+              <!-- Success Message -->
                 <div class="modal" id="successMessage">
-                    <div class="modal-background"></div>
+                    <div class="modal-background modal-exit"></div>
                         <div class="modal-card">
-                        <div class="modal-card title">
-                            <H4>Merci de votre message !</H4>
-                            <button class="modal-close is-large" aria-label="close"></button>
-                        </div>
+                          <header class="modal-card-head">
+                            <p class="modal-card-title title is-primary">
+                                Merci de votre confiance !
+                            </p>
+                                <button class="modal-close is-large modal-exit" aria-label="close"></button>
+                            </header>
                         <section class="modal-card-body">
                             Nous vous remercions d'avoir pris le le temps de nous contacter.
-                            Nous vous répondrons rapidement et ferons de notre mieux pour vous apporter une solution.
+                            Nous vous répondrons rapidement pour vous apporter la meilleure solution.
 
                             Si votre requête concerne une réparation, elle sera traitée plus rapidement en passant par notre formulaire de prise en charge.
                         </section>
+                        <footer class="modal-card-foot">
+                        </footer>
                     </div>
                 </div>
 
