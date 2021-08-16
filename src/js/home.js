@@ -4,10 +4,12 @@
 // ------------------  Form selection functions ------------------------------
 //------------------------------------------------------------------
 const modalForm = document.getElementById('modalform');
+var rootEl = document.documentElement;
 var currentTab = 0; // Current tab is set to be the first tab (0)
 document.addEventListener('DOMContentLoaded', function() {
 showTab(currentTab); // Display the current tab
 }, false);
+
 
 
 let valuesform = {
@@ -225,7 +227,8 @@ function formReset() {
     }
     var tab = document.getElementById("estimatetab");
     tab.style.display = "none"; // Hide estimate tab
-    modalForm.classList.remove('is-active'); // Hide Modal with form
+    modalForm.classList.remove('is-active'); // Hide Modal, show form
+    rootEl.classList.remove('is-clipped'); // Allow site scrolling
     currentTab = 0; // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
 }
@@ -391,17 +394,20 @@ function showModalForm(){
   document.getElementById("modalmacsubtitle").innerHTML = ("Ecran " + valuesform.screen + " - Année " + valuesform.year);
   // Show the form modal
   modalForm.classList.add('is-active');
+  rootEl.classList.add('is-clipped');
   const exits = modalForm.querySelectorAll('.modal-exit');
   exits.forEach(function(exit) {
     exit.addEventListener('click', function(event) {
       event.preventDefault();
       modalForm.classList.remove('is-active');
+      rootEl.classList.remove('is-clipped');
     });
   });
 }
 
 function modalFormReset(){
   modalForm.classList.remove('is-active');
+  rootEl.classList.remove('is-clipped');
   formReset()
 }
 
