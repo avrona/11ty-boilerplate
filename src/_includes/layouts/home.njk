@@ -5,8 +5,7 @@
  <!-- Top section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <section class="hero has-background is-transparent is-halfheight pb-O">
-    <!--<img alt="Touchbar carte-mère" class="hero-background is-transparent" src="images/MBPtouchbarboard-export.jpg" />
-    -->
+
       <div class="hero-body has-text-centered-mobile has-background is-transparent pb-0">
       <div class="container">
         <div class="columns">
@@ -30,7 +29,8 @@
    
           </div>
           <div class="column is-7">
-            <img src="images/MBP-export.jpg">
+            {# <img src="images/MBP-export.jpg"> #}
+            {% image "images/MBP-export.jpg", "Macbook Pro démonté entièrement" %}
           </div>
         </div>
 
@@ -162,7 +162,7 @@
                         <li>Garantie 180 jours</li>
                       </ul>
                   </div>
-                  <nav class="level is-mobile">
+                  <nav class="level">
                       <div class="level-left">
                           <p class="level-item is-size-3 has-text-info has-text-weight-bold" id="amount">
                               250€ TTC
