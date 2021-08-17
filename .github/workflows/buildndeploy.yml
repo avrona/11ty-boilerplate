@@ -16,12 +16,13 @@ jobs:
       - run: npm ci
       - run: npm run scss
       - run: npm run build --if-present
-      - name: Archive production artifacts to dist
-        uses: actions/upload-artifact@v2
+      - name: push action to dist
+        uses: ad-m/github-push-action@v0.6.0
         with:
-          name: dist
-          path: |
-            dist
+    # Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.TOKEN_GIT }}
+        directory: dist
+
       - name: Upload build to hosting environment
         uses: Creepios/sftp-action@v1.0.1
         with:
@@ -31,3 +32,19 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           localPath: './dist'
           remotePath: './lamp0/web/vhosts/crm.6337.fr/htdocs'
+          - name: GitHub Push
+
+  uses: ad-m/github-push-action@v0.6.0
+  with:
+    # Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
+    github_token: 
+    # Repository name to push. Default or empty value represents current github repository (${GITHUB_REPOSITORY})
+    repository: # optional, default is 
+    # Destination branch to push changes
+    branch: # optional, default is master
+    # Determines if force push is used
+    force: # optional
+    # Determines if --tags is used
+    tags: # optional
+    # Directory to change to before pushing.
+    directory: # optional, default is .
