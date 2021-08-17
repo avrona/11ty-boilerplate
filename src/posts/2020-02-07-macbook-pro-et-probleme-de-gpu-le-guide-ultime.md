@@ -7,6 +7,7 @@ coverImage: "../images/signal-attachment-2020-02-07-233834-2-2.jpeg"
 subtitle: ""
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
+templateEngineOverride: njk,md
 ---
 
 # Les problèmes de carte graphique et les MacBook Pro, une grande histoire d'amour
@@ -67,7 +68,7 @@ En passant votre carte au four, vous permettez à ces vias de prendre un peu vol
 
 Il en est de même pour le remplacement, le GPU étant touché par un vice de fabrication, voir de conception, le remplacement ne fait que remplacer une puce défectueuse par une puce qui sera bientôt défectueuse.
 
-\[caption id="attachment\_979" align="aligncenter" width="631"\]![MacBook Pro 2011 problème carte graphique GPU](images/2011-GPU-screen-2.jpg) Exemple des symptômes d'un GPU défectueux sur MBP 15 mi-2011. Source: Macrumors forum\[/caption\]
+[MacBook Pro 2011 problème carte graphique GPU](images/2011-GPU-screen-2.jpg {% image "images/2011-GPU-screen-2.jpg", "Macbook Pro puce de gestion du GPU" %} Exemple des symptômes d'un GPU défectueux sur MBP 15 mi-2011. Source: Macrumors forum\[/caption\]
 
 ## Désactiver le GPU, la seule solution fiable
 
