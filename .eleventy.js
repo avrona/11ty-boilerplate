@@ -17,7 +17,7 @@ async function imageShortcode(src, alt) {
   let metadata = await Image(src, {
     widths: [384, 512, 800, 960, 1280],
     formats: ['webp', 'jpeg'],
-    urlPath: "images/",
+    urlPath: "../images/",
     outputDir: "./src/images/",
     /* =====
     Now we'll make sure each resulting file's name will 
