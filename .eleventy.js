@@ -18,7 +18,7 @@ async function imageShortcode(src, alt) {
     widths: [384, 512, 800, 960, 1280],
     formats: ['webp', 'jpeg'],
     urlPath: "../images/",
-    outputDir: "./src/images/",
+    outputDir: "dist/images/",
     /* =====
     Now we'll make sure each resulting file's name will 
     make sense to you. **This** is why you need 
