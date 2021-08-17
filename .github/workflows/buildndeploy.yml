@@ -32,4 +32,3 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           localPath: './dist'
           remotePath: './lamp0/web/vhosts/crm.6337.fr/htdocs'
-          - name: GitHub Push
