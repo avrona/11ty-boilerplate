@@ -55,7 +55,7 @@ Notre problème se situe en plein dans le circuit d’alimentation et de charge 
 
 Si la zone autour d’ISL6259 est touchée, il est possible qu’un des capteurs de courant, ou qu’un des composants de ces lignes soit touché. Il devient alors impossible à votre MacBook Pro de savoir la quantité d’énergie fournie soit par le chargeur, soit par la batterie. Par sécurité, votre ordinateur ne s’allumera pas. Il se peut aussi qu’il se fourvoie (à cause de ces dégâts liquides) sur ces quantités, et choisisse de ne pas charger ou ne pas utiliser la batterie alors que c’est nécessaire.
 
-{% image "images/schema-1.jpg", "Schéma détaillé de la zone touchée de la carte mère de Macbook Pro. En jaune, les composants changés. %}
+{% image "images/schema-1.jpg", "Schéma détaillé de la zone touchée de la carte mère de Macbook Pro. En jaune, les composants changés." %}
 
 
 Ça, c’est pour la théorie, et pour les grandes lignes.
