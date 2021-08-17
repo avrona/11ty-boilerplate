@@ -20,7 +20,8 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: master # The branch the action should deploy to.
-          folder: build # The folder the action should deploy.
+          folder: dist # The folder the action should deploy.
+          target-folder: dist
 
       - name: Upload build to hosting environment
         uses: Creepios/sftp-action@v1.0.1
