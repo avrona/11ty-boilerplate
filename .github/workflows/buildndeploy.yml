@@ -19,9 +19,8 @@ jobs:
       - name: push action to dist
         uses: ad-m/github-push-action@v0.6.0
         with:
-    # Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
-        github_token: ${{ secrets.TOKEN_GIT }}
-        directory: dist
+          github_token: ${{ secrets.TOKEN_GIT }}
+          directory: dist
 
       - name: Upload build to hosting environment
         uses: Creepios/sftp-action@v1.0.1
