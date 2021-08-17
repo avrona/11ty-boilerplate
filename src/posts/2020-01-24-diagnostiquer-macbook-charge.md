@@ -21,8 +21,7 @@ Il existe plusieurs origines possibles à un Mac qui ne charge plus. En voici qu
 - Problème matériel de la carte-mère
 - Surchauffe
 
-{% image "images/mac-charge.gif", "Branchement d'un Mac et allumage en vert du Magsafe." %}
-
+![](images/mac-charge.gif)
 
 ## Diagnostiquer un Mac qui refuse de charger
 
@@ -46,9 +45,9 @@ Le côté matériel du Mac peut également être impliqué. Le Magsafe contient 
 
 #### Réinitialiser les systèmes de gestion de charge
 
-La première chose à faire, sera, bien-sûr, de tenter de redémarrer votre Mac. Faites-le, idéalement, de façon propre, en cliquant sur le menu _Pomme_, puis sur _Redémarrer_. \[/av\_textblock\]
+La première chose à faire, sera, bien-sûr, de tenter de redémarrer votre Mac. Faites-le, idéalement, de façon propre, en cliquant sur le menu _Pomme_, puis sur _Redémarrer_.
 
-{% image "images/IT-crowd.gif", "vidéo de le série IT crowd" %}
+![](images/IT-crowd.gif)
 
 
 Si votre MacBook Pro ne charge toujours pas après un redémarrage vous devrez tenter de réinitialiser le _SMC (System Management Control)_. Comme son nom l'indique, le _SMC_ est une puce de gestion de certaines fonctions matérielles du Mac. C'est son rôle de reconnaître le chargeur branché et de lui permettre ou non de charger le batterie. Il est chef d'orchestre de la charge, même si une autre puce est présente pour gérer la batterie. Il gère la mise-en-veille et le réveil, vérifie certains fonctions vitales avant le démarrage gère le niveau de rétroéclairage, parmi d'autres choses encore.
