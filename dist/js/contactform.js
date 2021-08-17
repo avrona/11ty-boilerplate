@@ -2,6 +2,8 @@ const submit = document.getElementById('submitButton')
 const inputFirstName = document.getElementById('inputFirstName')
 const inputLastName = document.getElementById('inputLastName')
 const inputEmail = document.getElementById('inputEmailField')
+const inputSubject = document.getElementById('inputSubjectField')
+const inputMessage = document.getElementById('inputMessageField')
 const iconLastName = document.getElementById('lastNameCheckIcon')
 const iconFirstName = document.getElementById('firstNameCheckIcon')
 const iconEmail = document.getElementById('emailCheckIcon')
@@ -16,9 +18,9 @@ var emailValidated = false
 
 document.addEventListener("DOMContentLoaded", function() {
 emailMessage.style = 'display:none';
-successMessage.style = 'display:none';
+//successMessage.style = 'display:none';
 submit.disabled = true;
-submit.setAttribute("disabled","")
+submit.setAttribute("disabled","");
 }
 )
 
@@ -36,61 +38,12 @@ document.addEventListener('change', event => {
     }
   }, false)
 
- document.addEventListener('DOMContentLoaded', function () {
 
-  // Modals
-
-  var rootEl = document.documentElement;
-  var $modals = getAll('.modal');
-  var $modalButtons = getAll('.modal-button');
-  var $modalCloses = getAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button');
-
-  if ($modalButtons.length > 0) {
-    $modalButtons.forEach(function ($el) {
-      $el.addEventListener('click', function () {
-        var target = $el.dataset.target;
-        var $target = document.getElementById(target);
-        rootEl.classList.add('is-clipped');
-        $target.classList.add('is-active');
-      });
-    });
-  }
-
-  if ($modalCloses.length > 0) {
-    $modalCloses.forEach(function ($el) {
-      $el.addEventListener('click', function () {
-        closeModals();
-      });
-    });
-  }
-
-  document.addEventListener('keydown', function (event) {
-    var e = event || window.event;
-    if (e.keyCode === 27) {
-      closeModals();
-    }
-  });
-
-  function closeModals() {
-    rootEl.classList.remove('is-clipped');
-    $modals.forEach(function ($el) {
-      $el.classList.remove('is-active');
-    });
-  }
-
-  // Functions
-
-  function getAll(selector) {
-    return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
-  }
-
-});
-  
 
 
 // First Name validation
   function validateFirstName() {
-    var regexString = /^[a-z ,.'-]+$/i; //words separated by space
+    var regexString = /^[a-z ,.' À-ž-]+$/i; //words separated by space with accents or some signs.
    
     const iconFirstName = document.getElementById('firstNameCheckIcon')
     const conditionsFirstName =
@@ -127,7 +80,7 @@ document.addEventListener('change', event => {
 
   // Last Name validation
   function validateLastName() {
-    var regexString = /^[a-z ,.'-]+$/i; //words separated by space
+    var regexString = /^[a-z ,.' À-ž-]+$/i; //words separated by space with accents or some signs
    
     const iconLastName = document.getElementById('lastNameCheckIcon')
     const conditionsLastName =
@@ -217,32 +170,55 @@ document.addEventListener('change', event => {
   function sendForm () {
 
 
-    // Show the success message tab: 
+// Show the success message modal
+     
     
+    successMessage.classList.add('is-active');
+  
+    const exits = successMessage.querySelectorAll('.modal-exit');
+    exits.forEach(function(exit) {
+      exit.addEventListener('click', function(event) {
+        event.preventDefault();
+        successMessage.classList.remove('is-active');
+        window.location.reload();
+      });
+    });
 
-
-    // Sending and receiving data in JSON format using POST method
+// Sending and receiving data in JSON format using POST method
         //
         var xhr = new XMLHttpRequest();
         // formData as a JSON
-        var data = new FormData();
-        data.append('zf_referrer_name','https://www.6337.fr/');
-        data.append('zf_redirect_url',''); 
-        data.append('SingleLine','Pas répondu');
-        data.append('Name_First', toString(inputFirstName.value));
-        data.append('Name_Last', toString(inputLastName.value));
-        data.append('Email', toString(inputEmail.value));
-        data.append('SingleLine1','');
-        data.append('MultiLine','test script d\'Alex');
+        var formData = { zf_referrer_name: "https://www.6337.fr/",
+                        zf_redirect_url: "", 
+                        SingleLine:"Pas répondu",
+                        Name_First: inputFirstName.value,
+                        Name_Last: inputLastName.value,
+                        Email: inputEmail.value,
+                        SingleLine1: inputSubject.value,
+                        MultiLine: inputMessage.value }
 
             
         // PHP script
-        xhr.open("POST", "../test.php");
+        xhr.open("POST", "../zformspost/contactform.php");
 
         xhr.onreadystatechange = function() { if (xhr.readyState === 4 && xhr.status === 200) { console.log(xhr.responseText);
+                                              // Show the success message modal
+                                        /* 
+                                        successMessage.classList.add('is-active');
+                                        const exits = successMessage.querySelectorAll('.modal-exit');
+                                        exits.forEach(function(exit) {
+                                          exit.addEventListener('click', function(event) {
+                                            event.preventDefault();
+                                            successMessage.classList.remove('is-active');
+                                            window.location.reload();
+                                          });
+                                        }); 
+                                        */
+
         } }
-        //xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
-        xhr.send(data); 
+        // xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.send(new URLSearchParams(formData).toString()); 
 
 }
 

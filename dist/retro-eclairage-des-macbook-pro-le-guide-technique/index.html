@@ -1,13 +1,38 @@
+
+
+  
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
+  
 
   <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Rétro-éclairage des MacBook Pro: Le guide technique</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  ––––––––––––––––––––––––––––––––––––––––––––––––––
+-->
+
+    <!--Twitter Card-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@6337Mac">
+    <meta name="twitter:creator" content="@6337Mac">
+    <meta name="twitter:url" content="https://www.6337.fr/retro-eclairage-des-macbook-pro-le-guide-technique/">
+
+    <!--Schema-->
+    <meta charset="utf-8">
+    <link rel="author" href="https://www.6337.fr">
+    <link rel="publisher" href="https://www.6337.fr">
+        
+    <!-- Facebook OpenGraph -->
+    <meta property="og:url" content="https://www.6337.fr/retro-eclairage-des-macbook-pro-le-guide-technique/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="6337.fr Réparation MacBook Pro &amp; MacBook Air">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="article:author" content="https://www.6337.fr">
+
+
+
+
+    
 
    <!-- PREVENT INDEXING
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -18,12 +43,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– --_
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- navbar JS 
-  <script type="text/javascript" src="../js/navbarmanagement.js" defer="defer"></script>
+  <script type="text/javascript" src="../js/navbarmanagement.js" defer="defer"></script> -->
   <!-- Contact page JS 
   <script type="text/javascript" src="../js/contactform.js" defer="defer"></script>
   -->
+
   
       
           <script type="text/javascript" src="../js/navbarmanagement.js" defer="defer"></script>
@@ -36,9 +62,10 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/home.css">
-   <link rel="stylesheet" href="../css/faq.css">
+  <link rel="stylesheet" href="../css/faq.css">
   <link rel="stylesheet" href="../css/all.css" > <!--load fontawesome icons -->
   <!-- Bulma CSS
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">  -->
@@ -47,10 +74,21 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../images/favicon.png">
 
-</head>
-<body>
+<!--Twitter Card-->
+      <meta name="twitter:title" content="Rétro-éclairage des MacBook Pro: Le guide technique">
+      <meta name="twitter:description" content="Le premier guide détaillé et en français pour diagnostiquer les problèmes de rétroéclairage des MacBook Pro et MacBook Air. A vos multimètres !">
+      
+      <!--Schema-->
+      <meta itemprop="name" content="Rétro-éclairage des MacBook Pro: Le guide technique">
+      <meta name="description" content="Le premier guide détaillé et en français pour diagnostiquer les problèmes de rétroéclairage des MacBook Pro et MacBook Air. A vos multimètres !">
+      
+      <!-- Facebook OpenGraph -->
+      <meta property="og:title" content="">
+      <meta property="og:description" content="Le premier guide détaillé et en français pour diagnostiquer les problèmes de rétroéclairage des MacBook Pro et MacBook Air. A vos multimètres !"></head>
 
-  <header>
+  <body>
+    <header>
+
     <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="https://6337.fr">
@@ -107,8 +145,8 @@
       </nav>
     
 </header>
-  <main>
-    
+    <main>
+      
 
   <div class="columns is-centered">
     <div class="column is-8">
@@ -119,7 +157,7 @@
                     <div class="column is-three-quarter">
                         <div class="block">
                             <h1 class="title is-3 has-text-centered">Rétro-éclairage des MacBook Pro: Le guide technique</h1>
-                            <H2 class="subtitle is-4 has-text-centered"></H2>
+                            <H2 class="subtitle is-4 has-text-centered">Le premier guide détaillé et en français pour diagnostiquer les problèmes de rétroéclairage des MacBook Pro et MacBook Air. A vos multimètres !</H2>
                         </div>
                     </div>
                 </div>
@@ -130,16 +168,17 @@
                   </div>
                 </div>
 
-<div class='content'>
+            <div class='content'>
 
-<h3>Préambule :</h3>
+            <h3>Préambule :</h3>
 <p>Cet article porte sur des explications simples de fonctionnement d'un rétro-éclairage sur un écran. S'en suivent des détails bien plus techniques, pour utilisateurs avertis. Si votre objectif est uniquement de comprendre ce que votre réparateur préféré baragouine, arrêtez vous au premier chapitre (avant la migraine). Si vous êtes du genre technique et motivé, allez jusqu'au bout, et n'hésitez pas a poser des questions à la fin ! Ca nous aidera à améliorer l'article.</p>
 <h1>Commençons par le commencement. C’est quoi le rétro-éclairage ?</h1>
 <p>Votre écran d’ordinateur n’est pas fait d’une seule couche, qui vous affiche des informations, mais de deux : Une couche qui affiche effectivement les informations, icônes et images. C’est ce qu’on appelle communément la dalle LCD. Une autre couche qui sert à éclairer l’écran, le rétro-éclairage ou <em>backlight</em>, dans la langue de Shakespeare.</p>
 <h2>Principe de base du rétro-éclairage d'un écran</h2>
 <p>Le principe est simple, la première couche ne produit pas de lumière, elle ne fait qu’afficher ou masquer des points de couleur variable, et partiellement transparents (les fameux pixels) qui correspondent à l’information à afficher. Derrière se trouve un diffuseur, et des bandes de LED. Les bandes de LED sont en général disposées sur le côté de l’écran, et créent une faisceau de lumière à l’intérieur du diffuseur. Le diffuseur est une fine couche de matière plastique transparente, faite pour diffuser la lumière sur toute la surface de l’écran.</p>
 <p>Le résultat est que la lumière crée par les LED, assez concentrée au départ, est diffusée de façon uniforme sur tout l’écran, puis passe au travers de la dalle LCD ou se trouve les pixels, pour afficher clairement une information qui sinon serait à peine perceptible. Les pixels de votre écran sont donc éclairés par l’arrière, par ce second système, pour que vous puissiez les distinguer : Eclairé par l’arrière = rétro-éclairage = Backlight.</p>
-<p>[caption id=&quot;attachment_604&quot; align=&quot;aligncenter&quot; width=&quot;495&quot;]<img src="images/960px-IPod_Touch_2G_Backlight-495x400.jpeg" alt="Bande de LED du rétro-éclairage d'un iPod. (Wikipedia)"> Bande de LED du rétro-éclairage d'un iPod. (Wikipedia)[/caption]</p>
+<p><img src="images/960px-IPod_Touch_2G_Backlight-495x400.jpeg" alt="Bande de LED du rétro-éclairage d'un iPod. (Wikipedia)">
+Bande de LED du rétro-éclairage d'un iPod. (Wikipedia)</p>
 <p>Le rétro-éclairage est un classique des pannes de MacBook Pro, et de nombreux autres ordinateurs portables. Si le circuit en charge de l’alimentation des LED est défaillant, votre ordinateur et votre affichage fonctionnera, mais vous distinguerez à peine les informations.</p>
 <h2>Et sur un Mac, le <em>backlight</em> marche comment ?</h2>
 <p>Sur le Mac d’avant 2016, le logo pomme sur le dos de l’écran est transparent lui aussi. Il n'est éclairé quand l’écran s’allume. Cette pomme blanche est en fait éclairé par le même système de rétro-éclairage. Par conséquent, quand votre rétro-éclairage est défaillant, vous devriez pouvoir distinguer votre écran en mettant une lampe de poche (ou le flash de votre portable) derrière l’écran, pile au niveau du logo Pomme…</p>
@@ -196,17 +235,30 @@
 <p>[/av_textblock]</p>
 
 
-</div>
+            </div>
 
 
-  </div>
+      </div>
       </article>
+        <!-- Comment Box Snippet for test -->
+          <aside id="comment-sidecar"></aside>
+          <script type="text/javascript">
+              (function() {
+                  const scriptNode = document.createElement('script');
+                  scriptNode.type = 'text/javascript';
+                  scriptNode.async = true;
+                  scriptNode.src = '../comment-sidecar/comment-sidecar-js-delivery.php'; // adjust to the correct path
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(scriptNode);
+              })();
+          </script>
+
+
         </div>
         </div>
 
 
-  </main>
-    <footer class="footer">
+    </main>
+      <footer class="footer">
     <div class="content has-text-centered">
       <p class="has-text-centered	">
       © Copyright 2021 - <strong>6337 - Réparation Macbook</strong> - Point The Gap SAS - <a href="../cgv-cgu/">Mentions légales - CGV & CGU</a>
@@ -217,5 +269,5 @@
       <a href="https://www.instagram.com/6337atelier/"><span class="icon is-small"><i class="fab fa-instagram"></i></span></a>
     </div>
   </footer>
-</body>
+  </body>
 </html>

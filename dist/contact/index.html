@@ -1,13 +1,38 @@
+
+
+  
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
+  
 
   <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Contactez-nous</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  ––––––––––––––––––––––––––––––––––––––––––––––––––
+-->
+
+    <!--Twitter Card-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@6337Mac">
+    <meta name="twitter:creator" content="@6337Mac">
+    <meta name="twitter:url" content="https://www.6337.fr/contact/">
+
+    <!--Schema-->
+    <meta charset="utf-8">
+    <link rel="author" href="https://www.6337.fr">
+    <link rel="publisher" href="https://www.6337.fr">
+        
+    <!-- Facebook OpenGraph -->
+    <meta property="og:url" content="https://www.6337.fr/contact/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="6337.fr Réparation MacBook Pro &amp; MacBook Air">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="article:author" content="https://www.6337.fr">
+
+
+
+
+    
 
    <!-- PREVENT INDEXING
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -18,12 +43,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– --_
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- navbar JS 
-  <script type="text/javascript" src="../js/navbarmanagement.js" defer="defer"></script>
+  <script type="text/javascript" src="../js/navbarmanagement.js" defer="defer"></script> -->
   <!-- Contact page JS 
   <script type="text/javascript" src="../js/contactform.js" defer="defer"></script>
   -->
+
   
       
           <script type="text/javascript" src="../js/contactform.js" defer="defer"></script>
@@ -38,9 +64,10 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/home.css">
-   <link rel="stylesheet" href="../css/faq.css">
+  <link rel="stylesheet" href="../css/faq.css">
   <link rel="stylesheet" href="../css/all.css" > <!--load fontawesome icons -->
   <!-- Bulma CSS
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">  -->
@@ -49,10 +76,21 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../images/favicon.png">
 
-</head>
-<body>
+<!--Twitter Card-->
+    <meta name="twitter:title" content="Contactez-nous">
+    <meta name="twitter:description" content="Atelier de réparation experts en carte mères de MacBook, MacBook Pro et MacBook Air. 6337 répare des cartes HS, oxydées, des connecteurs arrachés...">
+    
+    <!--Schema-->
+    <meta itemprop="name" content="Contactez-nous">
+    <meta name="description" content="Atelier de réparation experts en carte mères de MacBook, MacBook Pro et MacBook Air. 6337 répare des cartes HS, oxydées, des connecteurs arrachés...">
+    
+    <!-- Facebook OpenGraph -->
+    <meta property="og:title" content="Contactez-nous">
+    <meta property="og:description" content="Atelier de réparation experts en carte mères de MacBook, MacBook Pro et MacBook Air. 6337 répare des cartes HS, oxydées, des connecteurs arrachés..."></head>
 
-  <header>
+  <body>
+    <header>
+
     <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="https://6337.fr">
@@ -109,8 +147,8 @@
       </nav>
     
 </header>
-  <main>
-    
+    <main>
+      
  <!---- Page title-->
   <section class="hero is-small">
     <div class="hero-body">
@@ -127,10 +165,10 @@
 
   <!---- Contact Form -->
     
-   <section class="hero is-halfheight">
+   <section class="hero is-large pb-6">
       <div class="columns">
           <div class="column is-half-desktop is-offset-one-quarter-desktop is-10-mobile is-offset-1-mobile is-8-tablet is-offset-2-tablet">
-              <form>
+              <form onsubmit="return false">
                   <div class="field is-horizontal">
                       <div class="field-label is-normal">
                           <label class="label" for="name">Nom</label>
@@ -138,7 +176,7 @@
                       <div class="field-body">
                           <div class="field is-expanded">
                               <p class="control is-expanded has-icons-left has-icons-right">
-                                  <input type="text" class="input inputLastNameField" placeholder="Nom" id="inputLastName" />
+                                  <input type="text" class="input inputLastNameField" placeholder="Le Gallois" id="inputLastName" />
                                   <span class="icon is-small is-left">
                                       <i class="fas fa-user"></i>
                                   </span>
@@ -157,7 +195,7 @@
                       <div class="field-body">
                           <div class="field is-expanded">
                               <p class="control is-expanded has-icons-left has-icons-right">
-                                  <input type="text" class="input inputFirstNameField" placeholder="Prénom" id="inputFirstName" />
+                                  <input type="text" class="input inputFirstNameField" placeholder="Perceval" id="inputFirstName" />
                                   <span class="icon is-small is-left">
                                       <i class="fas fa-user"></i>
                                   </span>
@@ -176,7 +214,7 @@
                           <div class="field-body">
                               <div class="field is-expanded mr-0">
                                   <p class="control is-expanded has-icons-left has-icons-right">
-                                      <input type="e-mail" placeholder="jean@dupont.fr" class="input inputEmailField" id="inputEmailField">
+                                      <input type="e-mail" placeholder="Perceval.Le-Gallois@Kaamelot.fr" class="input inputEmailField" id="inputEmailField">
                                       <span class="icon is-small is-left">
                                         <i class="fas fa-envelope"></i>
                                       </span>
@@ -199,7 +237,7 @@
                     <div class="field-body">
                       <div class="field">
                         <div class="control">
-                          <input class="input inputTextField" type="text" placeholder="e.g. Proposition de partenariat">
+                          <input class="input inputTextField" type="text" placeholder="e.g. Proposition de partenariat" id="inputSubjectField">
                         </div>
                       </div>
                     </div>
@@ -212,7 +250,7 @@
                     <div class="field-body">
                       <div class="field">
                         <div class="control">
-                          <textarea class="textarea" placeholder="Dites-nous comment on peut vous aider !"></textarea>
+                          <textarea class="textarea" placeholder="Dites-nous comment on peut vous aider !" id="inputMessageField"></textarea>
                         </div>
                       </div>
                     </div>
@@ -227,7 +265,7 @@
                                 <div class="control">
                                     <label class="checkbox">
                                         <input class="is-small" type="checkbox">
-                                        Je reconnais avoir lu les <a href="#">Conditions d'utilisation</a> de 6337.fr
+                                        Je reconnais avoir lu les <a href="/cgv-cgu/">Conditions d'utilisation</a> de 6337.fr
                                     </label>
                                 </div>
                             </div>
@@ -252,17 +290,27 @@
 
 
                 </form>
-<!-- Success Message -->
-                <article class="message" id="successMessage">
-                    <div class="message-header">
-                        <p>Merci de votre message !</p>
-                        <button class="delete" aria-label="delete"></button>
+
+              <!-- Success Message -->
+                <div class="modal" id="successMessage">
+                    <div class="modal-background modal-exit"></div>
+                        <div class="modal-card">
+                          <header class="modal-card-head">
+                            <p class="modal-card-title title is-primary">
+                                Merci de votre confiance !
+                            </p>
+                                <button class="modal-close is-large modal-exit" aria-label="close"></button>
+                            </header>
+                        <section class="modal-card-body">
+                            Nous vous remercions d'avoir pris le le temps de nous contacter.
+                            Nous vous répondrons rapidement pour vous apporter la meilleure solution.
+
+                            Si votre requête concerne une réparation, elle sera traitée plus rapidement en passant par notre formulaire de prise en charge.
+                        </section>
+                        <footer class="modal-card-foot">
+                        </footer>
                     </div>
-                    <div class="message-body">
-                        Si votre requête concerne une réparation, elle sera traitée plus rapidement en passant par notre formulaire de prise en charge.
-                        Nous vous répondrons rapidement et ferons de notre mieux pour vous apporter une solution.
-                    </div>
-                </article>
+                </div>
 
           </div>
 
@@ -272,8 +320,8 @@
 
 
 
-  </main>
-    <footer class="footer">
+    </main>
+      <footer class="footer">
     <div class="content has-text-centered">
       <p class="has-text-centered	">
       © Copyright 2021 - <strong>6337 - Réparation Macbook</strong> - Point The Gap SAS - <a href="../cgv-cgu/">Mentions légales - CGV & CGU</a>
@@ -284,5 +332,5 @@
       <a href="https://www.instagram.com/6337atelier/"><span class="icon is-small"><i class="fab fa-instagram"></i></span></a>
     </div>
   </footer>
-</body>
+  </body>
 </html>

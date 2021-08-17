@@ -1,13 +1,38 @@
+
+
+  
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
+  
 
   <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Faire réparer mon Mac</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  ––––––––––––––––––––––––––––––––––––––––––––––––––
+-->
+
+    <!--Twitter Card-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@6337Mac">
+    <meta name="twitter:creator" content="@6337Mac">
+    <meta name="twitter:url" content="https://www.6337.fr/prise-en-charge/">
+
+    <!--Schema-->
+    <meta charset="utf-8">
+    <link rel="author" href="https://www.6337.fr">
+    <link rel="publisher" href="https://www.6337.fr">
+        
+    <!-- Facebook OpenGraph -->
+    <meta property="og:url" content="https://www.6337.fr/prise-en-charge/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="6337.fr Réparation MacBook Pro &amp; MacBook Air">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="article:author" content="https://www.6337.fr">
+
+
+
+
+    
 
    <!-- PREVENT INDEXING
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -18,12 +43,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– --_
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- navbar JS 
-  <script type="text/javascript" src="../js/navbarmanagement.js" defer="defer"></script>
+  <script type="text/javascript" src="../js/navbarmanagement.js" defer="defer"></script> -->
   <!-- Contact page JS 
   <script type="text/javascript" src="../js/contactform.js" defer="defer"></script>
   -->
+
   
       
           <script type="text/javascript" src="../js/reparation-form.js" defer="defer"></script>
@@ -38,9 +64,10 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/home.css">
-   <link rel="stylesheet" href="../css/faq.css">
+  <link rel="stylesheet" href="../css/faq.css">
   <link rel="stylesheet" href="../css/all.css" > <!--load fontawesome icons -->
   <!-- Bulma CSS
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">  -->
@@ -49,10 +76,21 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../images/favicon.png">
 
-</head>
-<body>
+<!--Twitter Card-->
+    <meta name="twitter:title" content="Faire réparer mon Mac">
+    <meta name="twitter:description" content="Atelier de réparation experts en carte mères de MacBook, MacBook Pro et MacBook Air. 6337 répare des cartes HS, oxydées, des connecteurs arrachés...">
+    
+    <!--Schema-->
+    <meta itemprop="name" content="Faire réparer mon Mac">
+    <meta name="description" content="Atelier de réparation experts en carte mères de MacBook, MacBook Pro et MacBook Air. 6337 répare des cartes HS, oxydées, des connecteurs arrachés...">
+    
+    <!-- Facebook OpenGraph -->
+    <meta property="og:title" content="Faire réparer mon Mac">
+    <meta property="og:description" content="Atelier de réparation experts en carte mères de MacBook, MacBook Pro et MacBook Air. 6337 répare des cartes HS, oxydées, des connecteurs arrachés..."></head>
 
-  <header>
+  <body>
+    <header>
+
     <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="https://6337.fr">
@@ -109,8 +147,8 @@
       </nav>
     
 </header>
-  <main>
-    
+    <main>
+      
  <!---- Page title-->
   <section class="hero is-small">
     <div class="hero-body">
@@ -127,7 +165,7 @@
 
   <!------------------------------------------ Multi-step contact Form ------------------------>
     
-   <section class="hero is-halfheight">
+   <section class="hero is-large pb-6">
       <div class="columns is-centered">
           
           <!-- FORM -->
@@ -248,7 +286,7 @@
                             
                             
                               <p class="level-item">
-                                <button class="button is-primary is-outlined is-small" onclick="formReset()">
+                                <button class="button is-primary is-outlined is-small" onclick="formReset(); return false">
                                   Recommencer
                                   </button>
                               </p>                          
@@ -330,7 +368,7 @@
                             <div class="field-body">
                               <div class="field">
                                 <div class="control">
-                                  <textarea class="textarea" placeholder="Dites-nous comment on peut vous aider !"></textarea>
+                                  <textarea class="textarea" placeholder="Dites-nous comment on peut vous aider !" id="inputMessageField"></textarea>
                                 </div>
                               </div>
                             </div>
@@ -358,7 +396,7 @@
                                 <div class="field-body">
                                     <div class="field">
                                         <div class="control">
-                                        <button class="button is-primary" id="submitButton" onclick="sendForm()">
+                                        <button class="button is-primary" id="submitButton" onclick="sendEstimate(); return false">
                                             Demander un devis
                                         </button>
                                         </div>
@@ -382,14 +420,30 @@
 
 
             </form>
-          
+
+            <!-- Success Message -->
+                <div class="modal" id="successMessage">
+                    <div class="modal-background modal-exit"></div>
+                        <div class="modal-card">
+                          <header class="modal-card-head">
+                            <p class="modal-card title">
+                                <H4>Merci de votre confiance !</H4>
+                            </p>
+                                <button class="modal-close is-large modal-exit" aria-label="close"></button>
+                            </header>
+                        <section class="modal-card-body">
+                            Nous vous remercions d'avoir pris le le temps de nous contacter.
+                            Vous recevrez bientôt un email de confirmation, avec quelques conseils, dernière étape avant de faire réparer votre Mac !
+                        </section>
+                        <footer class="modal-card-foot">
+                         
+                        </footer>
+                    </div>
+                </div>
 
           
             </div>
           </div>
-
-
-
 
           </div>
 
@@ -399,8 +453,8 @@
 
 
 
-  </main>
-    <footer class="footer">
+    </main>
+      <footer class="footer">
     <div class="content has-text-centered">
       <p class="has-text-centered	">
       © Copyright 2021 - <strong>6337 - Réparation Macbook</strong> - Point The Gap SAS - <a href="../cgv-cgu/">Mentions légales - CGV & CGU</a>
@@ -411,5 +465,5 @@
       <a href="https://www.instagram.com/6337atelier/"><span class="icon is-small"><i class="fab fa-instagram"></i></span></a>
     </div>
   </footer>
-</body>
+  </body>
 </html>
