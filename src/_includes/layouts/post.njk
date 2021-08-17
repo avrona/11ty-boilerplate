@@ -4,6 +4,21 @@ jsfile: ["../js/navbarmanagement.js"]
 
 
 {% extends "layouts/base.njk" %} 
+  {%- block seo -%}
+      <!--Twitter Card-->
+      <meta name="twitter:title" content="{{ title}}">
+      <meta name="twitter:description" content="{{ subtitle|striptags|truncate(196) }}">
+      
+      <!--Schema-->
+      <meta itemprop="name" content="{{ title}}">
+      <meta name="description" content="{{ subtitle|striptags|truncate(196) }}">
+      
+      <!-- Facebook OpenGraph -->
+      <meta property="og:title" content="{{post.title}}">
+      <meta property="og:description" content="{{ subtitle|striptags|truncate(196) }}">
+  {%- endblock -%}
+
+
 
 {% block content %}
 

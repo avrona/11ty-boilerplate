@@ -8,7 +8,7 @@
 
       <div class="hero-body has-text-centered-mobile has-background is-transparent pb-0">
       <div class="container">
-        <div class="columns">
+        <div class="columns is-vcentered">
           
           <div class="column is-6 pl-6 is-align-items-center">
             <h1 class="title is-1 maintitle">Réparer l'irréparable</h1>
@@ -16,7 +16,7 @@
                
                   <div class="rotator-wrapper is-align-items-center">
                     <h1 class="subtitle is-3">
-                      Il reste un espoir pour votre<br>
+                      Il reste un espoir pour votre
                       <span class="rotator is-align-items-center">
                         <span><br><h1 class="has-text-centered-mobile">MacBook Air</h1></span>
                         <span><br><h1 class="has-text-centered-mobile">MacBook Pro Unibody</h1></span>
@@ -28,7 +28,7 @@
                   </div>
    
           </div>
-          <div class="column is-7">
+          <div class="column is-6">
             {# <img src="images/MBP-export.jpg"> #}
             {% image "images/MBP-export.jpg", "Macbook Pro démonté entièrement" %}
           </div>
@@ -47,7 +47,7 @@
           <div class="column is-7"> <!--colonne features-->
 <!--features list-->
 {% for item in features.feat %}
-{% include "partials/feature-block.njk"%}
+{% include "partials/home/feature-block.njk"%}
 {% endfor %}
           </div>
 
@@ -389,7 +389,7 @@
 
 {% set cls = cycler(" ", " is-flex-direction-row-reverse") %}
 {% for item in issuelist.issue %}
-{% include 'partials/issues.njk' %}
+{% include 'partials/home/issues.njk' %}
 {% endfor %}
 
         </div>
@@ -407,7 +407,7 @@
   <div class="columns is-centered">
 
 {% for item in steps.step %}
-{% include "partials/step-block.njk"%}
+{% include "partials/home/step-block.njk"%}
 {% endfor %}
 
   </div>
@@ -436,7 +436,7 @@
 
 {# looping each testimonial from the list #}
 {%- for item in items  %}
-            {% include "partials/testimonials-slide.njk" %}
+            {% include "partials/home/testimonials-slide.njk" %}
 {%- endfor %}
         </div>
             </div>

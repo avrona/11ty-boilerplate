@@ -1,13 +1,17 @@
 ---
 title: Erreur 404 - Page non-trouvée
-permalink: 404.html
+permalink: 404/
 jsfile: ["../js/navbarmanagement.js" ]
 ---
 
 
-{% extends "layouts/base.njk" %} 
+{% extends "layouts/base.njk" %}
+
+  {%- block seo -%}
+  {%- endblock -%}
+
 <div class="section">
-{% block content %}
+{%- block content -%}
 
 <div class='columns is-centered'>
   <div class='column is-8'>
@@ -15,12 +19,12 @@ jsfile: ["../js/navbarmanagement.js" ]
       <div class='hero-body'>
 
       <h1 class='title has-text-centered'>{{ title }}</h1>
-      <p class='is-size-4 has-text-centered'>Ici, il n'y a rien. Si c'est ce que vous cherchiez, tant mieux.</br> Dans le cas contraire, vous pouvez retourner en arrière ou revenir votre notre page d'acceuil. <a href="{{ '/' | url }}">page d'acceuil.</a></p>
+      <p class='is-size-4 has-text-centered'>Ici, il n'y a rien. Si c'est ce que vous cherchiez, tant mieux.<br> Dans le cas contraire, vous pouvez retourner en arrière ou revenir votre notre page d'acceuil. <a href="{{ '/' | url }}">page d'acceuil.</a></p>
       
       </div>
     </div>
   </div>
 </div>
 
-{% endblock %}
+{%- endblock -%}
 </div>

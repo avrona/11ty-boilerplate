@@ -3,7 +3,7 @@ layout: "layouts/blog-layout.njk"
 jsfile: ["../js/navbarmanagement.js" ]
 pagination:
   data: collections.blog
-  size: 5
+  size: 0
 ---
 
 <div class="section">
@@ -12,12 +12,12 @@ pagination:
 {% set lastposts = collections.blog | head(-5) %}
 
 
-  {% include "partials/blog-featured.njk" %}
+  {% include "partials/blog/blog-featured.njk" %}
 
 {% set remainposts = collections.blog | headoff(-5) %}
 
 {%- for post in remainposts | reverse -%}
-  {% include "partials/blog-box.njk" %}
+  {% include "partials/blog/blog-box.njk" %}
 {%- endfor -%}
 
 </div>

@@ -1,0 +1,65 @@
+
+
+  <!-- Basic Page Needs
+  ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+-->
+
+    <!--Twitter Card-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@{{site.twitter}}">
+    <meta name="twitter:creator" content="@{{site.twitter}}">
+    <meta name="twitter:url" content="{{site.baseURL}}{{page.url}}">
+
+    <!--Schema-->
+    <link rel="author" href="{{site.baseURL}}">
+    <link rel="publisher" href="{{site.baseURL}}">
+        
+    <!-- Facebook OpenGraph -->
+    <meta property="og:url" content="{{site.baseURL}}{{page.url}}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{site.title}}">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="article:author" content="{{site.baseURL}}">
+
+
+   <!-- PREVENT INDEXING
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --_
+  <!-- navbar JS 
+  <script type="text/javascript" src="../js/navbarmanagement.js" defer="defer"></script>
+  <!-- Contact page JS 
+  <script type="text/javascript" src="../js/contactform.js" defer="defer"></script>
+  -->
+
+  {% if jsfile %}
+      {% for script in jsfile %}
+          <script type="text/javascript" src="{{script}}" defer="defer"></script>
+      {% endfor %}
+  {% endif %}
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ 
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/faq.css">
+  <link rel="stylesheet" href="../css/all.css" > <!--load fontawesome icons -->
+  <!-- Bulma CSS
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">  -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+
