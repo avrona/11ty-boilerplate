@@ -9,13 +9,13 @@ permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---
 
-# Ne croyez pas Apple, votre MacBook Air n'a pas de problèmes de carte-mère:
+## Votre MacBook Air n'a peut-être pas de problèmes de carte-mère
 
 Et non, même si Apple l'a dit, ce n'est pas (forcément) le cas. Nous avons vu passer plusieurs MacBook Air 11 pouces 2014 avec les même symptômes, et le même solution: Un client nous contact et nous envoie son Mac. Apple l'a diagnostiqué: Carte mère HS. Nous faisons nos tests, et réalisons que la carte-mère marche très bien. Si vous êtes dans ce cas, vous trouverez la marche à suivre pour savoir si vous êtes dans ce cas, et surtout comment vous en sortir seuls, à moindre coût !
 
-# Les symptômes: Ecran noir au démarrage
+## Les symptômes: Ecran noir au démarrage
 
-## A quoi ressemble cet écran noir sur MacBook Air ?
+### A quoi ressemble cet écran noir sur MacBook Air ?
 
 Quels sont exactement les symptômes à identifier ? D'abord, nous n'avons vu ce comportement que sur des MacBook Air écran 11 pouces de mi-2014. C'est très spécifique. Ensuite l'ordinateur se comporte de la façon suivante au démarrage:
 
@@ -27,15 +27,15 @@ Et rien de plus ne se passe, impossible d'aller plus loin, aucune touche ne rép
 
 Pourtant l'ordinateur charge bien et répond très bien aux sollicitations d'allumage et d'extinction.
 
-## Apple et son mauvais diagnostic
+### Apple et son mauvais diagnostic
 
 Nos clients qui sont passés par un AppleStore on fait faire le diagnostic de leur machine sur place. Le constat d'Apple est que le carte-mère était fautive, et qu'il fallait la remplacer.
 
 Les méthodes de diagnostic d'Apple sont principalement basées sur des logiciels d'analyses. Il y a de moins en moins de test typiques de diagnostics tels que les tests d'isolation (débrancher un à un les éléments pour identifier le fautif) ou des tests visant à remplacer un composant par un autre connu comme fonctionnel. Pourtant il suffit de ça pour identifier la panne.
 
-# Retirer le SSD et voir votre MacBook Air reprendre vie
+## Retirer le SSD et voir votre MacBook Air reprendre vie
 
-## Valider le diagnostic par isolation
+### Valider le diagnostic par isolation
 
 C'est une technique classique de diagnostic technique que l'isolation. Il s'agit de déconnecter les uns après les autres, les éléments déconnectables du système principal pour connaitre le fautif. Si votre maison à les plombs qui saute, vous pouvez éteindre tous les disjoncteurs secondaires, remettre le principal, puis réactiver les disjoncteurs secondaires un à un, jusqu'à ce que les plombs sautent de nouveau. Grâce à ça, vous savez ou est le fautif, et il reste à débrancher chacun des éléments sur ce disjoncteurs pour trouver le coupable (même méthode...). Nous on procède de la même façon: On ouvre le Mac et débranche un élément. On rallume la machine et on voit si le MacBook Air veut bien démarrer.
 
@@ -53,9 +53,9 @@ D'ailleurs, c'est encore le meilleur moyen de chercher ces SSD: "Apple SSD 12+16
 
 ![Tableau comparatif SSD MacBook Air MacBook Pro](images/SSD-connectors.jpg)
 
-# En conclusion:
+## En conclusion:
 
-# Faites confiance aux petits réparateurs experts (comme nous...)
+## Faites confiance aux petits réparateurs experts (comme nous...)
 
 Eh oui ! Sur ce genre de pannes, le SAV Apple pêche par ses procédures strictes et son incapacité à sortir du cadre. Il suffirait pourtant de laisser un peu d'initiative aux Genius pour qu'ils arrivent aux même conclusions et conseils que nous.
 

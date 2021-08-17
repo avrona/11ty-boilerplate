@@ -5,7 +5,7 @@ tags:
   - "blog"
   - "non-classe"
 coverImage: "../images/TPS924-dimensions.png"
-subtitle: ""
+subtitle: "Le court-circuit est une panne classique. Elle est simple à diagnostiquer mais demande une certaine technique pour la réparer."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---
@@ -63,7 +63,8 @@ Cela nous permet de trouver quel est le point chaud (où le givre fond, si l’o
 
 Le fautif ici est U8030. Quelques recherches dans les schémas électriques de la 820-3476-A, et sur internet nous permettent d’identifier ce « switch ». Il est justement responsable d’activer la ligne PP3V3\_S0\_FET (qui est directement reliée à PP3V3\_S0) en la connectant à PP3V3\_S5, dans le cas ou P3V3S0\_EN (« EN » pour « enable », ou activer en anglais) est à tension haute.
 
-\[caption id="attachment\_200" align="aligncenter" width="300"\]![](images/TPS924-dimensions-300x278.png) Les dimensions du TPS22924: 1.41mm de long sur 1.35mm de large.\[/caption\] 
+{% image "images/TPS924-dimensions-300x278.png", "Le fusible qui était également à remplacer sur ce Mac." %} 
+Les dimensions du TPS22924: 1.41mm de long sur 1.35mm de large. 
 
 Ce TPS22924 (c’est le nom du composant) est un simple montage de deux transistors en « push-pull ». Ce composant permet de faire suivre le courant arrivant de PP3V3\_S5, sur ordre de P3V3S0\_EN.  
 Par contre, c’est un composant en boitier BGA, donc assez petit, 1.4 mm par 0.9mm, et bien plus difficile à souder qu'un QFN (ou qu'un composant traversant... S'il y en avait sur une carte mère de Macbook pro).
@@ -82,12 +83,7 @@ Et au final, on retrouve le plaisir de voir un pomme s’afficher sur l’écran
 
 Il s’agissait donc bien de ce switch qui était en court-circuit et empêchait ce Macbook pro retina A1502 de s’allumer.
 
-\[av\_button\_big label='Contactez-nous !' description\_pos='below' link='page,249' link\_target='\_blank' icon\_select='yes-left-icon' icon='ue81d' font='entypo-fontello' custom\_font='#ffffff' color='theme-color' custom\_bg='#444444' color\_hover='theme-color' custom\_bg\_hover='#444444' av\_uid='av-sk8k' custom\_class='' admin\_preview\_bg=''\]  
-Vous n'y croyez pas ?  
-Vous voulez faire la même chose ?  
-Vous cherchez désespérément un TPS22924 ?  
-\[/av\_button\_big\]
 
 Si vous ne vous sentez pas les compétences pour cette réparation, ou si vous souhaitez la faire chez vous mais que vous avez des questions, n'hésitez pas à utiliser le [formulaire pour nous contacter.](https://www.6337.fr/contact/)
 
-D'autres descriptifs de réparations sont ajoutés très régulièrement sur [notre blog](https://www.6337.fr/blog/). Une petite recherche vous aidera peut-être à trouver votre solution!
+D'autres descriptifs de réparations sont ajoutés très régulièrement sur [notre blog](https://www.6337.fr/blog/). N'hésitez pas à revenir régulièrement.

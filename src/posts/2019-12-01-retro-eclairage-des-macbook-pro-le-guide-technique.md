@@ -5,7 +5,7 @@ tags:
   - "blog"
   - "non-classe"
 coverImage: "../images/P1100139-2.jpg"
-subtitle: ""
+subtitle: "Le premier guide détaillé et en français pour diagnostiquer les problèmes de rétroéclairage des MacBook Pro et MacBook Air. A vos multimètres !"
 permalink : "./{{ page.fileSlug }}/"
 layout: "layouts/post.njk"
 ---
@@ -25,7 +25,8 @@ Le principe est simple, la première couche ne produit pas de lumière, elle ne 
 
 Le résultat est que la lumière crée par les LED, assez concentrée au départ, est diffusée de façon uniforme sur tout l’écran, puis passe au travers de la dalle LCD ou se trouve les pixels, pour afficher clairement une information qui sinon serait à peine perceptible. Les pixels de votre écran sont donc éclairés par l’arrière, par ce second système, pour que vous puissiez les distinguer : Eclairé par l’arrière = rétro-éclairage = Backlight.
 
-\[caption id="attachment\_604" align="aligncenter" width="495"\]![Bande de LED du rétro-éclairage d'un iPod. (Wikipedia)](images/960px-IPod_Touch_2G_Backlight-495x400.jpeg) Bande de LED du rétro-éclairage d'un iPod. (Wikipedia)\[/caption\]
+![Bande de LED du rétro-éclairage d'un iPod. (Wikipedia)](images/960px-IPod_Touch_2G_Backlight-495x400.jpeg)
+Bande de LED du rétro-éclairage d'un iPod. (Wikipedia)
 
 Le rétro-éclairage est un classique des pannes de MacBook Pro, et de nombreux autres ordinateurs portables. Si le circuit en charge de l’alimentation des LED est défaillant, votre ordinateur et votre affichage fonctionnera, mais vous distinguerez à peine les informations.
 

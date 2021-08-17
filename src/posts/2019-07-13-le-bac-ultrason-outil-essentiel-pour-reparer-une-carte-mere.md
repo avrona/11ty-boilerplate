@@ -5,23 +5,23 @@ tags:
   - "blog"
   - "non-classe"
 coverImage: "../images/bac-ultrason-pro.jpeg"
-subtitle: ""
+subtitle: "Inconnu du grand public, les bac ultrasons sont des outils de nettoyage très utilisés en optique, médical, mécanique de précision ou horlogerie. C'est aussi un indispensable dans notre atelier."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---
 
  On va démarrer avec un petit coup de gueule : toutes ces boutiques qui vous vendent des désoxydations sans résultat garanti à 20 ou 30€, demandez leur la marque de leur bac ultrason : S’ils réfléchissent, ou ne savent pas, c’est mauvais signe. Si en plus ils n’ont pas enlevé les protection EMI (ces petits « caches » métalliques sur votre carte mère) autant dire qu’ils vous vendent du vent ! Ils vous vendent une désoxydation dans de l’eau distillée avec un bac ultrason LIDL à 30€, et là, ne rien faire reviendrait exactement au même résultat.
 
-Il y a quelques règles que trop peu de professionnels respectent :
+Il y a quelques règles que seuls quelques professionnels respectent :
 
 - Une désoxydation, on ne la facture que si elle donne des résultats.
 - Elle se fait dans un bac ultrason pro : Elmasonic, Crest, EMAG…
-- On enlève tous les caches, toutes les protection EMI, tous les plastiques, sinon, ça ne sert à rien.
+- On enlève tous les caches, toutes les protection électromagnétique, tous les plastiques, sinon, ça ne sert à rien.
 - On rince à l’alcool IPA 95% minimum, et on sèche le tout d’abord à l’air, puis au four (ou à l’air chaud, et séchage long).
 
 Voilà ! Tout ceux qui ne suivent pas ce mode opératoire vendent une prestation inutile. Passons maintenant aux quelques explications sur les ultrason, le nettoyage du même nom, et le bac ultrason à utiliser.
 
-![](images/BAc-ultrason-amateur-1.jpeg)
+{% image "images/BAc-ultrason-amateur-1.jpeg", "Exemple d'un bac ultrason amateur." %}
 
 Bac à Ultrason bas de gamme. Ils sont inefficaces sur une carte mère de MacBook Pro ou de MaBook Air.  
 Nous n'utiliserons jamais ce type de bac.
@@ -56,7 +56,8 @@ Il lui faut également une taille minimum pour immerger la totalité de la carte
 
 Il lui faut une puissance minimum (sinon, il ne sert à rien de plus que dégazer votre solution de nettoyage…). Et enfin, il faut qu’il puisse chauffer, et ça aussi c’est indispensable (même si on peut contourner le problème en faisant chauffer le liquide de nettoyage par ailleurs).En général, le petit bac ultrason type nettoyage de bijou, vendu 30€ en grande surface, ne chauffe pas, n’a pas de fonction sweep, n’est pas assez puissant et est trop petit.
 
-![](images/bac-ultrason-pro-1030x451.jpeg)
+{% image "images/bac-ultrason-pro-1030x451.jpeg", "Les nettoyeurs ultrason pro ont un tout autre aspect." %}
+
 
 Exemples de bacs à ultrason de laboratoire.  
 Liste des fabricants, de gauche à droite: [Bandelin](https://bandelin.com/produkte/?lang=fr), [Crest](https://www.crest-ultrasonics.com/), [SharperTek](https://www.sharpertek.com/) et [Elma](https://www.elma-ultrasonic.com/fr/) (celui qui équipe notre atelier).

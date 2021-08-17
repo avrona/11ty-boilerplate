@@ -4,14 +4,18 @@ date: "2020-01-19"
 tags:  
   - "blog"
 coverImage: "../images/ISL6259.png"
-subtitle: ""
+subtitle: "Un article un peu technique sur la gestion de batterie sur les Mac: puce ISL, capteurs de courant et problèmes de charge."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---
 
 Ce Macbook Pro Retina, modèle A1398, ne reconnaissait et ne chargeait pas sa batterie, pourtant en bon état.
 
-**Modèle:** Macbook pro Retina 15 Fin 2013 **Numéro de modèle:** A1398 **Numéro de carte mère:** 820-3787 **Symptômes:** Ne charge pas la batterie. Ne reconnait pas la batterie **Solution:** Remplacer ISL6259
+* **Modèle:** Macbook pro Retina 15 Fin 2013
+* **Numéro de modèle:** A1398
+* **Numéro de carte mère:** 820-3787
+* **Symptômes:** Ne charge pas la batterie. Ne reconnait pas la batterie
+* **Solution:** Remplacer ISL6259
 
 ## S'il ne reconnait pas la batterie, il ne peut pas la charger...
 
@@ -31,7 +35,8 @@ Si la batterie de votre MacBook Pro n'est pas reconnue, vous verrez que rien ne 
 
 C'est sur ce point que doit se concentrer le diagnostic: Votre carte-mère n'arrive pas à communiquer avec la batterie, et donc croit qu'elle n'est pas présente.
 
-\[caption id="attachment\_900" align="aligncenter" width="1514"\]![Puce de gestion de batterie et charge sur macbook pro ISL6259 U7100](images/ISL6259.png) ISL6259 avec toutes ces entrées-sorties\[/caption\]
+{% image "images/ISL6259.png", "ISL6259 avec toutes ces entrées-sorties" %}
+
 
 ### Il y a de l'intelligence dans la batterie d'un Mac
 

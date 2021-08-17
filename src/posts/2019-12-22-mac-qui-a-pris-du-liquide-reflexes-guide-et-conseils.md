@@ -118,5 +118,3 @@ Si votre Mac ne fonctionne pas après ça, c'est que des composants ont été to
 Si vous ne vous sentez pas d'aller plus loin que la déconnexion de la batterie, contactez-nous.
 
 On sait faire, et on le fait très souvent !
-
-\[av\_button\_big label='Faire réparer mon Mac abimé par du liquide' description\_pos='below' link='manually,https://www.6337.fr/prise-en-charge/?mac-cause=de%20liquide%20renvers%C3%A9' link\_target='' icon\_select='yes-left-icon' icon='ue856' font='entypo-fontello' custom\_font='#ffffff' color='theme-color' custom\_bg='#444444' color\_hover='theme-color' custom\_bg\_hover='#444444' av\_uid='av-bquss' custom\_class='' admin\_preview\_bg=''\] Que ce soit du thé, ou la poire de papi gégé, on saura ranimer votre Mac préféré \[/av\_button\_big\]

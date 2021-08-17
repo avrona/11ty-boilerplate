@@ -6,7 +6,7 @@ tags:
   - "featured"
   - "non-classe"
 coverImage: "../images/MBA-condo.jpg"
-subtitle: ""
+subtitle: "Les MacBook Air, malgré leur robustesse, ont quelques faiblesses. Dans cet exemple, le condensateur à rendu l'âme."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---
@@ -30,7 +30,7 @@ Ce condensateur se trouve sur PPBUS\_S5\_HS\_COMPUTING\_ISNS, qui sert à alimen
 
 Sur la carte mère, juste à coté de ce condensateur, qui parait en parfait état, on voit un légère trace, comme si un éclair, ou un éclatement avait eu lieu. Une marque discrète, mais essentielle pour le diagnostic. Avec un multimètre, on valide que ce condensateur est en court-circuit… Dessoudage à l’air chaud, remplacement par un condo équivalent venant d’une carte similaire (un « donneur d’organes »).
 
-![](images/MBA-condo-1030x688.jpg)
+{% image "images/MBA-condo-1030x688.jpg", "Le condensateur remplacé sur ce MacBook Air." %}
 
 Le condensateur fautif, apparement intact à la surface, mais dont l'éclatement à laissé des traces qui ne trompent pas au niveau du PCB. Ce condensateur mettait l'alimentation du CPU de ce MacBook Air en court-circuit.
 
@@ -43,7 +43,7 @@ Est-ce qu’il alimente les lignes de tension du Mac : Non, car la tension trop
 
 Après quelques vérification de tension, On réalise que les 8.65V pris juste avant le fusible F7140, se transforme en 3V après… Ce fusible à une resistance de plusieurs Ohms, ce qui n’est clairement pas normal. Il a du commencer à jouer son rôle au moment ou le C7430 s'est mis en court-circuit, mais n'a pas eu le temps de terminer so "oeuvre". On ressort la carte donneuse pour récupérer un fusible avec les même caractéristiques et le transférer sur la nouvelle.
 
-![](images/MBA-Condo-fusible-1030x688.jpg)
+{% image "images/MBA-Condo-fusible-1030x688.jpg", "Le fusible qui était également à remplacer sur ce Mac." %}
 
 Les deux coupables cote-à-cote: Condensateur C7430 à gauche et Fusible F7140 à droite.
 

@@ -1,6 +1,6 @@
 ---
 title: "iMac 2009 A1311 - Carte mère 820-2494: Mort? Pas tout à fait..."
-subtitle: ""
+subtitle: "Le cas d'une panne détectée et diagnostiquée par défaut. Ce genre de réparation n'est pas dans nos habitudes, mais l'exemple était parlant."
 date: "2019-04-13"
 tags: 
   - "blog"
@@ -52,7 +52,7 @@ Toutes les lignes d’alim ont les bonnes tensions, en particulier celles nommé
 
 Ce composant est un LTC3851, un PMIC (Power Management Integrated Circuit). Son rôle est de générer différentes tensions stabilisées en fonction des différents capteurs auxquels il est connecté. Il génère le 5 Volt qui permet de booter et maintenir allumé une bonne partie des composants de la machine.
 
-![](../images/iMac-sophie-puce.jpg)
+{% image "images/iMac-sophie-puce.jpg", "La puce remplacée sur cet iMac" %}
 
 La puce fautive est au centre, avec un marquage U7300 juste à sa gauche.
 
@@ -62,7 +62,7 @@ Les cartes d’iMac résistent bien à la chaleur, et cela nous le prouve encore
 
 En général, pour souder un QFN, on met toujours trop d’étain, et une fois posé, ca dépasse de tous les cotés et il y a des courts-circuits de part et d’autre. Il suffit ensuite de repasser au fer à souder (la panne en couteau aide bien, une « KN » sur notre station Hakko FM-203) pour enlever l’excès et replacer l’étain sur les pads du QFN et de la carte.
 
-![](../images/iMac-Sophie-U7300.png)
+{% image "images/iMac-Sophie-U7300.png", "U7300 ou LTC3851" %}
 
 Extrait du schéma électrique, montrant U7300 et le type de composant: un LTC3851
 

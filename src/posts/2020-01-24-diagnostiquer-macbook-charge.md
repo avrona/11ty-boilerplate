@@ -4,12 +4,10 @@ date: "2020-01-24"
 tags:  
   - "blog"
 coverImage: "../images/magsafe-photo-small.jpeg"
-subtitle: ""
+subtitle: "Un guide simple et direct pour diagnostiquer votre Mac qui refuse de charger."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---
-
-\[av\_textblock size='' font\_color='' color='' av-desktop-hide='' av-medium-hide='' av-small-hide='' av-mini-hide='' av-medium-font-size='' av-small-font-size='' av-mini-font-size='' av\_uid='av-klans'\]
 
 ## Votre MacBook Pro ne charge plus. Quels diagnostics effectuer ?
 
@@ -23,11 +21,8 @@ Il existe plusieurs origines possibles à un Mac qui ne charge plus. En voici qu
 - Problème matériel de la carte-mère
 - Surchauffe
 
-\[/av\_textblock\]
+{% image "images/mac-charge.gif", "Branchement d'un Mac et allumage en vert du Magsafe." %}
 
-\[av\_image src='https://www.6337.fr/wp-content/uploads/2020/01/mac-charge.gif' attachment='917' attachment\_size='full' align='center' styling='' hover='' link='' target='' caption='' font\_size='' appearance='' overlay\_opacity='0.4' overlay\_color='#000000' overlay\_text\_color='#ffffff' copyright='' animation='no-animation' av\_uid='av-g8ty0' custom\_class='' admin\_preview\_bg=''\]\[/av\_image\]
-
-\[av\_textblock size='' font\_color='' color='' av-desktop-hide='' av-medium-hide='' av-small-hide='' av-mini-hide='' av-medium-font-size='' av-small-font-size='' av-mini-font-size='' av\_uid='av-1fi3k'\]
 
 ## Diagnostiquer un Mac qui refuse de charger
 
@@ -53,9 +48,10 @@ Le côté matériel du Mac peut également être impliqué. Le Magsafe contient 
 
 La première chose à faire, sera, bien-sûr, de tenter de redémarrer votre Mac. Faites-le, idéalement, de façon propre, en cliquant sur le menu _Pomme_, puis sur _Redémarrer_. \[/av\_textblock\]
 
-\[av\_image src='https://www.6337.fr/wp-content/uploads/2020/01/IT-crowd.gif' attachment='916' attachment\_size='full' align='center' styling='' hover='' link='' target='' caption='' font\_size='' appearance='' overlay\_opacity='0.4' overlay\_color='#000000' overlay\_text\_color='#ffffff' copyright='' animation='no-animation' av\_uid='av-77sk0' custom\_class='' admin\_preview\_bg=''\]\[/av\_image\]
+{% image "images/IT-crowd.gif", "vidéo de le série IT crowd" %}
 
-\[av\_textblock size='' font\_color='' color='' av-medium-font-size='' av-small-font-size='' av-mini-font-size='' av\_uid='av-9gek8' custom\_class='' admin\_preview\_bg=''\] Si votre MacBook Pro ne charge toujours pas après un redémarrage vous devrez tenter de réinitialiser le _SMC (System Management Control)_. Comme son nom l'indique, le _SMC_ est une puce de gestion de certaines fonctions matérielles du Mac. C'est son rôle de reconnaître le chargeur branché et de lui permettre ou non de charger le batterie. Il est chef d'orchestre de la charge, même si une autre puce est présente pour gérer la batterie. Il gère la mise-en-veille et le réveil, vérifie certains fonctions vitales avant le démarrage gère le niveau de rétroéclairage, parmi d'autres choses encore.
+
+Si votre MacBook Pro ne charge toujours pas après un redémarrage vous devrez tenter de réinitialiser le _SMC (System Management Control)_. Comme son nom l'indique, le _SMC_ est une puce de gestion de certaines fonctions matérielles du Mac. C'est son rôle de reconnaître le chargeur branché et de lui permettre ou non de charger le batterie. Il est chef d'orchestre de la charge, même si une autre puce est présente pour gérer la batterie. Il gère la mise-en-veille et le réveil, vérifie certains fonctions vitales avant le démarrage gère le niveau de rétroéclairage, parmi d'autres choses encore.
 
 Vous l'avez compris, un plantage du SMC peut mener à un MacBook Pro qui refuse de charger.
 
@@ -69,7 +65,7 @@ Pour réinitialiser le SMC, il faut procéder de la façon suivant, selon que vo
 
 - Sur un Mac avec une puce de sécurité T2 (MacBook Pro ou Air depuis 2018. Mac Mini depuis 2018, Mac Pro 2019 ou iMac Pro)
     1. Eteignez votre Mac
-    2. Pressez les touches \[Control (_ctrl_)\] + \[![](images/macos-catalina-sidecar-sidebar-option-icon.png "Alt") Option (_alt_)\] du coté gauche de votre clavier et les touches \[Maj ![](images/macos-catalina-sidecar-sidebar-shift-icon.png "Majuscule") \] + \[_Power\]_ du coté droit, pendant 10 secondes environ
+    2. Pressez les touches \[Control (_ctrl_)\] +  Option (_alt_)\] du coté gauche de votre clavier et les touches \[Maj + \[_Power\]_ du coté droit, pendant 10 secondes environ
     3. Relâcher ces touches. Vous devriez voir la lumière de votre chargeur Magsafe passer à l'orange puis revenir au vert.
     4. Appuyez sur le bouton _Power_ de votre Mac pour le rallumer.
 
@@ -86,4 +82,4 @@ Il est possible que votre batterie ait surchauffé, ou soit trop froide et se me
 
 Si cela ne fonctionne pas non plus, vérifiez que la batterie est bien reconnue par votre Mac. Allez dans le menu _Pomme_ -> _A propos de ce Mac_ -> _Rapport Système_ -> _Alimentation._ Y-a-t'il bien des informations concernant votre batterie, comme son numéro de série ou son niveau de charge ? Si non, c'est que la batterie n'est pas reconnue par l'ordinateur. Cela peut venir de votre batterie ou de la carte mère. Un MacBook pro ne charge plus tant qu'il n'a pas reconnu la batterie et qu'il communique avec elle.
 
-Il faut alors tenter de brancher une batterie neuve, ou de test, dont vous savez qu'elle fonctionne. Si la nouvelle batterie n'est toujours pas reconnue, vous faites face à un problème de carte mère. Dans ce cas, nous vous conseillons de nous contacter pour intervenir sur ce genre de problème. Nous pourrons vous guider pour remplacer une batterie, ou bien remplacement la puce de charge ou le SMC, ou les capteurs de charge (capteurs de courant) de votre carte mère. \[/av\_textblock\]
+Il faut alors tenter de brancher une batterie neuve, ou de test, dont vous savez qu'elle fonctionne. Si la nouvelle batterie n'est toujours pas reconnue, vous faites face à un problème de carte mère. Dans ce cas, nous vous conseillons de nous contacter pour intervenir sur ce genre de problème. Nous pourrons vous guider pour remplacer une batterie, ou bien remplacement la puce de charge ou le SMC, ou les capteurs de charge (capteurs de courant) de votre carte mère.
