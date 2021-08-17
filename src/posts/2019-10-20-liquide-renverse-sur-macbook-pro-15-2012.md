@@ -40,7 +40,7 @@ La zone touchée est autour d’ISL6259. C’est une puce assez connue car elle 
 
 Notre problème se situe en plein dans le circuit d’alimentation et de charge de la carte mère de notre MacBook Pro.
 
-{% image "images/schemabloc.jpg", "Schéma-bloc de la partie alimentation et charge. Extrait du schéma d'une carte mère de Macbook Pro %}
+{% image "images/schemabloc.jpg", "Schéma-bloc de la partie alimentation et charge. Extrait du schéma d'une carte mère de Macbook Pro" %}
 
 #### Principe de fonctionnement :
 
