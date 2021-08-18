@@ -22,7 +22,8 @@
                           <div class="is-flex is-align-items-center is-justify-content-start mt-4">
                               <a href="#" class="image is-48x48">
                                   {# Author picture #}
-                                  <img alt="profil" src="{{ item.profile_photo_url }}" class="is-rounded"/>
+                                  <img alt="profil" src="{{ item.profile_photo_url }}" loading="lazy" decoding="async"/>
+                                  {# {% testimimage item.profile_photo_url, item.author_name, "48px"  %} #}
                               </a>
                               <div class="is-flex is-flex-direction-column ml-2 is-align-content-space-between">
                                   <span class="font-semibold has-text-weight-bold">
