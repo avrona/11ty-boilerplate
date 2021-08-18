@@ -8,20 +8,19 @@
     
         <div class="box">
           <article class="media">
+            
             <figure class="media-left">
-              <p class="image is-64x64">
-                <img src="{{ post.data.coverImage }}">
+              <p class="image is-96x96">
+              {% thumbimage post.data.coverImage , post.data.coverImageAlt %}  
               </p>
             </figure>
             <div class="media-content">
-              <div class="content">
+              <div class="content  is-hoverable">
                 <a href="{{ post.url | url }}">
-                  <p>
-                    <strong>{{ post.data.title }}</strong>
-                    <br>
-                    {{ post.data.excerpt }}
-                    <br>
-                  </p>
+                  <H4 class="has-text-primary"> {{ post.data.title }}</H3>
+                    <p class="has-text-grey-dark">
+                    {{ post.data.subtitle | truncate(145) }}
+                    <p>
                   <p class="has-text-weight-semibold has-text-grey ">{{ post.date | readablePostDate }}</p>
                 </a>
               </div>
