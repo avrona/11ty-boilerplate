@@ -4,7 +4,8 @@ date: "2019-10-20"
 tags:  
   - "blog"
   - "non-classe"
-coverImage: "../images/Macbook-pro-oxydation-repare-2.jpg"
+coverImage: "images/Macbook-pro-oxydation-repare-2.jpg"
+coverImageAlt: ""
 subtitle: "Un verre renversé: un catastrophe pour vous, mais un simple cas d'école pour nous. Eclaircissement sur les réflexes à voir et les réparations qui s'imposent."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'

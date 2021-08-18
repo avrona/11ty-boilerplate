@@ -4,7 +4,8 @@ date: "2019-05-04"
 tags: 
   - "blog"
   - "non-classe"
-coverImage: "../images/bac-ultrason-pro.jpeg"
+coverImage: "images/bac-ultrason-pro.jpeg"
+coverImageAlt: "Exemple de bac ultrason professionnel"
 subtitle: "Inconnu du grand public, les bac ultrasons sont des outils de nettoyage très utilisés en optique, médical, mécanique de précision ou horlogerie. C'est aussi un indispensable dans notre atelier."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'

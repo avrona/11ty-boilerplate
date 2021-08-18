@@ -4,7 +4,8 @@ date: "2019-10-10"
 tags:  
   - "blog"
   - "non-classe"
-coverImage: "../images/P1090325.jpg"
+coverImage: "images/P1090325.jpg"
+coverImageAlt: ""
 subtitle: ""
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'

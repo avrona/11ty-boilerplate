@@ -4,7 +4,8 @@ date: "2019-06-20"
 tags: 
   - "blog"
   - "non-classe"
-coverImage: "../images/TPS924-dimensions.png"
+coverImage: "images/TPS924-dimensions.png"
+coverImageAlt: ""
 subtitle: "Le court-circuit est une panne classique. Elle est simple à diagnostiquer mais demande une certaine technique pour la réparer."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'

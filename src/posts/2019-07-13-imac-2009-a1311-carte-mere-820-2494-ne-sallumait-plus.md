@@ -5,8 +5,8 @@ date: "2019-04-13"
 tags: 
   - "blog"
   - "non-classe"
-coverImage: "../images/iMac-sophie-puce.jpg"
-coverImageAlt: ""
+coverImage: "images/iMac-sophie-puce.jpg"
+coverImageAlt: "Puce remplacée sur l'iMac de Sophie"
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---

@@ -5,7 +5,8 @@ tags:
   - "blog"
   - "featured"
   - "non-classe"
-coverImage: "../images/MBA-condo.jpg"
+coverImage: "images/MBA-condo.jpg"
+coverImageAlt: "Condensateur remplacé sur un MacBook Air"
 subtitle: "Les MacBook Air, malgré leur robustesse, ont quelques faiblesses. Dans cet exemple, le condensateur à rendu l'âme."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'

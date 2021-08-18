@@ -4,7 +4,8 @@ date: "2019-09-27"
 tags:  
   - "blog"
   - "non-classe"
-coverImage: "../images/OWC-Mac-Air-SSD.jpg"
+coverImage: "images/OWC-Mac-Air-SSD.jpg"
+coverImageAlt: ""
 subtitle: ""
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'

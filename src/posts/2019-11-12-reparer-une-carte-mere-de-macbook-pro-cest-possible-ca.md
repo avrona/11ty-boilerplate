@@ -3,7 +3,8 @@ title: "Réparer une carte mère HS de Macbook Pro, c’est possible ça ?"
 date: "2019-11-12"
 tags:  
   - "blog"
-coverImage: "../images/fond-6337.jpg"
+coverImage: "images/fond-6337.jpg"
+coverImageAlt: ""
 subtitle: "Il n'est pas nécessaire de remplacer une carte mère de MacBook Pro ou MacBook Air. Dans 95% des cas, elle est réparable, et nous vous expliquons comment."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'

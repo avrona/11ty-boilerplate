@@ -3,7 +3,8 @@ title: "MacBook Pro et Problème de GPU : Le guide ultime"
 date: "2020-02-07"
 tags: 
   - "blog"
-coverImage: "../images/signal-attachment-2020-02-07-233834-2-2.jpeg"
+coverImage: "images/signal-attachment-2020-02-07-233834-2-2.jpeg"
+coverImageAlt: ""
 subtitle: ""
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'

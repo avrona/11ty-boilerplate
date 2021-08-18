@@ -4,7 +4,8 @@ date: "2019-12-22"
 tags: 
   - "blog"
   - "non-classe"
-coverImage: "../images/Mac-liquid-icone.png"
+coverImage: "images/Mac-liquid-icone.png"
+coverImageAlt: ""
 subtitle: ""
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
