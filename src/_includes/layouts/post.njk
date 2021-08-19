@@ -5,9 +5,13 @@ jsfile: ["../js/navbarmanagement.js"]
 
 {% extends "layouts/base.njk" %} 
   {%- block seo -%}
+
+      <title> {{post.title}} </title>
       <!--Twitter Card-->
-      <meta name="twitter:title" content="{{ title}}">
+      <meta name="twitter:title" content="{{ post.title }}">
       <meta name="twitter:description" content="{{ subtitle|striptags|truncate(196) }}">
+      <meta name="twitter:image" content="{{ env.base.img + coverImage }}">
+
       
       <!--Schema-->
       <meta itemprop="name" content="{{ title}}">
@@ -16,6 +20,9 @@ jsfile: ["../js/navbarmanagement.js"]
       <!-- Facebook OpenGraph -->
       <meta property="og:title" content="{{post.title}}">
       <meta property="og:description" content="{{ subtitle|striptags|truncate(196) }}">
+      <meta property="og:image" content="{{ env.base.img + coverImage }}"/>
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="675" />
   {%- endblock -%}
 
 
