@@ -3,6 +3,7 @@
       {
         "title": "Dommage liquide",
         "image": "images/Mac-liquid-icone.svg",
+        "altimage": "Verre renversé sur un Mac",
         "text":"Un accident arrive à tout le monde, et on est là pour en faire un mauvais souvenir ! Nous recherchons et remplaçons les composants affectés, avant tout autre action. La désoxydation d’une carte mère retire des traces qui sont d’importants indices pour notre réparation. La carte mère de votre Macbook fonctionne avant d’être désoxydée au bac à ultrasons.",
         "btnicon":"fa-glass-cheers",
         "btntitle":"Réparer mon Mac"
@@ -10,6 +11,7 @@
       {
         "title": "Carte-mère HS",
         "image": "images/icone-carte-mere.svg",
+        "altimage": "Carte-mère de MacBook Pro",
         "text":"Le sort en est jeté : votre réparateur vous propose un exorbitant remplacement de carte mère ? Nous sommes l’alternative. Quelle qu’en soit la raison, notre expertise nous permet de remonter à l’origine du problème, et réparer votre carte mère, plutôt que de la changer. Du fusible fondu au condensateur suicidaire, nous avons les pièces et le savoir-faire pour ramener votre MacBook Pro ou Air à la vie.",
         "btnicon":"fa-screwdriver",
         "btntitle":"Réparer ma carte-mère"
@@ -17,6 +19,7 @@
       {
         "title": "Rétroéclairage en panne",
         "image": "images/mac-no-backlight.svg",
+        "altimage": "Mac en panne de rétroéclairage",
         "text":"C’est un classique : vous entendez les bruits habituels de votre Mac et vous distinguez vaguement une image dans un écran quasi-noir. Votre écran fonctionne mais l’alimentation haute-tension du rétro-éclairage à grillé. Driver LED, fusible, connecteur ou capteur de courant… les causes nous sont biens connues et réparables dans notre atelier.",
         "btnicon":"fa-adjust",
         "btntitle":"Réparer mon rétroéclairage"
@@ -24,6 +27,7 @@
       {
         "title": "Connecteur arraché",
         "image": "images/icone-connecteur.svg",
+        "altimage": "zoom sur un connecteur cassé",
         "text":"Vous deviez changer une pièce vous-même, et ça s’est mal terminé ? On ne vous sermonnera pas, bien au contraire ! On est là pour rattraper la maladresse… Ce connecteur si petit, qui à fini par s’arracher n’est ni la fin du monde, ni la fin de votre Mac. Vous êtes parti pour un passage chez nous, et une jolie leçon qui ne doit surtout pas vous décourager de tenter à nouveau l’auto-réparation.",
         "btnicon":"fa-ethernet",
         "btntitle":"Remplacer mon connecteur"
