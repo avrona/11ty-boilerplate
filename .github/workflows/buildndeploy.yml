@@ -1,4 +1,4 @@
-name: Eleventy Build
+name: Eleventy Build Dev
 on: workflow_dispatch
 
 jobs:
