@@ -3,6 +3,7 @@
 const { DateTime } = require("luxon");
 const Image = require("@11ty/eleventy-img");
 const path = require('path');
+const purgeCssPlugin = require("eleventy-plugin-purgecss");
 
 // FULL SIZE Image pluging configuration
 function imageShortcode(src, alt) {
@@ -120,6 +121,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
   eleventyConfig.addNunjucksShortcode("thumbimage", thumbimageShortcode);
 
+  // Load PurgeCSS: remove unused CSS before build
+  eleventyConfig.addPlugin(purgeCssPlugin, {
+    // Optional: Specify the location of your PurgeCSS config
+    config: "./src/_data/purgecss.config.js",
+
+    // Optional: Set quiet: true to suppress terminal output
+    quiet: false,
+  });
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
