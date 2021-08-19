@@ -4,6 +4,7 @@ const { DateTime } = require("luxon");
 const Image = require("@11ty/eleventy-img");
 const path = require('path');
 const purgeCssPlugin = require("eleventy-plugin-purgecss");
+const eleventyGoogleFonts = require("eleventy-google-fonts");
 
 // FULL SIZE Image pluging configuration
 function imageShortcode(src, alt) {
@@ -120,6 +121,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
   eleventyConfig.addNunjucksShortcode("thumbimage", thumbimageShortcode);
+  // Google Fonts plugin
+  eleventyConfig.addPlugin(eleventyGoogleFonts);
 
   // Load PurgeCSS: remove unused CSS before build
   eleventyConfig.addPlugin(purgeCssPlugin, {
