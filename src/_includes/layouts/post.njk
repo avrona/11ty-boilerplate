@@ -6,7 +6,7 @@ jsfile: ["../js/navbarmanagement.js"]
 {% extends "layouts/base.njk" %} 
   {%- block seo -%}
 
-      <title> {{post.title}} </title>
+      <title> {{ title }} </title>
       <!--Twitter Card-->
       <meta name="twitter:title" content="{{ post.title }}">
       <meta name="twitter:description" content="{{ subtitle|striptags|truncate(196) }}">
