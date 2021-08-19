@@ -8,6 +8,8 @@
   {% include "partials/structure/site-head.njk" %}
   
       {%- block seo -%}
+
+      <title> {{ site.title }}</title>
     <!--Twitter Card-->
     <meta name="twitter:title" content="{{title}}">
     <meta name="twitter:description" content="{{ site.description }}">
