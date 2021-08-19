@@ -11,7 +11,7 @@ showTab(currentTab); // Display the current tab
 }, false);
 
 
-
+// -------------------- Variables for the Mac problem steps ---------------//
 let valuesform = {
     model:"",
     idmodel: "",
@@ -23,6 +23,45 @@ let valuesform = {
     idproblem:""
 }
 
+// -------------------- Variables for the customer details and form validation step ---------------//
+const submit = document.getElementById('submitButton')
+const inputFirstName = document.getElementById('inputFirstName')
+const inputLastName = document.getElementById('inputLastName')
+const inputEmail = document.getElementById('inputEmailField')
+const inputSubject = document.getElementById('inputSubjectField')
+const inputMessage = document.getElementById('inputMessageField')
+const iconLastName = document.getElementById('lastNameCheckIcon')
+const iconFirstName = document.getElementById('firstNameCheckIcon')
+const iconEmail = document.getElementById('emailCheckIcon')
+const emailMessage = document.getElementById('wrongEmailMessage')
+//const successMessage = document.getElementById('successMessage')
+const modalClose = document.getElementsByClassName('modal-close')
+const MAXCHARNAMEFIELD = 20
+const MINCHARNAMEFIELD = 3
+var firstNameValidated = false
+var lastNameValidated = false
+var emailValidated = false
+
+document.addEventListener("DOMContentLoaded", function() {
+emailMessage.style = 'display:none';
+// successMessage.style = 'display:none';
+submit.disabled = true;
+submit.setAttribute("disabled","")
+}
+)
+
+// EVENT LISTENERS for the Customer details step (name, email)
+document.addEventListener('change', event => {   
+  if (event.target.matches('.inputFirstNameField')) {
+    validateFirstName()
+  } else if (event.target.matches('.inputLastNameField')) {
+    validateLastName()
+  } else if (event.target.matches('.inputEmailField')) {
+    validateEmail(event.target.value)
+  } else {
+    //nothing
+  }
+}, false)
 
 // Listen to buttons on STEP 1 and act accordingly (Model)
 document.addEventListener("DOMContentLoaded", function(){
@@ -300,59 +339,9 @@ function showEstimate () {
     // Modify the content accordingly
     document.getElementById("mactitle").innerHTML = (valuesform.model);
     document.getElementById("macsubtitle").innerHTML = ("Ecran " + valuesform.screen + " - Année " + valuesform.year);
-/*
-    // Sending and receiving data in JSON format using POST method
-        //
-        var xhr = new XMLHttpRequest();
-        // formData
-        var formData = new FormData();
-            formData.append("zf_referrer_name:", "https://www.6337.fr/");
-            formData.append("zf_redirect_url", ""); 
-            formData.append("zc_gad", "");
-            formData.append("Dropdown", valuesform.model);
-            formData.append("Dropdown4", valuesform.screen);
-            formData.append("Dropdown5", valuesform.year);
-            formData.append("Dropdown1", valuesform.problem);
-            formData.append("Dropdown2", "d'une réparation ratée");
-
-        // TEST zoho forms
-        var formendpoint = "https://forms.zohopublic.eu/6337crm/form/TESTUndevisen3clics/formperma/tKHAtARvKUQ-8vW_LMK8Lw4gzmaVTvm00S-DsYVqAK8/htmlRecords/submit"
-        xhr.open("POST", formendpoint);
-
-        //Envoie les informations du header adaptées avec la requête
-        //xhr.setRequestHeader("Content-Type", "multipart/form-data");
-
-        xhr.send(formData);
-*/
-
 }
-/*
-function sendEstimate(){
-            // Sending and receiving data in JSON format using POST method
-        //
-        var xhr = new XMLHttpRequest();
-        // Payload
-        var payload = {"Dropdown":"MacBook Pro Retina","Dropdown4":"13 pouces","Dropdown4_group_name":"MacBook Pro retina","Dropdown5":"2013","Dropdown5_group_name":"MacBook Pro Retina","Dropdown1":"la réactivité est (très) faible","Dropdown2":"de liquide renversé","REFERRER_NAME":"https://www.6337.fr/","ZS_IF_DOMAIN":"https://www.6337.fr/"}
-        // TEST zoho forms
-        var formendpoint = "https://forms.zohopublic.eu/6337crm/form/TESTUndevisen3clics/formperma/tKHAtARvKUQ-8vW_LMK8Lw4gzmaVTvm00S-DsYVqAK8/records"
-        xhr.open("POST", formendpoint, true);
 
-        //Envoie les informations du header adaptées avec la requête
-        xhr.setRequestHeader("Content-Type", "application/json");
 
-        xhr.onreadystatechange = function() { //Appelle une fonction au changement d'état.
-            if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-        // Requête finie, traitement ici.
-            }
-        }
-        xhr.send("foo=bar&lorem=ipsum");
-        // xhr.send(new Int8Array());
-        // xhr.send(document);
-
-        // Redirect to the next steps form
-        window.location.href = "https://www.6337.fr/prise-en-charge/";
-}
-*/
 
 function validateForm() {
     return true ;}
@@ -383,6 +372,132 @@ function filterSelection(buttontype, argument1, argument2) {
         }
 }
    
+// First Name validation
+function validateFirstName() {
+  var regexString = /^[a-z ,.' À-ž-]+$/i; //words separated by space with accents or some signs.
+ 
+  const iconFirstName = document.getElementById('firstNameCheckIcon')
+  const conditionsFirstName =
+    (inputFirstName.value.length > MINCHARNAMEFIELD) &&
+    (inputFirstName.value.length < MAXCHARNAMEFIELD) &&
+    (inputFirstName.value != null) &&
+    (regexString.test(inputFirstName.value))  //test for regex string
+  console.log(regexString.test(inputFirstName.value))
+
+  // First Name test condition and validation
+  if (conditionsFirstName) {
+    // input box color
+    inputFirstName.classList.remove('is-danger')
+    inputFirstName.classList.add('is-success')
+
+    // icon first name type
+    iconFirstName.classList.remove('fa-exclamation-triangle')
+    iconFirstName.classList.add('fa-check')
+    console.log("icon :" + iconFirstName.classList.value)
+ 
+    //now we call submit button test
+    firstNameValidated = true
+  } else {
+    // input box color
+    inputFirstName.classList.remove('is-success')
+    inputFirstName.classList.add('is-danger')      
+    // icon first name type
+    iconFirstName.classList.remove('fa-check')
+    iconFirstName.classList.add('fa-exclamation-triangle')
+
+    firstNameValidated = false
+  }
+}
+
+// Last Name validation
+function validateLastName() {
+  var regexString = /^[a-z ,.' À-ž-]+$/i; //words separated by space with accents or some signs
+ 
+  const iconLastName = document.getElementById('lastNameCheckIcon')
+  const conditionsLastName =
+  (inputLastName.value.length > MINCHARNAMEFIELD) &&
+  (inputLastName.value.length < MAXCHARNAMEFIELD) &&
+  (inputLastName.value != null) &&
+  (regexString.test(inputLastName.value))  //test for regex string
+
+// Last Name test condition and validation
+  if (conditionsLastName) {
+    // input box color
+    inputLastName.classList.remove('is-danger')
+    inputLastName.classList.add('is-success')
+
+    // icon Last name type
+    iconLastName.classList.remove('fa-exclamation-triangle')
+    iconLastName.classList.add('fa-check')
+    console.log("icon :" + iconLastName.classList.value)
+ 
+    //now we call submit button test
+    lastNameValidated = true
+
+  } else {
+    // input box color
+    inputLastName.classList.remove('is-success')
+    inputLastName.classList.add('is-danger')
+    // icon last name type
+    iconLastName.classList.remove('fa-check')
+    iconLastName.classList.add('fa-exclamation-triangle')
+ 
+    lastNameValidated = false
+  }
+  // If all validated launch SubmitCheck()
+  if (lastNameValidated) {
+    submitCheck()
+  }
+
+}
+
+// Validate email
+function validateEmail(value) {
+  const iconEmail = document.getElementById('emailCheckIcon')
+ 
+  if (validateRegexString(value)) {
+    // input box color
+    inputEmail.classList.remove('is-danger')
+    inputEmail.classList.add('is-success')
+    // icon type
+    iconEmail.classList.remove('fa-exclamation-triangle')
+    iconEmail.classList.add('fa-check')
+    emailMessage.style  = 'display:none'
+ 
+    emailValidated = true
+    submitCheck()
+  } else {
+    // input box color
+    inputEmail.classList.remove('is-sucess')
+    inputEmail.classList.add('is-danger')
+    // icon type
+    iconEmail.classList.remove('fa-check')
+    iconEmail.classList.add('fa-exclamation-triangle')
+    emailMessage.style = 'display:block'
+ 
+    emailValidated = false
+  }
+}
+
+
+function validateRegexString(email) {
+  const regexString = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    return regexString.test(String(email).toLowerCase()) // true|false
+}
+
+
+function submitCheck() {
+  console.log(firstNameValidated, lastNameValidated, emailValidated)
+  if (firstNameValidated && lastNameValidated && emailValidated) {
+ 
+    submit.disabled = false;              //button is no longer no-clickable
+    submit.removeAttribute("disabled");   //detto
+  } else {
+    emailMessage.style = 'display:block'  //email warning shows up
+  }
+}
+
+
 
 function showModalForm(){
 
@@ -410,6 +525,56 @@ function modalFormReset(){
   rootEl.classList.remove('is-clipped');
   formReset()
 }
+
+function sendEstimate(){
+
+  // Show the success message modal
+   
+  successMessage.classList.add('is-active');
+  const exits = successMessage.querySelectorAll('.modal-exit');
+  exits.forEach(function(exit) {
+    exit.addEventListener('click', function(event) {
+      event.preventDefault();
+      successMessage.classList.remove('is-active');
+      location.reload();
+    });
+  });
+
+ // Sending and receiving data in JSON format using POST method
+      //
+      var xhr = new XMLHttpRequest();
+      // formData
+      var formData = {
+          zf_referrer_name: "https://www.6337.fr/",
+          zf_redirect_url: "", 
+          zc_gad: "",
+          Dropdown: valuesform.model,
+          Dropdown9: valuesform.screen,
+          Dropdown1: valuesform.year,
+          Dropdown3: valuesform.problem,
+          Dropdown2: 'autre',
+          MultiLine: inputMessage.value,
+          Name_Last: inputLastName.value,
+          Name_First: inputFirstName.value,
+          Email: inputEmail.value,
+          PhoneNumber_countrycode: '000000000',
+          TermsConditions: 'on'
+      }
+
+
+
+      // PHP script
+      xhr.open("POST", "../zformspost/prise-en-charge.php");
+
+      xhr.onreadystatechange = function() { if (xhr.readyState === 4 && xhr.status === 200) { console.log(xhr.responseText);
+      } }
+      // xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
+      xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhr.send(new URLSearchParams(formData).toString()); 
+}
+
+function validateForm() {
+  return true ;}
 
 // ------------------  testimonial carousel functions ------------------------------
 //------------------------------------------------------------------
