@@ -533,66 +533,6 @@ function filterSelection(buttontype, argument1, argument2) {
 }
    
 
-/*
-function filterSelection(argument1, argument2) {
-    var x, i;
-    x = document.getElementsByClassName("button");
-    
-    for (i = 0; i < x.length; i++) {
-        // element.style.display = "none";
-        if (x[i].className.indexOf(argument1) > -1) {
-            for (j = 0; j < x.length; j++){
-                if (x[j].className.indexOf(argument2) > -1) {
-                    x[j].style.display = "block";
-                    console.log("j" + x[j]);
-                } else { 
-                    x[i].style.display = "display";
-                    console.log("i" + x[i]);
-                        }
-            }
-        }
-    }
-}
-*/
-      
-
-      
-
-    /*
-  // This function deals with validation of the form fields
-  var x, y, i, valid = true;
-  x = document.getElementsByClassName("tab");
-  y = x[currentTab].getElementsByTagName("input");
-  // A loop that checks every input field in the current tab:
-  for (i = 0; i < y.length; i++) {
-    // If a field is empty...
-    if (y[i].value == "") {
-      // add an "invalid" class to the field:
-      y[i].className += " invalid";
-      // and set the current valid status to false:
-      valid = false;
-    }
-  }
-  // If the valid status is true, mark the step as finished and valid:
-  if (valid) {
-    document.getElementsByClassName("step")[currentTab].className += " finish";
-  }
-  return valid; // return the valid status
-}
-*/
-
-/*
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = document.getElementsByClassName("step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class to the current step:
-  x[n].className += " active";
-}
-*/
-
 
 
 
