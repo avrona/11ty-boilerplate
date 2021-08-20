@@ -38,7 +38,7 @@ Mais pour 299€ le SSD 256Go pour MacBook Air 2011, on repassera. (Mais on revi
 
 Si vous êtes un chineur dans l’âme, et que vous avez du temps, alors n’hésitez pas. leboncoin.fr reste le leader dans ce domaine. On y trouve de nombreux Mac et des pièces détachées de la marque à la pomme. Vous y trouverez peut-être votre bonheur : un SSD d’origine Apple compatible avec votre MacBook Air. Les mêmes conseils que pour n’importe quel achat s’appliquent : Préférez la remise en main propre et testez le fonctionnement du SSD si possible.
 
-{% image "leboncoin-ssd-289x300.jpg", "Capture d’écran d’une annonce leboncoin pour un SSD MacBook Air" %}
+{% image "leboncoin-ssd.jpg", "Capture d’écran d’une annonce leboncoin pour un SSD MacBook Air" %}
 
 Ici aussi les prix sont assez élevés. Le principe de l’offre et de la demande s’applique (comme partout ailleurs)
 
