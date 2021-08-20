@@ -1,6 +1,6 @@
 
    
-const baseUrl = "https://crm.6337.fr";
+const baseUrl = "https://www..6337.fr";
 
 module.exports = {
     baseURL: `${baseUrl}`,
