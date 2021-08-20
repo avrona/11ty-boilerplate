@@ -6,7 +6,7 @@ module.exports = {
     content: ["./dist/**/*.html", "./dist/**/*.js" ],
   
     // CSS files to be purged in-place
-    css: ["./dist/**/*.css"],
+    // css: ["./dist/**/*.css"],
     whitelistPatterns: [/^cs-/, /^comment-/], // Retain all classes starting with...
     whitelist: [
                 'cs-title',
