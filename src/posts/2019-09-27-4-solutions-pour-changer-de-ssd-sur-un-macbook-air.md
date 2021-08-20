@@ -53,7 +53,7 @@ Ici aussi les prix sont assez élevés. Le principe de l’offre et de la demand
 
 Ceux qui ont déjà voulu changer de SSD connaissent cette solution. Il existe quelques fabricants de SSD qui sont compatibles avec les machines MacBook Air ou MacBook Pro. C’est a priori une bonne solution, sans trop de risques. Faites malgré tout quelques recherches sur les modèles que vous achetez. [Certains sites](http://www.journaldulapin.com/2016/03/09/owc-bricole-pour-les-macbook-airpro-avec-des-ssd-pcie/) ont déjà montré que OWC, pour ne pas les citer, avait fait un montage "assez sale \[qui\] augmente les risques de défaillances" (sic) pour obtenir la compatibilité et les performances requises sur un SSD compatible avec la gamme 2015 d’Apple.
 
-{% image "OWC-Mac-Air-SSD-300x196.jpg", "Un SSD de OWC" %}
+{% image "OWC-Mac-Air-SSD.jpg", "Un SSD de OWC" %}
 
 Mais ce sont des solutions malgré tout réputées et faciles à mettre en œuvre. Encore une fois, il vaut mieux avoir un portefeuille un peu épais : [184€ les 256Go chez OWC](http://www.macway.com/fr/product/26321/owc-barrette-ssd-mercury-aura-pro-6g-240-go-macbook-air-20102011.html) soit 0.72€/Go. C’est deux fois plus cher qu’un disque classique de Type M2.
 
@@ -69,7 +69,7 @@ Apple a bien mis des connecteurs propriétaires dans ses machines. D’après ce
 
 Alors, s’il n’y a que le connecteur qui change, pourquoi ne pas utiliser un adaptateur ? Et c’est là que vous réalisez que vous êtes tombé sur le bon site.
 
-{% image "SSD-monte-small-2-300x113.jpg", "Montage d’un SSD Transcend 1To sur un adaptateur pour MacBook Air" %}
+{% image "SSD-monte-small-2.jpg", "Montage d’un SSD Transcend 1To sur un adaptateur pour MacBook Air" %}
 
 Avec un un adaptateur, vous pouvez monter un disque SSD type M2 SATA de votre choix dans n’importe quel MacBook Air de 2010 à 2012. Le montage n’est pas plus compliqué que pour les solutions ci-dessus. Et le prix ? Il défie toute concurrence. Pour quelques euros vous disposez d’un adaptateur et des outils pour démonter votre MacBook Air. Ensuite, vous achetez un SSD Type M2 : Un Crucial MX500 de 256Go par exemple. Il est vendu 50€ sur Amazon. Au total, ça vous fait un nouveau disque SSD pour votre MacBook Air pour 50€ plus le prix de l'adaptateur. Attention: Pour un MacBook Air 2011, prenez bien un disque SATA, au format M2. (Les disques PCIE sont incompatibles).
 
