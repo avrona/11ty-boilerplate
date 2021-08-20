@@ -31,4 +31,4 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           localPath: './dist'
-          remotePath: './lamp0/web/vhosts/crm.6337.fr/htdocs'
+          remotePath: './lamp0/web/vhosts/www.6337.fr/htdocs'
