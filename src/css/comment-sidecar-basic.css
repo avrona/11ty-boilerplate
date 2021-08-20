@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 aside#comment-sidecar p.cs-title {
     font-size: 36px;
     margin: 20px 0px 10px 0px;
@@ -65,3 +66,4 @@ aside#comment-sidecar  form .cs-emailHint {
     font-size: 80%;
     width: 100%;
 }
+/* purgecss stop ignore */
