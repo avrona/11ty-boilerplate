@@ -44,7 +44,7 @@ var emailValidated = false
 
 document.addEventListener("DOMContentLoaded", function() {
 emailMessage.style = 'display:none';
-// successMessage.style = 'display:none';
+//successMessage.style = 'display:none';
 submit.disabled = true;
 submit.setAttribute("disabled","")
 }
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     break
                 // MacBook
                 case "mb":
-                    alert ("Macbook");
+                    mbpopup();
                     break
                 // iMac
                 case "imac":
@@ -275,6 +275,14 @@ function formReset() {
 
 function estimate() {
     let sum = 0 ;
+    // Cas si backlight ou connecteur
+    if (valuesform.idproblem == "backlight") {
+      sum = sum - 60;
+    }
+    if (valuesform.idproblem == "connector") {
+      sum = sum - 40;
+    }
+    // Cas en fonction de modèle et écran
     switch (valuesform.idmodel) {
         case "mbpu":
             sum = sum + 220 ;
@@ -497,7 +505,23 @@ function submitCheck() {
   }
 }
 
+function mbpopup() {
 
+  // Show the success message modal with MacBook 12 warning
+   
+  successMessage.classList.add('is-active');
+  modalForm.classList.add('is-active'); // Hide Modal, show form
+  document.getElementById("modalmessage").innerHTML = "Nous vous remercions de la confiance que vous nous portez.\<br\>\<br\> Votre MacBook 12 ne fait malheureusement pas partie des modèles que nous réparons. Vous pourrez en lire plus dans un article de blog bientôt disponible. Navré de ne pouvoir vous aider.</p>";
+  const exits = successMessage.querySelectorAll('.modal-exit');
+  exits.forEach(function(exit) {
+    exit.addEventListener('click', function(event) {
+      event.preventDefault();
+      successMessage.classList.remove('is-active');
+      modalForm.classList.remove('is-active');
+      
+    });
+  });
+}
 
 function showModalForm(){
 
