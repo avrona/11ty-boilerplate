@@ -555,6 +555,8 @@ function sendEstimate(){
    // Sending and receiving data in JSON format using POST method
         //
         var xhr = new XMLHttpRequest();
+        // rematch valuesform with ZOHO good values
+        valuematch();
         // formData
         var formData = {
             zf_referrer_name: "https://www.6337.fr/prise-en-charge",
