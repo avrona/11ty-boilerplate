@@ -4,7 +4,7 @@ date: "2020-02-19"
 tags: 
   - "blog"
 coverImage: "images/MacBook-Air-boots-with-black-screen-624x468-1.jpeg"
-coverImageAlt: ""
+coverImageAlt: "Exemple d'écra de MacBook Air avec rétroéclairage en panne."
 subtitle: "Un écran noir ? Et si cela ne venait pas de la carte-mère ? On vous en dit plus sur ce problème rencontré maintes fois, et sur lequel même les 'genius' de l'AppleStore butte parfois... "
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
@@ -52,7 +52,7 @@ Le MacBook Air mi-2014 utilise un SSD compatible avec les mac portables (MacBook
 
 D'ailleurs, c'est encore le meilleur moyen de chercher ces SSD: "Apple SSD 12+16" ou "Apple SSD MacBook Pro Retina".
 
-![Tableau comparatif SSD MacBook Air MacBook Pro](images/SSD-connectors.jpg)
+{% image images/SSD-connectors.jpg, 'Tableau comparatif SSD MacBook Air MacBook Pro' %}
 
 ## En conclusion:
 
