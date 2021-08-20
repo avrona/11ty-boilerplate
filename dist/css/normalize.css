@@ -181,6 +181,11 @@ figure {
  * Address odd `em`-unit font size rendering in all browsers.
  */
 
+code {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
 /* Forms
    ========================================================================== */
 
@@ -232,7 +237,8 @@ button {
  */
 
 button,
-html input[type="button"] {
+html input[type="button"],
+input[type="submit"] {
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
 }

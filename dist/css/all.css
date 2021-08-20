@@ -30,6 +30,9 @@ readers do not read off random characters that represent icons */
 .fa-adjust:before {
   content: "\f042"; }
 
+.fa-angle-down:before {
+  content: "\f107"; }
+
 .fa-angle-right:before {
   content: "\f105"; }
 

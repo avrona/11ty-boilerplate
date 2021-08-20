@@ -49,6 +49,9 @@
 
 
 /* Hide all steps by default: */
+.tab {
+  display: none;
+}
 
 /* Mark the active step: */
 .step.active {
@@ -131,7 +134,7 @@
   margin-right: -20px;
 }
 
-/*----------------- Testimonial Slider ---------------------*/
+/*----------------- Testimonial Slider ---------------------
 
 
 .slide-wrap {
@@ -186,7 +189,7 @@
 #next-slide {
   margin-right: -20px;
 }
-
+*/
 
 /*----------------- Rotation text ---------------------*/
 
@@ -199,6 +202,7 @@
   text-align: left;
 }
 .rotator-wrapper span span {
+ 
   position: absolute;
   font-weight: bold;
   top: -0px;
