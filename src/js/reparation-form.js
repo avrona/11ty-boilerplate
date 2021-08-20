@@ -354,7 +354,9 @@ function valuematch() {
       valuesform.problem = "la batterie ne charge pas";
       break;
     case "motherboard":
+      console.log("problem avant:", valuesform.problem);
       valuesform.problem = "la carte-mère est en panne";
+      console.log("problem après:", valuesform.problem);
       break;
     case "slow":
       valuesform.problem = "la réactivité est (très) faible";
