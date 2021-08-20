@@ -580,6 +580,7 @@ function sendEstimate(){
         xhr.open("POST", "../zformspost/prise-en-charge.php");
 
         xhr.onreadystatechange = function() { if (xhr.readyState === 4 && xhr.status === 200) { console.log(xhr.responseText);
+          alert("Une erreur est survenue. Contactez alex@6337.fr par email pour la signaler.")
         } }
         // xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
         xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
