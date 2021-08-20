@@ -5,8 +5,8 @@ tags:
   - "blog"
   - "non-classe"
 coverImage: "images/OWC-Mac-Air-SSD.jpg"
-coverImageAlt: ""
-subtitle: ""
+coverImageAlt: "SSD de remplacement de OWC conçu pour les MacBook Air"
+subtitle: "Contrairement aux idées reçues, il existe des solutions pour remplacer son SSD sur les MacBook Air. Voici nos 4 meilleures options, de la plus sûre à la moins (et plus technique)"
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---
