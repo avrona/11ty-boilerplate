@@ -52,7 +52,7 @@ Le MacBook Air mi-2014 utilise un SSD compatible avec les mac portables (MacBook
 
 D'ailleurs, c'est encore le meilleur moyen de chercher ces SSD: "Apple SSD 12+16" ou "Apple SSD MacBook Pro Retina".
 
-{% image images/SSD-connectors.jpg, 'Tableau comparatif SSD MacBook Air MacBook Pro' %}
+{% image "images/SSD-connectors.jpg", 'Tableau comparatif SSD MacBook Air MacBook Pro' %}
 
 ## En conclusion:
 
