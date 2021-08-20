@@ -49,11 +49,11 @@ On se doit de vérifier tous ces éléments avec intelligence. Si on n’a pas l
 Dans notre cas, tout semblait fonctionner très bien, et cela à été confirmé en branchant un autre écran, qui lui fonctionnait.
 
 
-{% image "images/20190707\_160710-225x300.jpg", "L'emplacement du connecteur LVDS de l'écran, une fois le connecteur retiré" %}
+{% image "images/20190707\_160710.jpg", "L'emplacement du connecteur LVDS de l'écran, une fois le connecteur retiré" %}
 
-{% image "images/20190707\_160648-1-225x300.jpg", "Connecteur d'écran LVDS remplacé sur carte-mère de Macbook Pro" %}
+{% image "images/20190707\_160648-1.jpg", "Connecteur d'écran LVDS remplacé sur carte-mère de Macbook Pro" %}
 
-{% image "images/20190707\_172529-1-225x300.jpg", "Résultat du remplacement de connecteur d'écran LVDS sur MacBook Pro" %}
+{% image "images/20190707\_172529-1.jpg", "Résultat du remplacement de connecteur d'écran LVDS sur MacBook Pro" %}
 
  
 Notre problème ne se trouvait donc pas sur la carte mère, mais dans l’écran.
