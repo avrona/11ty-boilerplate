@@ -354,7 +354,9 @@ function valuematch() {
       valuesform.problem = "la batterie ne charge pas";
       break;
     case "motherboard":
+      console.log("problem avant:", valuesform.problem);
       valuesform.problem = "la carte-mère est en panne";
+      console.log("problem après:", valuesform.problem);
       break;
     case "slow":
       valuesform.problem = "la réactivité est (très) faible";
@@ -554,9 +556,10 @@ function sendEstimate(){
 
    // Sending and receiving data in JSON format using POST method
         //
-        var xhr = new XMLHttpRequest();
         // rematch valuesform with ZOHO good values
         valuematch();
+        var xhr = new XMLHttpRequest();
+
         // formData
         var formData = {
             zf_referrer_name: "https://www.6337.fr/prise-en-charge",
