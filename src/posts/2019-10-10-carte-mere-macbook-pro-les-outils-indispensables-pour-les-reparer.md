@@ -23,7 +23,7 @@ On va donc se faire une petite liste des éléments de base qu’il vous faudra 
 
 Ce qui peut arriver de pire à une carte mère (la pauvre…) c’est que quelqu’un tente de réparer quelque-chose qui fonctionne.On a déjà vu ça plus d’une fois. Il y a quelques principes de bases à avoir, et de nombreux points à vérifier.
 
-{% image "images/0lCQXW9-dr-house-background-300x94.jpg", "Gregory House présentant le cerveau dont on devra se servir." %}
+{% image "images/0lCQXW9-dr-house-background.jpg", "Gregory House présentant le cerveau dont on devra se servir." %}
 
 Si une puce ne délivre pas le signal voulu, est-ce parce qu’elle est hors-service ou parce qu’une autre puce hors-service ne lui dit pas de s’allumer ? Si le signale n’arrive pas, est-ce parce que la puce en charge de fournir est hors-service ? Parce qu’elle n’est pas alimentée correctement ? Parce que la piste qui amène ce signal a grillé ? À cause d’un composant sur la piste de signal qui est en court-circuit (condensateur ou résistance) ?
 
@@ -37,7 +37,7 @@ Là, rien de haut de gamme n’est nécessaire. Un simple multimètre à 10€ v
 
 Un multimètre possède une résistance minimum, en dessous de laquelle il considère qu’il y a court-circuit. C’est à vous de connaître cette valeur, et de savoir que si votre multimètre bipe, ça veut peut-être seulement dire que la valeur à mesurer est en dessous de la limite mesurable du multimètre… et on ne peut pas y faire grand-chose. Parfois, la résistance de vos pointes de multimètre sera aussi grosse que ce que vous cherchez à mesurer (0.5 Ohm, ou 1 Ohm).
 
-{% image "images/mutlimetre-300x239.jpg", "Exemple de multimètre utilisé pour le diagnostic de Mac" %}
+{% image "images/mutlimetre.jpg", "Exemple de multimètre utilisé pour le diagnostic de Mac" %}
 
 La seule solution est de connaître votre matériel et ses limites. Acheter un multimètre avec un sensibilité accrue n’est que dépense inutile pour diagnostiquer une carte mère de MacBook Pro.
 
@@ -47,7 +47,7 @@ On reviendra dans d'autres articles, dans le futur, sur l'utilisation du multim�
 
 Oui, on parle des schémas électroniques de la carte mère du MacBookPro ou MacBook Air. Il est bien plus facile de diagnostiquer une carte lorsqu’on a le schéma du PCB (Printed Circuit Board), et le schéma électronique. Le premier, au format .BRD, montre ou se trouve chaque composant sur la carte mère. Le second, au format .PDF, montre quels composants sont reliés ensemble, quels sont leurs caractéristiques ou leurs rôles. C’est ce schéma qui nous permet de vous parler des noms de pistes (PP3V3\_S0, par exemple) et de nommer des composants.
 
-{% image "images/schema-300x192.jpg", "Exemple d'un (petit) bout de schéma électronique." %}
+{% image "images/schema.jpg", "Exemple d'un (petit) bout de schéma électronique." %}
 
 Ne nous demandez pas de vous envoyer des schémas, nous ne les communiquons pas. Ils sont faciles à trouver rapidement sur Google, surtout pour les Macbook Pro, Macbook Air, iMac et même Iphone…
 
@@ -73,7 +73,7 @@ Si vous souhaitez non seulement diagnostiquer mais aussi vous initier à la micr
 
 Pour le moment, nous sommes équipé d'un Bausch & Lomb Sterezoom 5 qui doit dater des années 80. C'est un très bon rapport qualité prix et c'est bien mieux que les microscopes Made in China vendus au même prix. Contrairement à l'électronique, l'optique n'a pas beaucoup évolué récemment. Mieux vaut parfois un bon outil vintage qu'un mauvais outil récent.
 
-{% image "images/P1090325-300x246.jpg", " Notre loupe ou microscope Bausch & Lomb" %}
+{% image "images/P1090325.jpg", " Notre loupe ou microscope Bausch & Lomb" %}
 
 Si vous faites de la réparation électronique très régulièrement, ou si vous voulez vous lancer professionnellement, c’est indispensable. Les images grossies et rondes de nos [posts de blog](https://www.6337.fr/blog/) viennent de cet outil. N'hésitez pas à nous demander conseil. Nous avons fait beaucoup de recherches et d'essais avant de faire notre choix.
 
