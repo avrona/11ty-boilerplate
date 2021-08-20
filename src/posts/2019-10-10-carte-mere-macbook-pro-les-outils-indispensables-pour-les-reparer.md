@@ -61,7 +61,7 @@ Il ne faut pas grand-chose comme outil pour ouvrir et explorer un Macbook Pro ou
 
 Les kits d’[iFixit](https://eustore.ifixit.com/fr/Outils/Kits-d-outils/) sont très bien fait. Parmi les tournevis, le fameux Pentalobe 5 est indispensable. Il ne servira qu’à ouvrir le capot arrière de la machine, mais c'est impossible de faire sans. Ensuite, vous utiliserez beaucoup de Torx, en particulier T5 mais parfois aussi T8 ou T9 (pour enlever l’écran par exemple). Certaines vis sont des classiques cruciformes de petite taille.
 
-\[caption id="attachment\_318" align="aligncenter" width="381"\]![](images/pinces-300x300.jpg) Pinces brucelles\[/caption\]
+{% image "images/pinces.jpg", "Pinces brucelles." %}
 
 Il vous faudra aussi un outil plastique fin pour défaire les nappes ou connecteurs de la carte mère avant réparation. Un médiator de guitare fait bien l’affaire, ou une carte de réduction redécoupée. Préférez vraiment du plastique pour ce genre de choses (les outils métalliques peuvent faire court-circuit). Enfin, une pince brucelle (petite pince de labo) sera utile, voir même indispensable si vous vous lancez dans la soudure.
 
@@ -69,7 +69,7 @@ Il vous faudra aussi un outil plastique fin pour défaire les nappes ou connecte
 
 Si vous souhaitez non seulement diagnostiquer mais aussi vous initier à la micro-soudure pour réparer, un microscope améliorera grandement votre confort. C’est un loupe à grossissement jusque x40, parfois plus, sur un pied déporté. Elle permet de voir avec ses deux yeux, et donc d’apprécier la profondeur (contrairement au microscope de biologie avec une seule oculaire). C'est indispensable pour travailler et souder des composant sur des carte mère de MacBook Pro. Cela peut coûter assez cher, de quelques centaines d’euros pour un modèle fiable d’occasion, jusqu’à plusieurs milliers d’euros pour les modèles pro.
 
-{% image "images/P1090423-300x200.jpg", "Le genre de chose qu'un microscope binoculaire permet de voir : un condensateur qui à mal vécu une surtension." %}
+{% image "images/P1090423.jpg", "Le genre de chose qu'un microscope binoculaire permet de voir : un condensateur qui à mal vécu une surtension." %}
 
 Pour le moment, nous sommes équipé d'un Bausch & Lomb Sterezoom 5 qui doit dater des années 80. C'est un très bon rapport qualité prix et c'est bien mieux que les microscopes Made in China vendus au même prix. Contrairement à l'électronique, l'optique n'a pas beaucoup évolué récemment. Mieux vaut parfois un bon outil vintage qu'un mauvais outil récent.
 
