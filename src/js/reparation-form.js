@@ -317,6 +317,64 @@ function estimate() {
 return sum ;}
 
 
+function valuematch() {
+  switch (valuesform.idmodel) {
+    case "mbpu":
+      valuesform.model = "MacBook Pro";
+      break;
+    case "mbpr":
+      valuesform.model = "MacBook Pro Retina";
+      break;
+    case "mbptb":
+      valuesform.model = "MacBook Pro Touchbar (USB-C)";
+      break;
+    case "mba":
+      valuesform.model = "MacBook Air";
+      break;
+  }
+  switch (valuesform.idscreen) {
+    case "11p":
+      valuesform.screen = "11 pouces";
+      break;
+    case "13p":
+      valuesform.screen = "13 pouces";
+      break;
+    case "15p":
+      valuesform.screen = "15 pouces";
+      break;
+    case "16p":
+      valuesform.screen = "16 pouces";
+      break;
+    case "17p":
+      valuesform.screen = "17 pouces";
+      break;
+  }
+  switch (valuesform.idproblem) {
+    case "nocharge":
+      valuesform.problem = "la batterie ne charge pas";
+      break;
+    case "motherboard":
+      valuesform.problem = "la carte-mère est en panne";
+      break;
+    case "slow":
+      valuesform.problem = "la réactivité est (très) faible";
+      break;
+    case "backlight":
+      valuesform.problem = "la batterie ne charge pas";
+      break;
+    case "fanspeed":
+      valuesform.problem = "les ventilateurs soufflent au constamment";
+      break;
+    case "connector":
+      valuesform.problem = "un connecteur est cassé/arraché";
+      break;
+    case "crashes":
+      valuesform.problem = "plantages inopinés";
+      break;
+  }
+
+}
+
 function showEstimate () {
     var x = document.getElementsByClassName("buttontab");
     var tab = document.getElementById("step6");
@@ -499,19 +557,18 @@ function sendEstimate(){
         var xhr = new XMLHttpRequest();
         // formData
         var formData = {
-            zf_referrer_name: "https://www.6337.fr/",
+            zf_referrer_name: "https://www.6337.fr/prise-en-charge",
             zf_redirect_url: "", 
             zc_gad: "",
             Dropdown: valuesform.model,
             Dropdown9: valuesform.screen,
             Dropdown1: valuesform.year,
-            Dropdown3: valuesform.problem,
-            Dropdown2: 'autre',
+            Dropdown3: 'autre',
+            Dropdown2: valuesform.problem,
             MultiLine: inputMessage.value,
             Name_Last: inputLastName.value,
             Name_First: inputFirstName.value,
             Email: inputEmail.value,
-            PhoneNumber_countrycode: '000000000',
             TermsConditions: 'on'
         }
 
