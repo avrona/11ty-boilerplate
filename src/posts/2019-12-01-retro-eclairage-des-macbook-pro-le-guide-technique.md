@@ -26,7 +26,7 @@ Le principe est simple, la première couche ne produit pas de lumière, elle ne 
 
 Le résultat est que la lumière crée par les LED, assez concentrée au départ, est diffusée de façon uniforme sur tout l’écran, puis passe au travers de la dalle LCD ou se trouve les pixels, pour afficher clairement une information qui sinon serait à peine perceptible. Les pixels de votre écran sont donc éclairés par l’arrière, par ce second système, pour que vous puissiez les distinguer : Eclairé par l’arrière = rétro-éclairage = Backlight.
 
-![Bande de LED du rétro-éclairage d'un iPod. (Wikipedia)](images/960px-IPod_Touch_2G_Backlight-495x400.jpeg)
+{% image "images/960px-IPod_Touch_2G_Backlight.jpeg", "Bande de LED du rétro-éclairage d'un iPod." %}
 Bande de LED du rétro-éclairage d'un iPod. (Wikipedia)
 
 Le rétro-éclairage est un classique des pannes de MacBook Pro, et de nombreux autres ordinateurs portables. Si le circuit en charge de l’alimentation des LED est défaillant, votre ordinateur et votre affichage fonctionnera, mais vous distinguerez à peine les informations.
@@ -55,7 +55,7 @@ On alimente une inductance, (une bobine de fil). Pour faire simple, le rôle de 
 
 On alimente donc une bobine avec 12V. En sortie de celle-ci, on place un transistor MOSFET qui servira d’interrupteur commandé. Lorsque cet interrupteur est ouvert, les électrons sont stockés dans la bobine, et quand on le ferme, ces électrons s’échappent vers la sortie (les LED, dans notre cas). La tension d’entrée stable à 12V, devient une tension sous forme de pics à 60V en sortie. Il nous suffit de filtrer ces pics avec des condensateurs (qui stockent les électrons pour lisser la sortie). On obtient une tension de sortie plus élevée que l’entrée.
 
-\[caption id="attachment\_615" align="aligncenter" width="900"\]![LP8550 driver led rétro-éclairage MacBook Pro Datasheet](images/lp8550.jpg) Extrait de la datasheet du LP8550, le driver LED qui équipe le backlight de MacBook Pro 2010 à 2012.\[/caption\]
+{% image "images/lp8550.jpg", "Extrait de la datasheet du LP8550, le driver LED qui équipe le backlight de MacBook Pro 2010 à 2012." %}
 
 Dans les faits, la fréquence de commutation du transistor permet de faire varier la hauteur de nos pics de tension (Une ouverture plus longue donne un pic plus haut, jusqu’à une certaine limite) et donc de faire varier la tension de sortie lissée.
 
@@ -106,8 +106,4 @@ Si vous êtes arrivé jusqu'ici, que vous avez tout compris, et que vous voulez 
 
 Si vous n'avez pas tout compris, c'est parce que nous ne pouvons (trop) en mettre dans un seul article. On envisage de peut-être faire quelque chose de plus détaillé, et en 2 parties, pour l'avenir. Mais si vous comprenez le principe, vous en savez déjà beaucoup sur les Mac, les écrans, et le fonctionnement de leur rétroéclairage.
 
-N'oubliez que notre boulot c'est de réparer ces machines. Alors si cet article vous à convaincu de nous confier votre Mac, c'est par ici:
-
-\[av\_button\_big label='Faire réparer mon rétroéclairage !' description\_pos='below' link='page,644' link\_target='' icon\_select='no' icon='ue800' font='entypo-fontello' custom\_font='#ffffff' color='theme-color' custom\_bg='#444444' color\_hover='theme-color' custom\_bg\_hover='#444444' av\_uid='av-aizzf' custom\_class='' admin\_preview\_bg=''\] On a tout donné pour vous convaincre là... \[/av\_button\_big\]
-
-\[/av\_textblock\]
+N'oubliez que notre boulot c'est de réparer ces machines. Alors si cet article vous à convaincu de nous confier votre Mac,[c'est par ici !](https://www.6337.fr/prise-en-charge)
