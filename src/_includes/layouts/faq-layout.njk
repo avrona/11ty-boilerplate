@@ -26,20 +26,42 @@
 
 
 {%- for faq in collections.faq -%}
-
-
- <!-- Single FAQ Card
-
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  {% include "partials/faq-template.njk"%}
-
 {% endfor %}
+
+<!---- FAQ schema -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+  {%- for faq in collections.faq -%}
+    {%- if loop.last -%}
+        {
+        "@type": "Question",
+        "name": "{{ faq.data.title }}",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{ faq.data.text }}"
+        }
+        }
+        {%- else -%}
+        {
+      "@type": "Question",
+      "name": "{{ faq.data.title }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ faq.data.text }}"
+      }
+    },
+    {% endif %}
+    {% endfor %}
+  ]
+}</script>
+
+
             </div>
         </div>
 	</div>
 </section>
  
-
-
-
  {% endblock %}
