@@ -65,6 +65,10 @@ video {
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
 
+[hidden] {
+  display: none;
+}
+
 /* Links
    ========================================================================== */
 
