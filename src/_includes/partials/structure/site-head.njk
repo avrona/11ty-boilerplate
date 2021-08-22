@@ -21,6 +21,7 @@
     <meta property="og:site_name" content="{{site.title}}">
     <meta property="og:locale" content="fr_FR">
     <meta property="article:author" content="{{site.baseURL}}">
+    <meta property="og:image" content="{{ site.img }}MBP-export.jpg"/>
 
 {% set isPost = layout == 'layouts/post.njk' %}
 
@@ -40,7 +41,7 @@
     "audience": "intéressé par l'électronique et la réparation",
     "image": {
       "@type": "ImageObject",
-      "url": "{{ coverImage }}",
+      "url": "{{ site.baseURL }}/{{ coverImage }}",
       "height": 675,
       "width": 1200
     },
