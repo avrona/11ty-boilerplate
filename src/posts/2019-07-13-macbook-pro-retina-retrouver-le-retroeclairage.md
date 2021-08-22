@@ -70,6 +70,5 @@ Après un peu de nettoyage à l’alcool, notre rétroéclairage fonctionne de n
 ### Le driver, le connecteur, le fusible, une résistance ou un condensateur: de nombreuses sources possibles d'un même problème.
 
 C'est ainsi que notre MacBook Pro à retrouvé un rétroéclairage fonctionnel. Ce cas est assez rare, et ce sont plutôt des problèmes au niveau du connecteur: il est proche du coin de l'ordinateur et subit facilement des dégâts liquides. Sur le circuit de rétroéclairage: les tensions sont élevées et les composants soumis à rude épreuve.  
-
 Besoin d'éclairages (LOL), de conseils ou d'une réparation ?  
 
