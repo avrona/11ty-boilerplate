@@ -23,7 +23,7 @@ On va donc se faire une petite liste des éléments de base qu’il vous faudra 
 
 Ce qui peut arriver de pire à une carte mère (la pauvre…) c’est que quelqu’un tente de réparer quelque-chose qui fonctionne.On a déjà vu ça plus d’une fois. Il y a quelques principes de bases à avoir, et de nombreux points à vérifier.
 
-\[caption id="attachment\_314" align="aligncenter" width="727"\]![](images/0lCQXW9-dr-house-background-300x94.jpg) On en à tous un. Il va falloir s'en servir.\[/caption\]
+{% image "images/0lCQXW9-dr-house-background.jpg", "Cerveau tendu par Dr. House." %}
 
 Si une puce ne délivre pas le signal voulu, est-ce parce qu’elle est hors-service ou parce qu’une autre puce hors-service ne lui dit pas de s’allumer ? Si le signale n’arrive pas, est-ce parce que la puce en charge de fournir est hors-service ? Parce qu’elle n’est pas alimentée correctement ? Parce que la piste qui amène ce signal a grillé ? À cause d’un composant sur la piste de signal qui est en court-circuit (condensateur ou résistance) ?
 
@@ -37,7 +37,7 @@ Là, rien de haut de gamme n’est nécessaire. Un simple multimètre à 10€ v
 
 Un multimètre possède une résistance minimum, en dessous de laquelle il considère qu’il y a court-circuit. C’est à vous de connaître cette valeur, et de savoir que si votre multimètre bipe, ça veut peut-être seulement dire que la valeur à mesurer est en dessous de la limite mesurable du multimètre… et on ne peut pas y faire grand-chose. Parfois, la résistance de vos pointes de multimètre sera aussi grosse que ce que vous cherchez à mesurer (0.5 Ohm, ou 1 Ohm).
 
-\[caption id="attachment\_340" align="aligncenter" width="426"\]![](images/mutlimetre-300x239.jpg) 15€ pour une multimètre, c'est largement suffisant.\[/caption\]
+{% image "images/mutlimetre.jpg", "15€ pour une multimètre, c'est largement suffisant." %}
 
 La seule solution est de connaître votre matériel et ses limites. Acheter un multimètre avec un sensibilité accrue n’est que dépense inutile pour diagnostiquer une carte mère de MacBook Pro.
 
@@ -47,7 +47,7 @@ On reviendra dans d'autres articles, dans le futur, sur l'utilisation du multim�
 
 Oui, on parle des schémas électroniques de la carte mère du MacBookPro ou MacBook Air. Il est bien plus facile de diagnostiquer une carte lorsqu’on a le schéma du PCB (Printed Circuit Board), et le schéma électronique. Le premier, au format .BRD, montre ou se trouve chaque composant sur la carte mère. Le second, au format .PDF, montre quels composants sont reliés ensemble, quels sont leurs caractéristiques ou leurs rôles. C’est ce schéma qui nous permet de vous parler des noms de pistes (PP3V3\_S0, par exemple) et de nommer des composants.
 
-\[caption id="attachment\_317" align="aligncenter" width="747"\]![Schéma de charge de MacBook Pro](images/schema-300x192.jpg) Voilà à quoi ressemble un (petit) bout de schéma.\[/caption\]
+{% image "images/schema.jpg", "Schéma électronique d'un MacBook Pro" %}
 
 Ne nous demandez pas de vous envoyer des schémas, nous ne les communiquons pas. Ils sont faciles à trouver rapidement sur Google, surtout pour les Macbook Pro, Macbook Air, iMac et même Iphone…
 
@@ -61,7 +61,7 @@ Il ne faut pas grand-chose comme outil pour ouvrir et explorer un Macbook Pro ou
 
 Les kits d’[iFixit](https://eustore.ifixit.com/fr/Outils/Kits-d-outils/) sont très bien fait. Parmi les tournevis, le fameux Pentalobe 5 est indispensable. Il ne servira qu’à ouvrir le capot arrière de la machine, mais c'est impossible de faire sans. Ensuite, vous utiliserez beaucoup de Torx, en particulier T5 mais parfois aussi T8 ou T9 (pour enlever l’écran par exemple). Certaines vis sont des classiques cruciformes de petite taille.
 
-\[caption id="attachment\_318" align="aligncenter" width="381"\]![](images/pinces-300x300.jpg) Pinces brucelles\[/caption\]
+{% image "images/pinces.jpg", "Pinces brucelles" %}
 
 Il vous faudra aussi un outil plastique fin pour défaire les nappes ou connecteurs de la carte mère avant réparation. Un médiator de guitare fait bien l’affaire, ou une carte de réduction redécoupée. Préférez vraiment du plastique pour ce genre de choses (les outils métalliques peuvent faire court-circuit). Enfin, une pince brucelle (petite pince de labo) sera utile, voir même indispensable si vous vous lancez dans la soudure.
 
@@ -69,11 +69,11 @@ Il vous faudra aussi un outil plastique fin pour défaire les nappes ou connecte
 
 Si vous souhaitez non seulement diagnostiquer mais aussi vous initier à la micro-soudure pour réparer, un microscope améliorera grandement votre confort. C’est un loupe à grossissement jusque x40, parfois plus, sur un pied déporté. Elle permet de voir avec ses deux yeux, et donc d’apprécier la profondeur (contrairement au microscope de biologie avec une seule oculaire). C'est indispensable pour travailler et souder des composant sur des carte mère de MacBook Pro. Cela peut coûter assez cher, de quelques centaines d’euros pour un modèle fiable d’occasion, jusqu’à plusieurs milliers d’euros pour les modèles pro.
 
-\[caption id="attachment\_320" align="aligncenter" width="605"\]![](images/P1090423-300x200.jpg) Le genre de chose qu'un microscope binoculaire permet de voir : un condensateur qui à mal vécu une surtension.\[/caption\]
+{% image "images/P1090423.jpg", "un condensateur qui à mal vécu une surtension: grillé !" %}
 
 Pour le moment, nous sommes équipé d'un Bausch & Lomb Sterezoom 5 qui doit dater des années 80. C'est un très bon rapport qualité prix et c'est bien mieux que les microscopes Made in China vendus au même prix. Contrairement à l'électronique, l'optique n'a pas beaucoup évolué récemment. Mieux vaut parfois un bon outil vintage qu'un mauvais outil récent.
 
-\[caption id="attachment\_319" align="aligncenter" width="492"\]![](images/P1090325-300x246.jpg) Notre loupe Bausch & Lomb\[/caption\]
+{% image "images/P1090325.jpg", "Notre loupe Bausch & Lomb" %}
 
 Si vous faites de la réparation électronique très régulièrement, ou si vous voulez vous lancer professionnellement, c’est indispensable. Les images grossies et rondes de nos [posts de blog](https://www.6337.fr/blog/) viennent de cet outil. N'hésitez pas à nous demander conseil. Nous avons fait beaucoup de recherches et d'essais avant de faire notre choix.
 
@@ -102,7 +102,5 @@ Il y a bien sûr d’autres consommables tels que des composants de remplacement
 ## Conclusion
 
 Voilà, vous en savez un peu plus sur les outils du réparateur de carte mère Macbook Pro et Macbook Air. Si vous voulez vous lancer, si vous avez des questions sur votre diagnostic ou si vous avez besoin d’un coup de main : demandez-nous ! On est là pour ça. Si vous avez tenté de réparer votre propre mac et que vous avez tout cassé, on est surement votre dernier espoir...
-
-\[av\_button\_big label='Contactez-nous !' description\_pos='below' link='page,249' link\_target='\_blank' icon\_select='yes-left-icon' icon='ue8b9' font='entypo-fontello' custom\_font='#ffffff' color='theme-color' custom\_bg='#444444' color\_hover='theme-color' custom\_bg\_hover='#444444' av\_uid='av-8qhzu' custom\_class='' admin\_preview\_bg=''\] D'autres questions ? Vous ne vous sentez pas capables de faire ça seul ? \[/av\_button\_big\]
 
 (Non, nous ne facturons pas le moindre conseil. On aime ce métier, et on aime le partager… gratuitement. Le savoir est clé dans cette activité !)
