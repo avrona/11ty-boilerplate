@@ -17,16 +17,16 @@
           <div class="navbar-start">
 
             {% for item in navigation.items %}
-            <a class="navbar-item has-text-weight-semibold is-size-5" href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+            <a class="navbar-item has-text-weight-semibold is-size-6 is-size-5-mobile" href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
             {% endfor %}
             
-            <div class="navbar-item has-dropdown is-hoverable has-text-weight-semibold is-size-5">
+            <div class="navbar-item has-dropdown is-hoverable has-text-weight-semibold is-size-6 is-size-5-mobile">
               <a class="navbar-link">
                 Plus...
               </a>
               <div class="navbar-dropdown">
                   {% for item in navigation.itemsmore %}
-                  <a class="navbar-item has-text-weight-semibold is-size-5" href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+                  <a class="navbar-item has-text-weight-semibold is-size-6 is-size-5-mobile" href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
 
                   {% endfor %}
               </div>
