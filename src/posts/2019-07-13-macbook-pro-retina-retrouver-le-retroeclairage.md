@@ -11,7 +11,7 @@ permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---
 
-\[av\_textblock size='' font\_color='' color='' av-medium-font-size='' av-small-font-size='' av-mini-font-size='' av\_uid='av-k0v6ekrw' custom\_class='' admin\_preview\_bg=''\]  
+
 **Modèle:** MacBook Pro Retina  
 **Numéro de modèle:**  
 **Numéro de carte mère:**  
@@ -50,21 +50,26 @@ On se doit de vérifier tous ces éléments avec intelligence. Si on n’a pas l
 Dans notre cas, tout semblait fonctionner très bien, et cela à été confirmé en branchant un autre écran, qui lui fonctionnait.
 
   
-\[/av\_textblock\]
+<div class="columns is-centered">
+   <div class="column is-one-third">
 
-\[av\_one\_third first min\_height='' vertical\_alignment='' space='' custom\_margin='' margin='0px' row\_boxshadow='' row\_boxshadow\_color='' row\_boxshadow\_width='10' link='' linktarget='' link\_hover='' title\_attr='' alt\_attr='' padding='0px' highlight='' highlight\_size='' border='' border\_color='' radius='0px' column\_boxshadow='' column\_boxshadow\_color='' column\_boxshadow\_width='10' background='bg\_color' background\_color='' background\_gradient\_color1='' background\_gradient\_color2='' background\_gradient\_direction='vertical' src='' background\_position='top left' background\_repeat='no-repeat' animation='' mobile\_breaking='' mobile\_display='' av\_uid='av-kh0hg'\]
+     {% image "images/20190707\_160710.jpg", "Connecteur LVDS retiré sur carte-mère de MacBook Pro" %}
 
-\[av\_image src='https://www.6337.fr/wp-content/uploads/2019/07/20190707\_160710-225x300.jpg' attachment='278' attachment\_size='medium' align='center' styling='' hover='' link='' target='' caption='' font\_size='' appearance='' overlay\_opacity='0.4' overlay\_color='#000000' overlay\_text\_color='#ffffff' copyright='' animation='no-animation' av\_uid='av-k0v6grgi' custom\_class='' admin\_preview\_bg=''\]\[/av\_image\]
+       </div>
+  <div class="column is-one-third">
+  
+         {% image "images/20190707\_160648-1.jpg", "Connecteur LVDS de remplacement avant soudure, sur une carte-mère de MacBook Pro" %}
 
-\[/av\_one\_third\]\[av\_one\_third min\_height='' vertical\_alignment='' space='' custom\_margin='' margin='0px' row\_boxshadow='' row\_boxshadow\_color='' row\_boxshadow\_width='10' link='' linktarget='' link\_hover='' title\_attr='' alt\_attr='' padding='0px' highlight='' highlight\_size='' border='' border\_color='' radius='0px' column\_boxshadow='' column\_boxshadow\_color='' column\_boxshadow\_width='10' background='bg\_color' background\_color='' background\_gradient\_color1='' background\_gradient\_color2='' background\_gradient\_direction='vertical' src='' background\_position='top left' background\_repeat='no-repeat' animation='' mobile\_breaking='' mobile\_display='' av\_uid='av-grz4s'\]
+    </div>
 
-\[av\_image src='https://www.6337.fr/wp-content/uploads/2019/07/20190707\_160648-1-225x300.jpg' attachment='277' attachment\_size='medium' align='center' styling='' hover='' link='' target='' caption='' font\_size='' appearance='' overlay\_opacity='0.4' overlay\_color='#000000' overlay\_text\_color='#ffffff' copyright='' animation='no-animation' av\_uid='av-k0v6h166' custom\_class='' admin\_preview\_bg=''\]\[/av\_image\]
+  <div class="column is-one-third">
+    
+             {% image "images/20190707\_172529-1.jpg", "Connecteur LVDS de remplacement avant soudure, sur une carte-mère de MacBook Pro" %}
 
-\[/av\_one\_third\]\[av\_one\_third min\_height='' vertical\_alignment='' space='' custom\_margin='' margin='0px' row\_boxshadow='' row\_boxshadow\_color='' row\_boxshadow\_width='10' link='' linktarget='' link\_hover='' title\_attr='' alt\_attr='' padding='0px' highlight='' highlight\_size='' border='' border\_color='' radius='0px' column\_boxshadow='' column\_boxshadow\_color='' column\_boxshadow\_width='10' background='bg\_color' background\_color='' background\_gradient\_color1='' background\_gradient\_color2='' background\_gradient\_direction='vertical' src='' background\_position='top left' background\_repeat='no-repeat' animation='' mobile\_breaking='' mobile\_display='' av\_uid='av-8mqt0'\]
+    </div>
+</div>
 
-\[av\_image src='https://www.6337.fr/wp-content/uploads/2019/07/20190707\_172529-1-225x300.jpg' attachment='279' attachment\_size='medium' align='center' styling='' hover='' link='' target='' caption='' font\_size='' appearance='' overlay\_opacity='0.4' overlay\_color='#000000' overlay\_text\_color='#ffffff' copyright='' animation='no-animation' av\_uid='av-k0v6h8yz' custom\_class='' admin\_preview\_bg=''\]\[/av\_image\]
 
-\[/av\_one\_third\]\[av\_textblock size='' font\_color='' color='' av-medium-font-size='' av-small-font-size='' av-mini-font-size='' av\_uid='av-k0v6f3w2' custom\_class='' admin\_preview\_bg=''\]  
 Notre problème ne se trouvait donc pas sur la carte mère, mais dans l’écran.
 
 On vous le dit tout de suite, changer le LED ou le feuillet de rétroéclairage sur des écrans collés est long, fastidieux et risqué.  
@@ -74,8 +79,6 @@ Après un peu de nettoyage à l’alcool, notre rétroéclairage fonctionne de n
 ### Le driver, le connecteur, le fusible, une résistance ou un condensateur: de nombreuses sources possibles d'un même problème.
 
 C'est ainsi que notre MacBook Pro à retrouvé un rétroéclairage fonctionnel. Ce cas est assez rare, et ce sont plutôt des problèmes au niveau du connecteur: il est proche du coin de l'ordinateur et subit facilement des dégâts liquides. Sur le circuit de rétroéclairage: les tensions sont élevées et les composants soumis à rude épreuve.  
-\[/av\_textblock\]
-
-\[av\_button\_big label='Contactez-nous' description\_pos='above' link='page,249' link\_target='\_blank' icon\_select='yes-left-icon' icon='ue804' font='entypo-fontello' custom\_font='#ffffff' color='theme-color' custom\_bg='#444444' color\_hover='theme-color' custom\_bg\_hover='#444444' av\_uid='av-8zous' custom\_class='' admin\_preview\_bg=''\]  
+  
 Besoin d'éclairages (LOL), de conseils ou d'une réparation ?  
-\[/av\_button\_big\]
+
