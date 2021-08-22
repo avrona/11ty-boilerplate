@@ -51,22 +51,15 @@ Dans notre cas, tout semblait fonctionner très bien, et cela à été confirmé
 
   
 <div class="columns is-centered">
-   <div class="column is-one-third">
-
-     {% image "images/20190707\_160710.jpg", "Connecteur LVDS retiré sur carte-mère de MacBook Pro" %}
-
-       </div>
-  <div class="column is-one-third">
-  
-         {% image "images/20190707\_160648-1.jpg", "Connecteur LVDS de remplacement avant soudure, sur une carte-mère de MacBook Pro" %}
-
-    </div>
-
-  <div class="column is-one-third">
-    
-             {% image "images/20190707\_172529-1.jpg", "Connecteur LVDS de remplacement avant soudure, sur une carte-mère de MacBook Pro" %}
-
-    </div>
+<div class="column is-one-third">
+{% image "images/20190707\_160710.jpg", "Connecteur LVDS retiré sur carte-mère de MacBook Pro" %}
+</div>
+<div class="column is-one-third">
+{% image "images/20190707\_160648-1.jpg", "Connecteur LVDS de remplacement avant soudure, sur une carte-mère de MacBook Pro" %}
+</div>
+<div class="column is-one-third">
+{% image "images/20190707\_172529-1.jpg", "Connecteur LVDS de remplacement avant soudure, sur une carte-mère de MacBook Pro" %}
+</div>
 </div>
 
 
