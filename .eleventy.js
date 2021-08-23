@@ -8,7 +8,7 @@ const eleventyGoogleFonts = require("eleventy-google-fonts");
 
 // FULL SIZE Image pluging configuration
 function imageShortcode(src, alt) {
-  let sizes = "(min-width: 1024px) 75vw, 100vw"
+  let sizes = "(min-width: 1024px) 40vw, 100vw"
   let srcPrefix = `./src/`
   src = srcPrefix + src
   console.log(`Generating image(s) from:  ${src}`)
