@@ -1,3 +1,4 @@
+/* 
 aside#comment-sidecar p.cs-title {
     font-size: 36px;
     margin: 20px 0px 10px 0px;
@@ -8,7 +9,10 @@ aside#comment-sidecar div.cs-post {
     margin: 15px 0px 15px 0px;
     clear: both;
     min-height: 65px; /* correspond to avatar size */
+    /*
 }
+
+/*
 aside#comment-sidecar div.cs-avatar{
     float: left;
     padding: 10px 0 0 0;
@@ -64,4 +68,4 @@ aside#comment-sidecar form .cs-url-group {
 aside#comment-sidecar  form .cs-emailHint {
     font-size: 80%;
     width: 100%;
-}
+} */

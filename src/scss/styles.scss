@@ -42,6 +42,10 @@ $modal-content-width: 720px;
 @import "./node_modules/bulma/sass/layout/_all.sass";
 
 // Import style for comment sidecar
+/*! purgecss start ignore */
+
+/*! purgecss end ignore */
+
 
 aside#comment-sidecar p.cs-title {
     font-size: 36px;
