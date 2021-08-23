@@ -6,6 +6,7 @@ permalink: "cgv-cgu/"
 jsfile: ["../js/navbarmanagement.js" ]
 ---
 
+
 ### [Télécharger les Conditions Générales de Vente](../images/CGV.pdf)
 
 ## Qui sommes-nous ?
@@ -89,3 +90,10 @@ Nous ne stockons aucune données confidentielles essentielles. Nous n'avons donc
 Il n'y en a pas non plus. (Et c'est pas prévu qu'il y en ait...)
 
 
+## Crédits photo
+
+La photo de [page d'acceuil](https://www.6337.fr), les photos de l'article [Mac qui à pris du liquide: reflexes, guides et conseils](https://www.6337.fr/mac-qui-a-pris-du-liquide-reflexes-guide-et-conseils/) sont des photos sous licence [Creative Commons CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) originellement publiée sur ifixit.com. Elles ont été redimensionnées pour utilisation sur ce site. Elles sont, elles aussi libres et distribuables sous la même licence.
+
+Les logos, visuels et marques présents sur ce site sont la propriété de leur détenteur respectif.
+
+Toute autre photo est la propriété de 6337.fr. 
