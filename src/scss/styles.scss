@@ -31,7 +31,6 @@ $modal-content-width: 720px;
 
 // Update some of Bulma's component variables
 
-
 // Import only what you need from Bulma
 @import "./node_modules/bulma/sass/utilities/_all.sass";
 @import "./node_modules/bulma/sass/base/_all.sass";
@@ -41,7 +40,6 @@ $modal-content-width: 720px;
 @import "./node_modules/bulma/sass/grid/_all.sass";
 @import "./node_modules/bulma/sass/helpers/_all.sass";
 @import "./node_modules/bulma/sass/layout/_all.sass";
-
 
 // Import style for comment sidecar
 /*! purgecss start ignore */
