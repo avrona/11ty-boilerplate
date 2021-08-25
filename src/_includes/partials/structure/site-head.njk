@@ -29,7 +29,12 @@ End Google Tag Manager -->
     <meta property="og:site_name" content="{{site.title}}">
     <meta property="og:locale" content="fr_FR">
     <meta property="article:author" content="{{site.baseURL}}">
-    <meta property="og:image" content="{{ site.baseURL }}/{{ coverImage }}"/>
+    {% if coverImage %}
+    <meta property="og:image" content="{{ site.baseURL}}/{{coverImage or site.header_image}}" />
+    {% else %}
+    <meta property="og:image" content="{{site.header_image}}" />
+    {% endif %}
+
 
 {% set isPost = layout == 'layouts/post.njk' %}
 
