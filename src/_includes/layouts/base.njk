@@ -7,20 +7,22 @@
 <head>
   {% include "partials/structure/site-head.njk" %}
   
-      {%- block seo -%}
+  
+    {%- block seo -%}
 
-      <title> {{ site.title }}</title>
+    <title> {{ site.title }}</title>
     <!--Twitter Card-->
     <meta name="twitter:title" content="{{title}}">
-    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:description" content="{{ subtitle or site.description }}">
     
     <!--Schema-->
     <meta itemprop="name" content="{{title}}">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{{ subtitle or site.description}}">
     
     <!-- Facebook OpenGraph -->
     <meta property="og:title" content="{{title}}">
-    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ subtitle or site.description}}">
+
     {%- endblock -%}
   
 </head>
