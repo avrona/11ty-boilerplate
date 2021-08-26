@@ -1,5 +1,5 @@
 ---
-title: "Réparer une carte mère HS de Macbook Pro, c’est possible ça ?"
+title: "Réparer une carte mère HS de Macbook Pro, c’est possible ?"
 date: "2019-11-12"
 tags:  
   - "blog"
