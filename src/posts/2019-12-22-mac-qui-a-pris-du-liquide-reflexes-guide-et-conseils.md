@@ -66,7 +66,18 @@ Sur le MacBook Pro Unibody, il faut vous munir d'un tournevis cruciforme de peti
 
 C'est assez simple, et très similaire sur tout les MacBook Pro Unibody, sauf les plus anciens 15 pouces, ou le connecteur de batterie se trouve en-dessous de celle-ci.
 
-\[av\_horizontal\_gallery ids='755,754,756' height='20' size='portfolio' links='active' lightbox\_text='caption' link\_dest='' gap='1px' active='enlarge' initial='' control\_layout='av-control-default' id='' av\_uid='av-a6aj8' custom\_class=''\]\[/av\_horizontal\_gallery\]
+<div class="columns is-centered">
+  <div class="column is-one-third">
+    {% image "images/MBA-Unibody.jpg", "Localisation des vis du capot d'un Macbook Pro" %}
+  </div>
+  <div class="column is-one-third">
+    {% image "images/Macbookpro-unibody-open.jpg", "Ouverture du capot arrière d'un MacBook Pro" %}
+  </div>
+  <div class="column is-one-third">
+    {% image "images/MBA-Unibodybatterie2.jpg", "Connecteur de batterie d'un MacBook Pro" %}
+  </div>
+</div>
+
 
 ### Déconnecter la batterie d'un MacBook Pro Retina (2012 à 2015):
 
@@ -77,7 +88,17 @@ Même étapes ici :
 1. On retire toutes les vis du capot arrière du Mac, et on retire le capot.
 2. On déconnecte la batterie en soulevant vers le haut avec les ongles ou avec une spatule en plastique (pas de tournevis ou de métal, pour éviter les faux contacts !).
 
-\[av\_horizontal\_gallery ids='759,758,760' height='20' size='portfolio' links='active' lightbox\_text='' link\_dest='' gap='large' active='enlarge' initial='' control\_layout='av-control-default' id='' av\_uid='av-ke06s' custom\_class=''\]\[/av\_horizontal\_gallery\]
+<div class="columns is-centered">
+  <div class="column is-one-third">
+    {% image "images/MBP15-retina-backcover.jpg", "Localisation des vis d'ouverture du modèle Retina" %}
+  </div>
+  <div class="column is-one-third">
+    {% image "images/MBPretina-capot.jpg", "Ouverture du capot arrière d'un MacBook Pro Retina" %}
+  </div>
+  <div class="column is-one-third">
+    {% image "images/MBP15-retina.jpg", "Déconnection de la batterie d'un MacBook Pro Retina 15 pouces" %}
+</div>
+</div>
 
 ### Déconnecter la batterie d'un MacBook Pro Touchbar (2016 à 2019):
 
@@ -91,16 +112,50 @@ Petit conseil : il faut vraiment entendre les différents clips sauter, en utili
 4. On déconnecte le connecteur d'information de la batterie, qui se trouve sous l'autocollant. Il faut soulever la petit partie plastique avant de tirer sur le flexible
 5. On dévisse la vis Torx à tête large, et on soulève le clip métallique souple qu'elle maintenait en place... ouf, on y est.
 
-\[av\_horizontal\_gallery ids='767,763,766,765,764,762,761' height='20' size='portfolio' links='active' lightbox\_text='' link\_dest='' gap='large' active='enlarge' initial='' control\_layout='av-control-default' id='' av\_uid='av-cv6yk' custom\_class=''\]\[/av\_horizontal\_gallery\]
 
-### Déconnecter la batterie d'un MacBook Pro Air 11" ou 13" :
+<div class="columns is-centered is-multiline">
+  <div class="column is-one-third">
+    {% image "images/MBP-15-TB.jpg", "Localisation des vis d'ouverture du MacBook Pro Touchbar" %}
+  </div>
+  <div class="column is-one-third">
+    {% image "images/MBP-15-TB-clips.jpg", "Le capot d'un MacBook Pro Touchbar doit être déclipsé" %}
+  </div>
+  <div class="column is-one-third">
+    {% image "images/MBP-15-TB-slide.jpg", "Le retrait du capot doit se faire avec un mouvement de glissement" %}
+  </div>
+  <div class="column is-one-third">
+    {% image "images/MBP-15-TB-infoconnector.jpg", "Deconnection du connecteur de communication avec la batterie" %}
+  </div>
+  <div class="column is-one-third">
+    {% image "images/MBP-15-TB-infoconnector-slide.jpg", "Retrait de la nappe de connection de la batterie" %}
+  </div>
+  <div class="column is-one-third">
+    {% image "images/MBP-15-TB-battscrew.jpg", "Vis de connection des connecteurs de batterie" %}
+</div>
+  <div class="column is-one-third">
+    {% image "images/MBP-15-TB-batt-open.jpg", "Débranchement de la batterie de MacBook Pro" %}
+  </div>
+</div>
+
+### Déconnecter la batterie d'un MacBook Air 11" ou 13" :
 
 On retrouve, pour les MacBook Air, la simplicité de MacBook Pro Retina. En se munissant d'un tournevis Pentalobe P5, spécial smartphone, on déconnecte rapidement la batterie.
 
 1. On retire toutes les vis du capot et on le soulève par l'arrière du Mac, pour le déposer.
-2. On soulève le connecteur de batterie, avec une spatule plastique
+2. On soulève le connecteur de batterie, avec une spatule plastique ou l'ongle sur les modèles 11 pouces. On tire la languette en plastique horizontalement (vers l'arrière) sur les 13 pouces.
 
-\[av\_horizontal\_gallery ids='771,754,769,770' height='20' size='portfolio' links='active' lightbox\_text='' link\_dest='' gap='large' active='enlarge' initial='' control\_layout='av-control-default' id='' av\_uid='av-9f2lg' custom\_class=''\]\[/av\_horizontal\_gallery\]
+<div class="columns is-centered">
+  <div class="column is-one-third">
+    {% image "images/MBA-screws.jpg", "Localisation des vis d'ouverture du modèle MacBook Air" %}
+  </div>
+  <div class="column is-one-third">
+    {% image "images/MBA-13-batt.jpg", "Deconnection de la batterie d'un MacBook Air 13 pouces" %}
+  </div>
+  <div class="column is-one-third">
+    {% image "images/MBA-11-batt.jpg", "Déconnection de la batterie d'un MacBook Pro Air 11 pouces" %}
+</div>
+</div>
+
 
 ## Étape 2 : Nettoyer la carte mère (ou emmener votre Mac chez un pro)
 
