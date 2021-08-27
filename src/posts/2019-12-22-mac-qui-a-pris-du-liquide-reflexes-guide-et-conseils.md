@@ -5,8 +5,8 @@ tags:
   - "blog"
   - "non-classe"
 coverImage: "images/Mac-liquid-icone.png"
-coverImageAlt: ""
-subtitle: ""
+coverImageAlt: "Verre renversé sur un MacBook Pro"
+subtitle: "Accident classique: un verre renversé sur un Mac. Le meilleurs réflexe est d'éteindre la machine et débrancher la batterie. On vous expliquer comment."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---
