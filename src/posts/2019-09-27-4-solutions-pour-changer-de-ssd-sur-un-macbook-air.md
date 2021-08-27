@@ -5,8 +5,8 @@ tags:
   - "blog"
   - "non-classe"
 coverImage: "images/OWC-Mac-Air-SSD.jpg"
-coverImageAlt: ""
-subtitle: ""
+coverImageAlt: "SSD et Macbook Air"
+subtitle: "Enfin un guide complet sur les SSD des MacBook Air: connecteurs, caractéristiques, solutions pour le remplacement... tout y est."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---

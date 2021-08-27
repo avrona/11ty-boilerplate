@@ -5,7 +5,7 @@ tags:
   - "blog"
   - "non-classe"
 coverImage: "images/Macbook-pro-oxydation-repare-2.jpg"
-coverImageAlt: ""
+coverImageAlt: "Image au microscope de composants oxydés sur une carte-mère"
 subtitle: "Un verre renversé: un catastrophe pour vous, mais un simple cas d'école pour nous. Eclaircissement sur les réflexes à voir et les réparations qui s'imposent."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
@@ -82,7 +82,15 @@ Souder ce genre de composants demande un peu de rigueur et de technique. Ce sont
 
 La technique consiste à utiliser le coté capillaire ([la tension superficielle](https://fr.wikipedia.org/wiki/Tension_superficielle), pour être exact) de l’étain fondu. Une fois positionné de façon approximative, la résistance vient se mettre en place toute seule. L’étain fondu l’attire dans son emplacement. Mais une petit vidéo vaut mieux qu'un long discours. Ci-dessous, un extrait de l'excellente chaîne Youtube [The Art of Repair](https://www.youtube.com/channel/UCG8Y3ARZq5s-FyasBOGNrnQ).
 
-\[video width="480" height="270" mp4="https://www.6337.fr/wp-content/uploads/2019/10/giphy-artofrepair.mp4" loop="true"\]\[/video\]
+
+<div class="columns is-centered">
+  <div class="column is-half">
+    <video controls width="100%">
+      <source src="../images/giphy-artofrepair.mp4" type="video/mp4">
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+  </div>
+</div>
 
 On peut facilement faire la différence entre le avant et après, sur les photos ci-dessous.
 
@@ -97,10 +105,14 @@ Il nous a fallu :
 
 Vu la petite taille de la zone, nous ne faisons pas passer la carte par un bain dans le bac à ultrason. Le nettoyage minutieux à l’alcool IPA, et avec un peu de chaleur enlève la majorité du flux.
 
-{% image "images/Macbook-pro-oxydation-2.jpg", "Zone oxydée de la carte mère, avant réparation." %}
-
-{% image "images/Macbook-pro-oxydation-repare-2.jpg", "La carte mère du Macbook Pro après réparation et nettoyage." %}
-
+<div class="columns is-centered">
+  <div class="column is-half">
+    {% image "images/Macbook-pro-oxydation-2.jpg", "Zone oxydée de la carte mère, avant réparation." %}
+  </div>
+  <div class="column is-half">
+    {% image "images/Macbook-pro-oxydation-repare-2.jpg", "La carte mère du Macbook Pro après réparation et nettoyage." %}
+  </div>
+</div>
 
 ## (Encore) une carte mère de MacBook Pro réparée
 

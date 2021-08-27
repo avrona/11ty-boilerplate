@@ -5,7 +5,7 @@ tags:
   - "blog"
   - "non-classe"
 coverImage: "images/P1100139-2.jpg"
-coverImageAlt: ""
+coverImageAlt: "Image d'un écran sans rétroéclairage, eclairé artificiellement par l'arrière."
 subtitle: "Le premier guide détaillé et en français pour diagnostiquer les problèmes de rétroéclairage des MacBook Pro et MacBook Air. A vos multimètres !"
 permalink : "./{{ page.fileSlug }}/"
 layout: "layouts/post.njk"

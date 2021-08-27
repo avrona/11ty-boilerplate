@@ -5,8 +5,8 @@ tags:
   - "blog"
   - "non-classe"
 coverImage: "images/P1090325.jpg"
-coverImageAlt: ""
-subtitle: ""
+coverImageAlt: "Loupe binoculaire Bausch and Lomb"
+subtitle: "La réparation de carte-mère ne s'improvise pas. Au-délà du savoir-faire, elle nécessite une petite liste d'outils bien précis."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---

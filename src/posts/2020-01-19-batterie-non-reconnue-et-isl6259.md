@@ -4,8 +4,8 @@ date: "2020-01-19"
 tags:  
   - "blog"
 coverImage: "images/ISL6259.png"
-coverImageAlt: ""
-subtitle: "Un article un peu technique sur la gestion de batterie sur les Mac: puce ISL, capteurs de courant et problèmes de charge."
+coverImageAlt: "Schéma de la puce de gestion de charge d'un MacBook Pro"
+subtitle: "Un article un peu technique sur la gestion de batterie sur les Mac: puce ISL, capteurs de courant et problèmes de charge y sont détaillés."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---

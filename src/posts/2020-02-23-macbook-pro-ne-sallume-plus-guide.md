@@ -4,7 +4,7 @@ date: "2020-02-23"
 tags: 
   - "blog"
 coverImage: "images/c898ba6fa905ce3486c9d4326f2e4e03.png"
-coverImageAlt: ""
+coverImageAlt: "Vue latérale d'un MacBook pro et de ses connecteurs"
 subtitle: "Un guide pas-à-pas pour pouvoir poser un diagnostic clair et savoir quoi faire ou vers qui se tourner pour réparer un MacBook Pro."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'

@@ -4,8 +4,8 @@ date: "2020-02-07"
 tags: 
   - "blog"
 coverImage: "images/signal-attachment-2020-02-07-233834-2-2.jpeg"
-coverImageAlt: ""
-subtitle: ""
+coverImageAlt: "Puce de gestion d'alimentation du GPU d'un MacBook Pro, source de nombreuses pannes."
+subtitle: "Les MacBook Pro 15 sont connus pour leur solidité... et leurs pannes récurrentes. Voici un listing des pannes pour chaque modèle, et des solutions associés."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 templateEngineOverride: njk,md
@@ -93,7 +93,7 @@ Cette série de MacBook Pro, les Retina 2012 15 pouces, a connu un défaut de fa
 
 Peu de réparateurs sont au fait de ce problème alors que la solution n'est pas si compliquée : il faut reprendre ces soudures à l'étain, avec un fer adapté. Une fois les soudures refaites, plus aucun problème.
 
-![MacBook Pro retina 2012 problème soudure GPU graphique](images/signal-attachment-2020-02-07-233834-2-2.jpeg)
+{% image "images/signal-attachment-2020-02-07-233834-2-2.jpeg", "MacBook Pro retina 2012 problème soudure GPU graphique" %} 
 
 # Et ensuite...
 

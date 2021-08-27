@@ -5,8 +5,8 @@ tags:
   - "blog"
   - "non-classe"
 coverImage: "images/20190707_160648.jpg"
-coverImageAlt: ""
-subtitle: ""
+coverImageAlt: "Connecteur LVDS qui sert à la connection interne de l'écran des MacBook Pro"
+subtitle: "Entre écran, nappe de connection, connecteur ou carte-mère, les sources de pannes sont nombreuses. Voici un petit guide pour s'y retrouver."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---

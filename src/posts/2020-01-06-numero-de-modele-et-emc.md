@@ -3,7 +3,7 @@ title: "Où trouver votre numéro de carte mère"
 date: "2020-01-06"
 tags: 
   - "knowledgebase"
-subtitle: ""
+subtitle: "Le numéro de carte-mère est parfois bien caché, et difficile à débusquer. On vous détaille la localisation de chacun d'entre eux, sur chaque modèle de Mac."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---

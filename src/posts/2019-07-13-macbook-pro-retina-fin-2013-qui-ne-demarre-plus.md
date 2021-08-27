@@ -5,7 +5,7 @@ tags:
   - "blog"
   - "non-classe"
 coverImage: "images/TPS924-dimensions.png"
-coverImageAlt: ""
+coverImageAlt: "Schéma technique d'une puce TPS924"
 subtitle: "Le court-circuit est une panne classique. Elle est simple à diagnostiquer mais demande une certaine technique pour la réparer."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'

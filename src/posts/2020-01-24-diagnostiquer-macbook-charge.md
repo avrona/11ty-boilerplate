@@ -4,8 +4,8 @@ date: "2020-01-24"
 tags:  
   - "blog"
 coverImage: "images/magsafe-photo-small.jpeg"
-coverImageAlt: ""
-subtitle: "Un guide simple et direct pour diagnostiquer votre Mac qui refuse de charger."
+coverImageAlt: "Image au microscope d'un connecteur magsafe branché"
+subtitle: "Un guide simple et direct pour diagnostiquer votre Mac qui refuse de charger: Test, conseils et outils y sont listés."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---
