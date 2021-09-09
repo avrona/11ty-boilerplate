@@ -14,7 +14,7 @@ Cette question est probablement celle que l’on nous pose le plus ? « La carte
 
 C’est, en fait, notre spécialité. La majorité de nos clients sont allés voir l’Apple Store, ou un réparateur local, agréé ou non. Parfois même les deux, ou les trois. Ils ont tous obtenu la même réponse: "la carte mère de votre MacBook est HS, et il faut la changer".
 
-J’ai récemment vu quelqu’un qui vendait sur leboncoin.fr un Macbook Pro 15 pouces Retina pour pièces. Il incluait parmi les photos, celles des deux devis qu’il avait fait faire. L’un était disait "Remplacement carte mère MacBook Pro : 1100€" et l’autre mentionnait aussi une réparation de carte mère HS Macbook pro pour 1700€. Forcément, Si l'on ajoute le pris d'une carte neuve au coût de la main d'oeuvre, le prix s’en ressent. Une réparation de cette carte mère chez nous coûterai 350€ à 400€ tout au plus.
+J’ai récemment vu quelqu’un qui vendait sur leboncoin.fr un Macbook Pro 15 pouces Retina pour pièces. Il incluait parmi les photos, celles des deux devis qu’il avait fait faire. Le premier mentionnait un remplacement carte mère MacBook Pro à 1100€ et le second, une réparation de carte mère HS Macbook pro pour 1700€. Forcément, Si l'on ajoute le prix d'une carte neuve au coût de la main d'oeuvre, la facture s’en ressent. Une réparation de carte mère chez nous coûterai 350€ à 400€ tout au plus sur ce modèle.
 
 Certains pensent même qu’Apple pousse à la consommation en établissant un devis avec changement de "carte logique", dès qu’il y a des traces d’humidité sur les capteurs, alors même que le problème est tout autre.
 
