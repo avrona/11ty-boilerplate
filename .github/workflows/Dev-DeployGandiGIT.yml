@@ -1,4 +1,4 @@
-name: Eleventy Build Prod
+name: Eleventy Build Dev GandiGit
 on: workflow_dispatch
 
 jobs:
