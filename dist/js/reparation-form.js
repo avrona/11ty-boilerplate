@@ -386,6 +386,9 @@ function showEstimate () {
     // Show the results tab: 
     tab.style.display = "inline";
 
+    // Trigger plausible tracking ;
+    plausible('EstimateReparation');
+
     // Calculate the sum
     var total = estimate();
     document.getElementById("amount").innerHTML = (total + "€ TTC");
