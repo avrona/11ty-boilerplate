@@ -124,7 +124,7 @@ Un de nos projet est de pouvoir documenter chacune de nos interventions : photos
 Ce projet pourrait aboutir à deux résultats : 
 
 * Le premier serait de fournir à nos clients un **compte-rendu d'intervention** : il saurait ce qui à été fait et pourraient ainsi assurer une forme de suivi si une autre réparation est faite par un autre professionnel.
-* Le second serait de publier toutes ces informations, de façon anonyme bien sûr. N'importe quel internaute pourrait voir la liste des interventions, les photos des carte-mères, des soudures, les succès et les échecs. Une telle base serait une ressource énorme pour d'autres réparateurs (et pour nous) pour trouver des solutions. Documentation, partage et ouverture sont des valeurs qui nous animent, et les bases d'une bonne démarche scientifique pour progresser.
+* Le second serait de **publier toutes ces informations**, de façon anonyme bien sûr. N'importe quel internaute pourrait voir la liste des interventions, les photos des carte-mères, des soudures, les succès et les échecs. Une telle base serait une ressource énorme pour d'autres réparateurs (et pour nous) pour trouver des solutions. Documentation, partage et ouverture sont des valeurs qui nous animent, et les bases d'une bonne démarche scientifique pour progresser.
 
 ## Le mot de la fin
 
