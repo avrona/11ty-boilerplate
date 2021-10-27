@@ -24,49 +24,49 @@ Le déclic, entre autres, aura été de faire le test des *web vitals* de Google
 </div>
 </div>
 
-Nous avions déjà entamé cette réflexion après avoir découvert les générateurs de site statiques (dont Jekyll, le plus célébre). Nous étions bien conscients qu'un site statique était beaucoup plus adapté à nos besoins (vitrine, blog et prise de contact pour nos devis) qu'un site Wordpress. Avec, en plus, l'avantage d'être  beaucoup plus léger, rapide... et écologique (un plus qui nous parle) !
+Nous avions déjà entamé cette réflexion après avoir découvert les générateurs de site statiques (dont **Jekyll**, le plus célébre). Nous étions bien conscients qu'un site statique était beaucoup plus adapté à nos besoins (vitrine, blog et prise de contact pour nos devis) qu'un site Wordpress. Avec, en plus, l'avantage d'être  beaucoup plus léger, rapide... et écologique (un plus qui nous parle) !
 
 Alors allons voir sous le capot. On vous raconte ici comment tout cela s'est passé.
 
 ### La JAMSTACK, un nom pompeux pour dire "site statique mais pas trop".
 
-Quelle techno ? Comment s'y prendre ? Les choix techniques ont été dictés par nos capacités à coder en interne : HTML ? OK. CSS ? On fera avec. JS ? Il va falloir apprendre. Vous l'aurez compris : notre goût pour la technique ne s'arrête pas aux cartes-mères. Loin de nous rebuter, l'idée de mettre les mains dans le développement web low-tech nous enthousiasmait. Oui, ce nouveau site à été codé par nos petits doigts de soudeurs, et nous n'en sommes pas peu fiers !
+Quelle techno ? Comment s'y prendre ? Les choix techniques ont été dictés par nos capacités à coder en interne : **HTML** ? OK. **CSS** ? On fera avec. **JavaScript** ? Il va falloir apprendre. Vous l'aurez compris : notre goût pour la technique ne s'arrête pas aux cartes-mères. Loin de nous rebuter, l'idée de mettre les mains dans le développement web low-tech nous enthousiasmait. Oui, ce nouveau site à été codé par nos petits doigts de soudeurs, et nous n'en sommes pas peu fiers !
 
 #### Le CSS
-Après quelques recherches et hésitations avec Tailwind, notre choix s'est arrêté sur Bulma : Un framework CSS qui permet de ne presque pas taper de CSS... Parfait pour nous ! L'idée ? Les classes ont des noms très clairs indiquant les styles qu'elles appliquent. Et ces derniers, chez Bulma, donnent déjà quelque-chose de plutôt sexy (il n'y a qu'à voir le site web de [Signal](https://www.signal.org/fr/), l'application de messagerie, dont le CSS est basé sur Bulma).
+Après quelques recherches et hésitations avec Tailwind, notre choix s'est arrêté sur **Bulma** : Un framework CSS qui permet de ne presque pas taper de CSS... Parfait pour nous ! L'idée ? Les classes ont des noms très clairs indiquant les styles qu'elles appliquent. Et ces derniers, chez Bulma, donnent déjà quelque-chose de plutôt sexy (il n'y a qu'à voir le site web de [Signal](https://www.signal.org/fr/), l'application de messagerie, dont le CSS est basé sur Bulma).
 
 #### Le générateur de site statique
 
-Pour la partie site statique, il fallait un générateur que l'on puisse comprendre (enfin, bidouiller...). Le SSG (*Static Site Generator*) à la mode en Javascript, c'est *11ty* (aka *Eleventy*). Après avoir vu quelques tutoriels, dont un détaillant comment transformer un thème HTML5/CSS en site 11ty, la décision était prise.
+Pour la partie site statique, il fallait un générateur que l'on puisse comprendre (enfin, bidouiller...). Le SSG (*Static Site Generator*) à la mode en Javascript, c'est **11ty** (aka *Eleventy*). Après avoir vu quelques tutoriels, dont un détaillant comment transformer un thème HTML5/CSS en site 11ty, la décision était prise.
 
-L'idée de base était de le faire en deux étapes : une première ou l'on reprend le même aspect du site pour en sortir une version rapide, tout en HTML/CSS mais sous forme de modèle (un seul article de blog sert de modèle aux autres), une deuxième étape pour transférer ça sous 11ty, avec un l'utilisation d'un language de *templating* (ce sera *nunjucks*).
+L'idée de base était de le faire en deux étapes : une première ou l'on reprend le même aspect du site pour en sortir une version rapide, tout en HTML/CSS mais sous forme de modèle (un seul article de blog sert de modèle aux autres), une deuxième étape pour transférer ça sous 11ty, avec un l'utilisation d'un language de *templating* (ce sera **nunjucks**).
 
 ## Les mains dans le cambouis (enfin, le clavier)
 
-Les premiers contacts avec Visual Code Studio ("C'est comme ça qu'on code de nos jours ?!?") sont plutôt rassurants. L'outil complète vos lignes... C'est simple, confortable. Bulma et sa documentation sont également bien pensés. S'il y a bien du temps perdu, c'est sur la partie Javascript (oui, bon ce n'est pas notre métier non plus).
+Les premiers contacts avec **Visual Code Studio** ("C'est comme ça qu'on code de nos jours ?!?") sont plutôt rassurants. L'outil complète vos lignes... C'est simple, confortable. Bulma et sa documentation sont également bien pensés. S'il y a bien du temps perdu, c'est sur la partie Javascript (oui, bon ce n'est pas notre métier non plus).
 
-Nous avons rapidement pu avoir un premier jet fonctionnel, puis progressivement avancer dans la conception de chacune des pages : accueil, contact, prise-en-charge, blog, et modèle pour les pages de posts. 
+Somme toute, nous avons rapidement pu avoir un premier jet fonctionnel, puis progressivement avancer dans la conception de chacune des pages : accueil, contact, prise-en-charge, blog, et modèle pour les pages de posts. 
 
-Il s'est ensuite agi d'apprendre et bidouiller *Nunjucks*, le langage qui permet de manipuler les modèles de pages, et de diviser le site en petit blocs de code réutilisés et réagencés par 11ty (du *templating"* quoi). 
+Il s'est ensuite agi d'apprendre et bidouiller **Nunjucks**, le langage qui permet de manipuler les modèles de pages, et de diviser le site en petit blocs de code réutilisés et réagencés par 11ty (du *templating"* quoi). 
 
 Puis d'optimiser le SEO (le référencement naturel). Pas évident avec 11ty, qui nous aura donné du fil à retordre (si vous avez déjà vu la liste interminable de balises Schema.org disponibles, vous comprendrez...). 
 
 Enfin, nous avons installé un module d'optimisation d'images (relativement facilement configurable), ainsi que pleins d'autres petites choses qui paraissaient simples et ne le furent en fait pas tout le temps.
 
-Il ne manquait plus que le formulaire de devis et de contact, LA partie dynamique de notre site. Une autre paire de manches...
+Il ne manquait plus que les parties dynamiques du site, à savoir : le formulaire de devis et de contact, les commentaires aux articles de blog, et puis il y avait aussi la question de l'analyse de vos visites. "Plus que"... lol ! Ce fut une autre paire de manches.
 
 ### Formulaires, commentaires, analytics... que des nouvelles solutions
 
 #### Des formulaires à la vanille
 
-Pour les formulaires, on a fini par tout faire à la main, avec *Vanilla JS* : du javascript codé de A à Z. Certes, c'était plus technique, mais : 
+Pour les formulaires, nous avons fini par tout faire à la main, avec **Vanilla JS** : du javascript codé de A à Z. Certes, c'était plus technique, mais : 
 
-* Cela nous permet de bien comprendre comment cela fonctionne, et comment <s>l'améliorer</s> le débugger.
+* Cela nous a permis de bien comprendre comment cela fonctionnait, et nous permet de savoir comment <s>l'améliorer</s> le débugger.
 * Nous avions besoin d'intégrer un système de devis avec un calcul de prix : pas si commun dans les formulaires existants.
 
 Tant qu'à faire, nous en avons profité pour repenser l'expérience utilisateur, avec des boutons plutôt que des menus déroulant, bien mieux intégrés et très rapides à s'afficher. [L'avez-vous essayé ?](https://www.6337.fr/prise-en-charge/).
 
-L'intégration avec notre CRM (Zoho) n'a pas été une mince affaire. Nous utilisons un petit script PHP pour renvoyer le contenu du formulaire vers son API. C'est plus sûr, et cela permet de ne pas jouer avec les configuration de Cross-Site-Scripting (c'est bon, vous suivez toujours ?).
+L'intégration avec notre CRM (**Zoho**) n'a pas été une mince affaire. Nous utilisons un petit script PHP pour renvoyer le contenu du formulaire vers son API. C'est plus sûr, et cela permet de ne pas jouer avec les configuration de **Cross-Site-Scripting** (c'est bon, vous suivez toujours ?).
 
 #### "Comment-Sidecar", notre sauveur
 
@@ -78,14 +78,14 @@ Pour nos commentaires, nous avons cherché une solution qui permettait de conser
 * **Hashover** : nécessite de refaire le CSS (et il fallait plonger un peu dans le code PHP pour ça).
 * **CommentBox** : freemium, et pas auto-hebergé.
 
-... et puis nous avons trouvé Comment-Sidecar, sur github. Un petit outil très discret, qui propose des commentaires et le formulaire qui va avec, de façon rapide et facile, avec un CSS tout prêt pour Bulma. Il cochait toutes les cases : stockage local, non-rétention de données personnelles, anti-spam...
+... et puis nous avons trouvé **Comment-Sidecar**, sur github. Un petit outil très discret, qui propose des commentaires et le formulaire qui va avec, de façon rapide et facile, avec un CSS tout prêt pour Bulma. Il cochait toutes les cases : stockage local, non-rétention de données personnelles, anti-spam...
 Après quelques commandes SQL (oui, ca fait beaucoup de langagues à bidouiller en peu de temps), nos commentaires de blog étaient transférés de Wordpress vers Comment-Sidecar, et ajoutés à 11ty, sur chacune de nos pages de blog. Yeah !
 
 #### Analytics : vie-privée avant tout
 
 Si l'on se démène pour avoir un système de commentaires auto-hebergé, c'est pas pour utiliser Google Analytics ensuite. Nous avions déjà testé Matomo (qui s'appelait Piwik à l'époque) et l'avons ré-installé ici pour le tester pendant quelques semaines. 
 J'ai fini pas rechecher quelque chose de léger. Eh oui, figurez-vous qu'avec ce site statique ultra optimisé, le script de Matomo est le deuxième plus gros élément de la page d'acceuil... 28 ko.
-L'outil à la mode, c'est Plausible. Il est open-source, auto-hébergeable (mais c'est pas facile : Docker et serveur x86), et surtout il est très, très, très léger. Moins de 1 ko, à comparer aux 38 ko de GoogleAnalytics, ou au 28 de Matomo.
+L'outil à la mode, c'est **Plausible**. Il est open-source, auto-hébergeable (mais c'est pas facile : Docker et serveur x86), et surtout il est très, très, très léger. Moins de 1 ko, à comparer aux 38 ko de GoogleAnalytics, ou au 28 de Matomo.
 
 L'un des avantages principaux de ces solutions, par rapport à Google Analytics, est de pouvoir facilement les configurer pour ne retenir aucune données personnelles (adresses IP anonymisées), et de ne partager le tracking avec aucun autre site. Ainsi, la CNIL laisse la possibilité de ne pas demander d'accord (le fameux "Ce site utilise des cookies") pour ce genre d'analyse anonyme.
 Quel confort d'arriver sur un site ou vous n'avez besoin de donner votre accord pour une utilisation de données opaque !
