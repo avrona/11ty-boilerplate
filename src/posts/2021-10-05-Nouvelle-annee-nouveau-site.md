@@ -6,7 +6,7 @@ tags:
   - "Atelier"
 coverImage: "images/website-speed.jpg"
 coverImageAlt: "Google lighthouse résultats de tests"
-subtitle: "Le low-tech c'est comme le vélo: on le choisit parce que c'est rapide et pas cher. L'écologie n'est qu'une externalité positive. Voici les réflexions, cheminements, choix et difficultés vers le développement interne et le lancement de notre nouveau site."
+subtitle: "La low-tech, c'est comme le vélo : on la choisit parce que c'est rapide et pas cher. L'écologie n'est qu'une externalité positive. Voici les réflexions, cheminements, choix et difficultés vers le développement interne et le lancement de notre nouveau site."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
 ---
