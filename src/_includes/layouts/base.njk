@@ -11,7 +11,7 @@
   
     {%- block seo -%}
 
-    <title> {{ site.title }}</title>
+    <title> {{title - site.titleshort or site.title }}</title>
     <!--Twitter Card-->
     <meta name="twitter:title" content="{{title}}">
     <meta name="twitter:description" content="{{ subtitle or site.description }}">
