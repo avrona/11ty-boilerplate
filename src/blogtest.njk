@@ -1,0 +1,92 @@
+---js
+{
+    title: "Le blog de 6337 - Réparation Mac",
+    subtitle: "Des infos, nos techniques, nos astuces et quelques indiscrétions sur les Mac et la réparation",
+    layout: "layouts/blog-layout.njk",
+    jsfile: ["../js/navbarmanagement.js" ],
+        pagination: {
+            data: "collections.blog",
+            size: 5,
+            alias: "remainposts",
+            reverse: true,
+
+    },
+    permalink: "blogtest{{ pagination.pageNumber }}/",
+}
+---
+
+
+<div class="section">
+
+<!-- Featured posts are only 5 last posts -->
+{#
+{% if not pagination.previousPageLink %}
+    {% set lastposts = collections.blog | head(-5) %}
+    {% include "partials/blog/blog-featured.njk" %}
+{% endif %}
+#}
+
+
+{# {% set remainposts = collections.blog | headoff(-5) %} #}
+{%- for post in remainposts -%}
+  {% include "partials/blog/blog-box.njk" %}
+{%- endfor -%}
+
+</div>
+
+
+
+
+{#
+{% if pagination.pageLinks.length > 1 %}
+  <div class="pb-6 sm:pb-0">
+    <p class="is-size-3">
+      Showing
+      <span class="">
+        {{ (pagination.pageNumber * pagination.size) + 1 }}
+      </span>
+      to
+      <span class="">
+        {% if pagination.nextPageLink %}
+          {{ (pagination.pageNumber * pagination.size) + pagination.size }}
+        {% else %}
+          {{ collections.all.length }}
+        {% endif %}
+      </span>
+      of
+      <span class="">{{ collections.all.length }}</span>
+      results
+    </p>
+  </div>
+{% endif %}
+#}
+
+<div class="section">
+
+<nav class="pagination is-right" role="navigation" aria-label="pagination">
+  {% if pagination.previousPageLink %}
+    <a class="pagination-previous" href="{{ pagination.previousPageHref }}">Précédent</a>
+  {% else %}
+    <a class="pagination-previous is-disabled">Précédent</a>
+  {% endif %}
+
+    {% if pagination.nextPageLink %}
+    <a class="pagination-next" href="{{ pagination.nextPageHref}}">Suivant</a>
+  {% else %}
+    <a class="pagination-next is-disabled">Suivant</a>
+  {% endif %}
+
+
+<ul class="pagination-list">
+ {# <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">First</a>{% else %}First{% endif %}</li> #}
+
+    {%- for pageEntry in pagination.pages %}
+      <li><a class="pagination-link {% if page.url == pagination.hrefs[ loop.index0 ] %} is-current {% endif %}" href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+    {%- endfor %}
+
+  {# <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">Last</a>{% else %}Last{% endif %}</li> #}
+</ul>
+
+</nav>
+
+</div>

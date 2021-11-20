@@ -6,7 +6,7 @@ const path = require('path');
 const purgeCssPlugin = require("eleventy-plugin-purgecss");
 const eleventyGoogleFonts = require("eleventy-google-fonts");
 
-// FULL SIZE Image pluging configuration
+// FULL SIZE Image plugin configuration
 function imageShortcode(src, alt) {
   let sizes = "(min-width: 1024px) 40vw, 100vw"
   let srcPrefix = `./src/`
@@ -21,7 +21,7 @@ function imageShortcode(src, alt) {
     widths: [384, 512, 800, 960, 1280],
     formats: ['webp', 'jpeg'],
     urlPath: "../images/",
-    outputDir: "dist/images/",
+    outputDir: "./dist/images/",
     /* =====
     Now we'll make sure each resulting file's name will 
     make sense to you. **This** is why you need 
@@ -72,7 +72,7 @@ function thumbimageShortcode(src, alt) {
     widths: [96, 192],
     formats: ['webp', 'jpeg'],
     urlPath: "../images/",
-    outputDir: "dist/images/",
+    outputDir: "./dist/images/",
     /* =====
     Now we'll make sure each resulting file's name will 
     make sense to you. **This** is why you need 
@@ -81,6 +81,7 @@ function thumbimageShortcode(src, alt) {
     filenameFormat: function (id, src, width, format, options) {
       const extension = path.extname(src)
       const name = path.basename(src, extension)
+      console.log (`${name}-${width}w.${format}`)
       return `${name}-${width}w.${format}`
     }
   }
