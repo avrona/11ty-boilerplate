@@ -6,7 +6,7 @@ text : "Nos tarifs sont sur la base de forfaits, de 180 à 450€ TTC, selon la 
 ---
 
 
-Nos tarifs sont sur la base de forfaits, **de 180 à 450€ TTC**, selon la panne et l’âge de votre Mac. Vous devez faire une [simulation sur notre page d’accueil](https://www.6337.fr/) pour connaître votre tarif. Tout est inclus: envoi, réparation et retour.
+Nos tarifs sont sur la base de forfaits, **de 180 à 520€ TTC**, selon la panne et l’âge de votre Mac. Vous devez faire une [simulation sur notre page d’accueil](https://www.6337.fr/) pour connaître votre tarif. Tout est inclus: envoi, réparation et retour.
 
 Pas de surprises, votre cas se trouve forcément parmi les options suivantes:
 
