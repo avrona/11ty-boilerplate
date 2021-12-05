@@ -11,7 +11,7 @@
             reverse: true,
 
     },
-    permalink: "./{% if pagination.pageNumber == 0 %}blog/{% else %}blog{{ pagination.pageNumber + 1 }}/{% endif %}",
+    permalink: "./{% if pagination.pageNumber == 0 %}blog/{% else %}blog/{{ pagination.pageNumber + 1 }}/{% endif %}",
 }
 ---
 
