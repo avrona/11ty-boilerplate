@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g id="laptop_macbook_pro" transform="matrix(1,0,0,1,-649.324,-1577.94)">
+        <g id="Rectangle_2" transform="matrix(0.914148,0,0,0.752571,665.896,1598.46)">
+            <rect x="0" y="23.52" width="83.969" height="53.184" style="fill:rgb(87,109,120);"/>
+        </g>
+        <g id="Path_7" transform="matrix(1,0,0,0.828705,0,284.39)">
+            <path d="M746.076,1601.46L662.476,1601.46C661.248,1601.46 660.24,1602.47 660.236,1603.7L660.236,1660.24L748.312,1660.24L748.312,1603.7C748.311,1602.47 747.304,1601.46 746.076,1601.46ZM742.657,1655.35L665.896,1655.35L665.896,1607.05L742.657,1607.05L742.657,1655.35Z" style="fill:rgb(217,217,217);fill-rule:nonzero;"/>
+        </g>
+        <g id="Path_8" transform="matrix(1,0,0,0.416867,0,968.15)">
+            <path d="M759.232,1663.48C759.232,1663.94 758.853,1664.32 758.392,1664.32C758.39,1664.32 758.389,1664.32 758.387,1664.32L650.162,1664.32L650.161,1664.32C649.702,1664.32 649.324,1663.94 649.324,1663.49L649.324,1663.48L649.324,1661.08C649.325,1660.62 649.702,1660.25 650.161,1660.25L758.392,1660.25C758.851,1660.25 759.23,1660.62 759.232,1661.08L759.232,1663.48Z" style="fill:rgb(204,204,204);fill-rule:nonzero;"/>
+        </g>
+        <g id="Path_9" transform="matrix(1,0,0,1,-0.003,11.3696)">
+            <path d="M704.825,1603.03C704.822,1603.32 704.576,1603.57 704.277,1603.57C703.976,1603.57 703.729,1603.32 703.729,1603.02C703.729,1602.72 703.976,1602.47 704.277,1602.47C704.578,1602.47 704.825,1602.72 704.825,1603.02L704.825,1603.03Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+        </g>
+        <path id="Path_10" d="M695.832,1660.24L695.832,1660.9C695.835,1661.36 696.213,1661.73 696.672,1661.73L711.882,1661.73C712.34,1661.73 712.716,1661.35 712.72,1660.9L712.72,1660.24L695.832,1660.24Z" style="fill:rgb(201,209,209);fill-rule:nonzero;"/>
+        <g transform="matrix(0.450652,0,0,0.450652,686.747,1653.87)">
+            <g transform="matrix(1,0,0,1,23.111,11.554)">
+                <text x="0px" y="0px" style="font-family:'MyriadApple-Text', 'Myriad Apple';font-size:5.229px;fill:rgb(89,89,89);">MacBook</text>
+            </g>
+            <g transform="matrix(1,0,0,1,43.552,11.554)">
+                <text x="0px" y="0px" style="font-family:'MyriadApple-Text', 'Myriad Apple';font-size:5.229px;fill:rgb(89,89,89);">Air</text>
+            </g>
+        </g>
+    </g>
+</svg>
