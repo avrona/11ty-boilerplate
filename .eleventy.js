@@ -110,6 +110,13 @@ Image(src, options );
   return out
 }
 
+// TEMP
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(UpgradeHelper);
+};
+
 // 11ty config and filters
 module.exports = function (eleventyConfig) {
     // Copy `img/` to `_site/img`
@@ -165,6 +172,12 @@ module.exports = function (eleventyConfig) {
         zone: "Europe/Amsterdam",
     }).setLocale('fr').toLocaleString(DateTime.DATE_FULL);
 });
+
+    // Limit Filter: Copy paste from Jérôme Coupé
+    eleventyConfig.addNunjucksFilter("limit", function(array, limit) {
+      return array.slice(0, limit);
+    });
+
 
     return {
 markdownTemplateEngine: 'njk',

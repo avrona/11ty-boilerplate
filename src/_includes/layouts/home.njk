@@ -450,17 +450,18 @@
 {# looping by batch of 3 testimonials - for each slide-entry #}
 {%- for items in reviews_data.reviews | batch(3)  %}
    
-        <div class="slide-entry">
-            <div class="slide-content">  
-                <div class="columns is-centered">
+    <div class="slide-entry">
+      <div class="slide-content">  
+          <div class="columns is-centered">
 
-{# looping each testimonial from the list #}
-{%- for item in items  %}
-            {% include "partials/home/testimonials-slide.njk" %}
-{%- endfor %}
-        </div>
-            </div>
-                </div>
+            {# looping each testimonial from the list #}
+              {%- for item in items  %}
+                {% include "partials/home/testimonials-slide.njk" %}
+              {%- endfor %}
+              
+          </div>
+      </div>
+    </div>
            
 {%- endfor %}
 {# Navigation Arrows #}
