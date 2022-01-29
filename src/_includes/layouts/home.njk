@@ -448,7 +448,7 @@
         <div class="slideshow"> 
 
 {# looping by batch of 3 testimonials - for each slide-entry #}
-{%- for items in reviews_data.reviews | batch(3)  %}
+{%- for items in reviews_data.reviews | shuffle | batch(3)  %}
    
     <div class="slide-entry">
       <div class="slide-content">  
