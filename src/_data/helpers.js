@@ -1,4 +1,4 @@
-module.exports = {
+
     /**
      * Returns back some attributes based on whether the
      * link is active or a parent of an active item
@@ -7,7 +7,7 @@ module.exports = {
      * @param {String} pageUrl The page context
      * @returns {String} The attributes or empty
      */
-    getLinkActiveState(itemUrl, pageUrl) {
+    exports.getLinkActiveState = function (itemUrl, pageUrl) {
       let response = '';
   
       if (itemUrl === pageUrl) {
@@ -20,14 +20,14 @@ module.exports = {
   
       return response;
     }
-  };
+  
   
   /**
  * Randomly shuffle an array
  * https://stackoverflow.com/a/2450976/1293256
  * @param  {Array} array The array to shuffle
  * @return {String}      The first item in the shuffled array
-
+ */
  
 exports.shuffle = function(array) {
 
@@ -48,4 +48,4 @@ exports.shuffle = function(array) {
 
   return array;
 };
-*/
+
