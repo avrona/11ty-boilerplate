@@ -5,6 +5,7 @@ const Image = require("@11ty/eleventy-img");
 const path = require('path');
 const purgeCssPlugin = require("eleventy-plugin-purgecss");
 const eleventyGoogleFonts = require("eleventy-google-fonts");
+const helpers = require("./src/_data/helpers");
 
 // FULL SIZE Image plugin configuration
 function imageShortcode(src, alt) {
@@ -110,8 +111,6 @@ Image(src, options );
   return out
 }
 
-// TEMP
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(UpgradeHelper);
@@ -173,10 +172,16 @@ module.exports = function (eleventyConfig) {
     }).setLocale('fr').toLocaleString(DateTime.DATE_FULL);
 });
 
-    // Limit Filter: Copy paste from Jérôme Coupé
-    eleventyConfig.addNunjucksFilter("limit", function(array, limit) {
-      return array.slice(0, limit);
-    });
+
+     // Random Filter: With the help from google search engine
+  eleventyConfig.addNunjucksFilter("shuffle", function(array) {
+    return helpers.shuffle(array);
+  });
+  
+  // Limit Filter: Copy paste from Jérôme Coupé
+  eleventyConfig.addNunjucksFilter("limit", function(array, limit) {
+    return array.slice(0, limit);
+  });
 
 
     return {
