@@ -1,0 +1,514 @@
+{
+  "reviews": [
+    {
+      "reviewId": "AbFvOqmzF0LLI1ehDBgtEyEMW5zoOOWLLNzINFi1bXnsPz5WgGWDLlCbc_uUvAIfK6NU3GrjjBVrQQ",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gh8Ie36K6vwxr5PCh1JnkZbJpDlp5Qc9aLLf0l5_t4=s120-c-c0x00000000-cc-rp-mo-ba3-br100",
+        "displayName": "Pierre Ammeloot"
+      },
+      "starRating": "FIVE",
+      "createTime": "2021-12-05T08:23:24.390Z",
+      "updateTime": "2021-12-05T08:23:24.390Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqmzF0LLI1ehDBgtEyEMW5zoOOWLLNzINFi1bXnsPz5WgGWDLlCbc_uUvAIfK6NU3GrjjBVrQQ"
+    },
+    {
+      "reviewId": "AbFvOqlJQC8EUA4fcTG-qH-egRx2N5RGeOzwAFg9HtGXAQJbSczHShuIE4dLdy63oQLPY4rUB7dU2w",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GiWJL8hFxhdg1floYP1ogEcESOAY7IIL5HK-LJA=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Zebra Trois"
+      },
+      "starRating": "FIVE",
+      "comment": "Un grand merci a Alex pour avoir réparé mon Macbook Pro pour la moitié du prix qu'en demandait Apple ! Très bon contact et service très pro, depuis 6 mois aucun souci à signaler avec mon MBP. J'ai déjà recommandé ses services à de nombreuses personnes (tout en espérant qu'elles n'en aient jamais besoin :o) et je continuerai !",
+      "createTime": "2021-10-16T20:11:59.985Z",
+      "updateTime": "2021-10-16T20:11:59.985Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqlJQC8EUA4fcTG-qH-egRx2N5RGeOzwAFg9HtGXAQJbSczHShuIE4dLdy63oQLPY4rUB7dU2w"
+    },
+    {
+      "reviewId": "AbFvOqnqzN-5yOVNZeH476Gsoi3HjYtKTmKgMg-5rBy54XV3hgoPVLg1R1pszAX43iKOpiyeugAuyw",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJyv_yp-qH75r9wbQRdD_lTbMqQQbigqdJaGqt5L=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Arthur Chblt"
+      },
+      "starRating": "FIVE",
+      "createTime": "2021-10-16T11:46:04.630Z",
+      "updateTime": "2021-10-16T11:46:04.630Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqnqzN-5yOVNZeH476Gsoi3HjYtKTmKgMg-5rBy54XV3hgoPVLg1R1pszAX43iKOpiyeugAuyw"
+    },
+    {
+      "reviewId": "AbFvOqmGqCQMRed-1kRznGTc753EQnKUasNUy6V2ahWwa_-WG-9X9InjZxTX8fMFLl7YvekDPB7Q",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJwQgYPwXl38UTkicWj3nl9ZaG-GtjoMki1ui3Hn=s120-c-c0x00000000-cc-rp-mo-ba3-br100",
+        "displayName": "Tony"
+      },
+      "starRating": "FIVE",
+      "comment": "Parfait autant niveau communication que réparation",
+      "createTime": "2021-10-16T07:45:35.207Z",
+      "updateTime": "2021-10-16T07:45:35.207Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqmGqCQMRed-1kRznGTc753EQnKUasNUy6V2ahWwa_-WG-9X9InjZxTX8fMFLl7YvekDPB7Q"
+    },
+    {
+      "reviewId": "AbFvOqmLrX6uS2H_yrBNdxurmUQMcFapa5BkUWOXtEASi9Ec7I4d5p5hsDmK6ZT2P_bgJorCT6Db0w",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJwJcEiAEoV-h72rAhBpj7bDjwNK9FKH1zMr-jG7=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "cedric cha"
+      },
+      "starRating": "FIVE",
+      "createTime": "2021-10-15T16:19:42.320Z",
+      "updateTime": "2021-10-15T16:19:42.320Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqmLrX6uS2H_yrBNdxurmUQMcFapa5BkUWOXtEASi9Ec7I4d5p5hsDmK6ZT2P_bgJorCT6Db0w"
+    },
+    {
+      "reviewId": "AbFvOqkm-xhs1_CAqoYNLQeHi-6uFinr1Yhw062jN95ePMm4kZMnGYl79aTRbw7qMLhMpT021fxK",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GgRrfWoX4971UNHIENDoK-HKPZ3Oo-DMvtPJPK6ow=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Edouard Keyser"
+      },
+      "starRating": "FIVE",
+      "comment": "Ravis d'avoir pus réparer ma carte mère chez 6337, au lieu de la faire remplacée comme affirmé par Apple. En plus cela m'a coûté la moitier du prix d'une neuve.",
+      "createTime": "2021-10-15T13:41:08.032Z",
+      "updateTime": "2021-10-15T13:41:08.032Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqkm-xhs1_CAqoYNLQeHi-6uFinr1Yhw062jN95ePMm4kZMnGYl79aTRbw7qMLhMpT021fxK"
+    },
+    {
+      "reviewId": "AbFvOqlD1HjVbTprpceXc6OQtA14yc3BdK5t8fYSda_Hc7lmkvAUPLjg3dikiVIlgoqJDajPF4DuMg",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJzNcYrpJiQPa32-st1wyolOdfjPfDBL3P-lD5LK=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Benhassine.mounir@gmail.com BHMOUN"
+      },
+      "starRating": "FIVE",
+      "comment": "Les explications furent claires, le pronostic juste\nLa réparation faite dans les temps et l'appareil reçu\ntrès bien emballé 2 jours après\nBravo messieurs\nBEN HASSINE MOUNIR",
+      "createTime": "2021-10-15T11:38:05.768Z",
+      "updateTime": "2021-10-15T11:38:05.768Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqlD1HjVbTprpceXc6OQtA14yc3BdK5t8fYSda_Hc7lmkvAUPLjg3dikiVIlgoqJDajPF4DuMg"
+    },
+    {
+      "reviewId": "AbFvOqkyp8uwXzpL2Y8QuKBocS_pr87tvNM3qzdc7nKT2eWPWx5RraGzw_XvtPQiLDRfcfqzlqUpoA",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gg7lFYl3G-OJv5wtDx5R2-pKnNvEHokD5_Fz4ax=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Les Escales Buissonnières - Organisme de formation"
+      },
+      "starRating": "FIVE",
+      "comment": "Parfait !\nAlex a fait preuve de disponibilité et de réactivité pour résoudre le problème que nous rencontrions sur nos ordinateurs.\nIl nous a proposé plusieurs solutions en détaillant chacune des propositions et leur tarif afin que nous puissions faire un choix, sereinement.\nMerci encore ☺️",
+      "createTime": "2021-10-15T10:07:50.681Z",
+      "updateTime": "2021-10-15T10:07:50.681Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqkyp8uwXzpL2Y8QuKBocS_pr87tvNM3qzdc7nKT2eWPWx5RraGzw_XvtPQiLDRfcfqzlqUpoA"
+    },
+    {
+      "reviewId": "AbFvOqkvdtIILSMWCuLgbPX1BT6kj93lToqDXHspJvEOc0AEveJ6_AyFn4lGoqJPH1SZylk78FfDDQ",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GhQrnte4GWh3rQD5haFyy9NkVIX3Rpr4DDi3s91gQ=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Michel"
+      },
+      "starRating": "FIVE",
+      "comment": "Encore merci pour la reparation de mon vieux mac. Je recommande 6337, reparation effectuée, mac en pleine forme 🙂",
+      "createTime": "2021-10-15T10:04:57.912Z",
+      "updateTime": "2021-10-15T10:04:57.912Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqkvdtIILSMWCuLgbPX1BT6kj93lToqDXHspJvEOc0AEveJ6_AyFn4lGoqJPH1SZylk78FfDDQ"
+    },
+    {
+      "reviewId": "AbFvOqmLk76ta2zEMk5ik5bJBOPgOfQyuSgyUwBYz6CEvZexzgxg-BYwUOsJwxo51ZRHeBLIqfZ5Ng",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GhpBLrmtrsJtsjrX2PHscVUbmu3GsW9FaPjBukxbA=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "cedric guintrange"
+      },
+      "starRating": "FIVE",
+      "createTime": "2021-10-15T09:56:38.329Z",
+      "updateTime": "2021-10-15T09:56:38.329Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqmLk76ta2zEMk5ik5bJBOPgOfQyuSgyUwBYz6CEvZexzgxg-BYwUOsJwxo51ZRHeBLIqfZ5Ng"
+    },
+    {
+      "reviewId": "AbFvOqkbVb2pzI1hqJwLvk87wTGA9wwNpOwW7gRfyRj58jSM-ke1ZMA9XGuCqfFVMwUNHoVV-FINqA",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GgrtSXmlTvttE6yAQmbk9buIr5hkcAzwCqQAJli=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Axel BIENSTMAN"
+      },
+      "starRating": "FIVE",
+      "createTime": "2021-10-15T09:39:09.672Z",
+      "updateTime": "2021-10-15T09:39:09.672Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqkbVb2pzI1hqJwLvk87wTGA9wwNpOwW7gRfyRj58jSM-ke1ZMA9XGuCqfFVMwUNHoVV-FINqA"
+    },
+    {
+      "reviewId": "AbFvOqljCKFgHTEahHWKGlJeUfE8IwTmfsqfnXRg9Ljs_a-X-blxSgrmo59GOhxwMEmOB6wf2-tQBw",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJy6QH7WcEeDZkbhWSoCh6l6uep20b2KFDR5G1Ek=s120-c-c0x00000000-cc-rp-mo-ba3-br100",
+        "displayName": "Michel Boujot"
+      },
+      "starRating": "FIVE",
+      "comment": "Un phare défectueux au montage sur la moto et après un appel au sav un retour pour une nouvelle livraison très rapide . Beaucoup de réactivité et de professionnalisme.",
+      "createTime": "2021-10-15T09:37:22.390Z",
+      "updateTime": "2021-10-15T09:37:22.390Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqljCKFgHTEahHWKGlJeUfE8IwTmfsqfnXRg9Ljs_a-X-blxSgrmo59GOhxwMEmOB6wf2-tQBw"
+    },
+    {
+      "reviewId": "AbFvOqksEyQivnLSpgidZk2rlShUu2sUieN2zP4kCib9arCq4X070uQgFj-Bjya3ysHKs6QeGyNm",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJz8-Jj85FCw3da66mGLnnt3OWXxG0P0KbXBrS8=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "nathan bloch"
+      },
+      "starRating": "FIVE",
+      "createTime": "2021-10-15T09:36:35.154Z",
+      "updateTime": "2021-10-15T09:36:35.154Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqksEyQivnLSpgidZk2rlShUu2sUieN2zP4kCib9arCq4X070uQgFj-Bjya3ysHKs6QeGyNm"
+    },
+    {
+      "reviewId": "AbFvOqkNDaJmsewx9XEOwAWPJbfwrHNm2o0PUqN99iyDtbJVGQVArYQdgdzEvDm2zQIKq2xOpHuG",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gi3_Vi1hgyHYJ7jnEDvMI83Pz1yJJdr_0juv-KDNQ=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Frédéric Janssen"
+      },
+      "starRating": "FIVE",
+      "comment": "Bon diagnostique de mon Mac Book Air qui avait reçu un café sur son clavier et qui ne pouvait plus s'allumer. Devis correct et très bonne réactivité. Je conseille.",
+      "createTime": "2021-10-15T09:35:42.176Z",
+      "updateTime": "2021-10-15T09:35:42.176Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqkNDaJmsewx9XEOwAWPJbfwrHNm2o0PUqN99iyDtbJVGQVArYQdgdzEvDm2zQIKq2xOpHuG"
+    },
+    {
+      "reviewId": "AbFvOqkcmSZFZMP0IkF1X2PjJ3utmde_zF5cMzESmgMyUlFju5cWg5rR9JsuU1ZV7EB72x9HvjGjBw",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJxzRS_N4IstMpyrZxpy6VBZ04iChHUmAhwFXXWQ1Q=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Christina Chheng"
+      },
+      "starRating": "FIVE",
+      "comment": "Un grand merci à Alex qui a réparé mon MacBook Pro en un temps éclair sachant que j'en avais besoin très vite! Mon ordi ne s'allumait plus et je pensais qu'il était mort, mais Alex l'a ressuscité à ma grande surprise! Encore merci!",
+      "createTime": "2021-10-05T16:39:56.947Z",
+      "updateTime": "2021-10-05T16:39:56.947Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqkcmSZFZMP0IkF1X2PjJ3utmde_zF5cMzESmgMyUlFju5cWg5rR9JsuU1ZV7EB72x9HvjGjBw"
+    },
+    {
+      "reviewId": "AbFvOqmgaAYPJUxGLkT2wXM6P-5gCb_4_WgN1RKfEVabS8x64ztuouTeKYECXbUYVrCjIgxQztOX1Q",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GgNqEhMeoyuENXR1Dj2cZ4ELhJiFrDpmCz-n5Bs9Ew=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Odile B."
+      },
+      "starRating": "FIVE",
+      "comment": "Avoir connaissance de l'existence de l'entreprise d'Alex et voir sur son site qu'il proposait un savoir-faire et un service que je croyais impossibles à trouver a été une très bonne surprise et une chance. Alex a bel et bien sauvé mon MacBook de 2013 qui avait pris l'eau dans un bagage ! Excellent service, compétences informatiques incontestables, super communication et réactivité et tarifs plus qu'honnêtes… Je recommande à 100% 6337 et Alex.",
+      "createTime": "2021-06-04T12:56:47.350Z",
+      "updateTime": "2021-06-04T12:56:47.350Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqmgaAYPJUxGLkT2wXM6P-5gCb_4_WgN1RKfEVabS8x64ztuouTeKYECXbUYVrCjIgxQztOX1Q"
+    },
+    {
+      "reviewId": "AbFvOqn69nWgpAfF8WTc9R8hntg05D-y6QfzT2qpWKA_HjT6Tj6fhFQpP-w32DftKB4NZuxp17u66A",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJwntMJPapW3ysPRPfe7cH4sqcoZNQsyAQ-A3E58=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Jean Charles Perret"
+      },
+      "starRating": "FIVE",
+      "createTime": "2021-05-20T04:42:05.690Z",
+      "updateTime": "2021-05-20T04:42:05.690Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqn69nWgpAfF8WTc9R8hntg05D-y6QfzT2qpWKA_HjT6Tj6fhFQpP-w32DftKB4NZuxp17u66A"
+    },
+    {
+      "reviewId": "AbFvOqlCuQUGDhItCJnrX4ixAxqmwfqLOOHHPolbRwdqES6ZP22D5SBS3yoFznFxfA_9jN6tzrwO6w",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJwDsLPAJlYwfAtRc4BfMrH4031_MqBDa2RkE3Mp=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Florent B"
+      },
+      "starRating": "FIVE",
+      "createTime": "2021-04-13T11:30:28.456Z",
+      "updateTime": "2021-04-13T11:30:28.456Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqlCuQUGDhItCJnrX4ixAxqmwfqLOOHHPolbRwdqES6ZP22D5SBS3yoFznFxfA_9jN6tzrwO6w"
+    },
+    {
+      "reviewId": "AbFvOqmp2PgpWT2hcWA5l4VAEnA7WjyoR3q2FIhZ-fv4QrtCf_SeF2zivUOmc2q4I6iZ9prBMowg",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJyNboM565jWQqJZiwPH4uAPc2Wp_P5jFAEEukox=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Kevin Pauchet"
+      },
+      "starRating": "FIVE",
+      "comment": "Alors que dire de cette société..\nAlex est très réactif, et réponds à toutes nos questions\nAprès un devis chez e-concept (qui à mon sens ne sont que des vendeurs sans aucunes compétences en matières de réparations) de plus de 900 euros\nCarte mère à changer, top case et peut être batterie..\nJ’ai envoyé mon MacBook Pro à Alex, la carte mère était intact, problème de fiche. Coût de la réparation divisé par 3.\nJe recommande a tous 6337, et surtout Alex qui préfère réparer que de changer\nProfessionnalisme et compétences sont au rendez-vous\nA recommander ++++++++++++++++++",
+      "createTime": "2021-04-10T11:30:51.246Z",
+      "updateTime": "2021-04-10T11:30:51.246Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqmp2PgpWT2hcWA5l4VAEnA7WjyoR3q2FIhZ-fv4QrtCf_SeF2zivUOmc2q4I6iZ9prBMowg"
+    },
+    {
+      "reviewId": "AbFvOqnQWiTrqmCzfnGo4Dy4WZheMK7p3_CqzJrU0oc3Q36Gh79ifyxzXeN5tV05dbJ8COU4NCIa",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJzBUypf21IhSyj5-76jkA18-bsLGkmDH-DK5nBz2Q=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Gladys Garnier"
+      },
+      "starRating": "FIVE",
+      "comment": "Comme la plupart des autres commentaires, on m'avait dit que ça me couterait aussi cher de remplacer la carte mère que d'acheter un nouveau mac.... J'ai découvert le site 6337 et grâce au professionnalisme d'Alex et de son équipe tout est rentré dans l'ordre. Il a été super réactif à ma demande. Je ne sais par quel miracle mon mac a ressuscité sans qu'Alex ne fasse de réparation lourde apparemment et il m'a facturé uniquement les frais de port alors qu'il a quand même passé du temps à faire tous les tests, à remettre des petites pièces manquantes, etc.... Bref, de mon expérience je vois que c'est un professionnel très très honnête qui ne facture pas des sommes astronomiques pour rien ! ça fait plaisir ! mille merciiiiiii",
+      "createTime": "2021-03-20T13:46:28.202Z",
+      "updateTime": "2021-03-20T13:46:28.202Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqnQWiTrqmCzfnGo4Dy4WZheMK7p3_CqzJrU0oc3Q36Gh79ifyxzXeN5tV05dbJ8COU4NCIa"
+    },
+    {
+      "reviewId": "AbFvOqmLWwkza_zHtKM3XZo8gl1BGISy81V7OgpNBabOx78Fo2xuskq5eXoCHjXwPNCCAuU5qPRDvQ",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GgR7eRZaqykBHjiX9FfD2Ztp3TgPdjS-uxOKMTPAw=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Ben Adi"
+      },
+      "starRating": "FIVE",
+      "comment": "Réparez l’irréparable, correspond tout à fait à l’équipe de 6337 !\nMon MacBook Pro a décidé de ne plus s’allumer du jour au lendemain, verdict chez un revendeur agréé Apple : changement de carte mère pour 900 euros. Puis en faisant mes recherches je suis tombé sur 6337, qui pour la moitié du prix a réparé mon MacBook ! un grand merci pour le temps passé à la recherche de la panne ! Ne jetez pas ! Réparez !",
+      "createTime": "2021-03-18T20:20:57.656Z",
+      "updateTime": "2021-03-18T20:20:57.656Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqmLWwkza_zHtKM3XZo8gl1BGISy81V7OgpNBabOx78Fo2xuskq5eXoCHjXwPNCCAuU5qPRDvQ"
+    },
+    {
+      "reviewId": "AbFvOqmjFGyPiKRW2iEL-BDIdvjHpX-x65hgo_RVKkeVrwpq42R4i2D1I_2GBhz1CiT0pxL-cilOtg",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GhcvM5VDFlP0LqfGGJR32AH8PDRMTOAQI1EgpF4yQ=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Lucas Marcialis"
+      },
+      "starRating": "FIVE",
+      "comment": "Réactivité, professionnalisme, expertise, service après-vente, je ne peux que recommander 6337 pour les réparations de MacBook !\n\nJ'y ai envoyé un MacBook Pro 2018 qui avait eu un problème de liquide et d'affichage de l'écran. L'ordinateur était diagnostiqué irréparable par un centre agréé Apple et un réparateur indépendant. On m'annonçait un remplacement du Top Case, de la carte mère et de l'écran pour une facture totale à 1300€.\n\nCe montant a été divisé par 3 par Alex qui a remarqué qu'il y avait un problème sur le connecteur écran de la carte mère et sur le port USB. Tous les composants ont été changés et tout fonctionne à merveille !\n\nJ'ai envoyé mon MacBook le mardi, il était réparé le jeudi et de retour le samedi. Alex a été réactif tout du long de nos échanges et a répondu a toutes mes questions, un grand MERCI !",
+      "createTime": "2021-03-13T09:13:13.649Z",
+      "updateTime": "2021-03-13T09:13:13.649Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqmjFGyPiKRW2iEL-BDIdvjHpX-x65hgo_RVKkeVrwpq42R4i2D1I_2GBhz1CiT0pxL-cilOtg"
+    },
+    {
+      "reviewId": "AbFvOqmf07W6osVQS1LgqMW_eCTyJJqWh_qt7KwGE5B25wDA8AmWhRLkusvlU2dG3OBQJbiG5Ns18Q",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GhqjftXinooP8JSwou47B70dT5mFX6zfe1XsvqENg=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Yoann Lossel"
+      },
+      "starRating": "FIVE",
+      "comment": "Je recommande vivement!",
+      "createTime": "2021-03-01T21:09:50.988Z",
+      "updateTime": "2021-03-01T21:09:50.988Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqmf07W6osVQS1LgqMW_eCTyJJqWh_qt7KwGE5B25wDA8AmWhRLkusvlU2dG3OBQJbiG5Ns18Q"
+    },
+    {
+      "reviewId": "AbFvOqmWv8gnbQ-f9cBIFCHUKWMS522TFmYL6kOZJDvfUQIa3o0rk3JpDCFJvQyRIBLOm_ooBi-1rA",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gg48ogc7RX279JtOQgU-tP_0naa8ZM36mZBkgbD8Q=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Richard SOJKA"
+      },
+      "starRating": "FIVE",
+      "comment": "J'ai été agréablement surpris par la réactivité et le professionalisme de cette société , j'avais détruit complètement un connecteur sur la carte mère de mon MacBook Pro j'ai pris contact avec Alex de la société 6337 et après quelques précisions et envoi de photos ils m'ont fait parvenir un bon de transport, sans rien payer d'avance, j'ai emballé suivant leurs recomandations l'appareil qu'ils on reçu dès le lendemain puis quelques jours plus tard la réparation et les tests étaient terminés j'ai reçu un appel de 6337, après un paiement sans surprise et tout à fait plus que raisonnable, j'ai reçu mon MacBook le lendemain et il fonctionne comme avant, je suis entièrement satisfait de la prestation, un grand merci à Alex et son équipe qui à réparé ce que je pensait irréparable, allez-y vous ne serez pas déçus.",
+      "createTime": "2021-02-25T13:21:54.391Z",
+      "updateTime": "2021-02-25T13:21:54.391Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqmWv8gnbQ-f9cBIFCHUKWMS522TFmYL6kOZJDvfUQIa3o0rk3JpDCFJvQyRIBLOm_ooBi-1rA"
+    },
+    {
+      "reviewId": "AbFvOql_j4hWDSMRSjxbhXXpzpfB7hzFx6-kSUVSKpTWxfI5lzfLILxq3ZI8LtMqY6yuqPLuo7LvUg",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJyaGKd8YbhVL_IWFcnaprzMMVEsZxYzpa7Ww6N9=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Wing Tsun"
+      },
+      "starRating": "FIVE",
+      "comment": "Réparation de qualité, moitié prix qu'un établissement agrée MAC.\nJe recommande.",
+      "createTime": "2021-02-22T18:06:27.890Z",
+      "updateTime": "2021-02-22T18:06:27.890Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOql_j4hWDSMRSjxbhXXpzpfB7hzFx6-kSUVSKpTWxfI5lzfLILxq3ZI8LtMqY6yuqPLuo7LvUg"
+    },
+    {
+      "reviewId": "AbFvOqkESDVmIwAUczwjpBkly80TDDZSfh-R2P8XEc4Jo0V8RHwTQTplV_tP5BbU_rZfPcJricoFTA",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GhSu0R1SWiz7dqt8tjugIkHDfobnn1iEsam-NVh=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Xavier Fournier"
+      },
+      "starRating": "FIVE",
+      "comment": "Très bon travail. Service de qualité. Bravo",
+      "createTime": "2020-11-30T12:52:45.535Z",
+      "updateTime": "2020-11-30T12:52:45.535Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqkESDVmIwAUczwjpBkly80TDDZSfh-R2P8XEc4Jo0V8RHwTQTplV_tP5BbU_rZfPcJricoFTA"
+    },
+    {
+      "reviewId": "AbFvOqn-4IWdHX5WDMAn6mrS63nDGi3thd1NtdQ6xsjnZDIk5Fb83j7IMt-x2JH4Ql1brGOfiwN5",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gjo-o-BH8P1ddHJHRYSknpfvKq-T-xsZn0HSLtpNg=s120-c-c0x00000000-cc-rp-mo-ba3-br100",
+        "displayName": "Pierre F"
+      },
+      "starRating": "FIVE",
+      "comment": "J'ai un mac book pro qui a passé des mois chez deux \"réparateurs\" à Montauban (Azerty et Docteur it, à fuir) qui avaient diagnostiqué tout deux un problème irréparable sur la carte mère, à changer donc. Problème confirmé chez iconcept (entreprise agrée Apple, il n'y a pas d'apple store à Toulouse), et donc changement de carte mère à 800 euros obligatoire. Je m'apprétais à jeter ce mac book pro de 2015 pour investir dans une chinoiserie de PC quand j'ai trouvé \"Réparer l'irréparable\" sur internet. En quelques jours à peine, ils ont diagnostiqué un problème sur le capteur d'ouverture du capot. Mon mac est comme neuf, il marche nickel et ça m'a couté 280 euros port compris. Bravo à l'efficacité et au professionnalisme de M. Alex Avron et son équipe!",
+      "createTime": "2020-10-12T09:59:58.024Z",
+      "updateTime": "2020-10-12T09:59:58.024Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqn-4IWdHX5WDMAn6mrS63nDGi3thd1NtdQ6xsjnZDIk5Fb83j7IMt-x2JH4Ql1brGOfiwN5"
+    },
+    {
+      "reviewId": "AbFvOqnK6kbmvCGediSln4JYGGGuy9jaI8x4oyrHyHq6zur1KvfS8Vjwz1iaeroiANHCNu4moTmMTA",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJxD3rd9QtFSsC9wfu5EoM9thoG5TycPzwcNmpJ8=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Dominique Rifflet"
+      },
+      "starRating": "FIVE",
+      "comment": "MacBook Pro 2013 retina - Carte mère HS d'après Apple (700 €) .. Après passage dans les mains d'Alex  la machine revient en pleine forme !  Envoi et retour de la machine aux frais de 6337 et  avec un professionnalisme que  je ne connaissais plus depuis plusieurs années auprès des revendeurs informatiques  !  Bref une société au top , un réparateur au top , vous pouvez y aller (même  de loin - ORLEANS) !!  Longue vie à 6337 !",
+      "createTime": "2020-09-22T15:28:34.078Z",
+      "updateTime": "2020-09-22T15:28:34.078Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqnK6kbmvCGediSln4JYGGGuy9jaI8x4oyrHyHq6zur1KvfS8Vjwz1iaeroiANHCNu4moTmMTA"
+    },
+    {
+      "reviewId": "AbFvOqnSlzi1_IC2E5Y6oSzE-1xGpfItIEo1ecYvzF8hQwF2iau0JgfFz_9y2KdW_QNFvxlhqArXOg",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GgkmbX9XA-US1CwY3FuLV2d56CzMmXe6_7XzDnvvg=s120-c-c0x00000000-cc-rp-mo-ba3-br100",
+        "displayName": "Louis Pollet"
+      },
+      "starRating": "FIVE",
+      "comment": "La carte mère de mon MacBook Air avait lâché et d'autres réparateurs m'avaient dit qu'il fallait la changer. J'ai confié la machine à Alex qui l'a ressuscitée, merci à lui ! Contact très pro, allez-y les yeux fermés.",
+      "createTime": "2020-09-03T11:22:06.732Z",
+      "updateTime": "2020-09-03T11:22:06.732Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqnSlzi1_IC2E5Y6oSzE-1xGpfItIEo1ecYvzF8hQwF2iau0JgfFz_9y2KdW_QNFvxlhqArXOg"
+    },
+    {
+      "reviewId": "AbFvOqnBTGwvMYiEaqj7i8oXsatkRSCRVyWlWTXRiFOrI7Tpd8CNHTg9Aecic12NDMwELs6DdBRErw",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GjE8yGt7CQ1SDjzkmPtfeCdT5ryDqOIDAPgejb0og=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Séverine Ségur"
+      },
+      "starRating": "FIVE",
+      "comment": "Un MacBook Pro de 2012 condamné par Apple et ramené à la vie par 6337. C’était inespéré et Alex l’a fait.\nPremier contact par mail pour jauger du sérieux de la société =\u003e parfait\nEnvoi de l’étiquette de prise en charge du matériel =\u003e parfait\nPetit mail pour prévenir de la réception du condamné =\u003e parfait\nSuivi de l’avancée du diagnostic et des réparations =\u003e parfait et parfait\nEt le mail final pour vous annoncer que l’opération s’est bien passée et que le convalescent va vous être renvoyé. (Après paiement de la facture. Jusque là rien n’est facturé 😊)\nCerise sur le gâteau : matériel reçu le lendemain pour mon plus grand bonheur.\nUn grand merci pour ce sauvetage. Je recommande cette société à 200%",
+      "createTime": "2020-06-25T16:43:22.431Z",
+      "updateTime": "2020-06-25T16:43:22.431Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqnBTGwvMYiEaqj7i8oXsatkRSCRVyWlWTXRiFOrI7Tpd8CNHTg9Aecic12NDMwELs6DdBRErw"
+    },
+    {
+      "reviewId": "AbFvOqlujdnU1UxBnUva39zZMezGP5M1xdw6VjlBeOAMLIWQX1MgI9pJf-spCbErmhQTc4zCdn5C5g",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJxBL70nq0zZtePn-gDv1FpzE7FhhvHAV93ss2Gc=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Chevallier audrey"
+      },
+      "starRating": "FIVE",
+      "comment": "Alex a pu prendre en charge ma panne d'ordinateur (Mac Book AIR) concernant un soucis de carte mère. En plein pendant le covid19 là où tous les dépanneurs classiques me demandaient 600 voir même 700 euros pour un délai d'attente de plus de deux semaines, Alex lui m'a facturé 280 euros et cela en moins d'une semaine.\nPro, réactif bien que cela se fasse à distance car j'habite Bdx et bien je ne regrette pas tant sur la prise en charge que sur le prix ou la sécurité.\nJe recommande vivement ce plan B qui est devenu aujourd'hui mon plan A :-)",
+      "createTime": "2020-05-25T14:08:29.407Z",
+      "updateTime": "2020-05-25T14:08:29.407Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqlujdnU1UxBnUva39zZMezGP5M1xdw6VjlBeOAMLIWQX1MgI9pJf-spCbErmhQTc4zCdn5C5g"
+    },
+    {
+      "reviewId": "AbFvOqmfKNpu7YAx-43EvyT3rRSvKw6vPDukMkHKPBvFEMynb4sd66MnNY4nZET_QA0z7bmVtjYssg",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GhmtQN7doLSoe-MNoc_8lTS5hsGklrCxmdIuZFX=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Gabriel Girard"
+      },
+      "starRating": "FIVE",
+      "comment": "J'avais joyeusement renversé une théière entière et bouillante sur mon Macbook Pro 2012. Tout le monde l'avait déclaré mort. Je cherchais même un nouvel ordi quand j'ai trouvé Alex --\u003e pro, super gentil, honnête, rapide, efficace, prix imbattable - sans faire de promesse au départ, il a inspecté l'ordi, il a dit : \"peut-être\", je lui ai laissé l'ordi, il m'a rappelé 2 ou 3 jours plus tard en m'annonçant la bonne nouvelle. J'écris, en ce moment, plus de 6 mois plus tard, sur ce même Macbook qui n'a jamais eu de quack suite à la réparation.\n\nEt ce n'est pas juste génial de ne pas avoir à acheter un nouvel ordi quand tu tombes avec une théière à la main, mais Alex nous permet aussi de poser un geste engagé et militant dans cette société du tout-jetable en réparant plutôt qu'en jetant tout un ordinateur parce qu'une infime partie de la carte mère est brisée et qu'on se frappe à la paresse de tant de centres de réparation. allez-y. Vraiment.",
+      "createTime": "2020-05-12T15:07:03.881Z",
+      "updateTime": "2020-05-12T15:07:03.881Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqmfKNpu7YAx-43EvyT3rRSvKw6vPDukMkHKPBvFEMynb4sd66MnNY4nZET_QA0z7bmVtjYssg"
+    },
+    {
+      "reviewId": "AbFvOqngiqnpOCd_e0hiqcI0vSCokETzFEjNmlyusK8Hs_tcP0YbBYJQMUlMiHTNdnHFUKlOG4n2XQ",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GgLf6Sk3P8JT3zTRImlOynf4sqMwLNYInvdmF7bqg=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Perrine"
+      },
+      "starRating": "FIVE",
+      "comment": "Je recommande vraiment. Alex a réparé ma carte mère et fait un travail formidable sur ce que je pensais être impossible (Et pour un prix imbattable). De plus la prise en charge et réparation ont été très rapide et Alex a pris en compte toutes mes demandes et c’est arrangé pour faire au mieux par rapport à ma situation. Encore merci !",
+      "createTime": "2020-02-25T10:43:32.779Z",
+      "updateTime": "2020-02-25T10:43:32.779Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqngiqnpOCd_e0hiqcI0vSCokETzFEjNmlyusK8Hs_tcP0YbBYJQMUlMiHTNdnHFUKlOG4n2XQ"
+    },
+    {
+      "reviewId": "AbFvOqlqI_oeLuehVU7TNmbqnTuDxNz3QbQ2-AwFOkTUfcSNqewIXttHd9ZqwFR70Oo7hhVYQxqhig",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gjg2DEPnec2trChdT6aqG__H78rMqUw-du0quNNLw=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Viken Kojakian"
+      },
+      "starRating": "FIVE",
+      "comment": "Le réparateur a été de bon conseils afin de m'aider à diagnostiquer la panne de mon macbook à distance. L'accompagnement est professionnel, et je leur accorderais ma confiance la prochaine fois en cas de besoin.",
+      "createTime": "2020-02-20T13:38:59.665Z",
+      "updateTime": "2020-02-20T13:38:59.665Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqlqI_oeLuehVU7TNmbqnTuDxNz3QbQ2-AwFOkTUfcSNqewIXttHd9ZqwFR70Oo7hhVYQxqhig"
+    },
+    {
+      "reviewId": "AbFvOqniCFkHA2jq1klPl55mG_BuvfxWyzyNLQk1Y8ohwmQqn0Yy1tJrIyYMunr4Ng0jiFWcCti7aQ",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14Ghmfiw6Ro83CIcXGS3yK0FJHeNp4ztcMpTviV-2nw=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Fabrice Hamm Coaching"
+      },
+      "starRating": "FIVE",
+      "comment": "Génial, mon macbook air ne démarrait plus, écran noir. Il s'agissait du disque dur qui était en fin de vie. Beaucoup de conseils précieux sont donnés !",
+      "createTime": "2020-02-14T19:32:36.768Z",
+      "updateTime": "2020-02-14T19:32:36.768Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqniCFkHA2jq1klPl55mG_BuvfxWyzyNLQk1Y8ohwmQqn0Yy1tJrIyYMunr4Ng0jiFWcCti7aQ"
+    },
+    {
+      "reviewId": "AbFvOqloVn608ryaIErtUJBnwHhrDmrH56zv44xVsl0HUt3KbZ998ze-MsykDlSDQZ83XAS5GiXRCg",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GiNjmdf2n1R6UqkYseZGIkTYnIFIKrk2d9F6KimAw=s120-c-c0x00000000-cc-rp-mo-ba3-br100",
+        "displayName": "Société Novotéo"
+      },
+      "starRating": "FIVE",
+      "comment": "tres bon professionnel , plein de bons conseils, grande maitrise du sujet",
+      "createTime": "2020-02-13T11:32:48.690Z",
+      "updateTime": "2020-02-13T11:32:48.690Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqloVn608ryaIErtUJBnwHhrDmrH56zv44xVsl0HUt3KbZ998ze-MsykDlSDQZ83XAS5GiXRCg"
+    },
+    {
+      "reviewId": "AbFvOqlPFoOjy2A9Xww2asPgveWVLVa5vJcP4bvS4eTBUNbsCwqrQG_u85Y4Z3tHQK_oa9si4CN_",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJzPS4aN30QXRwnXlhI0ywTeMGoxkWm6QHtW5iSP=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Julien Russo"
+      },
+      "starRating": "FIVE",
+      "comment": "Super pro! Mon Mac ne bootait plus et il a rapidement su diagnostiquer le problème et le réparer. Je recommande !!",
+      "createTime": "2020-01-31T18:54:39.170Z",
+      "updateTime": "2020-01-31T18:54:39.170Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqlPFoOjy2A9Xww2asPgveWVLVa5vJcP4bvS4eTBUNbsCwqrQG_u85Y4Z3tHQK_oa9si4CN_"
+    },
+    {
+      "reviewId": "AbFvOqmATE9A6OA9o9s_YG10P7ZRrNCXOnuXFfBaoLoZSzTyPdVTxAS2Tq7EkAuEjjzZRKm-y8qX",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GjvIUJCDA_yDQZHEt3yilxdKex8wAjUcO8UKii_kQ=s120-c-c0x00000000-cc-rp-mo-ba3-br100",
+        "displayName": "Vinyl Addict"
+      },
+      "starRating": "FIVE",
+      "comment": "Ils m'ont donné un petit coup de main a dépanner un macbook air qui refusait de s'allumer via le bouton power, juste par mail, c'est plutôt sympa, je penserais a vous le jour ou je ne pourrais rien faire de plus que ce que mes compétences me permettent ;) merci !",
+      "createTime": "2020-01-28T10:59:25.247Z",
+      "updateTime": "2020-01-28T10:59:25.247Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqmATE9A6OA9o9s_YG10P7ZRrNCXOnuXFfBaoLoZSzTyPdVTxAS2Tq7EkAuEjjzZRKm-y8qX"
+    },
+    {
+      "reviewId": "AbFvOqmOBT4gxoAa1g0U2dhYouvMYSw_fLYTHpxboIT4odmD3l29Lls6qiKMGPgx2HxzcNMDkVy3zQ",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gi5Ebcs1G436Ixp4350tHuaarpOX82LuIvx4RbJwA=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "sess EMERY"
+      },
+      "starRating": "FIVE",
+      "comment": "Magicien des temps modernes !\nGrâce à lui j'ai pu faire re vivre une sono qui ne voulait plus charger, un téléphone qui ne voulait plus s'allumer et le tout avec des conseils précieux !",
+      "createTime": "2020-01-27T14:06:07.901Z",
+      "updateTime": "2020-01-27T14:06:07.901Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqmOBT4gxoAa1g0U2dhYouvMYSw_fLYTHpxboIT4odmD3l29Lls6qiKMGPgx2HxzcNMDkVy3zQ"
+    },
+    {
+      "reviewId": "AbFvOqnsEULauVYKBcI1GrRl2P4NTbKqdlrueVZmZ1Vtq3P0NqHAaS3lXhW3mpt7PdlE9FVQEFhr0g",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GjVMPShGpIxvw8-Ssiq5GjdXhpMvAJ6hXBihc7Ssw=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Clémence Guilluy"
+      },
+      "starRating": "FIVE",
+      "comment": "Mardi midi : je reverse l’intégralité de mon thé brulant sur mon mac book pro de boulot, qui s’éteint instantanément. Je panique et me mets en PLS jusqu'à ce que je me souvienne de 6337.\nAlex me reçoit dès le lendemain matin, avec les différents scénarios & leurs prix : rien que ça, ça vaut 3 lexomils.\nMercredi midi. : mon mac est prêt, ouvert, testé, documenté & nettoyé. Les dommages n'étaient pas si violent - je repars avec un mac qui marche et une reconnaissance sur 3 générations pour la mains d'oeuvre & la rapidité d'exécution.",
+      "createTime": "2020-01-19T16:25:09.922Z",
+      "updateTime": "2020-01-19T16:25:09.922Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqnsEULauVYKBcI1GrRl2P4NTbKqdlrueVZmZ1Vtq3P0NqHAaS3lXhW3mpt7PdlE9FVQEFhr0g"
+    },
+    {
+      "reviewId": "AbFvOqkl8DbYz8lA9_NqUU_jLL647S0jdfsdhAJGoIJyaPw6myYa2Tx5FGqQTeixc9SV5nlrRGZ7wA",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14GiT3-upnGE7gwfIRl_oS0fVOWBahI9ivcgeBaeI_TI=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Sophie Manzetti"
+      },
+      "starRating": "FIVE",
+      "comment": "Alex a réussi à trouver et à changer la mini pièce qui ne fonctionnait plus sur la carte mère de mon imac qui ne s'allumait plus. Tout est réparé et fonctionne à merveille depuis ! Merci !",
+      "createTime": "2020-01-13T15:44:06.489Z",
+      "updateTime": "2020-01-13T15:44:06.489Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqkl8DbYz8lA9_NqUU_jLL647S0jdfsdhAJGoIJyaPw6myYa2Tx5FGqQTeixc9SV5nlrRGZ7wA"
+    },
+    {
+      "reviewId": "AbFvOqkEE1WML2ipmJY_VAvvrcux7atqUV_HQPvhMoWR46jFsOv5incyLS_TvTC_n8raxKeIVQtjJg",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/AOh14Giz8U1RKk6k13b74AYPvR3_9y2bNkpIrx_vxi5n6xA=s120-c-c0x00000000-cc-rp-mo-ba3-br100",
+        "displayName": "Alexis Ferchichi"
+      },
+      "starRating": "FIVE",
+      "comment": "J'ai confié mon Macbook Pro qui était dans un triste coma pendant 1 an ayant subit une violente tasse de thé sucré sur l'écran et le clavier. Il a été vite pris en charge et réparé par 6337 avec une excellente relation client. Il est comme neuf !",
+      "createTime": "2020-01-13T14:16:49.339Z",
+      "updateTime": "2020-01-13T14:16:49.339Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqkEE1WML2ipmJY_VAvvrcux7atqUV_HQPvhMoWR46jFsOv5incyLS_TvTC_n8raxKeIVQtjJg"
+    },
+    {
+      "reviewId": "AbFvOqkdXE_VoyR1i5Ugngham-RHiWFc6AaknxoBn4d0wt0HOuPKXzFKRG-8WD7ycEunoFuw2aRNEA",
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/AATXAJwR9aAO7mr93AEkHnFE3lpEJx-UNvjEeinW3Rrh=s120-c-c0x00000000-cc-rp-mo-br100",
+        "displayName": "Machine à Trucs"
+      },
+      "starRating": "FIVE",
+      "comment": "Nikel ! Réparation de mon alimentation (câble changé mais pas le transfo), remplacement de ma batterie par une neuve et  même nouveaux petits patins en caoutchouc (cadeau bonus!) sous mon macbook pro de 2010 qui repart pour quelques années... (j'ai même des pistes pour améliorer les performances avec quelques upgrades faisables facilement)",
+      "createTime": "2019-12-19T21:42:56.705Z",
+      "updateTime": "2019-12-19T21:42:56.705Z",
+      "name": "accounts/100678219450909218082/locations/15346035054736065092/reviews/AbFvOqkdXE_VoyR1i5Ugngham-RHiWFc6AaknxoBn4d0wt0HOuPKXzFKRG-8WD7ycEunoFuw2aRNEA"
+    }
+  ],
+  "averageRating": 5,
+  "totalReviewCount": 43
+}
