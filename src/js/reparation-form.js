@@ -282,23 +282,26 @@ function estimate() {
         break
 
         case "mbpr":
-            sum = sum + 280;
+            sum = sum + 300;
         if (valuesform.idscreen == "15p" ) {
             sum = sum + 40 ;
         } else {} ;
         break
 
         case "mbptb":
-            sum = sum + 450;
+            sum = sum + 470;
+        if (valuesform.idscreen == "16p" ) {
+            sum = sum + 20 ;
+        } else {} ;
         break
 
         case "mba":
-            sum = sum + 220;
+            sum = sum + 250;
             switch (valuesform.idyear) {
                 case "2012" :
                 case "2013" :
                 case "2014" :
-                    sum = sum + 60;
+                    sum = sum + 50;
                 break;
                 case "2015" :
                 case "2016" :
@@ -308,7 +311,7 @@ function estimate() {
 
                 case "2018" :
                 case "2019" :
-                    sum = sum + 230;
+                    sum = sum + 200;
                 default:
                 break;
             }
