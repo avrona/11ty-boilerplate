@@ -15,8 +15,7 @@ let valuesform = {
     screen:"",
     idscreen:"",
     problem:"",
-    idproblem:"",
-    amount:""
+    idproblem:""
 }
 
 // -------------------- Variables for the customer details and form validation step ---------------//
@@ -257,8 +256,7 @@ function formReset() {
         screen:"",
         idscreen:"",
         problem:"",
-        idproblem:"",
-        amount:""
+        idproblem:""
     }
     currentTab = 0; // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
@@ -319,7 +317,6 @@ function estimate() {
             }
         break
     }
-    valuesform.amount =  sum;
 return sum ;}
 
 
@@ -577,7 +574,6 @@ function sendEstimate(){
             Dropdown1: valuesform.year,
             Dropdown3: 'autre',
             Dropdown2: valuesform.problem,
-            Decimal: valuesform.amount,
             MultiLine: inputMessage.value,
             Name_Last: inputLastName.value,
             Name_First: inputFirstName.value,
