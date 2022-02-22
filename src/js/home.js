@@ -298,7 +298,7 @@ function estimate() {
         } else {} ;
         break
 
-        case "mbptb"
+	case "mbptb":
             sum = sum + 470;
 	if (valuesform.idscreen == "16p" ) {
             sum = sum + 20 ;
