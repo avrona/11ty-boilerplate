@@ -47,6 +47,7 @@ Pour relancer la puce T2, il faut d'abord mettre le Mac cible en mode DFU. Pour 
 Il vous faut télécharger l'application *Apple Configurator* sur le MacappStore. Elle sera indispensable.
 
 S'en suit une manipulation digne d'Indiana Jones dans *Les Aventuriers de l'Arche Perdue*. (Les plus anciens d'entre nous auront la référence).
+
 <div class="columns is-centered">
 <div class="column is-half">
 {% image "images/Raiders-of-the-Lost-Ark.jpg", "Indiana Jones tentant de mettre un Mac en mode DFU." %} 
@@ -86,6 +87,12 @@ Cette seconde méthode marche beaucoup mieux pour nous... A chaque fois, en fait
 Avertissement: *Relancer* et *restaurer* sont deux actions très différentes. *Restaurer* ou "réinitiliaser" revient à effacer la totalité des données de votre Mac. **Si vous souhaitez conserver vos données, NE FAITES PAS ÇA !!!**
 
 Nous vous conseillons de tenter de *Relancer* la puce T2, dans un premier temps.
+
+<div class="columns is-centered">
+<div class="column is-half">
+{% image "images/DFU.png", "Le mode DFU dans Apple Configurator. Source: https://www.journaldulapin.com/" %} 
+</div>
+</div>
 
 ### Relancer
 
