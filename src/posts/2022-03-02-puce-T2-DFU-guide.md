@@ -1,11 +1,11 @@
 ---
 title: "Votre Mac ne démarre pas, et si c'était la puce T2"
-subtitle: "L'ajout de la puce T2 n'"
+subtitle: "L'ajout de la puce T2 n'a pas apporté que des avantages. La sécurité renforcée de votre Mac implique une couche de matérie et logiciel qui peut flancher. Plus de puces égal plus de risques de panne."
 date: "2022-03-02"
 tags: 
   - "blog"
   - "non-classe"
-coverImage: "images/T2.jpg"
+coverImage: 'images/T2.jpg'
 coverImageAlt: "Puce T2 - L'objet du délit"
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
@@ -47,9 +47,11 @@ Pour relancer la puce T2, il faut d'abord mettre le Mac cible en mode DFU. Pour 
 Il vous faut télécharger l'application *Apple Configurator* sur le MacappStore. Elle sera indispensable.
 
 S'en suit une manipulation digne d'Indiana Jones dans *Les Aventuriers de l'Arche Perdue*. (Les plus anciens d'entre nous auront la référence).
-
+<div class="columns is-centered">
+<div class="column is-half">
 {% image "images/Raiders-of-the-Lost-Ark.jpg", "Indiana Jones tentant de mettre un Mac en mode DFU." %} 
-
+</div>
+</div>
 
 Je m'explique:
 
@@ -78,7 +80,6 @@ Croyez-moi sur parole, c'est une façon plutôt alambiquée d'expliquer une comb
 5. Maintenez ces touches appuyées, relâchez immédiatement dès que le logo *DFU* s'affiche sur l'ordinateur de secours. Il est possible que le logo *Recovery* s'affiche. Maintenez la pression sur ces touches, il devrait disparaître pour afficher un logo *DFU*.
 
 Cette seconde méthode marche beaucoup mieux pour nous... A chaque fois, en fait.
-
 
 ## Relancer ou Restaurer la puce T2
 
