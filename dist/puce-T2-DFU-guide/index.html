@@ -373,7 +373,7 @@ Ainsi, elle à son propre OS, appelé BridgeOS, son propre firmware, et doit par
 <p>Le méthode pour réparer tout ça consiste à mettre votre Mac en mode DFU, comme pouro un iPhone (DFU pour Device Firmware Update).
 Ce mode permet d'accéder à cette puce et de lui proposer une mise à jour ou une réinitilisation. C'est donc ce que nous allons faire.</p>
 <h2>1ère étape: Mettre votre Mac en mode DFU</h2>
-<p>Pour relancer la puce T2, il faut d'abord mettre le Mac cible en mode DFU. Pour cela, il vous faut votre ordinateur en panne, que nous appellerons l'ordinateur P pour Panne, un second ordinateur avec une version de MacOS la plus récente possible (au moins <em>BigSur</em>), que nous appellerons F pour Fonctionnel, et un câble pour connecter les deux. Si F est un Mac USB-C, un câble USB-C sera nécessaire, mais a priori, cela ne doit pas forcément être un câble Thunderbolt (avec un éclair dessus) : le câble fourni par Apple avec le chargeur devrait suffire.</p>
+<p>Pour relancer la puce T2, il faut d'abord mettre le Mac cible en mode DFU. Pour cela, il vous faut votre ordinateur en panne, que nous appellerons <strong>l'ordinateur P pour Panne</strong>, un second ordinateur avec une version de MacOS la plus récente possible (au moins <em>BigSur</em>), que <strong>nous appellerons F pour Fonctionnel</strong>, et un câble pour connecter les deux. Si F est un Mac USB-C, un câble USB-C sera nécessaire, mais a priori, cela ne doit pas forcément être un câble Thunderbolt (avec un éclair dessus) : le câble fourni par Apple avec le chargeur devrait suffire.</p>
 <p>Il vous faut télécharger l'application <em>Apple Configurator</em> sur le MacAppStore sur l'ordinateur F. Elle sera indispensable.</p>
 <p>S'en suit une manipulation digne d'Indiana Jones dans <em>Les Aventuriers de l'Arche Perdue</em>. (Les plus anciens d'entre nous auront la référence).</p>
 <div class="columns is-centered">
@@ -393,13 +393,13 @@ Ce mode permet d'accéder à cette puce et de lui proposer une mise à jour ou u
 </div>
 <p>Je m'explique:</p>
 <ul>
-<li>Il faut d'abord brancher F au port USB-C à gauche et le plus proche de vous (le plus proche du trackpad). Brancher également un chargeur sur l'un des autres ports.</li>
-<li>Il faut ensuite bien éteindre ce Mac (F). Ma technique consiste à rester appuyé sur le bouton Power et cliquer sur le trackpad. Quand il n'y a plus de son de clic, votre Mac est vraiment éteint. (Oui, le clic est un faux clic, ça pourra faire l'objet d'un autre article).</li>
+<li>Il faut d'abord brancher F (le Mac fonctionnel) sur le port USB-C à gauche et le plus proche de vous (le plus proche du trackpad) du Mac P (en panne). Brancher également un chargeur sur l'un des autres ports, toujours sur le Mac P.</li>
+<li>Il faut ensuite bien éteindre ce Mac (P). Ma technique consiste à rester appuyé sur le bouton Power et cliquer sur le trackpad. Quand il n'y a plus de son de clic, votre Mac est vraiment éteint. (Oui, le clic est un faux clic, ça pourra faire l'objet d'un autre article).</li>
 </ul>
 <p>Ensuite, c'est la que ça se complique. <a href="https://support.apple.com/fr-fr/guide/apple-configurator-2/apdebea5be51/mac">D'après Apple,</a> il faut, je cite:</p>
 <ol>
-<li>Appuyez sur le bouton Marche/Veille pendant environ 5 secondes pour éteindre complètement l’ordinateur portable Apple.</li>
-<li>Branchez le câble USB-C sur le port Thunderbolt frontal qui se trouve sur le côté gauche de l’ordinateur portable Apple.</li>
+<li>Appuyez sur le bouton Marche/Veille pendant environ 5 secondes pour éteindre complètement l’ordinateur portable Apple. [ndlr: le Mac P ].</li>
+<li>Branchez le câble USB-C sur le port Thunderbolt frontal qui se trouve sur le côté gauche de l’ordinateur portable Apple. [ndlr: sur le Mac P ].</li>
 <li>Tout en maintenant le bouton Marche/Arrêt enfoncé, appuyez simultanément sur les trois touches suivantes pendant environ 3 secondes :
 <ul>
 <li>La touche Majuscule côté droit</li>
@@ -410,7 +410,7 @@ Ce mode permet d'accéder à cette puce et de lui proposer une mise à jour ou u
 </ol>
 <p>Vu que cela ne nous paraît pas clair, je vous proposer ici notre version de la procédure :</p>
 <ol>
-<li>Appuyez sur le bouton Marche/Arrêt pendant environ 5 secondes pour éteindre complètement le Mac F.</li>
+<li>Appuyez sur le bouton Marche/Arrêt pendant environ 5 secondes pour éteindre complètement le Mac P.</li>
 <li>Branchez le câble USB-C sur le port Thunderbolt côté gauche plus proche du trackpad de l’ordinateur P et lancez l'application <em>Apple Configurator</em> sur le Mac F.</li>
 <li>Appuyez sur la touche Marche/Arrêt du Mac P pendant 2 à 4 secondes.</li>
 <li>Tout en maintenant la touche Marche/Arrêt maintenue, appuyez sur les touches suivantes de P :
@@ -420,10 +420,10 @@ Ce mode permet d'accéder à cette puce et de lui proposer une mise à jour ou u
 <li>Touche Contrôle (Ctrl) de gauche</li>
 </ul>
 </li>
-<li>Maintenez ces touches appuyées, relâchez immédiatement dès que le logo <em>DFU</em> s'affiche sur l'ordinateur F. Il est possible que le logo <em>Recovery</em> s'affiche, auquel cas maintenez la pression sur ces touches, il devrait disparaître pour afficher un logo <em>DFU</em>.</li>
+<li>Maintenez ces touches appuyées, relâchez immédiatement dès que le logo <em>DFU</em> s'affiche sur l'ordinateur F, dans l'application <em>Apple Configurator</em>. Il est possible que le logo <em>Recovery</em> s'affiche, auquel cas maintenez la pression sur ces touches, il devrait disparaître pour afficher un logo <em>DFU</em>.</li>
 </ol>
 <h2>Relancer ou Restaurer la puce T2</h2>
-<p>Avertissement: <em>Relancer</em> et <em>restaurer</em> sont deux actions très différentes. <em>Restaurer</em> ou &quot;réinitiliaser&quot; revient à effacer la <strong>totalité</strong> des données de votre Mac. <strong>Si vous souhaitez conserver vos données, NE FAITES PAS ÇA !!!</strong></p>
+<p>Avertissement: <em>Relancer</em> et <em>restaurer</em> sont deux actions très différentes. <em>Restaurer</em> ou &quot;réinitialiser&quot; revient à effacer la <strong>totalité</strong> des données de votre Mac. <strong>Si vous souhaitez conserver vos données, NE FAITES PAS ÇA !!!</strong></p>
 <p>Nous vous conseillons de tenter de <em>Relancer</em> la puce T2, dans un premier temps.</p>
 <div class="columns is-centered">
 <div class="column is-half">
@@ -437,7 +437,8 @@ Ce mode permet d'accéder à cette puce et de lui proposer une mise à jour ou u
       alt="Le mode DFU dans Apple Configurator. Source: https://www.journaldulapin.com/"
       loading="lazy"
       decoding="async">
-  </picture> 
+  </picture>
+*source: www.lejournaldulapin.com*
 </div>
 </div>
 <h3>Relancer</h3>
