@@ -44,7 +44,7 @@ Ce mode permet d'accéder à cette puce et de lui proposer une mise à jour ou u
 
 ## 1ère étape: Mettre votre Mac en mode DFU
 
-Pour relancer la puce T2, il faut d'abord mettre le Mac cible en mode DFU. Pour cela, il vous faut votre ordinateur en panne, que nous appellerons l'ordinateur P pour Panne, un second ordinateur avec une version de MacOS la plus récente possible (au moins *BigSur*), que nous appellerons F pour Fonctionnel, et un câble pour connecter les deux. Si F est un Mac USB-C, un câble USB-C sera nécessaire, mais a priori, cela ne doit pas forcément être un câble Thunderbolt (avec un éclair dessus) : le câble fourni par Apple avec le chargeur devrait suffire.
+Pour relancer la puce T2, il faut d'abord mettre le Mac cible en mode DFU. Pour cela, il vous faut votre ordinateur en panne, que nous appellerons **l'ordinateur P pour Panne**, un second ordinateur avec une version de MacOS la plus récente possible (au moins *BigSur*), que **nous appellerons F pour Fonctionnel**, et un câble pour connecter les deux. Si F est un Mac USB-C, un câble USB-C sera nécessaire, mais a priori, cela ne doit pas forcément être un câble Thunderbolt (avec un éclair dessus) : le câble fourni par Apple avec le chargeur devrait suffire.
 
 Il vous faut télécharger l'application *Apple Configurator* sur le MacAppStore sur l'ordinateur F. Elle sera indispensable.
 
@@ -58,13 +58,13 @@ S'en suit une manipulation digne d'Indiana Jones dans *Les Aventuriers de l'Arch
 
 Je m'explique:
 
-* Il faut d'abord brancher F au port USB-C à gauche et le plus proche de vous (le plus proche du trackpad). Brancher également un chargeur sur l'un des autres ports.
-* Il faut ensuite bien éteindre ce Mac (F). Ma technique consiste à rester appuyé sur le bouton Power et cliquer sur le trackpad. Quand il n'y a plus de son de clic, votre Mac est vraiment éteint. (Oui, le clic est un faux clic, ça pourra faire l'objet d'un autre article).
+* Il faut d'abord brancher F (le Mac fonctionnel) sur le port USB-C à gauche et le plus proche de vous (le plus proche du trackpad) du Mac P (en panne). Brancher également un chargeur sur l'un des autres ports, toujours sur le Mac P.
+* Il faut ensuite bien éteindre ce Mac (P). Ma technique consiste à rester appuyé sur le bouton Power et cliquer sur le trackpad. Quand il n'y a plus de son de clic, votre Mac est vraiment éteint. (Oui, le clic est un faux clic, ça pourra faire l'objet d'un autre article).
 
 Ensuite, c'est la que ça se complique. [D'après Apple,](https://support.apple.com/fr-fr/guide/apple-configurator-2/apdebea5be51/mac) il faut, je cite:
 
-1. Appuyez sur le bouton Marche/Veille pendant environ 5 secondes pour éteindre complètement l’ordinateur portable Apple.
-2. Branchez le câble USB-C sur le port Thunderbolt frontal qui se trouve sur le côté gauche de l’ordinateur portable Apple.
+1. Appuyez sur le bouton Marche/Veille pendant environ 5 secondes pour éteindre complètement l’ordinateur portable Apple. \[ndlr: le Mac P \].
+2. Branchez le câble USB-C sur le port Thunderbolt frontal qui se trouve sur le côté gauche de l’ordinateur portable Apple. \[ndlr: sur le Mac P \].
 3. Tout en maintenant le bouton Marche/Arrêt enfoncé, appuyez simultanément sur les trois touches suivantes pendant environ 3 secondes :
 	- La touche Majuscule côté droit
 	- La touche Option de gauche
@@ -72,14 +72,14 @@ Ensuite, c'est la que ça se complique. [D'après Apple,](https://support.apple.
 
 Vu que cela ne nous paraît pas clair, je vous proposer ici notre version de la procédure :
 
-1. Appuyez sur le bouton Marche/Arrêt pendant environ 5 secondes pour éteindre complètement le Mac F.
+1. Appuyez sur le bouton Marche/Arrêt pendant environ 5 secondes pour éteindre complètement le Mac P.
 2. Branchez le câble USB-C sur le port Thunderbolt côté gauche plus proche du trackpad de l’ordinateur P et lancez l'application *Apple Configurator* sur le Mac F.
 3. Appuyez sur la touche Marche/Arrêt du Mac P pendant 2 à 4 secondes.
 4. Tout en maintenant la touche Marche/Arrêt maintenue, appuyez sur les touches suivantes de P :
 	- Touche Majuscule côté droit
 	- Touche Option (Alt) de gauche
 	- Touche Contrôle (Ctrl) de gauche
-5. Maintenez ces touches appuyées, relâchez immédiatement dès que le logo *DFU* s'affiche sur l'ordinateur F. Il est possible que le logo *Recovery* s'affiche, auquel cas maintenez la pression sur ces touches, il devrait disparaître pour afficher un logo *DFU*.
+5. Maintenez ces touches appuyées, relâchez immédiatement dès que le logo *DFU* s'affiche sur l'ordinateur F, dans l'application *Apple Configurator*. Il est possible que le logo *Recovery* s'affiche, auquel cas maintenez la pression sur ces touches, il devrait disparaître pour afficher un logo *DFU*.
 
 ## Relancer ou Restaurer la puce T2
 
