@@ -83,13 +83,14 @@ Vu que cela ne nous paraît pas clair, je vous proposer ici notre version de la 
 
 ## Relancer ou Restaurer la puce T2
 
-Avertissement: *Relancer* et *restaurer* sont deux actions très différentes. *Restaurer* ou "réinitiliaser" revient à effacer la **totalité** des données de votre Mac. **Si vous souhaitez conserver vos données, NE FAITES PAS ÇA !!!**
+Avertissement: *Relancer* et *restaurer* sont deux actions très différentes. *Restaurer* ou "réinitialiser" revient à effacer la **totalité** des données de votre Mac. **Si vous souhaitez conserver vos données, NE FAITES PAS ÇA !!!**
 
 Nous vous conseillons de tenter de *Relancer* la puce T2, dans un premier temps.
 
 <div class="columns is-centered">
 <div class="column is-half">
-{% image "images/DFU.png", "Le mode DFU dans Apple Configurator. Source: https://www.journaldulapin.com/" %} 
+{% image "images/DFU.png", "Le mode DFU dans Apple Configurator. Source: https://www.journaldulapin.com/" %}
+*source: www.lejournaldulapin.com*
 </div>
 </div>
 
