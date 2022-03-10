@@ -25,7 +25,7 @@ En route !
 
 ## Ce problème de GPU ne vient pas du GPU
 
-Les MacBook pro 15 de mi-2010 sont dotés d'une carte mère numéro 820-2850. Ce sont des machines généralement fiables, et solides. Elles sont encore utilisables et utilisée aujourd'hui par de nombreuses personnes en bureautique ou pour de petites tâches quotidiennes. Leur problème graphique est encore trop souvent confondu avec celui des MacBook Pro 2011, mais nous y reviendrons.
+Les MacBook pro 15 de mi-2010 sont dotés d'une carte mère numérotée 820-2850. Ce sont des machines généralement fiables et solides. Elles sont encore utilisables et utilisée aujourd'hui par de nombreuses personnes en bureautique ou pour de petites tâches quotidiennes. Leur problème graphique est encore trop souvent confondu avec celui des MacBook Pro 2011, mais nous y reviendrons.
 
 ### Un problème d'alimentation de la puce graphique
 
@@ -33,7 +33,7 @@ Sur ces Mac, le problème vient de l'instabilité de l'alimentation de la puce g
 
 ### Encore une histoire de condensateurs
 
-La puce graphique à besoin d'une alimentation basse tension, qui varie selon la sollication du GPU. Il est alimenté à 1.35 ou 1.55 V lors de faibles charges, et doit être alimenté à 1.8 V lors de fortes charges. Il existe un circuit chargé de produire ces différentes tensions. Comme pour l'élévation de tension nécessaires au rétroéclairage de l'écran, on à ici un circuit en charge de l'abaissement de tension. Ce circuit fonctionne sur le même principe: une puce de commande, un transistor qui commute sur une inductance et des condensateurs de stabilisation. Je vous laisse réviser le rétroéclairage si vous ne suivez pas tout.
+La puce graphique à besoin d'une alimentation basse tension, qui varie selon la sollication du GPU. Il est alimenté à 1.35 ou 1.55 V lors de faibles charges, et doit être alimenté à 1.8 V lors de fortes charges. Il existe un circuit chargé de produire ces différentes tensions. Comme pour l'élévation de tension nécessaires au rétroéclairage de l'écran, on a ici un circuit qui s'occupe de l'abaissement de tension. Ce circuit fonctionne sur le même principe: une puce de commande, un transistor qui commute sur une inductance et des condensateurs de stabilisation. Je vous laisse réviser le rétroéclairage si vous ne suivez pas tout.
 
 Ce sont les condensateurs qui posent problème, et en particulier le C9560. C'est un condensateur tantale-polymère qui vieilli mal et qui ne devrait pas être utilisé pour ce genre d'applications. La régulation de tension est donc mal faite lorsque la sollicitation du GPU est maximale, celui-ci plante.
 
@@ -41,11 +41,12 @@ Exemple des symptômes (parmi d'autres) d'un GPU défectueux sur MBP 15' 2011. S
 
 ## Un condo, et ça repart !
 
-La solution consiste donc à remplacer ce condensateur. Il est conseillé de le remplacer par un condensateur de technologie différente (comme un condensateur aluminium). Il sera plus gros et demandera donc un peu d'adaptation. Mais certains modèles on trois pad, ce qui poser ce composant plus facilement, même s'il est plus gros, sur les pads déjà présent sur la carte mère.
+La solution consiste donc à remplacer ce condensateur. Il est conseillé de le remplacer par un condensateur de technologie différente (comme un condensateur aluminium). Il sera plus gros et demandera donc un peu d'adaptation. Mais certains modèles on trois pad de connection, ce qui permet de poser ce composant plus facilement, même s'il est plus gros, sur les pads déjà présent sur la carte mère.
 
 Notre modèle de prédilection ? Le EEF-LX0D331R4.
 
-Et c'est vraiment magique. Une fois ce fameux  condensateur remplacé, la puce graphique du MacBook Pro 15 2010 passe tous les tests de stress GPU sans aucun problème.
+Et c'est vraiment magique: Une fois ce fameux  condensateur remplacé, la puce graphique du MacBook Pro 15 2010 passe tous les tests de stress GPU sans aucun problème.
+Nous proposons encore cette réparation, mais notre temps (et notre rentabilité) nous contraint à un tarif minimum. Il devient plus efficace et rentable de passer par un Repair-Café. Si celui que vous contactez n'est pas au courant du problème, n'hésitez pas à leur dire de nous contacter. On pourra les guider avec quelques indications dans la réparation de cette panne.
 
 # MacBook Pro 15 pouces 2011
 
@@ -65,15 +66,15 @@ Nous n'intervenons plus sur ces ordinateurs, et nous ne sommes pas les seuls ré
 
 Le problème vient donc de vias: de minuscules ponts verticaux à l'intérieur de la puce qui permettent la communications entre les différents étages. Ce sont ces vias qui sont défectueux, et qui, avec le temps mais surtout avec les cycles thermique (passage du chaud au froid et inversement, de façon répétitive) fait d'abord craquer puis céder ces ponts.
 
-En passant votre carte au four, vous permettez à ces vias de prendre un peu volume et donc potentiellement de se ressouder partiellement. Mais la cassure est toujours, et réapparaîtra avec le temps et l'usage. Le passage au four n'est donc que l'illusion d'un réparation pérenne.
+En passant votre carte au four, vous permettez à ces vias de prendre un peu volume et donc potentiellement de se ressouder partiellement. Mais la cassure est toujours présente, et réapparaîtra avec le temps et l'usage. Le passage au four n'est donc que l'illusion d'un réparation pérenne.
 
-Il en est de même pour le remplacement, le GPU étant touché par un vice de fabrication, voir de conception, le remplacement ne fait que remplacer une puce défectueuse par une puce qui sera bientôt défectueuse.
+Il en est de même pour le remplacement, le GPU étant touché par un vice de fabrication, voir de conception, le remplacement ne fait que remplacer une puce déjà défectueuse par une puce qui sera tôt ou tard défectueuse.
 
 {% image "images/2011-GPU-screen-2.jpg", "Macbook Pro puce de gestion du GPU" %} Exemple des symptômes d'un GPU défectueux sur MBP 15 mi-2011. Source: Macrumors forum.
 
 ## Désactiver le GPU, la seule solution fiable
 
-La seule solution fiable que nous proposons est donc de désactiver le GPU secondaire. Cela dire aussi dégrader les performances de votre ordinateur: Vous ne pourrez plus lancer de jeu 3D dans de bonnes conditions, les performances graphiques seront dégradées, la sorti vidéo deviendra inactive et le rétroéclairage de l'écran ne sera plus réglable.
+La seule solution fiable que nous proposons est donc de désactiver le GPU secondaire. Cela veut dire aussi dégrader les performances de votre ordinateur: Vous ne pourrez plus lancer de jeu 3D dans de bonnes conditions, les performances graphiques seront dégradées, la sortie vidéo deviendra inactive et le rétroéclairage de l'écran ne sera plus réglable.
 
 C'est le prix à payer pour retrouver une machine fonctionnelle.
 
@@ -83,13 +84,15 @@ C'est le prix à payer pour retrouver une machine fonctionnelle.
 
 La partie accélération graphique des MacBook Pro 15 pouces Retina 2012 comporte elle aussi un défaut. Celui ci n'a jamais été avoué par Apple, et encore moins pris en garantie étendue.
 
-Les symptômes ici sont parfois divergents, mais le plus souvent, votre Mac affiche un écran noir, soit directement après avoir booté, ou bien en sollicitant la carte graphique. L'écran devient noir mais le MacBook Pro fonctionne toujours. Vous entendez le bruit des touches ou du réglages du son. La seule manière de sortir de ce plantage et de redémarrer la machine d'autres fois le Mac redémarre de lui-même.
+Les symptômes ici sont parfois divergents. Le plus souvent, votre Mac affiche un écran noir, soit directement après avoir booté, ou bien en sollicitant la carte graphique (3D, Vidéo HD...). L'écran devient noir mais le MacBook Pro fonctionne toujours. Vous entendez le bruit des touches ou du réglages du son. Parfois, la seule manière de sortir de ce plantage est de redémarrer la machine. D'autres fois le Mac redémarre de lui-même. Il peut aussi arriver que le Mac plante directement. Avec le temps, le problème s'aggrave pour que finalement votre Mac démarre directement sur un écra noir.
 
 Là aussi, ce n'est pas le GPU qui est en cause, mais une histoire de soudures sur de puces d'alimentation du GPU.
 
+Détail important: Les MacBook Pro 15 pouces Retina 2012 et "Early 2013" partagent la même carte-mère. Seule une mise-à-jour de quantité de RAM, et disque dur avait été proposée par Apple. Cela veut aussi dire que les Retina 15 2012 et les Retina 15 début 2013 ont le même défaut, et la même panne.
+
 ## La faute à des soudures un peu légères
 
-Cette série de MacBook Pro, les Retina 2012 15 pouces, a connu un défaut de fabrication. Trop peu de pâte à braser à été appliquée pour certains soudures. Résultat, les soudures sont trop fines, elles craquèlent ou se défont avec le temps.  Ce sont plus spécifiquement les soudures de la puce de gestion d'alimentation (encore elle). Notre photo prise au microscope montre bien la légèreté des soudures autour de ce composant.
+Cette série de MacBook Pro, les Retina 2012 15 pouces (et *early 2013*), a connu un défaut de fabrication. Trop peu de pâte à braser à été appliquée pour certains soudures. Résultat, les soudures sont trop fines, elles craquèlent ou se défont avec le temps.  Ce sont plus spécifiquement les soudures de la puce de gestion d'alimentation (encore elle). Notre photo prise au microscope montre bien la légèreté des soudures autour de ce composant.
 
 Peu de réparateurs sont au fait de ce problème alors que la solution n'est pas si compliquée : il faut reprendre ces soudures à l'étain, avec un fer adapté. Une fois les soudures refaites, plus aucun problème.
 
@@ -97,4 +100,4 @@ Peu de réparateurs sont au fait de ce problème alors que la solution n'est pas
 
 # Et ensuite...
 
-Eh bien, ensuite, on continue de travailler, avec la communauté de réparateurs de cartes-mères, à trouver les sources des problèmes et les solutions associées. D'autres problèmes de production sur les Macs sont apparus sur les séries suivantes, pas forcément sur des carte graphique, mais ailleurs (écran, clavier, SSD par exemple). Tous ces problèmes, nous les connaissons, les documentons, nous partageons avec d'autres réparateurs pour tous avancer vers une solution.
+Eh bien, ensuite, on continue de travailler, avec la communauté de réparateurs de cartes-mères, à trouver les sources des problèmes et les solutions associées. D'autres problèmes de production sur les Macs sont apparus sur les séries suivantes, pas forcément sur des carte graphique, mais ailleurs (nappe de connection de l'écran, clavier *papillon* ou SSD par exemple). Tous ces problèmes, nous les connaissons, les documentons, nous partageons avec d'autres réparateurs pour tous avancer vers une solution. Nous faisons de notre mieux pour vous les expliquer de la façon la plus didactique possible.
