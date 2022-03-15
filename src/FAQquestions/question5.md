@@ -1,5 +1,5 @@
 ---
-title: "Envoyer mon Mac, ce n’est pas risqué ?"
+title: "Envoyer mon MacBook Pro ou Air, ce n’est pas risqué ?"
 permalink: false
 tags : faq
 text : "Non. D'ailleurs, une majorité de clients d'Apple recoivent leur Mac par transporteur.

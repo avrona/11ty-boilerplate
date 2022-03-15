@@ -1,5 +1,5 @@
 ---
-title: "Vous pouvez réparer toutes les pannes ?"
+title: "Vous pouvez réparer toutes les pannes de carte-mère ?"
 permalink: false
 tags : faq
 text: "Non.

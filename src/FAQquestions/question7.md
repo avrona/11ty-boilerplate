@@ -1,5 +1,5 @@
 ---
-title: "Je ne sais pas comment emballer mon Mac !"
+title: "Je ne sais pas comment emballer mon MacBook Pro !"
 permalink: false
 tags : faq
 text : "Nous avons un guide tout prêt pour vous aider, que vous pouvez recevoir sur demande.

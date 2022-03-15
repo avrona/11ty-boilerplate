@@ -1,5 +1,5 @@
 ---
-title: "Comment se passe la réparation ?"
+title: "Comment se passe la réparation de mon Mac ?"
 permalink: false
 tags : faq
 text: "Votre réparation suit les quelques étapes suivantes:

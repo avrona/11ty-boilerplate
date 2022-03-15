@@ -1,5 +1,5 @@
 ---
-title : "Combien coûte un devis ?"
+title : "Combien coûte un devis de réparation carte-mère ?"
 permalink : false
 tags : faq
 text : "Rien.  
