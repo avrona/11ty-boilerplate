@@ -1,5 +1,5 @@
 ---
-title: "Votre intervention conserve la garantie ?"
+title: "Votre intervention conserve la garantie d'Apple ?"
 permalink: false
 tags : faq
 text : "Le type de réparation que nous faisons laisse des traces qui ne duperont pas Apple. Mais nous proposons nous même une garantie sur notre intervention.

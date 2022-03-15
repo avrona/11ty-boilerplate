@@ -1,5 +1,5 @@
 ---
-title: "Mon Mac à pris l’eau/de la bière/du thé. Est-il réparable ?"
+title: "Mon Mac à pris l’eau,de la bière ou du thé. Est-il réparable ?"
 permalink: false
 tags : faq
 text : "Oui, c’est d’ailleurs notre spécialité.
