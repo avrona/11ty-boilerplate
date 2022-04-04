@@ -7,7 +7,9 @@ coverImage: "images/fond-6337.jpg"
 coverImageAlt: "Carte-mère démontée et en cours de réparation"
 subtitle: "Il n'est pas nécessaire de remplacer une carte mère de MacBook Pro ou MacBook Air. Dans 95% des cas, elle est réparable, et nous vous expliquons comment."
 permalink : "./{{ page.fileSlug }}/"
-layout: 'layouts/post.njk'
+layout: 'layouts/post-n-form.njk'
+formtitle : "Votre forfait réparation carte-mère"
+formheader : "Une estimation en 3 clics pour une réparation de votre carte-mère. L'envoi, la réparation, le retour et la garantie sont inclus."
 ---
 
 Cette question est probablement celle que l’on nous pose le plus ? « La carte mère de mon MacBook Pro et HS. Est-ce possible de la faire réparer? ».

@@ -7,7 +7,9 @@ coverImage: "images/magsafe-photo-small.jpeg"
 coverImageAlt: "Image au microscope d'un connecteur magsafe branché"
 subtitle: "Un guide simple et direct pour diagnostiquer votre Mac qui refuse de charger: Test, conseils et outils y sont listés."
 permalink : "./{{ page.fileSlug }}/"
-layout: 'layouts/post.njk'
+layout: 'layouts/post-n-form.njk'
+formtitle : "Votre MacBook Pro ne charge toujours pas ?"
+formheader : "Faites diagnostiquer et réparer le circuit de charge. Envoi, réparation, retour et garantie... tout inclus !"
 ---
 
 ## Votre MacBook Pro ne charge plus. Quels diagnostics effectuer ?

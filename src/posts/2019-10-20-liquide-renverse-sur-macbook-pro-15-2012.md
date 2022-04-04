@@ -8,7 +8,9 @@ coverImage: "images/Macbook-pro-oxydation-repare-2.jpg"
 coverImageAlt: "Image au microscope de composants oxydés sur une carte-mère"
 subtitle: "Un verre renversé: un catastrophe pour vous, mais un simple cas d'école pour nous. Eclaircissement sur les réflexes à voir et les réparations qui s'imposent."
 permalink : "./{{ page.fileSlug }}/"
-layout: 'layouts/post.njk'
+layout: 'layouts/post-n-form.njk'
+formtitle : "Réparation carte-mère oxydée"
+formheader : "Un devis instantané pour réparer votre carte-mère après une soirée arrosée. Envoi, réparation, retour et garantie incluses !"
 ---
 
 **Modèle :** Macbook pro 15 Mi-2012 **Numéro de modèle :** A1286 **Numéro de carte mère :** 820-3330-B **Symptômes :** Dommage liquide : Tisane renversée **Solution :** Remplacer R7051, R7052 et C7050

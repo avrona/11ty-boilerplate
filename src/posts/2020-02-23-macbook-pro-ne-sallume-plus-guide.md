@@ -7,8 +7,18 @@ coverImage: "images/c898ba6fa905ce3486c9d4326f2e4e03.png"
 coverImageAlt: "Vue latérale d'un MacBook pro et de ses connecteurs"
 subtitle: "Un guide pas-à-pas pour pouvoir poser un diagnostic clair et savoir quoi faire ou vers qui se tourner pour réparer un MacBook Pro."
 permalink : "./{{ page.fileSlug }}/"
-layout: 'layouts/post.njk'
+layout: 'layouts/post-n-form.njk'
+formtitle : "Votre MacBook Pro ne s'allume toujours pas ?"
+formheader : "Votre devis pour faire réparer votre carte-mère par des experts. Envoi, réparation, retour et garantie incluses !"
 ---
+
+#### Résumé
+
+- Vérifier si tout est en ordre pour qu'il s'allume :
+  - Le chargeur fonctionne (et la prise aussi...)
+  - Est-il vraiment éteint ? Vérifier s'il fait du bruit, si la touche verouillage-majuscule s'allume, si l'affichage externe fonctionne, augmenter le rétroéclairage
+- Réinitialiser la PRAM et le SMC
+- Sortir les tournevis... ou nous contacter.
 
 ### Un guide écrit par un réparateur, qui va du plus simple au plus complexe :
 
