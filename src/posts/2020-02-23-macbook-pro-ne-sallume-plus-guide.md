@@ -7,7 +7,7 @@ coverImage: "images/c898ba6fa905ce3486c9d4326f2e4e03.png"
 coverImageAlt: "Vue latérale d'un MacBook pro et de ses connecteurs"
 subtitle: "Un guide pas-à-pas pour pouvoir poser un diagnostic clair et savoir quoi faire ou vers qui se tourner pour réparer un MacBook Pro."
 permalink : "./{{ page.fileSlug }}/"
-layout: 'layouts/post-n-form.njk'
+layout: 'layouts/post.njk'
 formtitle : "Votre MacBook Pro ne s'allume toujours pas ?"
 formheader : "Votre devis pour faire réparer votre carte-mère par des experts. Envoi, réparation, retour et garantie incluses !"
 ---

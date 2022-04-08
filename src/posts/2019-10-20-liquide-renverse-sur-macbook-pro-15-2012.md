@@ -8,7 +8,7 @@ coverImage: "images/Macbook-pro-oxydation-repare-2.jpg"
 coverImageAlt: "Image au microscope de composants oxydés sur une carte-mère"
 subtitle: "Un verre renversé: un catastrophe pour vous, mais un simple cas d'école pour nous. Eclaircissement sur les réflexes à voir et les réparations qui s'imposent."
 permalink : "./{{ page.fileSlug }}/"
-layout: 'layouts/post-n-form.njk'
+layout: 'layouts/post.njk'
 formtitle : "Réparation carte-mère oxydée"
 formheader : "Un devis instantané pour réparer votre carte-mère après une soirée arrosée. Envoi, réparation, retour et garantie incluses !"
 ---

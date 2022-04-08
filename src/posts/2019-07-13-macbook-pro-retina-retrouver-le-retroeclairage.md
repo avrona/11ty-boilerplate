@@ -8,7 +8,7 @@ coverImage: "images/20190707_160648.jpg"
 coverImageAlt: "Connecteur LVDS qui sert à la connection interne de l'écran des MacBook Pro"
 subtitle: "Entre écran, nappe de connection, connecteur ou carte-mère, les sources de pannes sont nombreuses. Voici un petit guide pour s'y retrouver."
 permalink : "./{{ page.fileSlug }}/"
-layout: 'layouts/post-n-form.njk'
+layout: 'layouts/post.njk'
 formtitle : "Devis réparation rétroéclairage"
 formheader : "Une estimation en 3 clics pour une réparation du rétroéclairage sur votre carte-mère. Envoi, réparation, retour et garantie incluses !"
 ---

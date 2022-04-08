@@ -7,7 +7,7 @@ coverImage: "images/fond-6337.jpg"
 coverImageAlt: "Carte-mère démontée et en cours de réparation"
 subtitle: "Il n'est pas nécessaire de remplacer une carte mère de MacBook Pro ou MacBook Air. Dans 95% des cas, elle est réparable, et nous vous expliquons comment."
 permalink : "./{{ page.fileSlug }}/"
-layout: 'layouts/post-n-form.njk'
+layout: 'layouts/post.njk'
 formtitle : "Votre forfait réparation carte-mère"
 formheader : "Une estimation en 3 clics pour une réparation de votre carte-mère. L'envoi, la réparation, le retour et la garantie sont inclus."
 ---
