@@ -1,6 +1,8 @@
 ---js
 {
-    title: "Le blog de 6337 - Réparation Mac",
+  eleventyComputed: {
+    title: "{% if pagination.pageNumber == 0 %}Blog Réparation Mac{% else %}Blog Réparation Mac - page {{ pagination.pageNumber + 1 }}{% endif %}"
+    },
     subtitle: "Des infos, nos techniques, nos astuces et quelques indiscrétions sur les Mac et la réparation",
     layout: "layouts/blog-layout.njk",
     jsfile: ["../js/navbarmanagement.js" ],
