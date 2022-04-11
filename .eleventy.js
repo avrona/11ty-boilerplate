@@ -6,6 +6,9 @@ const path = require('path');
 const purgeCssPlugin = require("eleventy-plugin-purgecss");
 const eleventyGoogleFonts = require("eleventy-google-fonts");
 const helpers = require("./src/_data/helpers");
+// Add Schema.org plugin
+const schema = require("@quasibit/eleventy-plugin-schema");
+
 
 // FULL SIZE Image plugin configuration
 function imageShortcode(src, alt) {
@@ -130,6 +133,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksShortcode("thumbimage", thumbimageShortcode);
   // Google Fonts plugin
   eleventyConfig.addPlugin(eleventyGoogleFonts);
+  // Add schema.org pluging shortcode
+  eleventyConfig.addPlugin(schema);
 
   // Load PurgeCSS: remove unused CSS before build
   eleventyConfig.addPlugin(purgeCssPlugin, {
@@ -171,6 +176,11 @@ module.exports = function (eleventyConfig) {
         zone: "Europe/Amsterdam",
     }).setLocale('fr').toLocaleString(DateTime.DATE_FULL);
 });
+
+    // Create ISO8601 date and time filter
+eleventyConfig.addFilter('iso8601', (dateObj) => {
+  return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toISO()
+})
 
 
      // Random Filter: With the help from google search engine
