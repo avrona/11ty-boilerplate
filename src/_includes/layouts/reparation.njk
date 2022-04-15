@@ -1,4 +1,15 @@
- {% extends "layouts/base.njk" %} 
+---
+layout: layouts/base.njk
+eleventyComputed:
+  meta:
+    title: Comment faire réparer mon Mac...
+    description: Formulaire pour un devis rapide de de réparation de carte-mère de votre Macbook, Macbook Pro ou MacBook Air
+    breadcrumbs:
+      - name: Devis
+        url: "{{ site.url  +  page.url }}"
+        position: 2
+        image: "{{ site.url  + '/' +  site.header_image }}"
+---
  
  {% block content %}
  <!---- Page title-->
@@ -6,7 +17,7 @@
     <div class="hero-body">
         <div class="container has-text-centered is-primary">
         <H1 class="title">
-            Comment faire réparer mon Mac...
+            {{ meta.title }}
         </H1>
         <H2 class="subtitle">
             Répondez à ce quelques questions, on se charge du reste.

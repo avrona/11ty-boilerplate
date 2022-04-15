@@ -1,4 +1,15 @@
- {% extends "layouts/base.njk" %} 
+---
+layout: layouts/base.njk
+eleventyComputed:
+  meta:
+    title: A propos de 6337
+    description: L'atelier, son activité, son histoire et pourquoi "6337" et pas "1664" ?
+    breadcrumbs:
+      - name: A propos
+        url: "{{ site.url  +  page.url }}"
+        position: 2
+        image: "{{ site.url  + '/' +  site.header_image }}"
+---
  
  {% block content %}
  <!---- Page title-->
@@ -6,7 +17,7 @@
     <div class="hero-body">
         <div class="container has-text-centered is-primary">
         <p class="title">
-            A propos de 6337
+            {{ meta.title }}
         </p>
         <p class="subtitle">
             63% d'étain et 37% de plomb, notre alliage préféré

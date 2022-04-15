@@ -1,4 +1,6 @@
-{% extends "layouts/base.njk" %} 
+---
+layout: layouts/base.njk
+---
 
  {% block content %}
 
@@ -42,7 +44,7 @@
         <div class="columns is-centered featuresection">
           <div class="column is-7"> <!--colonne features-->
 <!--features list-->
-{% for item in features.feat %}
+{% for item in featureblock.feat %}
 {% include "partials/home/feature-block.njk"%}
 {% endfor %}
           </div>
@@ -409,7 +411,7 @@
   <!-- Alternating left right using cycler and cls.next() inwide issues.njk-->
 
 {% set cls = cycler(" ", " is-flex-direction-row-reverse") %}
-{% for item in issuelist.issue %}
+{% for item in issues.issue %}
 {% include 'partials/home/issues.njk' %}
 {% endfor %}
 
@@ -427,7 +429,7 @@
   
   <div class="columns is-centered">
 
-{% for item in steps.step %}
+{% for item in stepblock.step %}
 {% include "partials/home/step-block.njk"%}
 {% endfor %}
 

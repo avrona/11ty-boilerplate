@@ -6,12 +6,11 @@
     },
     layout: "layouts/blog-layout.njk",
     jsfile: ["../js/navbarmanagement.js" ],
-        pagination: {
-            data: "collections.blog",
-            size: 5,
-            alias: "remainposts",
-            reverse: true,
-
+      pagination: {
+          data: "collections.blog",
+          size: 5,
+          alias: "remainposts",
+          reverse: true,
     },
     permalink: "./{% if pagination.pageNumber == 0 %}blog/{% else %}blog{{ pagination.pageNumber + 1 }}/{% endif %}",
 }

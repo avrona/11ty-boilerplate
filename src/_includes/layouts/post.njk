@@ -1,10 +1,29 @@
 ---
+layout: layouts/base.njk
 jsfile: ["../js/navbarmanagement.js"]
+type: post
+eleventyComputed:
+  meta:
+    url: "{{ site.url  +  page.url }}"
+    title: "{{ title | safe }}"
+    description: "{{ subtitle | safe }}"
+    image:
+      src: "{{ site.url  + '/' +  coverImage }}"
+    author:
+      name: Alex AVRON
+      url: https://www.linkedin.com/in/alexavron/
+    published: "{{ date | iso8601 }}"
+    modified: "{% if updateDate %}{{ updateDate | iso8601 }}{% endif %}"
+    breadcrumbs:
+      - name: Blog
+        url: "{{ site.url  +  page.url }}"
+        position: 2
+        image: "{{ site.url  + '/' +  site.header_image }}"
+      - name: "{{ title | safe }}"
+        url: "{{ site.url }}  + '/blog/'"
+        position: 3
+        image: "{{ site.url  + '/' +  site.header_image }}" 
 ---
-
-
-{% extends "layouts/base.njk" %}
-
 
 
 

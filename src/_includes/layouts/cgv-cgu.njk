@@ -1,4 +1,17 @@
- {% extends "layouts/base.njk" %} 
+---
+layout: layouts/base.njk
+type: page
+eleventyComputed:
+  meta:
+    title: Mentions légales, CGV-CGU, crédits photos
+    description: Nos mentions légales, conditions générales, d'achat, les crédits photos et toutes les références légales obligatoires.
+    breadcrumbs:
+      - name: Conditions Générales
+        url: "{{ site.url  +  page.url }}"
+        position: 2
+        image: "{{ site.url  + '/' +  site.header_image }}"
+---
+
 
  {% block content %}
 
@@ -8,7 +21,7 @@
     <div class="hero-body">
         <div class="container has-text-centered is-primary">
         <h1 class="title">
-            Mentions légales, CGV-CGU, crédits photos
+            {{ title }}
         </H1>
         <H2 class="subtitle">
             ...et autres trucs légaux obligatoires.

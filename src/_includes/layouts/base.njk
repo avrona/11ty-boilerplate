@@ -1,4 +1,55 @@
-
+---
+type: page
+eleventyComputed:
+  meta:
+    site:
+      name: "{{ site.title | safe }}"
+      description: "{{ site.description | safe }}"
+      url: "{{ site.url }}"
+      logo:
+        src: "{{ site.url  + '/' +  site.logo }}"
+        width: 400
+        height: 497
+    breadcrumbs:
+      - name: Accueil
+        url: "{{ site.url }}"
+        position: 1
+        image: "{{ site.url  + '/' +  site.header_image }}"
+    language: fr-FR
+    url: "{{ site.url  +  page.url }}"
+    title: "{{ page.title | safe }}"
+    description: "{{ page.subtitle | safe }}"
+    image:
+      src: "{{ site.url  + '/' +  site.header_image }}"
+    organization:
+      name: 6337 - Réparer l'irréparable
+      legalName: 6337 SAS
+      url: https://www.6337.fr
+      logo: "{{ site.url  + '/' +  site.logo }}"
+      description: "{{ site.description | safe }}"
+      foundingDate: '2020'
+      founders:
+      - name: Alex AVRON
+      address:
+        streetAddress: 39 Avenue Sidoine Apollinaire
+        addressLocality: Lyon
+        postalCode: '69009'
+        addressCountry: France
+      contactPoint:
+      - telephone: "+33-4-28-29-49-49"
+        contactType: Service Client
+        areaServed: FR
+        availableLanguage:
+        - English
+        - French
+      - email: "alex@6337.fr"
+      sameAs:
+      - https://www.facebook.com/6337.fr/
+      - https://twitter.com/6337mac
+      - https://www.instagram.com/6337atelier/
+      - https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TCswTUrOLjYwYLRSNagwMU8zSU2yMDZMSU62SEoytzKoSLI0NEk1TbZMsjQxNLa0TPZiMTM2NgcAB6oQWw&q=6337&oq=6337&aqs=chrome.2.69i60j69i59j46i175i199j0l2j69i60j69i61l2.3461j0j9&sourceid=chrome&ie=UTF-8#lrd=0x47f4eb831dcc8bb7:0xb914e5c9b941399c,1,,,
+      - https://www.linkedin.com/company/6337fr
+---
 
   
 <!DOCTYPE html>
@@ -6,23 +57,26 @@
 
 <head>
 <meta charset="UTF-8">
+
+{% jsonLdScript meta, type, tags %}
+
   {% include "partials/structure/site-head.njk" %}
   
   
     {%- block seo -%}
     
-    {% set titletag = [title, " - " , site.titleshort] | join %}
-    <title>  {{ titletag or site.title }}</title>
+    {% set titletag = [ title, " - " , titleshort] | join %}
+    <title>  {{ titletag or title }}</title>
     <!--Twitter Card-->
-    <meta name="twitter:title" content="{{title}}">
+    <meta name="twitter:title" content="{{ title}}">
     <meta name="twitter:description" content="{{ subtitle or site.description }}">
     
     <!--Schema-->
-    <meta itemprop="name" content="{{title}}">
+    <meta itemprop="name" content="{{ site.title}}">
     <meta name="description" content="{{ subtitle or site.description }}">
     
     <!-- Facebook OpenGraph -->
-    <meta property="og:title" content="{{title}}">
+    <meta property="og:title" content="{{ site.title}}">
     <meta property="og:description" content="{{ subtitle or site.description }}">
 
     {%- endblock -%}
@@ -45,10 +99,10 @@
 </script>
 <!-- End Matomo Code -->
 
-<!--  Plausible -->
+<!--  Plausible
 <script async defer data-domain="www.6337.fr" src="https://plausible.6337.fr/js/plausible.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-<!-- End Plausible Code -->
+End Plausible Code -->
 
   <body>
 <!-- Google Tag Manager (noscript)
@@ -59,7 +113,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     {% include "partials/structure/site-header.njk" %}
     <main>
-      {% block content %}{% endblock %}
+      {{ content | safe }}
     </main>
     {% include "partials/structure/site-foot.njk" %}
   </body>

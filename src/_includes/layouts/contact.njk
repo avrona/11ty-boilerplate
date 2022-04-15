@@ -1,4 +1,15 @@
- {% extends "layouts/base.njk" %} 
+---
+layout: layouts/base.njk
+eleventyComputed:
+  meta:
+    title: Contactez-nous
+    description: Formulaire de contact
+    breadcrumbs:
+      - name: Contact
+        url: "{{ site.url  +  page.url }}"
+        position: 2
+        image: "{{ site.url  + '/' +  site.header_image }}"
+---
  
  {% block content %}
  <!---- Page title-->
@@ -6,7 +17,7 @@
     <div class="hero-body">
         <div class="container has-text-centered is-primary">
         <h1 class="title">
-            Contactez-nous
+            {{ title }}
         </H1>
         <H2 class="subtitle">
             On répond toujours !

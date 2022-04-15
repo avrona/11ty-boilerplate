@@ -9,6 +9,7 @@ coverImage: "images/iMac-sophie-puce.jpg"
 coverImageAlt: "Puce remplacée sur l'iMac de Sophie"
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
+type: post
 ---
 
 L’iMac de Sophie a déjà rendu de loyaux services, mais elle en a besoin encore aujourd'hui.

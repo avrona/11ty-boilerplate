@@ -1,4 +1,20 @@
- {% extends "layouts/base.njk" %} 
+---
+layout: layouts/base.njk
+eleventyComputed:
+  meta:
+    title: Tous les avis de nos clients
+    description: Liste mis-à-jour régulièrement de tous les avis laissés par clients sur Google
+    breadcrumbs:
+      - name: Accueil
+        url: "{{ site.url }}"
+        position: 1
+        image: "{{ site.url  + '/' +  site.header_image }}"
+      - name: Les Avis
+        url: "{{ site.url  +  page.url }}"
+        position: 2
+        image: "{{ site.url  + '/' +  site.header_image }}"
+---
+
 
 
 {% block content %}
@@ -8,7 +24,7 @@
     <div class="hero-body">
         <div class="container has-text-centered is-primary">
         <H1 class="title">
-            Tous les avis de nos clients
+            {{ meta.title }}
         </H1>
         <H2 class="subtitle">
             Sans exception, sans filtre !

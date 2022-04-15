@@ -3,6 +3,9 @@
     "titleshort": "6337.fr",
     "url": "https://www.6337.fr",
     "description": "Atelier de réparation experts en carte mères de MacBook, MacBook Pro et MacBook Air. 6337 répare des cartes HS, oxydées, des connecteurs arrachés...",
-    "header_image": "./src/images/MBP-export-800w.jpeg",
-    "copyright": "6337 SAS"
+    "header_image": "images/MBP-export-800w.jpeg",
+    "copyright": "6337 SAS",
+    "twitter": "6337Mac",
+    "author": "6337 SAS",
+    "logo": "images/Logo6337-400.png"
 }

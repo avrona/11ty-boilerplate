@@ -1,14 +1,4 @@
-
-
-<!-- Google Tag Manager
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WQ8N9Z5');</script>
-End Google Tag Manager -->
-
-  <!-- Basic Page Needs
+<!-- Basic Page Needs
   ––––––––––––––––––––––––––––––––––––––––––––––––––
 -->
 
@@ -16,20 +6,20 @@ End Google Tag Manager -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{site.twitter}}">
     <meta name="twitter:creator" content="@{{site.twitter}}">
-    <meta name="twitter:url" content="{{site.baseURL}}{{page.url}}">
+    <meta name="twitter:url" content="{{site.url}}{{page.url}}">
 
     <!--Schema-->
-    <link rel="author" href="{{site.baseURL}}">
-    <link rel="publisher" href="{{site.baseURL}}">
+    <link rel="author" href="{{site.url}}">
+    <link rel="publisher" href="{{site.author}}">
         
     <!-- Facebook OpenGraph -->
-    <meta property="og:url" content="{{site.baseURL}}{{page.url}}">
+    <meta property="og:url" content="{{site.url}}{{page.url}}">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="{{site.title}}">
     <meta property="og:locale" content="fr_FR">
-    <meta property="article:author" content="{{site.baseURL}}">
+    <meta property="article:author" content="{{site.author}}">
     {% if coverImage %}
-    <meta property="og:image" content="{{ site.baseURL}}/{{coverImage or site.header_image}}" />
+    <meta property="og:image" content="{{ site.url}}/{{coverImage or site.header_image}}" />
     {% else %}
     <meta property="og:image" content="{{site.header_image}}" />
     {% endif %}
@@ -37,23 +27,25 @@ End Google Tag Manager -->
 
 {% set isPost = layout == 'layouts/post.njk' %}
 
-<script type="application/ld+json">
+
+
+{# <script type="application/ld+json">
  {%- if isPost -%}
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "@id": "{{ site.baseURL }}/{{ page.fileSlug }}",
+    "@id": "{{ metadata.baseURL }}/{{ page.fileSlug }}",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "{{ site.baseURL }}/{{ page.fileSlug }}"
+      "@id": "{{ metadata.baseURL }}/{{ page.fileSlug }}"
     },
-    "url": "{{ site.baseURL }}",
+    "url": "{{ metadata.baseURL }}",
     "headline": "{{ subtitle }}",
     "description": "{{ title }}",
     "audience": "intéressé par l'électronique et la réparation",
     "image": {
       "@type": "ImageObject",
-      "url": "{{ site.baseURL }}/{{ coverImage }}",
+      "url": "{{ metadata.baseURL }}/{{ coverImage }}",
       "height": 675,
       "width": 1200
     },
@@ -65,23 +57,23 @@ End Google Tag Manager -->
     "articleSection": "Blog",
     "author": {
       "@type": "Person",
-      "name": "{{ site.author }}",
+      "name": "{{ metadata.author }}",
       "image": {
         "@type": "ImageObject",
-        "url": "{{ site.img }}avronixsmallsquare-495x400.jpg",
+        "url": "{{ metadata.img }}avronixsmallsquare-495x400.jpg",
         "height": 495,
         "width": 400
       },
-      "url": "{{ site.baseURL }}"
+      "url": "{{ metadata.baseURL }}"
     },
     "publisher": {
         "@type": "Organization",
-        "@id": "{{ site.baseURL }}",
-        "name": "{{ site.title }}",
-        "url": "{{ site.baseURL }}",
+        "@id": "{{ metadata.baseURL }}",
+        "name": "{{ metadata.title }}",
+        "url": "{{ metadata.baseURL }}",
         "logo": {
           "@type": "ImageObject",
-          "url": "{{ site.img }}Logo-6337-dark.png",
+          "url": "{{ metadata.img }}Logo-6337-dark.png",
           "height": 96,
           "width": 127
         }
@@ -103,7 +95,7 @@ End Google Tag Manager -->
 {%- endif -%}
     
   }
-</script>
+</script> #}
 
 
     
@@ -133,8 +125,8 @@ End Google Tag Manager -->
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  {% eleventyGoogleFonts 'https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap' %}
-  {# <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> #}
+  {# {% eleventyGoogleFonts 'https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap' %} #}
+  {# <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet" type="text/css"> #}
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

@@ -131,8 +131,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
   eleventyConfig.addNunjucksShortcode("thumbimage", thumbimageShortcode);
-  // Google Fonts plugin
-  eleventyConfig.addPlugin(eleventyGoogleFonts);
+  // Google Fonts plugin --> Give and error. Back to local fonts.
+  // eleventyConfig.addPlugin(eleventyGoogleFonts);
+
   // Add schema.org pluging shortcode
   eleventyConfig.addPlugin(schema);
 
