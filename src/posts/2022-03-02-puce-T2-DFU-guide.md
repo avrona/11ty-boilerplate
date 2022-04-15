@@ -66,9 +66,9 @@ Ensuite, c'est la que ça se complique. [D'après Apple,](https://support.apple.
 1. Appuyez sur le bouton Marche/Veille pendant environ 5 secondes pour éteindre complètement l’ordinateur portable Apple. \[ndlr: le Mac P \].
 2. Branchez le câble USB-C sur le port Thunderbolt frontal qui se trouve sur le côté gauche de l’ordinateur portable Apple. \[ndlr: sur le Mac P \].
 3. Tout en maintenant le bouton Marche/Arrêt enfoncé, appuyez simultanément sur les trois touches suivantes pendant environ 3 secondes :
-	- La touche Majuscule côté droit
-	- La touche Option de gauche
-	- La touche Contrôle de gauche
+	- La touche Majuscule côté droit: [[&#8679;]]
+	- La touche Option de gauche: [[Alt &#8997;]]
+	- La touche Contrôle de gauche: [[ Ctrl ]]
 
 Vu que cela ne nous paraît pas clair, je vous proposer ici notre version de la procédure :
 
@@ -76,9 +76,9 @@ Vu que cela ne nous paraît pas clair, je vous proposer ici notre version de la 
 2. Branchez le câble USB-C sur le port Thunderbolt côté gauche plus proche du trackpad de l’ordinateur P et lancez l'application *Apple Configurator* sur le Mac F.
 3. Appuyez sur la touche Marche/Arrêt du Mac P pendant 2 à 4 secondes.
 4. Tout en maintenant la touche Marche/Arrêt maintenue, appuyez sur les touches suivantes de P :
-	- Touche Majuscule côté droit
-	- Touche Option (Alt) de gauche
-	- Touche Contrôle (Ctrl) de gauche
+	- Touche Majuscule côté droit: [[&#8679;]]
+	- Touche Option (Alt) de gauche: [[Alt &#8997;]]
+	- Touche Contrôle (Ctrl) de gauche: [[ Ctrl ]]
 5. Maintenez ces touches appuyées, relâchez immédiatement dès que le logo *DFU* s'affiche sur l'ordinateur F, dans l'application *Apple Configurator*. Il est possible que le logo *Recovery* s'affiche, auquel cas maintenez la pression sur ces touches, il devrait disparaître pour afficher un logo *DFU*.
 
 ## Relancer ou Restaurer la puce T2

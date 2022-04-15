@@ -4,10 +4,13 @@ const { DateTime } = require("luxon");
 const Image = require("@11ty/eleventy-img");
 const path = require('path');
 const purgeCssPlugin = require("eleventy-plugin-purgecss");
-const eleventyGoogleFonts = require("eleventy-google-fonts");
+// const eleventyGoogleFonts = require("eleventy-google-fonts");
 const helpers = require("./src/_data/helpers");
 // Add Schema.org plugin
 const schema = require("@quasibit/eleventy-plugin-schema");
+// Markdown-it
+const markdownIt = require("markdown-it");
+var markdownItp = require("markdown-it")();
 
 
 // FULL SIZE Image plugin configuration
@@ -188,7 +191,15 @@ eleventyConfig.addFilter('iso8601', (dateObj) => {
   eleventyConfig.addNunjucksFilter("shuffle", function(array) {
     return helpers.shuffle(array);
   });
-  
+
+    let markdownLibrary = markdownIt({
+      html: true, // html tag inside source
+      breaks: true, // use '\n' as <br>
+      linkify: true, // Autoconvert URL-like text to links
+    })
+    .use(require("markdown-it-kbd")) // use [[Ctrl]] for keyboard-like style
+  eleventyConfig.setLibrary("md", markdownLibrary);
+    
   // Limit Filter: Copy paste from Jérôme Coupé
   eleventyConfig.addNunjucksFilter("limit", function(array, limit) {
     return array.slice(0, limit);

@@ -23,6 +23,7 @@
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@quasibit/eleventy-plugin-schema": "^1.9.1",
     "eleventy-google-fonts": "^0.0.5",
+    "markdown-it-kbd": "^2.2.2",
     "node-sass": "^7.0.1"
   }
 }

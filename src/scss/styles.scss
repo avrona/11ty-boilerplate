@@ -45,6 +45,16 @@ $pagination-current-background-color: $ming;
 @import "./node_modules/bulma/sass/helpers/_all.sass";
 @import "./node_modules/bulma/sass/layout/_all.sass";
 
+// CSS for keyboard symbol
+kbd {
+    border-radius: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 1px solid black;
+    background-color: $grey-light;
+  }
+
+
 // Import style for comment sidecar
 /*! purgecss start ignore */
 

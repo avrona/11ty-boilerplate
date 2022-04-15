@@ -53,13 +53,13 @@ La manipulation est la suivante :
 
 - Sur un Mac avec batterie non-amovible (de 2009 à nos jours)
     1. Eteignez votre Mac
-    2. Pressez les touches Maj + Control (_ctrl_) + Option (_alt_) du coté gauche de votre clavier et le bouton _Power_ (coté droit) pendant 10 secondes environ
+    2. Pressez les touches Maj [[&#8679;]] + Control [[ Ctrl ]] + Option [[Alt &#8997;]] du coté gauche de votre clavier et le bouton _Power_ (coté droit) pendant 10 secondes environ
     3. Relâcher ces touches. Vous devriez voir la lumière de votre chargeur Magsafe passer à l’orange puis revenir au vert.
     4. Appuyez sur le bouton _Power_ de votre Mac pour le rallumer.
 
 - Sur un Mac avec une puce de sécurité T2 (MacBook Pro ou Air depuis 2018. Mac Mini depuis 2018, Mac Pro 2019 ou iMac Pro)
     1. Eteignez votre Mac
-    2. Pressez les touches \[Control (_ctrl_)\] + \[ Option (_alt_)\] du coté gauche de votre clavier et les touches \[Maj  \] + \[_Power\]_ du coté droit, pendant 10 secondes environ
+    2. Pressez les touches Control [[ Ctrl ]] + Option [[Alt &#8997;]] du coté gauche de votre clavier et les touches Majuscule [[&#8679;]] + \[_Power\]_ du coté droit, pendant 10 secondes environ
     3. Relâcher ces touches. Vous devriez voir la lumière de votre chargeur Magsafe passer à l’orange puis revenir au vert.
     4. Appuyez sur le bouton _Power_ de votre Mac pour le rallumer.
 
