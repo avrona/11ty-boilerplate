@@ -10,7 +10,7 @@ layout: layouts/base.njk
 
       <div class="hero-body has-text-centered-mobile has-background is-transparent pb-0">
       <div class="container">
-        <div class="columns is-vcentered">
+        <div class="columns is-centered is-vcentered">
           
           <div class="column is-6 pl-6 is-align-items-center is-align-content-flex-end mb-6">
             <h1 class="title is-1 maintitle">Réparer l'irréparable</h1>
@@ -26,39 +26,17 @@ layout: layouts/base.njk
                       </span>
                   </div>
           </div>
-          <div class="column is-6">
+          <div class="column is-4">
             {# <img src="images/MBP-export.jpg"> #}
-            {% image "images/MBP-export.jpg", "Macbook Pro démonté entièrement" %}
-          </div>
-        </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Estimate & features section
-  -------------------------------------------------------->
-  <div class="section estimatesection pt-0"> 
-    <div class="container is-max-desktop">
-        <div class="columns is-centered featuresection">
-          <div class="column is-7"> <!--colonne features-->
-<!--features list-->
-{% for item in featureblock.feat %}
-{% include "partials/home/feature-block.njk"%}
-{% endfor %}
-          </div>
-
-          <div class="column is-1"></div>
-
-
-          <!--Estimate Form Fancy -->
-          <div class="column is-5 "> 
             
-            <div class="box mb-1 has-background-primary">
+              <!-- début coller -->
+                        <!--Estimate Form Fancy -->
+          
+            
+            <div class="box mb-0 has-background-primary">
               <h2 class="subtitle is-size-4 has-text-centered has-text-weight-bold has-text-white"> Un Devis en 3 clics !</h2>
             </div>
-            <div class="box has-background-primary-light">
+            <div class="box mb-6 has-background-primary-light">
               
             
                <!----------------- ESTIMATE FORM ---------------->
@@ -71,8 +49,7 @@ layout: layouts/base.njk
 
                  
                   <div class="buttons is-flex-direction-column is-centered">
-                    <button type="button" id="mba" class="button is-primary  is-outlined is-medium my-4 button-model" onclick="_paq.push(['trackEvent', 'Home-estimate', 'First step click', 'Macbook Air']);"
->MacBook Air</button>
+                    <button type="button" id="mba" class="button is-primary  is-outlined is-medium my-4 button-model" onclick="_paq.push(['trackEvent', 'Home-estimate', 'First step click', 'Macbook Air']);">MacBook Air</button>
                     <button type="button" id="mbp" class="button is-primary  is-outlined  is-medium my-4 button-model" onclick="_paq.push(['trackEvent', 'Home-estimate', 'First step click', 'Macbook Pro']);">MacBook Pro</button>
                     <button type="button" id="mb" class="button is-primary  is-outlined  is-medium my-4 button-model" onclick="_paq.push(['trackEvent', 'Home-estimate', 'First step click', 'Macbook 12']);">MacBook 12"</button>                  
                   </div>
@@ -156,9 +133,9 @@ layout: layouts/base.njk
                               Forfait réparation carte-mère qui inclut:
                       </p>
                       <ul>
-                        <li>Réparation de la carte-mère</li>
-                        <li>Envoi et retour par Chronopost avec assurance</li>
-                        <li>Garantie 180 jours</li>
+                        <li class="has-text-left-touch">Réparation de la carte-mère</li>
+                        <li class="has-text-left-touch">Envoi et retour par Chronopost avec assurance</li>
+                        <li class="has-text-left-touch">Garantie 180 jours</li>
                       </ul>
                   </div>
                   <nav class="level">
@@ -201,6 +178,36 @@ layout: layouts/base.njk
             </div>
           </div>
 
+
+
+
+          </div> 
+          <!-- fin coller -->
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image & features section
+  -------------------------------------------------------->
+  <div class="section estimatesection pt-0"> 
+    <div class="container ">
+        <div class="columns is-centered is-vcentered featuresection">
+          <div class="column is-6 pl-6-desktop"> <!--colonne features-->
+<!--features list-->
+{% for item in features.feat %}
+{% include "partials/home/feature-block.njk"%}
+{% endfor %}
+          </div>
+          <!--
+          <div class="column is-1"></div>
+          -->
+
+          <div class="column is-4">
+              {% image "images/MBP-export.jpg", "Macbook Pro démonté entièrement" %}
+          </div>
 
         </div>
       </div>
