@@ -16,7 +16,7 @@ formheader : "Votre devis pour faire réparer votre carte-mère par des experts.
 
 - Vérifier si tout est en ordre pour qu'il s'allume :
   - Le chargeur fonctionne (et la prise aussi...)
-  - Est-il vraiment éteint ? Vérifier s'il fait du bruit, si la touche verouillage-majuscule s'allume, si l'affichage externe fonctionne, augmenter le rétroéclairage
+  - Est-il vraiment éteint ? Vérifier s'il fait du bruit, si la touche verrouillage-majuscule s'allume, si l'affichage externe fonctionne, augmenter le rétroéclairage..
 - Réinitialiser la PRAM et le SMC
 - Sortir les tournevis... ou nous contacter.
 
@@ -30,7 +30,7 @@ La première étape, c’est de vérifier que tout est en ordre pour que votre M
 
 Si vous avez un MacBook Pro Touchbar, il n’y a plus de diode sur la prise de chargeur. Il va falloir vous équiper pour diagnostiquer votre chargeur. L’alternative la plus simple est d’emprunter le chargeur de votre voisin. Mais si vous voulez vous équiper, il existe des multimètre USB-C. [Nous utilisons celui-ci](https://satechi.net/products/satechi-type-c-power-meter-for-new-macbook-macbook-pro-type-c-devices).
 
-En branchant cet outil entre votre chargeur et le Mac, il vous indique la tension de charge des MacBook Pro Thunderbolt. Si elle est à 20 Volts (plutôt 19.8 Volts d’ailleurs…) tout est bon. Si la tension est à 5 Volts, c’est mauvais signe : le chargeur n'est pas reconnu, et c'est ce qui fait que votre MacBook Pro ne s'allume plus. Si le chargeur fonctionne bien ailleurs, c’est que c’est un problème de port USB-C : dans ce cas, on vous conseille de faire appel à un réparateur de carte-mère ([comme nous](https://www.6337.fr/prise-en-charge/), par exemple).
+En branchant cet outil entre votre chargeur et le Mac, il vous indique la tension de charge des MacBook Pro USB-C. Si elle est à 20 Volts (plutôt 19.8 Volts d’ailleurs…) tout est bon. Si la tension est à 5 Volts, c’est mauvais signe : le chargeur n'est pas reconnu, et c'est ce qui fait que votre MacBook Pro ne s'allume plus. Si le chargeur fonctionne bien ailleurs, c’est que c’est un problème de port USB-C : dans ce cas, on vous conseille de faire appel à un réparateur de carte-mère ([comme nous](https://www.6337.fr/prise-en-charge/), par exemple).
 
 ## Votre MacBook Pro ne s’allume plus, vous en êtes sûr ?
 
