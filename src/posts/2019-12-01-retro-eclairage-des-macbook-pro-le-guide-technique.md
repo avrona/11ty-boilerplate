@@ -17,11 +17,11 @@ layout: "layouts/post.njk"
 
 Cet article porte sur des explications simples de fonctionnement d'un rétro-éclairage sur un écran. S'en suivent des détails bien plus techniques, pour utilisateurs avertis. Si votre objectif est uniquement de comprendre ce que votre réparateur préféré baragouine, arrêtez vous au premier chapitre (avant la migraine). Si vous êtes du genre technique et motivé, allez jusqu'au bout, et n'hésitez pas a poser des questions à la fin ! Ca nous aidera à améliorer l'article.
 
-# Commençons par le commencement. C’est quoi le rétro-éclairage ?
+## Commençons par le commencement. C’est quoi le rétro-éclairage ?
 
 Votre écran d’ordinateur n’est pas fait d’une seule couche, qui vous affiche des informations, mais de deux : Une couche qui affiche effectivement les informations, icônes et images. C’est ce qu’on appelle communément la dalle LCD. Une autre couche qui sert à éclairer l’écran, le rétro-éclairage ou _backlight_, dans la langue de Shakespeare.
 
-## Principe de base du rétro-éclairage d'un écran
+### Principe de base du rétro-éclairage d'un écran
 
 Le principe est simple, la première couche ne produit pas de lumière, elle ne fait qu’afficher ou masquer des points de couleur variable, et partiellement transparents (les fameux pixels) qui correspondent à l’information à afficher. Derrière se trouve un diffuseur, et des bandes de LED. Les bandes de LED sont en général disposées sur le côté de l’écran, et créent une faisceau de lumière à l’intérieur du diffuseur. Le diffuseur est une fine couche de matière plastique transparente, faite pour diffuser la lumière sur toute la surface de l’écran.
 
@@ -32,13 +32,13 @@ Bande de LED du rétro-éclairage d'un iPod. (Wikipedia)
 
 Le rétro-éclairage est un classique des pannes de MacBook Pro, et de nombreux autres ordinateurs portables. Si le circuit en charge de l’alimentation des LED est défaillant, votre ordinateur et votre affichage fonctionnera, mais vous distinguerez à peine les informations.
 
-## Et sur un Mac, le _backlight_ marche comment ?
+### Et sur un Mac, le _backlight_ marche comment ?
 
 Sur le Mac d’avant 2016, le logo pomme sur le dos de l’écran est transparent lui aussi. Il n'est éclairé quand l’écran s’allume. Cette pomme blanche est en fait éclairé par le même système de rétro-éclairage. Par conséquent, quand votre rétro-éclairage est défaillant, vous devriez pouvoir distinguer votre écran en mettant une lampe de poche (ou le flash de votre portable) derrière l’écran, pile au niveau du logo Pomme…
 
 C’est encore le moyen le plus simple de diagnostiquer une rétro-éclairage défaillant, et c’est celui que nous utilisons !
 
-# Alimenter les LED du rétro-éclairage, c'est tout un programme
+## Alimenter les LED du rétro-éclairage, c'est tout un programme
 
 Place maintenant à un peu de technique. Une LED doit être alimenté pour briller. Logique. Elle est alimentée en tension, et on retrouve souvent des tensions de quelques volts à ses bornes : 2 à 5 Volts en général, pour chaque LED.
 
@@ -48,7 +48,7 @@ Chacune de ces LED étant montée en série, si nous en avons 10 sur la bande de
 
 Pour arriver à cette tension élevée, on utilise un circuit électronique, appelé _DC-DC Boost_. _DC-DC_ car il converti du courant continu (_Direct Current_ en anglais, le _DC_ de _AC/DC_...) vers du courant continu, et _Boost_, parce qu’il permet d’augmenter la tension de sortie, de la booster. Et il n’y a rien de magique là-dedans, on ne crée pas d'énergie de nulle part. Pour citer Lavoisier : "rien ne se perd, rien ne se crée, tout se transforme". C’est le cas ici. Une tension faible peut se convertir en tension plus forte, mais le courant de sortie sera réduit. La puissance d’entrée sera équivalente à la puissance de sortie, moins les pertes de conversion. La puissance étant égale à la tension multipliée par le courant, si on augmente la tension en réduisant le courant, on booste la tension, avec la même puissance (les puristes excuserons les raccourcis honteux de cette dernière phrase).
 
-## Créer 50V depuis une batterie 12V
+### Créer 50V depuis une batterie 12V
 
 Les allergiques à la technique sont excusés à partir d'ici !
 
@@ -62,7 +62,7 @@ Dans les faits, la fréquence de commutation du transistor permet de faire varie
 
 En d’autres termes, quand vous augmenter la luminosité de votre écran avec la touche , vous réduisez la fréquence de commutation (temps entre ouverture et fermeture) du transistor du _DC-DC Boost_. C’est l’inverse pour réduire la luminosité : le temps ouverture-fermeture est plus court -> donc les électrons stockés sont moins nombreux ->le pic de tensions à la fermeture est plus petit -> la tension d’alimentation des LED est plus faible -> votre écran brille moins…
 
-## Driver LED, inductance, MOSFET, fusible...ça en fait du monde
+### Driver LED, inductance, MOSFET, fusible...ça en fait du monde
 
 Toute cette gymnastique est créée et géré par une seule puce, appelée _Driver LED_. La bobine est extérieure à cette puce, elle est bien trop grosse. Par contre, le MOSFET est parfois intégré au D_river LED,_ sur les MacBook Pro/Air avant le Retina, et extérieur au _Driver LED_ sur les MacBook Pro/Air plus récents.
 
@@ -75,7 +75,7 @@ Ce petit listing doit commencer à vous donner des pistes de pannes possibles (o
 - Si le MOSFET est constamment ouvert, ou fermé, c'est pareil, plus rien ne fonctionne.
 - Enfin, si on ne dit pas au Driver LED de s'allumer, il n'éclaire pas l'écran... une simple piste coupée ou un condensateur en court-circuit peuvent en être responsables !
 
-# Analyse du backlight d'un MacBook Pro fin 2013
+## Analyse du backlight d'un MacBook Pro fin 2013
 
 Les composants de gestion du rétro-éclairage des MacBook Pro et MacBook Air sont tous situés à côté du Driver LED. Soit du même côté de la carte-mère, soit de l’autre côté pour la bobine. Ils ne sont pas forcément proches du connecteur de l'écran.
 
@@ -101,7 +101,7 @@ C'est finalement, pas si compliqué. Depuis le MacBook Pro 2009, jusqu’au plus
 
 Le Driver LED a évolué avec la machine et sa gestion d’énergie. Quelques composants ont été replacés plus proche, d’autres plus loin, mais globalement, l'idée est la même.
 
-# Conclusion
+## Conclusion
 
 Si vous êtes arrivé jusqu'ici, que vous avez tout compris, et que vous voulez tester ça en vrai, n'hésitez pas à nous envoyer un CV !!!
 
