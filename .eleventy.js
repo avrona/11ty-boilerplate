@@ -8,6 +8,8 @@ const purgeCssPlugin = require("eleventy-plugin-purgecss");
 const helpers = require("./src/_data/helpers");
 // Add Schema.org plugin
 const schema = require("@quasibit/eleventy-plugin-schema");
+// Add sitemap plugin
+const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 // Markdown-it
 const markdownIt = require("markdown-it");
 var markdownItp = require("markdown-it")();
@@ -147,6 +149,14 @@ module.exports = function (eleventyConfig) {
 
     // Optional: Set quiet: true to suppress terminal output
     quiet: false,
+  });
+
+  // sitemap plugin config
+  eleventyConfig.addPlugin(sitemap, {
+    lastModifiedProperty: "modified",
+    sitemap: {
+      hostname: 'https://www.6337.fr',
+    },
   });
 
   // Get the first `n` elements of a collection.
