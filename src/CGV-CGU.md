@@ -1,5 +1,4 @@
 ---
-title: "Conditions et confidentialité"
 date: "2019-05-15"
 layout: 'layouts/cgv-cgu.njk'
 permalink: "cgv-cgu/"
@@ -11,7 +10,7 @@ jsfile: ["../js/navbarmanagement.js" ]
 
 ## Qui sommes-nous ?
 
-L’adresse de notre site Web est : https://www.6337.fr. et notre service s'appelle 6337, et le nom de la société mère est Point The Gap SAS. Notre atelier est installé au Générateur9, un atelier partagé à Lyon 9ème. Vous pourrez nous y trouver, mais nous n'y sommes pas tous les jours. La société est domicilée à Lyon 3ème, à quelques pas de là (au 61 Cours de la liberté, pour être exact). Aujourd'hui, c'est plus une boite postale qu'un véritable bureau: vous aurez très peu de chance de nous y rencontrer (mais c'est l'endroit ou addresser vos réclamations officielles, s'il y a lieu).
+L’adresse de notre site Web est : https://www.6337.fr. et notre service s'appelle 6337, et le nom de la société mère est 6337 SAS. Notre atelier est installé au Générateur9, un atelier partagé à Lyon 9ème. Vous pourrez nous y trouver, mais nous n'y sommes pas tous les jours. La société est domicilée à Lyon 1er, à quelques pas de là (au 53 Quai Saint Vincent, pour être exact). Aujourd'hui, c'est une boite postale, et pas un véritable bureau: vous aurez très peu de chance de nous y rencontrer (mais c'est l'endroit ou addresser vos réclamations officielles par courrier, s'il y a lieu).
 
 ## Utilisation des données personnelles collectées
 

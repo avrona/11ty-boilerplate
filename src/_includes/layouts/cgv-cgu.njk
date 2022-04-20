@@ -1,10 +1,12 @@
 ---
+title: "Mentions légales, CGV-CGU, crédits photos"
+subtitle: "Mentions légales, conditions générales, d'achat, crédits photos"
 layout: layouts/base.njk
 type: page
 eleventyComputed:
   meta:
-    title: Mentions légales, CGV-CGU, crédits photos
-    description: Nos mentions légales, conditions générales, d'achat, les crédits photos et toutes les références légales obligatoires.
+    title: "{{ title | safe }}"
+    description: "{{ subtitle | safe }}"
     breadcrumbs:
       - name: Conditions Générales
         url: "{{ site.url  +  page.url }}"
