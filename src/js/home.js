@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     for (var i = 0; i < buttons ; i++) {
         stepone.querySelectorAll(".button")[i].addEventListener("click", (event)=> {
-            console.log("click:" + event.target.id);
+            //console.log("click:" + event.target.id);
                 // Store clicked button value
                 valuesform.model = event.target.innerHTML;
                 valuesform.idmodel = event.target.id;
@@ -85,8 +85,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 //MacBook Pro
                 case "mbp":
                     nextPrev(1);  
-                    console.log('mbp clicked');
-                    console.log(valuesform.idmodel); 
+                    //console.log('mbp clicked');
+                    //console.log(valuesform.idmodel); 
                     // Hide buttons not matching mbp
                     filterSelection("button-model-pro","mbp","");
                     break
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     for (var i = 0; i < buttons ; i++) {
         steptwo.querySelectorAll(".button")[i].addEventListener("click", (event)=> {
-            console.log("click:" + event.target.id);
+            //console.log("click:" + event.target.id);
                 nextPrev(1);
                 // Store clicked button value
                 valuesform.model = event.target.innerHTML;
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     for (var i = 0; i < buttons ; i++) {
         stepthree.querySelectorAll(".button")[i].addEventListener("click", (event)=> {
-            console.log("click:" + event.target.id);
+            //console.log("click:" + event.target.id);
                  // Store clicked button value
                 valuesform.screen = event.target.innerHTML;
                 valuesform.idscreen = event.target.id ;
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     for (var i = 0; i < buttons ; i++) {
         stepfour.querySelectorAll(".button")[i].addEventListener("click", (event)=> {
-            console.log("click:" + event.target.id);
+            //console.log("click:" + event.target.id);
                 nextPrev(1);
                 // Store clicked button value
                 valuesform.year = event.target.innerHTML;
@@ -188,10 +188,10 @@ document.addEventListener("DOMContentLoaded", function(){
     for (var i = 0; i < buttons.length ; i++) {
         let button = buttons[i];
         button.addEventListener("click", (event)=> {
-            console.log("click:" + event.target.id);
-            console.log("contenu:" + event.target.innerHTML);
-            console.log("target:" + event.target);
-            console.log("button:" + button.id);
+            // console.log("click:" + event.target.id);
+            // console.log("contenu:" + event.target.innerHTML);
+            // console.log("target:" + event.target);
+            // console.log("button:" + button.id);
             
                 // Store clicked button value
                 valuesform.problem = event.target.innerHTML ;
@@ -334,7 +334,7 @@ function showEstimate () {
     var x = document.getElementsByClassName("buttontab");
     var tab = document.getElementById("estimatetab");
     var formbtn1 = document.getElementById("resetBtn");
-    //var formbtn2 = document.getElementById("estimateBtn");
+    //var formbtn2 = document.getElementById("estimateBtn");npm
 
     // Hide the current tab:
     x[currentTab].style.display = "none";
@@ -344,11 +344,12 @@ function showEstimate () {
     tab.style.display = "inline";
 
     // Trigger plausible tracking ;
-    plausible('EstimateHome');
+    //plausible('EstimateHome');
 
     // Calculate the sum
     var total = estimate();
     document.getElementById("amount").innerHTML = (total + "€ TTC");
+    console.log ('test amount', total);
 
     // Modify the content accordingly
     document.getElementById("mactitle").innerHTML = (valuesform.model);
@@ -396,7 +397,7 @@ function validateFirstName() {
     (inputFirstName.value.length < MAXCHARNAMEFIELD) &&
     (inputFirstName.value != null) &&
     (regexString.test(inputFirstName.value))  //test for regex string
-  console.log(regexString.test(inputFirstName.value))
+  // console.log(regexString.test(inputFirstName.value))
 
   // First Name test condition and validation
   if (conditionsFirstName) {
@@ -407,7 +408,7 @@ function validateFirstName() {
     // icon first name type
     iconFirstName.classList.remove('fa-exclamation-triangle')
     iconFirstName.classList.add('fa-check')
-    console.log("icon :" + iconFirstName.classList.value)
+    // console.log("icon :" + iconFirstName.classList.value)
  
     //now we call submit button test
     firstNameValidated = true
@@ -443,7 +444,7 @@ function validateLastName() {
     // icon Last name type
     iconLastName.classList.remove('fa-exclamation-triangle')
     iconLastName.classList.add('fa-check')
-    console.log("icon :" + iconLastName.classList.value)
+    // console.log("icon :" + iconLastName.classList.value)
  
     //now we call submit button test
     lastNameValidated = true
@@ -501,7 +502,7 @@ function validateRegexString(email) {
 
 
 function submitCheck() {
-  console.log(firstNameValidated, lastNameValidated, emailValidated)
+  // console.log(firstNameValidated, lastNameValidated, emailValidated)
   if (firstNameValidated && lastNameValidated && emailValidated) {
  
     submit.disabled = false;              //button is no longer no-clickable
