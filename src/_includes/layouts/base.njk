@@ -68,12 +68,12 @@ eleventyComputed:
     {% set titletag = [ title, " - " , titleshort] | join %}
     <title>  {{ titletag or title }}</title>
     <!--Twitter Card-->
-    <meta name="twitter:title" content="{{ title}}">
+    <meta name="twitter:title" content="{{ site.title }}">
     <meta name="twitter:description" content="{{ subtitle or site.description }}">
     
     <!--Schema-->
     <meta itemprop="name" content="{{ site.title}}">
-    <meta name="description" content="{{ subtitle or site.description }}">
+    <meta name="description" content="{{ subtitle or page.meta.description or site.description }}">
     
     <!-- Facebook OpenGraph -->
     <meta property="og:title" content="{{ site.title}}">
