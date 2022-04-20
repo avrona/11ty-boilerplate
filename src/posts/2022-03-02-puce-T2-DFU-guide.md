@@ -2,6 +2,7 @@
 title: "Votre Mac ne démarre pas : et si c'était la puce T2 ?"
 subtitle: "L'ajout de la puce T2 n'a pas apporté que des avantages. La sécurité renforcée de votre Mac implique une surcouche matérielle et logicielle qui peut parfois flancher. Plus de puces = plus de risques de panne."
 date: "2022-03-02"
+modified: "2022-04-12"
 tags: 
   - "blog"
   - "non-classe"

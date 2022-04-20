@@ -1,6 +1,7 @@
 ---
 title: "Votre MacBook Pro ne s’allume plus : Le guide ultime de diagnostic"
 date: "2020-02-23"
+modified: "2022-04-20"
 tags: 
   - "blog"
 coverImage: "images/c898ba6fa905ce3486c9d4326f2e4e03.png"

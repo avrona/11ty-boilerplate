@@ -1,6 +1,7 @@
 ---
 title: "MacBook Pro et Problème de GPU : Le guide ultime"
 date: "2020-02-07"
+modified: "2021-12-02"
 tags: 
   - "blog"
 coverImage: "images/signal-attachment-2020-02-07-233834-2-2.jpeg"

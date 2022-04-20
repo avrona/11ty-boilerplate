@@ -2,6 +2,7 @@
 title: "iMac 2009 A1311 - Carte mère 820-2494: Mort? Pas tout à fait..."
 subtitle: "Le cas d'une panne détectée et diagnostiquée par défaut. Ce genre de réparation n'est pas dans nos habitudes, mais l'exemple était parlant."
 date: "2019-04-13"
+modified: "2019-04-13"
 tags: 
   - "blog"
   - "non-classe"

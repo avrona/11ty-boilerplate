@@ -1,6 +1,7 @@
 ---
 title: "Tableau de compatibilité entre LCD et Mac"
 date: "2020-02-10"
+modified: "2020-02-10"
 tags: 
   - "knowledgebase"
 ---

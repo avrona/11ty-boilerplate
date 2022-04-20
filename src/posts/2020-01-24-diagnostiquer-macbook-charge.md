@@ -1,6 +1,7 @@
 ---
 title: "Comment diagnostiquer un MacBook Pro qui ne charge plus?"
 date: "2020-01-24"
+modified: "2022-04-10"
 tags:  
   - "blog"
 coverImage: "images/magsafe-photo-small.jpeg"

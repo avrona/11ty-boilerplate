@@ -1,6 +1,7 @@
 ---
 title: "Nouvelle année, nouveau site pour 6337"
 date: "2021-09-23"
+modified: "2021-09-23"
 tags:  
   - "blog"
   - "Atelier"

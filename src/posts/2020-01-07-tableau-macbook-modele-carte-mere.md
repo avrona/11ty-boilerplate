@@ -1,6 +1,7 @@
 ---
 title: "Tableaux de correspondance Modèle & Carte mère"
 date: "2020-01-07"
+modified: "2020-01-07"
 tags: 
   - "knowledgebase"
 subtitle: "Un grand tableau de correspondance entre le modèle de votre Mac, et le modèle de carte-mère qui correspond. Bien utile pour une réparation."

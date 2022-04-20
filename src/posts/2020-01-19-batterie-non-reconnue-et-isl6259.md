@@ -1,6 +1,7 @@
 ---
 title: "Batterie non-reconnue et ISL6259"
 date: "2020-01-19"
+modified: "2020-01-19"
 tags:  
   - "blog"
 coverImage: "images/ISL6259.png"
