@@ -21,7 +21,7 @@ J’ai récemment vu quelqu’un qui vendait sur leboncoin.fr un Macbook Pro 15 
 
 Certains pensent même qu’Apple pousse à la consommation en établissant un devis avec changement de "carte logique", dès qu’il y a des traces d’humidité sur les capteurs, alors même que le problème est tout autre.
 
-## Dans 95% des cas, une carte mère de MacBook Pro peut se réparer
+## Dans 95% des cas, une carte mère de MacBook peut se réparer
 
 Alors, on va faire simple : dans 95% des cas, une carte logique peut se réparer, qu'il s'agisse de MacBook Pro, MacBook Air ou iMac.
 
