@@ -15,15 +15,15 @@ formheader : "Une estimation en 3 clics pour une réparation de votre carte-mèr
 
 Cette question est probablement celle que l’on nous pose le plus ? « La carte mère de mon MacBook Pro et HS. Est-ce possible de la faire réparer? ».
 
-C’est, en fait, notre spécialité. La majorité de nos clients sont allés voir l’Apple Store, ou un réparateur local, agréé ou non. Parfois même les deux, ou les trois. Ils ont tous obtenu la même réponse: "la carte mère de votre MacBook est HS, et il faut la changer".
+C’est, en fait, notre spécialité. La majorité de nos clients sont allés voir l’Apple Store, ou un réparateur local, agréé ou non. Parfois même les deux, ou les trois. Ils ont tous obtenu la même réponse: "la carte logique de votre MacBook est HS, et il faut la changer".
 
-J’ai récemment vu quelqu’un qui vendait sur leboncoin.fr un Macbook Pro 15 pouces Retina pour pièces. Il incluait parmi les photos, celles des deux devis qu’il avait fait faire. Le premier mentionnait un remplacement carte mère MacBook Pro à 1100€ et le second, une réparation de carte mère HS Macbook pro pour 1700€. Forcément, Si l'on ajoute le prix d'une carte neuve au coût de la main d'oeuvre, la facture s’en ressent. Une réparation de carte mère chez nous coûterai 350€ à 400€ tout au plus sur ce modèle.
+J’ai récemment vu quelqu’un qui vendait sur leboncoin.fr un Macbook Pro 15 pouces Retina pour pièces. Il incluait parmi les photos, celles des deux devis qu’il avait fait faire. Le premier mentionnait un remplacement de carte logique MacBook Pro à 1100€ et le second, une réparation de carte mère HS Macbook pro pour 1700€. Forcément, Si l'on ajoute le prix d'une carte neuve au coût de la main d'oeuvre, la facture s’en ressent. Une réparation de carte mère chez nous coûterai 350€ à 400€ tout au plus sur ce modèle.
 
 Certains pensent même qu’Apple pousse à la consommation en établissant un devis avec changement de "carte logique", dès qu’il y a des traces d’humidité sur les capteurs, alors même que le problème est tout autre.
 
 ## Dans 95% des cas, une carte mère de MacBook Pro peut se réparer
 
-Alors, on va faire simple : dans 95% des cas, une carte mère peut se réparer, qu'il s'agisse de MacBook Pro, MacBook Air ou iMac.
+Alors, on va faire simple : dans 95% des cas, une carte logique peut se réparer, qu'il s'agisse de MacBook Pro, MacBook Air ou iMac.
 
 Comment s’y prend-on ? On va tout vous dire.
 
@@ -41,7 +41,7 @@ Pour tout cela, on utilise les schémas donc, mais aussi une loupe binoculaire, 
 
 ## Parfois, une carte mère de MacBook Pro est irréparable
 
-On ne va pas vous mentir. Il arrive qu’une carte mère de MacBook Pro ne soit pas réparable. Il y a deux cas
+On ne va pas vous mentir. Il arrive qu’un MacBook Pro ne soit pas réparable. Il y a deux cas : 
 
 ### Le cas où le CPU (micro-processeur) est touché
 
@@ -55,6 +55,6 @@ Ces puces sont également difficiles à trouver, mais ce n'est pas le problème 
 
 Les réparateurs comme nous sont nombreux outre-Atlantique, et encore plus nombreux en Asie, bien moins présents en Europe. Nous en voyons malgré tout de plus en plus, une vraie tendance est train de se forger. Cela va de pair avec une volonté de réparer et faire durer, plutôt que remplacer.
 
-Un bon réparateur de carte mère de MacBook Pro communique sur ses réparations. Il met en avant ses compétences, car elles sont rares. N’hésitez pas à demander, ou bien chercher des photos des travaux de votre réparateur. Il doit pouvoir vous montrer son atelier. Certains sous-traitent ce travail à un prestataire. Essayez d'en savoir plus sur le parcours de votre carte et la réputation de la personne qui sera en charge de celle-ci.
+Un bon réparateur de MacBook Pro communique sur ses réparations. Il met en avant ses compétences, car elles sont rares. N’hésitez pas à demander, ou bien chercher des photos des travaux de votre réparateur. Il doit pouvoir vous montrer son atelier. Certains sous-traitent ce travail à un prestataire. Essayez d'en savoir plus sur le parcours de votre carte et la réputation de la personne qui sera en charge de celle-ci.
 
 Si vous êtes à Lyon, nous sommes là, bien sûr (Lyon 9, pour être exact). Sinon, vous pouvez nous envoyer votre Macbook Pro. On s’occupera de sa carte mère dans les règles de l’art.
