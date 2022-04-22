@@ -9,13 +9,13 @@ coverImageAlt: "Vue latérale d'un MacBook pro et de ses connecteurs"
 subtitle: "Un guide pas-à-pas pour pouvoir poser un diagnostic clair et savoir quoi faire ou vers qui se tourner pour réparer un MacBook Pro."
 permalink : "./{{ page.fileSlug }}/"
 layout: 'layouts/post.njk'
-formtitle : "Votre MacBook Pro ne s'allume toujours pas ?"
+formtitle : "Votre Mac ne s'allume toujours pas ?"
 formheader : "Votre devis pour faire réparer votre carte-mère par des experts. Envoi, réparation, retour et garantie incluses !"
 ---
 
 #### Résumé
 
-- Vérifier si tout est en ordre pour qu'il s'allume :
+- Vérifier si tout est en ordre pour que votre Mac s'allume :
   - Le chargeur fonctionne (et la prise aussi...), le câble d'alimentation est bien branché...
   - Est-il vraiment éteint ? Vérifier s'il fait du bruit, si la touche verrouillage-majuscule s'allume, si l'affichage externe fonctionne, augmenter le rétroéclairage..
 - Réinitialiser la PRAM et le SMC
@@ -33,7 +33,7 @@ Si vous avez un MacBook Pro Touchbar, il n’y a plus de diode sur la prise de c
 
 En branchant cet outil entre votre chargeur et le Mac, il vous indique la tension de charge des MacBook Pro USB-C. Si elle est à 20 Volts (plutôt 19.8 Volts d’ailleurs…) tout est bon. Si la tension est à 5 Volts, c’est mauvais signe : le chargeur n'est pas reconnu, et c'est ce qui fait que votre MacBook Pro ne s'allume plus. Si le chargeur fonctionne bien ailleurs, c’est que c’est un problème de port USB-C : dans ce cas, on vous conseille de faire appel à un réparateur de carte-mère ([comme nous](https://www.6337.fr/prise-en-charge/), par exemple).
 
-## Votre MacBook Pro ne s’allume plus, vous en êtes sûr ?
+## Votre Mac ne s’allume plus, vous en êtes sûr ?
 
 Une des premières étapes essentielles est de savoir si votre Mac est bien éteint. Eh oui, peut-être que votre écran est simplement éteint, ou que votre Mac est allumé mais n’affiche rien. Alors vérifiez que votre Mac est allumé :
 
