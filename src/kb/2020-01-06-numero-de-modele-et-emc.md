@@ -1,12 +1,20 @@
 ---
 title: "Où trouver votre numéro de carte mère"
 date: "2020-01-06"
+modified: "2020-01-06"
 tags: 
   - "knowledgebase"
+  - "compatibilité"
+coverImage: "images/iMac-sophie-puce.jpg"
+coverImageAlt: "Puce remplacée sur l'iMac de Sophie"
 subtitle: "Le numéro de carte-mère est parfois bien caché, et difficile à débusquer. On vous détaille la localisation de chacun d'entre eux, sur chaque modèle de Mac."
-permalink : "./{{ page.fileSlug }}/"
-layout: 'layouts/post.njk'
 ---
+
+
+<!-- 
+permalink : "./kb/{{ page.fileSlug }}/"
+jsfile: ["../../js/navbarmanagement.js" ]
+relative_path: '../' -->
 
 Pour toute question sur ce qu'est le numéro d'une carte mère, et à quoi il correspond. Référez-vous à l'article idoine: [A quoi correspond le numéro de carte mère](https://www.6337.fr/a-quoi-correspond-le-numero-de-carte-mere/)
 
@@ -24,9 +32,9 @@ Ces Mac plus anciens ont des carte mères qui épousent la forme du ventilateur.
 
 Le numéro de carte se trouve le plus souvent en bas à gauche de la carte (Mac retourné et ouvert, batterie face devant vous). C'est la zone entouré en vert sur l'image. Et pour exemple, le 820-2530-A qui correspond à un MacBook Pro mi-2010. Attention, sur certains modèles, le numéro de carte mère se trouve en dessous d'un des connecteurs de cette zone...
 
-\[caption id="attachment\_806" align="aligncenter" width="601"\]![](images/820-2530-A-CM-web.jpg) Le numéro de carte mère se trouve dans cette zone.\[/caption\]
+{% image "images/820-2530-A-CM-web.jpg", "Le numéro de carte mère se trouve dans cette zone." %}
 
-\[caption id="attachment\_807" align="aligncenter" width="331"\]![](images/820-2530-A-CMnumber-crop.jpg) Exemple d'un 820-2530-A, gravé entre le module RAM et le connecteur du disque dur.\[/caption\]
+{% image "images/820-2530-A-CMnumber-crop.jpg", "Exemple d'un 820-2530-A, gravé entre le module RAM et le connecteur du disque dur." %}
 
 ## MBP Unibody 15
 

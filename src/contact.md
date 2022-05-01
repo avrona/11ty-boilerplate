@@ -4,4 +4,5 @@ subtitle: "Formulaire de contact: posez toutes vos questions sur les Mac et la r
 layout: 'layouts/contact.njk'
 permalink: "contact/"
 jsfile: ["../js/contactform.js", "../js/navbarmanagement.js" ]
+relative_path: ''
 ---

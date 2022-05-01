@@ -1,8 +1,13 @@
 ---
 title: "Tableau de compatibilité entre LCD et Mac"
 date: "2020-02-10"
+modified: "2020-02-10"
 tags: 
   - "knowledgebase"
+  - "compatibilité"
+coverImage: "images/iMac-sophie-puce.jpg"
+coverImageAlt: "Puce remplacée sur l'iMac de Sophie"
+subtitle: "Un grand tableau de correspondance entre le modèle de votre Mac, et le modèle d'écran LCD qui correspond. Bien utile pour une réparation."
 ---
 
 ## Quels Macbook Pro ou Air seront compatibles avec mon LCD/écran de remplacement (et inversement...)

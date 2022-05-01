@@ -1,0 +1,158 @@
+---
+layout: layouts/base.njk
+---
+
+
+{# {% extends "layouts/base.njk" %} #}
+
+ {% block content %}
+ <!---- Page title-->
+  <section class="hero is-small">
+    <div class="hero-body">
+        <div class="container has-text-centered is-primary">
+        <H1 class="title">
+            {{ meta.title }}
+        </H1>
+        <H2 class="subtitle">
+            {{ meta.description }}
+        </H2>
+        </div>
+    </div>
+  </section>
+
+   <!---- Cards content -->
+
+<section>
+   <div class="container is-max-desktop">
+    <section class="featured">
+      
+      <div class="level">
+        <div class="level-left">
+          <div class="level-item">
+            <h2 class="subtitle">Catégories</h2>
+          </div>
+        </div>
+      </div>
+      
+      <div class="columns">
+          <!-- Single Card template -->
+        {% for item in kbdata.kbfeature.card %}
+          {% include 'partials/kbpage/kbcard.njk' %}
+        {% endfor %}
+         <!-- End single card template -->
+      </div>
+
+
+    </section>
+    <section class="categories">
+      <div class="columns is-multiline">
+          <!-- Single Columns article list template -->
+        <div class="column is-6">
+          <div class="category">
+            <h1 class="title is-5">
+              {{ kbdata.kbfeature.card[0].subtitle }} <span>{{ collections['premiers pas'] | length }} articles</span>
+            </h1>
+            <hr />
+            <ul>
+              {% for post in collections['premiers pas']   %}
+               {% if loop.index0 < 5 %}
+                  <li>
+                    <a href="{{ post.data.page.url }}">
+                      <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
+                      {{ post.data.title }}
+                    </a>
+                  </li>
+                {% else %}
+                {% endif %}
+              {% endfor %}
+            </ul>
+              <a href="/categories/premiers_pas/">
+                <h3 class="category-more">View All <i class="far fa-arrow-right icon-padding-left"></i></h3>
+              </a>
+          </div>
+        </div>
+        <!-- End of single column article list template -->
+        <div class="column is-6">
+          <div class="category">
+            <h1 class="title is-5">
+              {{ kbdata.kbfeature.card[1].subtitle }} <span>{{ collections['compatibilité'] | length }} articles</span>
+            </h1>
+            <hr />
+            <ul>
+              {% for post in collections['compatibilité']   %}
+               {% if loop.index0 < 5 %}
+                  <li>
+                    <a href="{{ post.data.page.url }}">
+                      <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
+                      {{ post.data.title }}
+                    </a>
+                  </li>
+                {% else %}
+                {% endif %}
+              {% endfor %}
+            </ul>
+              <a href="/categories/compatibilite/">
+                <h3 class="category-more">View All <i class="far fa-arrow-right icon-padding-left"></i></h3>
+              </a>
+          </div>
+        </div>
+
+        <div class="column is-6">
+          <div class="category">
+            <h1 class="title is-5">
+              Getting Started <span>6 articles</span>
+            </h1>
+            <hr />
+            <ul>
+              <li>
+                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
+                Creating a New Conversation
+              </li>
+              <li>
+                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
+                Assigning Conversations and Changing Status
+              </li>
+              <li>
+                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
+                Adding Internal Notes
+              </li>
+              <li>
+                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
+                Configuring Your Inbox View
+              </li>
+              <li>
+                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
+                Snoozing a Conversation
+              </li>
+            </ul>
+            <h3 class="category-more">View All <i class="far fa-arrow-right icon-padding-left"></i></h3>
+          </div>
+        </div>
+        <div class="column is-6">
+          <div class="category">
+            <h1 class="title is-5">
+              Users & Groups <span>3 articles</span>
+            </h1>
+            <hr />
+            <ul>
+              <li>
+                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
+                Understanding User Roles
+              </li>
+              <li>
+                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
+                Creating a Group
+              </li>
+              <li>
+                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
+                Editing the Role of a User
+              </li>
+            </ul>
+            <h3 class="category-more">View All <i class="far fa-arrow-right icon-padding-left"></i></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    {% endblock %}

@@ -1,12 +1,13 @@
 ---
 title: "Tableaux de correspondance Modèle & Carte mère"
 date: "2020-01-07"
+modified: "2020-01-07"
 tags: 
   - "knowledgebase"
+  - "compatibilité"
+coverImage: "images/iMac-sophie-puce.jpg"
+coverImageAlt: "Puce remplacée sur l'iMac de Sophie"
 subtitle: "Un grand tableau de correspondance entre le modèle de votre Mac, et le modèle de carte-mère qui correspond. Bien utile pour une réparation."
-permalink : "./{{ page.fileSlug }}/"
-layout: 'layouts/post.njk'
-
 ---
 
 \[av\_textblock size='' font\_color='' color='' av-desktop-hide='' av-medium-hide='' av-small-hide='' av-mini-hide='' av-medium-font-size='' av-small-font-size='' av-mini-font-size='' av\_uid=''\]

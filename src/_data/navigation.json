@@ -15,12 +15,16 @@
     ] ,
     "itemsmore": [
         {
-          "text": "A propos",
-          "url": "/a-propos-de-6337"
-        },
-        {
           "text": "Blog",
           "url": "/blog/"
+        },
+        {
+          "text": "Base de connaissances",
+          "url": "/kb"
+        },
+        {
+          "text": "A propos",
+          "url": "/a-propos-de-6337/"
         },
         {
           "text": "Contact",

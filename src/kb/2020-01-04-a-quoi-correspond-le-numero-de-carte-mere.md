@@ -1,11 +1,13 @@
 ---
 title: "A quoi correspond le numéro de carte mère"
 date: "2020-01-04"
+modified: "2020-01-04"
 tags: 
   - "knowledgebase"
+  - "premiers pas"
+coverImage: "images/iMac-sophie-puce.jpg"
+coverImageAlt: "Puce remplacée sur l'iMac de Sophie"
 subtitle: "Le numéro de carte-mère correspond au numéro de la pièce. Indispensable pour identifier, diagnostiquer et réparer un Mac. Mais a quoi correspond-t-il exactement ?"
-permalink : "./{{ page.fileSlug }}/"
-layout: 'layouts/post.njk'
 ---
 
 ## Un numéro ? sur ma carte mère ?

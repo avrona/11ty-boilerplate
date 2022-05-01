@@ -1,0 +1,16 @@
+{
+    "card": [
+      {
+        "subtitle": "Diagnostic",
+        "tag": "Tag 1"
+      },
+      {
+        "subtitle": "Premier pas",
+        "tag": "Tag 2"
+      },
+      {
+        "subtitle": "Test",
+        "tag": "Tag 3"
+      }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "card": [
+      {
+        "subtitle": "Premiers pas",
+        "tag": "Tag 1"
+      },
+      {
+        "subtitle": "Diagnostic",
+        "tag": "Tag 2"
+      },
+      {
+        "subtitle": "Réparation",
+        "tag": "Tag 3"
+      },
+      {
+        "subtitle": "Soudure",
+        "tag": "Tag 3"
+      }
+    ]
+}

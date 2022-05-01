@@ -15,6 +15,7 @@ const markdownIt = require("markdown-it");
 var markdownItp = require("markdown-it")();
 
 
+
 // FULL SIZE Image plugin configuration
 function imageShortcode(src, alt) {
   let sizes = "(min-width: 1024px) 40vw, 100vw"
