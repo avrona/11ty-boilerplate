@@ -5,12 +5,10 @@ modified: "2020-01-07"
 tags: 
   - "knowledgebase"
   - "compatibilité"
-coverImage: "images/iMac-sophie-puce.jpg"
-coverImageAlt: "Puce remplacée sur l'iMac de Sophie"
+coverImage: "kb/images/820-01814-cm-Web.jpg"
+coverImageAlt: "Carte-mère de MacBook Pro Touchbar"
 subtitle: "Un grand tableau de correspondance entre le modèle de votre Mac, et le modèle de carte-mère qui correspond. Bien utile pour une réparation."
 ---
-
-\[av\_textblock size='' font\_color='' color='' av-desktop-hide='' av-medium-hide='' av-small-hide='' av-mini-hide='' av-medium-font-size='' av-small-font-size='' av-mini-font-size='' av\_uid=''\]
 
 # Comment lire ces tableaux
 
@@ -106,9 +104,7 @@ Pour rappel, nous avons des articles dans cette base de connaissance pour:
 |  | EMC 3184 | A1932 | Late 2018 | MacBookAir8,1 | 820-01521 |  |
 |  | EMC 3184 | A1932 | True Tone 2019 | MacBookAir8,2 |  |
 
-\[/av\_textblock\]
 
-\[av\_codeblock wrapper\_element='' wrapper\_element\_attributes='' codeblock\_type='' av\_uid='av-k5hxhoej' custom\_class=''\]
 
 # Tableau modèle de Mac vers numéro de carte mère
 
@@ -136,4 +132,3 @@ Pour rappel, nous avons des articles dans cette base de connaissance pour:
 |  | EMC 2352-1 | A1297 | Early 2011 | MacBookPro8,3 | 820-2914 |  |
 |  | EMC 2564 | A1297 | Late 2011 | MacBookPro8,3 | 820-2914 |  |
 
-\[/av\_codeblock\]

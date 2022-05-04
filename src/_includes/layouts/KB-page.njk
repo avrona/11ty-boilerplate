@@ -5,6 +5,9 @@ layout: layouts/base.njk
 
 {# {% extends "layouts/base.njk" %} #}
 
+{% set cattitle = ['premiers pas','compatibilité','réparation','soudure'] %}
+{% set catsubtitle = ['Les basiques de la réparation, premières étapes ou essentiels.','Tableaux et gammes de compatibilité de pièces entre différents modèles.','Le vif du sujet: démonter, diagnostiquer, tester et valider','Explications sur les techniques, méthodes et outils de soudure. Le summum.'] %}
+
  {% block content %}
  <!---- Page title-->
   <section class="hero is-small">
@@ -34,10 +37,22 @@ layout: layouts/base.njk
         </div>
       </div>
       
-      <div class="columns">
+      <div class="columns is-mobile is-centered is-multiline">
           <!-- Single Card template -->
-        {% for item in kbdata.kbfeature.card %}
-          {% include 'partials/kbpage/kbcard.njk' %}
+        {% for i in range(0,4) -%}
+          <div class="column is-3-tablet is-half-mobile pb-6 mx-3-is-mobile">
+            <a href="/kb/categories/{{cattitle[i]}}/">
+              <article>
+                <figure class="image is-5by3">
+                  <img src="https://i.ibb.co/fq8hSGQ/placeholder-image-368x246.png" />
+                </figure>
+                <h2 class="title is-5 has-text-primary mb-1">{{ cattitle[i] | capitalize }}</h2>
+                <p class="has-text-grey-dark">
+                  {{ catsubtitle[i] | capitalize }}
+                <p>
+              </article>
+            </a>
+          </div>
         {% endfor %}
          <!-- End single card template -->
       </div>
@@ -45,38 +60,51 @@ layout: layouts/base.njk
 
     </section>
     <section class="categories">
+
+  
+
       <div class="columns is-multiline">
+
+      {% for i in range(0,4) -%}
+
           <!-- Single Columns article list template -->
         <div class="column is-6">
           <div class="category">
-            <h1 class="title is-5">
-              {{ kbdata.kbfeature.card[0].subtitle }} <span>{{ collections['premiers pas'] | length }} articles</span>
-            </h1>
-            <hr />
+            <H3 class="subtitle is-5 has-text-primary mb-1">
+              {{ cattitle[i] | capitalize }}: <span>{{ collections[cattitle[i]] | length }} articles</span>
+            </H3>
+            <hr class="my-1">
             <ul>
-              {% for post in collections['premiers pas']   %}
+              {% for post in collections[cattitle[i]]   %}
                {% if loop.index0 < 5 %}
                   <li>
                     <a href="{{ post.data.page.url }}">
+                      <h4 class="has-text-grey-dark"
                       <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
                       {{ post.data.title }}
+                      </h4>
                     </a>
                   </li>
                 {% else %}
                 {% endif %}
               {% endfor %}
             </ul>
-              <a href="/categories/premiers_pas/">
+              <a href="/kb/categories/{{cattitle[i]}}/">
                 <h3 class="category-more">View All <i class="far fa-arrow-right icon-padding-left"></i></h3>
               </a>
           </div>
         </div>
+        {%- endfor %}
         <!-- End of single column article list template -->
+{# 
+          <!-- Single Columns article list template -->
         <div class="column is-6">
           <div class="category">
+            <a href="/categories/compatibilite/">
             <h1 class="title is-5">
               {{ kbdata.kbfeature.card[1].subtitle }} <span>{{ collections['compatibilité'] | length }} articles</span>
             </h1>
+            </a>
             <hr />
             <ul>
               {% for post in collections['compatibilité']   %}
@@ -96,61 +124,63 @@ layout: layouts/base.njk
               </a>
           </div>
         </div>
-
+         <!-- End of single column article list template -->
+          <!-- Single Columns article list template -->
         <div class="column is-6">
           <div class="category">
+            <a href="/categories/réparation/">
             <h1 class="title is-5">
-              Getting Started <span>6 articles</span>
+              {{ kbdata.kbfeature.card[0].subtitle }} <span>{{ collections['réparation'] | length }} articles</span>
             </h1>
+            </a>
             <hr />
             <ul>
-              <li>
-                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
-                Creating a New Conversation
-              </li>
-              <li>
-                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
-                Assigning Conversations and Changing Status
-              </li>
-              <li>
-                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
-                Adding Internal Notes
-              </li>
-              <li>
-                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
-                Configuring Your Inbox View
-              </li>
-              <li>
-                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
-                Snoozing a Conversation
-              </li>
+              {% for post in collections['réparation']   %}
+               {% if loop.index0 < 5 %}
+                  <li>
+                    <a href="{{ post.data.page.url }}">
+                      <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
+                      {{ post.data.title }}
+                    </a>
+                  </li>
+                {% else %}
+                {% endif %}
+              {% endfor %}
             </ul>
-            <h3 class="category-more">View All <i class="far fa-arrow-right icon-padding-left"></i></h3>
+              <a href="/categories/premiers_pas/">
+                <h3 class="category-more">View All <i class="far fa-arrow-right icon-padding-left"></i></h3>
+              </a>
           </div>
         </div>
+        <!-- End of single column article list template -->
+          <!-- Single Columns article list template -->
         <div class="column is-6">
           <div class="category">
+            <a href="/categories/premiers_pas/">
             <h1 class="title is-5">
-              Users & Groups <span>3 articles</span>
+              {{ kbdata.kbfeature.card[0].subtitle }} <span>{{ collections['premiers pas'] | length }} articles</span>
             </h1>
+            </a>
             <hr />
             <ul>
-              <li>
-                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
-                Understanding User Roles
-              </li>
-              <li>
-                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
-                Creating a Group
-              </li>
-              <li>
-                <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
-                Editing the Role of a User
-              </li>
+              {% for post in collections['premiers pas']   %}
+               {% if loop.index0 < 5 %}
+                  <li>
+                    <a href="{{ post.data.page.url }}">
+                      <i class="fas fa-caret-right fa-xs icon-padding-right" /></i>
+                      {{ post.data.title }}
+                    </a>
+                  </li>
+                {% else %}
+                {% endif %}
+              {% endfor %}
             </ul>
-            <h3 class="category-more">View All <i class="far fa-arrow-right icon-padding-left"></i></h3>
+              <a href="/categories/premiers_pas/">
+                <h3 class="category-more">View All <i class="far fa-arrow-right icon-padding-left"></i></h3>
+              </a>
           </div>
         </div>
+        <!-- End of single column article list template --> #}
       </div>
     </section>
 

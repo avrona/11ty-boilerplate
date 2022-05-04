@@ -1,10 +1,10 @@
 ---
-title: "Test N4 - lorem ipsum"
+title: "Test N4 - premiers pas"
 date: "2022-04-10"
 modified: "2022-04-12"
 tags: 
   - "knowledgebase"
-  - "compatibilité"
+  - "premiers pas"
 coverImage: "images/iMac-sophie-puce.jpg"
 coverImageAlt: "Puce remplacée sur l'iMac de Sophie"
 subtitle: "Un grand tableau de correspondance entre le modèle de votre Mac, et le modèle d'écran LCD qui correspond. Bien utile pour une réparation."
