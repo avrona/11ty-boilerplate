@@ -6,33 +6,41 @@ layout: layouts/base.njk
 {# {% extends "layouts/base.njk" %} #}
 
 {% set cattitle = ['premiers pas','compatibilité','réparation','soudure'] %}
-{% set catsubtitle = ['Les basiques de la réparation, premières étapes ou essentiels.','Tableaux et gammes de compatibilité de pièces entre différents modèles.','Le vif du sujet: démonter, diagnostiquer, tester et valider','Explications sur les techniques, méthodes et outils de soudure. Le summum.'] %}
+{% set catsubtitle = ['Les basiques de la réparation, premières étapes ou essentiels.','Tableaux et gammes de compatibilité de pièces entre différents modèles.','Le vif du sujet: démonter, diagnostiquer, tester et valider.','Explications sur les techniques, méthodes et outils de soudure, le graal.'] %}
+{% set catimagealt = ['Vue latérale ports MacBook Pro', 'SSD compatible pour MacBook Air' , 'Puce T2 carte-mère' , 'Oxydation de composant sur carte-mère de MacBook Pro' ]%}
+{% set catimage = ['images/c898ba6fa905ce3486c9d4326f2e4e03.png','images/OWC-Mac-Air-SSD.jpg', 'images/T2-5x3.jpg','images/Macbook-pro-oxydation-5x3.jpg' ]%}
+
+<div class="columns is-centered">
+  <div class="column is-8 mb-1-mobile">
 
  {% block content %}
  <!---- Page title-->
   <section class="hero is-small">
-    <div class="hero-body">
-        <div class="container has-text-centered is-primary">
-        <H1 class="title">
-            {{ meta.title }}
-        </H1>
-        <H2 class="subtitle">
-            {{ meta.description }}
-        </H2>
-        </div>
+    <div class="container is-fluid">
+      <div class="hero-body">
+          <div class="container has-text-centered is-primary">
+          <H1 class="title">
+              {{ meta.title }}
+          </H1>
+          <H2 class="subtitle">
+              {{ meta.description }}
+          </H2>
+          </div>
+      </div>
     </div>
   </section>
 
    <!---- Cards content -->
 
-<section>
+  <section>
+  <div class="container is-fluid">
    <div class="container is-max-desktop">
     <section class="featured">
       
       <div class="level">
         <div class="level-left">
           <div class="level-item">
-            <h2 class="subtitle">Catégories</h2>
+            <h2 class="subtitle has-text-weight-semibold">Catégories</h2>
           </div>
         </div>
       </div>
@@ -44,9 +52,11 @@ layout: layouts/base.njk
             <a href="/kb/categories/{{cattitle[i]}}/">
               <article>
                 <figure class="image is-5by3">
-                  <img src="https://i.ibb.co/fq8hSGQ/placeholder-image-368x246.png" />
+                  {# <img src="/images/T2-192w.webp" /> #}
+                  {% image catimage[i] , catimagealt[i] %}
                 </figure>
-                <h2 class="title is-5 has-text-primary mb-1">{{ cattitle[i] | capitalize }}</h2>
+                <h2 class="title is-5 has-text-primary mb-1 mt-2">{{ cattitle[i] | capitalize }}</h2>
+                <hr class="my-1">
                 <p class="has-text-grey-dark">
                   {{ catsubtitle[i] | capitalize }}
                 <p>
@@ -57,9 +67,10 @@ layout: layouts/base.njk
          <!-- End single card template -->
       </div>
 
-
-    </section>
-    <section class="categories">
+    </div>
+  </section>
+  <section class="categories">
+  <div class="container is-fluid">
 
   
 
@@ -90,7 +101,7 @@ layout: layouts/base.njk
               {% endfor %}
             </ul>
               <a href="/kb/categories/{{cattitle[i]}}/">
-                <h3 class="category-more">View All <i class="far fa-arrow-right icon-padding-left"></i></h3>
+                <h3 class="category-more">View All <i class="fa fa-chevron-right icon-padding-left"></i></h3>
               </a>
           </div>
         </div>
@@ -182,7 +193,10 @@ layout: layouts/base.njk
         </div>
         <!-- End of single column article list template --> #}
       </div>
+      </div>
     </section>
 
 
     {% endblock %}
+  </div>
+</div>

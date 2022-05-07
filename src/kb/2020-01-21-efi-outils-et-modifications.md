@@ -4,7 +4,7 @@ date: "2020-01-21"
 modified: "2021-01-21"
 tags:  
   - "knowledgebase"
-  - "premiers pas"
+  - "réparation"
 coverImage: "images/iMac-sophie-puce.jpg"
 coverImageAlt: "Puce remplacée sur l'iMac de Sophie"
 subtitle: "Les bases de compréhesion de l'EFI, son rôle et de comment le modifier sans tout casser !"
@@ -74,7 +74,7 @@ Il faut ouvrir le fichier dump de votre EFI, et rechercher la chaîne de caract�
 
 A la fin, il suffit de récrire le fichier grâce à flashrom:
 
-> `flashrom -p ch341a*spi -r nomdufichier`
+> `flashrom -p ch341a_spi -r nomdufichier`
         
 
 **Attention:** Sur les macs plus récents, l'accès à la ROM de l'EFI est mieux protégée. Il faut, en fait, allumer le mac, puis l'éteindre, en restant appuyé sur le bouton *Power*. Ne pas enlever son doigt du bouton *Power*, et lancer le commandes que vous voulez (lecture, vérification, écriture). Gardez votre doigt sur *Power* pendant toutes les manipulations...
