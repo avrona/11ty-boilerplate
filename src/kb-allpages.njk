@@ -1,0 +1,72 @@
+---
+layout: layouts/base.njk
+type: page
+pagination:
+  data: collections
+  size: 1
+  alias: 'tag'
+  filter: [ 'all', 'faq', 'featured', 'Atelier', 'blog', 'non-classe' ]
+eleventyComputed:
+  title: "Base de connaissance - {{ tag }}"
+  meta:
+    url: "{{ site.url  +  page.url }}"
+    title: "{{ title | safe }}"
+    description: "{{ subtitle | safe }}"
+    breadcrumbs:
+      - name: "{{ title | safe }}"
+        url: "{{ site.url  +  '/kb/categorie/' + tag }}"
+        position: 2
+        image: "{{ site.url  + '/' +  site.header_image }}"
+relative_path : '../../'
+permalink: "./kb/categories/{{ tag }}/"
+---
+
+ <!-- Title of the page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <h1 class="title is-3 has-text-centered">
+      Catégorie '{{ tag }}'
+      </h1>
+      <h2 class="subtitle is-5 has-text-centered">
+      Base de connaissance: "{{ tag | capitalize }}"
+      </h2>
+    </div>
+  </section>
+
+
+<div class="section">
+
+{% set taglist = collections[ tag ] %}
+{% for post in taglist | reverse  %}
+
+    <div class="columns is-centered">
+      <div class="column is-8 ">
+    
+        <div class="box">
+          <article class="media">
+            <figure class="media-left">
+              <p class="image is-96x96">
+               {% thumbimage post.data.coverImage , post.data.coverImageAlt %} 
+              </p>
+            </figure>
+            <div class="media-content">
+              <div class="content  is-hoverable">
+                <a href="{{ post.url | url }}">
+                  <H4 class="has-text-primary"> {{ post.data.title }}</H3>
+                    <p class="has-text-grey-dark">
+                    {{ post.data.subtitle | truncate(145) }}
+                    <p>
+                  {# <p class="has-text-weight-semibold has-text-grey ">{{ post.date | readablePostDate }}</p> #}
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+{%  endfor  %}
+
+</div>
+
+

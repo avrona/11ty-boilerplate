@@ -4,4 +4,5 @@ subtitle: "63% d'étain et 37% de plomb, notre alliage préféré (et autre info
 layout: 'layouts/about.njk'
 permalink: "a-propos-de-6337/"
 jsfile: ["../js/navbarmanagement.js" ]
+relative_path: ''
 ---

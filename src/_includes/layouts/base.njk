@@ -50,7 +50,6 @@ eleventyComputed:
       - https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TCswTUrOLjYwYLRSNagwMU8zSU2yMDZMSU62SEoytzKoSLI0NEk1TbZMsjQxNLa0TPZiMTM2NgcAB6oQWw&q=6337&oq=6337&aqs=chrome.2.69i60j69i59j46i175i199j0l2j69i60j69i61l2.3461j0j9&sourceid=chrome&ie=UTF-8#lrd=0x47f4eb831dcc8bb7:0xb914e5c9b941399c,1,,,
       - https://www.linkedin.com/company/6337fr
 ---
-
   
 <!DOCTYPE html>
 <html lang="fr">
@@ -58,11 +57,11 @@ eleventyComputed:
 <head>
 <meta charset="UTF-8">
 
-{% jsonLdScript meta, type, tags %}
+  {% jsonLdScript meta, type, tags %}
 
-  {% include "partials/structure/site-head.njk" %}
-  
-  
+
+    {% include "partials/structure/site-head.njk" %}
+
     {%- block seo -%}
     
     {% set titletag = [ title, " - " , titleshort] | join %}

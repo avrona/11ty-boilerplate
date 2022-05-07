@@ -5,6 +5,8 @@ date: "2022-03-02"
 modified: "2022-04-12"
 tags: 
   - "blog"
+  - "knowledgebase"
+  - "premiers pas"
   - "non-classe"
 coverImage: 'images/T2.jpg'
 coverImageAlt: "Puce T2 - L'objet du délit"

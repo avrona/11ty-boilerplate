@@ -1,39 +1,60 @@
 ---js
 {
-  eleventyComputed: {
-    title: "{% if pagination.pageNumber == 0 %}Blog Réparation Mac{% else %}Blog Réparation Mac - page {{ pagination.pageNumber + 1 }}{% endif %}",
-    subtitle: "{% if pagination.pageNumber == 0 %}Des infos, nos techniques, nos astuces et quelques indiscrétions sur les Mac et la réparation {% else %}Archives de notre blog sur les Mac et la réparation - page {{ pagination.pageNumber + 1 }}{% endif %}"
-    },
-    layout: "layouts/blog-layout.njk",
-    jsfile: ["../js/navbarmanagement.js" ],
-      pagination: {
-          data: "collections.blog",
-          size: 5,
-          alias: "remainposts",
-          reverse: true,
-    },
-    permalink: "./{% if pagination.pageNumber == 0 %}blog/{% else %}blog{{ pagination.pageNumber + 1 }}/{% endif %}",
+	"eleventyComputed":{
+		"title":"{% if pagination.pageNumber == 0 %}Blog Réparation Mac{% else %}Blog Réparation Mac - page {{ pagination.pageNumber + 1 }}{% endif %}",
+		"subtitle":"{% if pagination.pageNumber == 0 %}Des infos, nos techniques, nos astuces et quelques indiscrétions sur les Mac et la réparation {% else %}Archives de notre blog sur les Mac et la réparation - page {{ pagination.pageNumber + 1 }}{% endif %}"
+	},
+	"layout":"layouts/blog-layout.njk",
+	"jsfile":[
+		"../js/navbarmanagement.js"
+	],
+	"pagination":{
+		"data":"collections.blog",
+		"size":5,
+		"alias":"remainposts",
+		"reverse":true
+	},
+	"permalink":"./{% if pagination.pageNumber == 0 %}blog/{% else %}blog{{ pagination.pageNumber + 1 }}/{% endif %}",
+	"relative_path":""
 }
 ---
 
 
 <div class="section">
 
-<!-- Featured posts are only 5 last posts -->
-{#
-{% if not pagination.previousPageLink %}
-    {% set lastposts = collections.blog | head(-5) %}
-    {% include "partials/blog/blog-featured.njk" %}
-{% endif %}
-#}
+{% for post in remainposts  %}
 
-
-{# {% set remainposts = collections.blog | headoff(-5) %} #}
-{%- for post in remainposts -%}
-  {% include "partials/blog/blog-box.njk" %}
-{%- endfor -%}
+    <div class="columns is-centered">
+      <div class="column is-8 ">
+    
+        <div class="box">
+          <article class="media">
+            
+            <figure class="media-left">
+              <p class="image is-96x96">
+               {% thumbimage post.data.coverImage , post.data.coverImageAlt %} 
+              </p>
+            </figure>
+            <div class="media-content">
+              <div class="content  is-hoverable">
+                <a href="{{ post.url | url }}">
+                  <H4 class="has-text-primary"> {{ post.data.title }}</H3>
+                    <p class="has-text-grey-dark">
+                    {{ post.data.subtitle | truncate(145) }}
+                    <p>
+                  <p class="has-text-weight-semibold has-text-grey ">{{ post.date | readablePostDate }}</p>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+{%  endfor  %}
 
 </div>
+
+
 
 
 

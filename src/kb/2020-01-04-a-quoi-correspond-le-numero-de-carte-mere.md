@@ -1,11 +1,13 @@
 ---
 title: "A quoi correspond le numéro de carte mère"
 date: "2020-01-04"
+modified: "2020-01-04"
 tags: 
   - "knowledgebase"
+  - "premiers pas"
+coverImage: "kb/images/820-00281-numero-CM.jpg"
+coverImageAlt: "Numéro de Carte mère 820-00281"
 subtitle: "Le numéro de carte-mère correspond au numéro de la pièce. Indispensable pour identifier, diagnostiquer et réparer un Mac. Mais a quoi correspond-t-il exactement ?"
-permalink : "./{{ page.fileSlug }}/"
-layout: 'layouts/post.njk'
 ---
 
 ## Un numéro ? sur ma carte mère ?
@@ -24,7 +26,7 @@ Ce numéro est inscrit sur la carte, en des endroits différents selon le modèl
 
 Autant le dire, si l'on n'est pas un initié, il n'est pas simple à trouver. Pourtant il est essentiel.
 
-\[caption id="attachment\_795" align="aligncenter" width="1200"\]![Carte mère 820 00281 ](images/820-00281-numero-CM.jpg) Exemple de numéro de carte mère de MacBook Pro\[/caption\]
+{% image "kb/images/820-00281-numero-CM.jpg", "Carte mère 820-00281" %}
 
 ## Un numéro essentiel
 

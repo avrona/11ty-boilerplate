@@ -4,10 +4,17 @@ date: "2020-01-06"
 modified: "2020-01-06"
 tags: 
   - "knowledgebase"
+  - "compatibilité"
+coverImage: "kb/images/820-2915-A-CM-web.jpg"
+coverImageAlt: "Numéro de carte-mère de MacBook Pro, bien caché..."
 subtitle: "Le numéro de carte-mère est parfois bien caché, et difficile à débusquer. On vous détaille la localisation de chacun d'entre eux, sur chaque modèle de Mac."
-permalink : "./{{ page.fileSlug }}/"
-layout: 'layouts/post.njk'
 ---
+
+
+<!-- 
+permalink : "./kb/{{ page.fileSlug }}/"
+jsfile: ["../../js/navbarmanagement.js" ]
+relative_path: '../' -->
 
 Pour toute question sur ce qu'est le numéro d'une carte mère, et à quoi il correspond. Référez-vous à l'article idoine: [A quoi correspond le numéro de carte mère](https://www.6337.fr/a-quoi-correspond-le-numero-de-carte-mere/)
 
@@ -25,9 +32,9 @@ Ces Mac plus anciens ont des carte mères qui épousent la forme du ventilateur.
 
 Le numéro de carte se trouve le plus souvent en bas à gauche de la carte (Mac retourné et ouvert, batterie face devant vous). C'est la zone entouré en vert sur l'image. Et pour exemple, le 820-2530-A qui correspond à un MacBook Pro mi-2010. Attention, sur certains modèles, le numéro de carte mère se trouve en dessous d'un des connecteurs de cette zone...
 
-\[caption id="attachment\_806" align="aligncenter" width="601"\]![](images/820-2530-A-CM-web.jpg) Le numéro de carte mère se trouve dans cette zone.\[/caption\]
+{% image "kb/images/820-2530-A-CM-web.jpg", "Le numéro de carte mère se trouve dans cette zone." %}
 
-\[caption id="attachment\_807" align="aligncenter" width="331"\]![](images/820-2530-A-CMnumber-crop.jpg) Exemple d'un 820-2530-A, gravé entre le module RAM et le connecteur du disque dur.\[/caption\]
+{% image "kb/images/820-2530-A-CMnumber-crop.jpg", "Exemple d'un 820-2530-A, gravé entre le module RAM et le connecteur du disque dur." %}
 
 ## MBP Unibody 15
 
@@ -35,7 +42,9 @@ Sur les modèles 15 pouces, la carte mère à la même forme que sur les modèle
 
 Prenez votre Mac face à vous, sur dos, capot inférieur ouvert et batterie devant vous. Le numéro de carte se trouve en dessous ou à gauche du ventilateur gauche. Voyez notre illustration d'un MacBook Pro 15 Unibody 2012 pour plus de détails.
 
-\[caption id="attachment\_814" align="aligncenter" width="655"\]![](images/820-2915-A-CM-web.jpg) Le numéro de carte zoomé dans le cadre vert clair.\[/caption\]
+
+
+{% image "kb/images/820-2915-A-CM-web.jpg", "Le numéro de carte zoomé dans le cadre vert clair." %}
 
 # MacBook Pro Retina
 
@@ -53,7 +62,7 @@ Photos à venir...
 
 Pour ces Mac, le numéro de carte mère se trouve en bas à gauche de celle-ci, toujours, Mac retourné, capot retiré et batterie face à vous. Il est parfois écrit de façon très discrète. Ouvrez les yeux.
 
-\[caption id="attachment\_819" align="aligncenter" width="652"\]![](images/820-3536-CM-web.jpg) On vous avait prévenu. C'est parfois très discret...\[/caption\]
+{% image "kb/images/820-3536-CM-web.jpg", "On vous avait prévenu. C'est parfois très discret..." %}
 
 ## MBPr 15"
 
@@ -61,7 +70,7 @@ Pour ces Mac, le numéro de carte mère se trouve en bas à gauche de celle-ci, 
 
 On a de la chance. Le numéro de carte est au même endroit pour tous les MacBook Pro Retina 15 pouces. Et c'est relativement facile à trouver. Toujours en bas à gauche de la carte mère, au niveau du coin, sous le SSD, comme sur la photo ci-dessous.
 
-\[caption id="attachment\_822" align="aligncenter" width="645"\]![](images/820-3662-CM-Web.jpg) Batterie devant vous. en bas à gauche de la carte mère.\[/caption\]
+{% image "kb/images/820-3662-CM-Web.jpg", "Batterie devant vous. en bas à gauche de la carte mère." %}
 
 # MacBook Pro TouchBar
 
@@ -77,7 +86,7 @@ On commence avec le MacBook Pro 2016, celui avec des touches de fonction classiq
 
 En bien, justement, le numéro de la carte mère est juste au dessus de ce SSD. Il est recouvert par un autocollant.
 
-\[caption id="attachment\_824" align="aligncenter" width="576"\]![](images/820-00875-CM-Web.jpg) Sous l'autocollant qui relie SSD et carte mère, on trouve notre numéro de carte.\[/caption\]
+{% image "kb/images/820-00875-CM-Web.jpg", "Sous l'autocollant qui relie SSD et carte mère, on trouve notre numéro de carte." %}
 
 ### MBP TB 13" 2016 à 2019 TouchBar
 
@@ -85,7 +94,7 @@ En bien, justement, le numéro de la carte mère est juste au dessus de ce SSD. 
 
 Les TouchBar ont la fameuse carte mère en forme de moustache, qui épouse la forme des deux ventilateurs. Ici, le numéro de carte mère se trouve n'est pas visible quand on ouvre le Mac (ce serait trop simple voyons...). Apple à fait le choix judicieux de placer ce numéro derrière la carte. Il faudra donc, en plus d'ouvrir le Mac, démonte la totalité de la carte mère pour la retourner. Une fois que tout ceci est fait. Le numéro de carte mère est sous la moustache de gauche, carte face à vous, et moustaches qui remontent... bref, voyez la photo :
 
-\[caption id="attachment\_827" align="aligncenter" width="596"\]![](images/820-00239-CM-Web.jpg) Il ne s'agit pas de la face mais du dos de la carte mère. Il faut la retirer pour accéder au numéro.\[/caption\]
+{% image "kb/images/820-00239-CM-Web.jpg", "Il ne s'agit pas de la face mais du dos de la carte mère. Il faut la retirer pour accéder au numéro." %}
 
 ## Modèle 15 pouces:
 
@@ -93,13 +102,14 @@ Les TouchBar ont la fameuse carte mère en forme de moustache, qui épouse la fo
 
 Sur les modèles 15 pouces, jusqu'en 2018. Le numéro de carte se trouve sur l'avant de la carte, mais quasiment au même endroit que pour les modèles 13 pouces. Avant de la carte, moustache de gauche, et juste en dessous, le numéro de votre carte mère.
 
-![820 00281 carte mère MacBook Pro Retina Touchbar](images/820-00281-numero-CM-1.jpg)
+{% image "kb/images/820-00281-numero-CM-1.jpg", "820 00281 carte mère MacBook Pro Retina Touchbar" %}
 
 ### MBP TB 15" 2019 TouchBar
 
 Ici, le numéro de carte mère est sur la face avant, mais coté droit de la carte mère.
 
-![Carte mère MacBook Pro Touchbar 820-01814](images/820-01814-cm-Web.jpg)
+{% image "kb/images/820-01814-cm-Web.jpg", "Carte mère MacBook Pro Touchbar 820-01814" %}
+
 
  
 
@@ -117,8 +127,7 @@ On vous mets une illustration dès qu'on la trouve... (désolé).
 
 Sur les MacBook Air 11" de 2013à 2015, Apple à placé le numéro de carte mère le long du bord haut de la carte, au dessus du CPU. Il est bien plus facile à trouver.
 
-\[caption id="attachment\_842" align="aligncenter" width="575"\]![MacBook Air 2014 carte mère 820-3435](images/820-3435-1-CM-Web.jpg) Sur les MacBook Air Récents, le numéro de carte se trouve au dessus du CPU.\[/caption\]
-
+{% image "kb/images/820-3435-1-CM-Web.jpg", "MacBook Air 2014 carte mère 820-3435" %}
  
 
 ## Modèle 13 pouces:
@@ -127,19 +136,19 @@ Sur les MacBook Air 11" de 2013à 2015, Apple à placé le numéro de carte mèr
 
 A gauche, sous le SSD, ou au centre de la carte... en gros.
 
-![820-3023 carte mère MacBook Air](images/820-3023-CM-Web.jpg)
+{% image "kb/images/820-3023-CM-Web.jpg", "820-3023 carte mère MacBook Air" %}
 
 ### MBA 13" 2012:
 
 A gauche de la carte, juste au dessus du haut-parleur.
 
-![820-3209 carte mère MacBook Air 2012](images/820-3209-cm-web.jpg)
+{% image "kb/images/820-3209-cm-web.jpg", "820-3209 carte mère MacBook Air 2012" %}
 
 ### MBA 13" 2013 - 2017:
 
 Le numéro de carte mère se trouve sous le SSD.
 
-![820-3437 carte mère MacBook Air](images/820-3437-CM-Web.jpg)
+{% image "kb/images/820-3437-CM-Web.jpg", "820-3437 carte mère MacBook Air" %}
 
 ### MBA 13" Retina 2018 - 2019:
 
@@ -149,7 +158,7 @@ Et le numéro de carte mère est ici gravé en contact Or, comme sur les iPhone,
 
 Il se trouve tout à droite de cette carte très compact.
 
-![MacBook Air Retina 2018 820-01521 carte mère](images/820-01521-cm-web.jpg)
+{% image "kb/images/820-01521-cm-web.jpg", "MacBook Air Retina 2018 820-01521 carte mère" %}
 
 # Conclusion:
 

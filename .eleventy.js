@@ -15,22 +15,27 @@ const markdownIt = require("markdown-it");
 var markdownItp = require("markdown-it")();
 
 
+
 // FULL SIZE Image plugin configuration
-function imageShortcode(src, alt) {
+async function imageShortcode(src, alt) {
   let sizes = "(min-width: 1024px) 40vw, 100vw"
   let srcPrefix = `./src/`
   src = srcPrefix + src
-  console.log(`Generating image(s) from:  ${src}`)
+  // console.log(`Generating image(s) from:  ${src}`)
   if(alt === undefined) {
     // Throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`)
   }
-
+  let isKb = false ;
+  if ( src.includes('kb/') ) {
+    isKb = true;
+  }
+  // isKb = src.includes('kb/') ;
   let options = {
     widths: [384, 512, 800, 960, 1280],
     formats: ['webp', 'jpeg'],
-    urlPath: "../images/",
-    outputDir: "./dist/images/",
+    urlPath: isKb ? "/kb/images/" : "/images/",
+    outputDir: isKb ? "./dist/kb/images/" : "./dist/images/",
     /* =====
     Now we'll make sure each resulting file's name will 
     make sense to you. **This** is why you need 
@@ -42,12 +47,8 @@ function imageShortcode(src, alt) {
       return `${name}-${width}w.${format}`
     }
   }
-
- // generate images, while this is async we don’t wait
-Image(src, options );
-
   // get metadata even the images are not fully generated
-  let metadata = Image.statsSync(src, options ) 
+  let metadata = await Image(src, options ) 
 
   let lowsrc = metadata.jpeg[0]
   let highsrc = metadata.jpeg[metadata.jpeg.length - 1]  
@@ -67,21 +68,25 @@ Image(src, options );
 }
 
 // THUMBNAIL Image pluging configuration
-function thumbimageShortcode(src, alt) {
+async function thumbimageShortcode(src, alt) {
   let sizes = "(min-width: 1024px) 15vw, 30vw"
   let srcPrefix = `./src/`
   src = srcPrefix + src
-  console.log(`Generating image(s) from:  ${src}`)
+  // console.log(`Generating thumbnail image(s) from:  ${src}`)
   if(alt === undefined) {
     // Throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`)
   }
-
+  let isKb = false ;
+  if ( src.includes('kb/') ) {
+    isKb = true;
+  }
+  // isKb = src.includes('kb/') ;
   let options = {
     widths: [96, 192],
     formats: ['webp', 'jpeg'],
-    urlPath: "../images/",
-    outputDir: "./dist/images/",
+    urlPath: isKb ? "/kb/images/" : "/images/",
+    outputDir: isKb ? "./dist/kb/images/" : "./dist/images/",
     /* =====
     Now we'll make sure each resulting file's name will 
     make sense to you. **This** is why you need 
@@ -94,14 +99,8 @@ function thumbimageShortcode(src, alt) {
       return `${name}-${width}w.${format}`
     }
   }
-
-
- // generate images, while this is async we don’t wait
-Image(src, options );
-
   // get metadata even the images are not fully generated
-  let metadata = Image.statsSync(src, options ) 
-
+  let metadata = await Image(src, options) 
   let lowsrc = metadata.jpeg[0]
   let highsrc = metadata.jpeg[metadata.jpeg.length - 1]  
   let out =  `<picture>
@@ -126,17 +125,20 @@ module.exports = function(eleventyConfig) {
 
 // 11ty config and filters
 module.exports = function (eleventyConfig) {
-    // Copy `img/` to `_site/img`
+    // Copy `images/` to `./dist/images`
   eleventyConfig.addPassthroughCopy("./src/images/");
+  eleventyConfig.addPassthroughCopy("./src/kb/images/");
   eleventyConfig.addPassthroughCopy("./src/js/");
   eleventyConfig.addPassthroughCopy("./src/css/");
   eleventyConfig.addPassthroughCopy("./src/webfonts/");
   // Image shortcodes
-  eleventyConfig.addNunjucksShortcode("image", imageShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
-  eleventyConfig.addNunjucksShortcode("thumbimage", thumbimageShortcode);
-  // Google Fonts plugin --> Give and error. Back to local fonts.
+  eleventyConfig.addNunjucksAsyncShortcode("thumbimage", thumbimageShortcode);
+  eleventyConfig.addLiquidShortcode("thumbimage", thumbimageShortcode);
+  eleventyConfig.addJavaScriptFunction("thumbimage", thumbimageShortcode);
+  // Google Fonts plugin --> Gives and error. Back to local fonts.
   // eleventyConfig.addPlugin(eleventyGoogleFonts);
 
   // Add schema.org pluging shortcode
