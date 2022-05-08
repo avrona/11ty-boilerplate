@@ -287,41 +287,54 @@ function estimate() {
         case "mbpu":
             sum = sum + 220 ;
         if (valuesform.idscreen == "15p" || valuesform.idscreen == "17p" ) {
-            sum = sum + 30 ;
+            sum = sum + 20 ;
         } else {} ;
         break
 
         case "mbpr":
-            sum = sum + 280;
+            sum = sum + 250;
         if (valuesform.idscreen == "15p" ) {
             sum = sum + 40 ;
         } else {} ;
         break
 
 	case "mbptb":
-            sum = sum + 450;
+            sum = sum + 400;
+          switch (valuesform.idyear) {
+            case "2018" :
+            case "2019" :
+            case "2020" :
+            case "2021" :
+            case "2022" :
+                sum = sum + 50;
+            default:
+            break;
+          }
 	if (valuesform.idscreen == "16p" ) {
             sum = sum + 20 ;
         } else {} ;
         break
 
         case "mba":
-            sum = sum + 220;
+            sum = sum + 200;
             switch (valuesform.idyear) {
                 case "2012" :
                 case "2013" :
                 case "2014" :
-                    sum = sum + 60;
+                    sum = sum + 40;
                 break;
                 case "2015" :
                 case "2016" :
                 case "2017" :
-                    sum = sum + 100;
+                    sum = sum + 90;
                 break;
 
                 case "2018" :
                 case "2019" :
-                    sum = sum + 230;
+                case "2020" :
+                case "2021" :
+                case "2022" :
+                    sum = sum + 150;
                 default:
                 break;
             }
@@ -344,7 +357,7 @@ function showEstimate () {
     tab.style.display = "inline";
 
     // Trigger plausible tracking ;
-    plausible('EstimateHome');
+    //plausible('EstimateHome');
 
     // Calculate the sum
     var total = estimate();
