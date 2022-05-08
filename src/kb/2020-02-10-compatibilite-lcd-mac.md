@@ -21,34 +21,33 @@ On s'est nous aussi posé la question, alors on à construit ce petit tableau, q
 ## MacBook Pro Unibody:
 
 Cela va sans dire: ces MacBook Pro ont un écran non-rétina. Ils ne sont pas compatibles, ni avec les écran de Macbook Air, ni avec les écrans de MacBook Pro Retina, ou Touchbar. Bon, on le précise quand même. La légende du tableau est la suivante:
-
-.tg .tg-lcd{background-color:rgba(255, 197, 23,0.5);font-weight:bold} .tg .tg-centpc{background-color:rgba(50, 168, 82,0.5);font-weight:bold} .tg .tg-test{background-color:rgba(71, 142, 255,0.5);font-weight:bold} .tg .td{align="center";vertical-align:middle;}
-
-| 
+ 
 #### **Légende des tableaux**
 
- |
-| --- |
-| 100% | 100% compatible. Les écran assemblés sont interchangeables. |
-| LCD | Seul le LCD est compatible. Il faut échanger le LCD d'un assemblage vers un autre. |
-| Test | L'affichage fonctionne, mais impossible de monter l'écran avec le chassis. Dédié uniquement au test. |
-| \-- | Non compatible. Aucun affichage. |
 
-| 
+| Légende  ||
+| :-- | :-- | 
+| **100%** | 100% compatible. Les écran assemblés sont interchangeables. |
+| **LCD** | Seul le LCD est compatible. Il faut échanger le LCD d'un assemblage vers un autre. |
+| **Test** | L'affichage fonctionne, mais impossible de monter l'écran avec le chassis. Dédié uniquement au test. |
+| **\--** | Non compatible. Aucun affichage. |
+
+
 ### **MacBook Pro Unibody 13 pouces**
 
- |
-| --- |
-|  | A1278 |
-|  | EMC 2326 | EMC 2351 | EMC 2419 | EMC 2555 | EMC 2554 |
-|  | Mid 2009 | Mid 2010 | Early 2011 | Late 2011 | Mid 2012 |
-| A1278 | EMC 2326 | Mid 2009 | 100% | 100% | LCD | LCD | LCD |
-| EMC 2351 | Mid 2010 | 100% | 100% | LCD | LCD | LCD |
-| EMC 2419 | Early 2011 | LCD | LCD | 100% | 100% | 100%\* |
-| EMC 2555 | Late 2011 | LCD | LCD | 100% | 100% | 100%\* |
-| EMC 2554 | Mid 2012 | LCD | LCD | 100%\* | 100%\* | 100% |
+ |  Unibody 13 pouces |||||||
+ :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+ | | |    A1278     |||||
+ | | | EMC 2326 | EMC 2351 | EMC 2419 | EMC 2555 | EMC 2554 |
+ | | | Mid 2009 | Mid 2010 | Early 2011 | Late 2011 | Mid 2012 |
+A1278 | EMC 2326 | Mid 2009 | 100% | 100% | LCD | LCD | LCD |
+^^ | EMC 2351 | Mid 2010 | 100% | 100% | LCD | LCD | LCD |
+^^ | EMC 2419 | Early 2011 | LCD | LCD | 100% | 100% | 100%\* |
+^^ | EMC 2555 | Late 2011 | LCD | LCD | 100% | 100% | 100%\* |
+^^ | EMC 2554 | Mid 2012 | LCD | LCD | 100%\* | 100%\* | 100% |
 
-| 
+
+
 ### **MacBook Pro Unibody 15 pouces**
 
  |

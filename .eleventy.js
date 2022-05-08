@@ -11,9 +11,15 @@ const schema = require("@quasibit/eleventy-plugin-schema");
 // Add sitemap plugin
 const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 // Markdown-it
-const markdownIt = require("markdown-it");
-var markdownItp = require("markdown-it")();
-
+// let markdownIt = require("markdown-it");
+// let markdownItAttrs = require('markdown-it-attrs');
+// let markdownItKbd = require("markdown-it-kbd");
+// let markdownItMultitable = require("markdown-it-multimd-table");
+// const options = {
+//   html: true, // html tag inside source
+//   breaks: true, // use '\n' as <br>
+//   linkify: true, // Autoconvert URL-like text to links
+// };
 
 
 // FULL SIZE Image plugin configuration
@@ -204,13 +210,25 @@ eleventyConfig.addFilter('iso8601', (dateObj) => {
     return helpers.shuffle(array);
   });
 
-    let markdownLibrary = markdownIt({
-      html: true, // html tag inside source
-      breaks: true, // use '\n' as <br>
-      linkify: true, // Autoconvert URL-like text to links
-    })
-    .use(require("markdown-it-kbd")) // use [[Ctrl]] for keyboard-like style
-  eleventyConfig.setLibrary("md", markdownLibrary);
+  // Markdown engines
+  let markdownIt = require("markdown-it");
+  let markdownItAttrs = require('markdown-it-attrs');
+  let markdownItKbd = require("markdown-it-kbd");
+  let markdownItMultitable = require("markdown-it-multimd-table");
+  let markdownItOpts = {
+    html: true, // html tag inside source
+    breaks: true, // use '\n' as <br>
+    linkify: true, // Autoconvert URL-like text to links
+  };
+  const markdownEngine = markdownIt(markdownItOpts);
+  markdownEngine.use(markdownItAttrs);
+  markdownEngine.use(markdownItKbd);
+  markdownEngine.use(markdownItMultitable,{
+    multiline: true, // multimd table multiline
+    rowspan: true, // multimd table 
+    headerless: true, // multimd table 
+  });
+  eleventyConfig.setLibrary("md", markdownEngine);
     
   // Limit Filter: Copy paste from Jérôme Coupé
   eleventyConfig.addNunjucksFilter("limit", function(array, limit) {

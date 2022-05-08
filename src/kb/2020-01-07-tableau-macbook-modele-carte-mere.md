@@ -23,12 +23,11 @@ Pour rappel, nous avons des articles dans cette base de connaissance pour:
 
 # Tableau modèle de Mac vers numéro de carte mère
 
-| 
+
 ### **MacBook Pro Unibody**
 
- |
-| --- |
-| **Ecran** | **EMC** | **Model N°** | **Date** | **Model ID** | **N° de carte mère** |
+| Ecran | EMC    | Model N° | Date | Model ID |  N° de carte mère   |
+|-------|--------|----------|------|----------|---------------------|
 | **13** | EMC 2326 | A1278 | Mid 2009 | MacBookPro5,5 | 820-2530 |  |
 |  | EMC 2351 | A1278 | Mid 2010 | MacBookPro7,1 | 820-2879 |  |
 |  | EMC 2419 | A1278 | Early 2011 | MacBookPro8,1 | 820-2936 |  |
@@ -47,12 +46,13 @@ Pour rappel, nous avons des articles dans cette base de connaissance pour:
 |  | EMC 2352-1 | A1297 | Early 2011 | MacBookPro8,3 | 820-2914 |  |
 |  | EMC 2564 | A1297 | Late 2011 | MacBookPro8,3 | 820-2914 |  |
 
-| 
+
+{.table .is-hoverable}
+
 ### MacBook Pro Retina
 
- |
-| --- |
-| **Ecran** | **EMC** | **Model N°** | **Date** | **Model ID** | **N° de carte mère** |
+| Ecran | EMC    | Model N° | Date | Model ID |  N° de carte mère   |
+|-------|--------|----------|------|----------|---------------------|
 | **13** | EMC 2557 | A1425 | Late 2012 | MacBookPro10,2 | 820-3462 |  |
 |  | EMC 2672 | A1425 | Early 2013 | MacBookPro10,2 | 820-3190 |  |
 |  | EMC 2678 | A1502 | Late 2013 | MacBookPro11,1 | 820-3476 | 820-3536 |
@@ -81,12 +81,13 @@ Pour rappel, nous avons des articles dans cette base de connaissance pour:
 |  | EMC 3359 | A1990 | 2019 | MacBookPro15,3 |  |
 | **16** | EMC 3347 | A2141 | 2019 | MacBookPro16,1 |  |
 
-| 
+
+{.table .is-hoverable}
+
 ### MacBook Air
 
- |
-| --- |
-| **Ecran** | **EMC** | **Model N°** | **Date** | **Model ID** | **N° de carte mère** |
+| Ecran | EMC    | Model N° | Date | Model ID |  N° de carte mère   |
+|-------|--------|----------|------|----------|---------------------|
 | **11** | EMC 2393 | A1370 | Late 2010 | MacBookAir3,1 | 820-2796 |  |
 |  | EMC 2471 | A1370 | Mid 2011 | MacBookAir4,1 | 820-3024 |  |
 |  | EMC 2558 | A1465 | Mid 2012 | MacBookAir5,1 | 820-3208 |  |
@@ -105,30 +106,6 @@ Pour rappel, nous avons des articles dans cette base de connaissance pour:
 |  | EMC 3184 | A1932 | True Tone 2019 | MacBookAir8,2 |  |
 
 
-
-# Tableau modèle de Mac vers numéro de carte mère
-
-| 
-### **MacBook Pro Unibody**
-
- |
-| --- |
-| **Ecran** | **EMC** | **Model N°** | **Date** | **Model ID** | **N° de carte mère** |
-| **13** | EMC 2326 | A1278 | Mid 2009 | MacBookPro5,5 | 820-2530 |  |
-|  | EMC 2351 | A1278 | Mid 2010 | MacBookPro7,1 | 820-2879 |  |
-|  | EMC 2419 | A1278 | Early 2011 | MacBookPro8,1 | 820-2936 |  |
-|  | EMC 2555 | A1278 | Late 2011 | MacBookPro8,1 | 820-2936 |  |
-|  | EMC 2554 | A1278 | Mid 2012 | MacBookPro9,2 | 820-3115 |  |
-| **15** | EMC 2255 | A1286 | Late 2008 | MacBookPro5,1 | 820-2330 |  |
-|  | EMC 2325 | A1286 | Mid 2009 | MacBookPro5,3 | 820-2532 | 820-2330 |
-|  | EMC 2324 | A1286 | Mid 2009 2.5Ghz | MacBookPro5,4 | 820-2533 |  |
-|  | EMC 2353 | A1286 | Mid 2010 | MacBookPro6,2 | 820-2850 |  |
-|  | EMC 2353-1 | A1286 | Early 2011 | MacBookPro8,2 | 820-2915 |  |
-|  | EMC 2363 | A1286 | Late 2011 | MacBookPro8,2 | 820-2915 |  |
-|  | EMC 2556 | A1286 | Mid 2012 | MacBookPro9,1 | 820-3330 |  |
-| **17** | EMC 2272 | A1297 | Early 2009 | MacBookPro5,2 | 820-2390 |  |
-|  | EMC 2329 | A1297 | Mid 2009 | MacBookPro5,2 | 820-2610 |  |
-|  | EMC 2352 | A1297 | Mid 2010 | MacBookPro6,1 | 820-2849 |  |
-|  | EMC 2352-1 | A1297 | Early 2011 | MacBookPro8,3 | 820-2914 |  |
-|  | EMC 2564 | A1297 | Late 2011 | MacBookPro8,3 | 820-2914 |  |
+{.table .is-hoverable}
+<!-- Html attributes add classes to the table: Must be two new lines below table to apply. -->
 
