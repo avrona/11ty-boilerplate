@@ -4,6 +4,7 @@ layout: 'layouts/cgv-cgu.njk'
 permalink: "cgv-cgu/"
 jsfile: ["../js/navbarmanagement.js" ]
 relative_path: ''
+eleventyExcludeFromCollections: true
 ---
 
 
