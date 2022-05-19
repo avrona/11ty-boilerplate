@@ -26,101 +26,118 @@ Cela va sans dire: ces MacBook Pro ont un écran non-rétina. Ils ne sont pas co
 
 
 | Légende  ||
-| :-- | :-- | 
-| **100%** | 100% compatible. Les écran assemblés sont interchangeables. |
-| **LCD** | Seul le LCD est compatible. Il faut échanger le LCD d'un assemblage vers un autre. |
-| **Test** | L'affichage fonctionne, mais impossible de monter l'écran avec le chassis. Dédié uniquement au test. |
-| **\--** | Non compatible. Aucun affichage. |
+| :--: | :-- | 
+| 100%<!--{.has-bg-success}--> | 100% compatible. Les écrans assemblés sont interchangeables. |
+| LCD <!--{.has-bg-warning}--> | Seul le LCD est compatible. Il faut échanger le LCD d'un assemblage vers un autre. |
+| Test <!--{.has-bg-info}--> | L'affichage fonctionne, mais impossible de monter l'écran avec le chassis. Dédié uniquement au test. |
+| \-- <!--{.has-bg-danger}--> | Non compatible. Aucun affichage. |
 
 
 ### **MacBook Pro Unibody 13 pouces**
 
- |  Unibody 13 pouces |||||||
+ ||||||||
  :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
  | | |    A1278     |||||
  | | | EMC 2326 | EMC 2351 | EMC 2419 | EMC 2555 | EMC 2554 |
  | | | Mid 2009 | Mid 2010 | Early 2011 | Late 2011 | Mid 2012 |
-A1278 | EMC 2326 | Mid 2009 | 100% | 100% | LCD | LCD | LCD |
-^^ | EMC 2351 | Mid 2010 | 100% | 100% | LCD | LCD | LCD |
-^^ | EMC 2419 | Early 2011 | LCD | LCD | 100% | 100% | 100%\* |
-^^ | EMC 2555 | Late 2011 | LCD | LCD | 100% | 100% | 100%\* |
-^^ | EMC 2554 | Mid 2012 | LCD | LCD | 100%\* | 100%\* | 100% |
+A1278 | EMC 2326 | Mid 2009 | 100%<!--{.has-bg-success}--> | 100%<!--{.has-bg-success}--> | LCD<!--{.has-bg-warning}--> | LCD<!--{.has-bg-warning}-->  | LCD<!--{.has-bg-warning}-->  |
+^^ | EMC 2351 | Mid 2010 | 100%<!--{.has-bg-success}-->| 100% <!--{.has-bg-success}--> | LCD<!--{.has-bg-warning}-->  | LCD<!--{.has-bg-warning}-->  | LCD<!--{.has-bg-warning}-->  |
+^^ | EMC 2419 | Early 2011 | LCD<!--{.has-bg-warning}-->  | LCD<!--{.has-bg-warning}-->  | 100%<!--{.has-bg-success}--> | 100%<!--{.has-bg-success}--> | 100%\*<!--{.has-bg-success}-->|
+^^ | EMC 2555 | Late 2011 | LCD<!--{.has-bg-warning}-->  | LCD<!--{.has-bg-warning}-->  | 100%<!--{.has-bg-success}--> | 100%<!--{.has-bg-success}--> | 100%\*<!--{.has-bg-success}--> |
+^^ | EMC 2554 | Mid 2012 | LCD<!--{.has-bg-warning}-->  | LCD<!--{.has-bg-warning}-->  | 100%\*<!--{.has-bg-success}--> | 100%\*<!--{.has-bg-success}--> | 100%<!--{.has-bg-success}--> |
+[13 pouces Unibody]
+
+
+{.table .is-hoverable}
+<!-- Html attributes add classes to the table: Must be two new lines below table to apply. -->
+
 
 
 
 ### **MacBook Pro Unibody 15 pouces**
 
- |
-| --- |
-|  |  |  | A1286 |
+ |||||||||||
+ :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+|  |  |  | A1286 |||||||
 |  |  |  | EMC 2255 | EMC 2325 | EMC 2324 | EMC 2353 | EMC 2353-1 | EMC 2363 | EMC 2556 |
 |  |  |  | Late 2008 | Mid 2009 | Mid 2009 2.5Ghz | Mid 2010 | Early 2011 | Late 2011 | Mid 2012 |
-| A1286 | EMC 2255 | Late 2008 | 100% | \-- | \-- | \-- | \-- | \-- | \-- |
-| EMC 2325 | Mid 2009 | \-- | 100% | LCD | LCD | LCD | LCD | LCD |
-| EMC 2324 | Mid 2009 2.5Ghz | \-- | LCD | 100% | LCD | LCD | LCD | LCD |
-| EMC 2353 | Mid 2010 | \-- | LCD | LCD | 100% | 100%\* | 100%\* | 100%\* |
-| EMC 2353-1 | Early 2011 | \-- | LCD | LCD | 100%\* | 100% | 100%\* | 100%\* |
-| EMC 2363 | Late 2011 | \-- | LCD | LCD | 100%\* | 100%\* | 100% | 100%\* |
-| EMC 2556 | Mid 2012 | \-- | LCD | LCD | 100%\* | 100%\* | 100%\* | 100% |
+| A1286 | EMC 2255 | Late 2008 | 100%<!--{.has-bg-success}--> | \--<!--{.has-bg-danger}--> | \--<!--{.has-bg-danger}--> | \--<!--{.has-bg-danger}--> | \--<!--{.has-bg-danger}--> | \--<!--{.has-bg-danger}--> | \--<!--{.has-bg-danger}--> |
+^^ | EMC 2325 | Mid 2009 | \--<!--{.has-bg-danger}--> | 100%<!--{.has-bg-success}-->  | LCD<!--{.has-bg-warning}--> | LCD<!--{.has-bg-warning}--> | LCD<!--{.has-bg-warning}--> | LCD<!--{.has-bg-warning}--> | LCD<!--{.has-bg-warning}--> |
+^^ | EMC 2324 | Mid 2009 2.5Ghz | \--<!--{.has-bg-danger}--> | LCD<!--{.has-bg-warning}--> | 100%<!--{.has-bg-success}-->  | LCD<!--{.has-bg-warning}--> | LCD<!--{.has-bg-warning}--> | LCD<!--{.has-bg-warning}--> | LCD<!--{.has-bg-warning}--> |
+^^ | EMC 2353 | Mid 2010 | \--<!--{.has-bg-danger}--> | LCD<!--{.has-bg-warning}--> | LCD<!--{.has-bg-warning}--> | 100%<!--{.has-bg-success}-->  | 100%\*<!--{.has-bg-success}-->  | 100%\*<!--{.has-bg-success}-->  | 100%\*<!--{.has-bg-success}-->  |
+^^ | EMC 2353-1 | Early 2011 | \--<!--{.has-bg-danger}--> | LCD<!--{.has-bg-warning}--> | LCD<!--{.has-bg-warning}--> | 100%\*<!--{.has-bg-success}-->  | 100%<!--{.has-bg-success}-->  | 100%\*<!--{.has-bg-success}-->  | 100%\*<!--{.has-bg-success}-->  |
+^^ | EMC 2363 | Late 2011 | \--<!--{.has-bg-danger}--> | LCD<!--{.has-bg-warning}--> | LCD<!--{.has-bg-warning}--> | 100%\*<!--{.has-bg-success}-->  | 100%\*<!--{.has-bg-success}-->  | 100%<!--{.has-bg-success}-->  | 100%\*<!--{.has-bg-success}-->  |
+^^ | EMC 2556 | Mid 2012 | \--<!--{.has-bg-danger}--> | LCD<!--{.has-bg-warning}--> | LCD<!--{.has-bg-warning}--> | 100%\*<!--{.has-bg-success}-->  | 100%\*<!--{.has-bg-success}-->  | 100%\*<!--{.has-bg-success}-->  | 100%<!--{.has-bg-success}-->  |
+[15 pouces Unibody]
 
-| 
+
+{.table .is-hoverable}
+<!-- Html attributes add classes to the table: Must be two new lines below table to apply. -->
 ### **MacBook Pro Unibody 17 pouces**
 
- |
-| --- |
-|  |  |  | A1297 |
-|  |  |  | EMC 2272 | EMC 2329 | EMC 2352 | EMC 2352-1 | EMC 2564 |
-|  |  |  | Early 2009 | Mid 2009 | Mid 2010 | Early 2011 | Late 2011 |
-| A1297 | EMC 2272 | Early 2009 | 100% | \-- | \-- | \-- | \-- |
-| EMC 2329 | Mid 2009 | \-- | 100% | \-- | \-- | \-- |
-| EMC 2352 | Mid 2010 | \-- | \-- | 100% | \-- | \-- |
-| EMC 2352-1 | Early 2011 | \-- | \-- | \-- | 100% | \-- |
-| EMC 2564 | Late 2011 | \-- | \-- | \-- | \-- | 100% |
 
+ :---  |  :---    | :---     |:---                        | :---                       | :---                       | :---                       | :---                       |
+|      |          |          |A1297                       |                            |                            |                            |                            |
+|      |          |          |EMC 2272                    | EMC 2329                   |EMC 2352                    | EMC 2352-1                 | EMC 2564                   |
+|      |          |          |Early 2009                  | Mid 2009                   |Mid 2010                    | Early 2011                 | Late 2011                  |
+|A1297 |EMC 2272  |Early 2009|100%<!--{.has-bg-success}-->|\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  | \--<!--{.has-bg-danger}--> | \--<!--{.has-bg-danger}--> |
+|^^    |EMC 2329  |Mid 2009  |\--<!--{.has-bg-danger}-->  |100%<!--{.has-bg-success}-->|\--<!--{.has-bg-danger}-->  | \--<!--{.has-bg-danger}--> | \--<!--{.has-bg-danger}--> |
+|^^    |EMC 2352  |Mid 2010  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |100%<!--{.has-bg-success}-->| \--<!--{.has-bg-danger}--> | \--<!--{.has-bg-danger}--> |
+|^^    |EMC 2352-1|Early 2011|\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |100%<!--{.has-bg-success}-->| \--<!--{.has-bg-danger}--> |
+|^^    |EMC 2564  |Late 2011 |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  | \--<!--{.has-bg-danger}--> |100%<!--{.has-bg-success}-->|
+[17 pouces Unibody]
+
+
+{.table .is-hoverable}
+<!-- Html attributes add classes to the table: Must be two new lines below table to apply. -->
 ## MacBook Pro Retina:
 
 En ce qui concerne les MacBook Pro retina, le tableau est un peu plus intéressant. En effet, il semble que les écran de 15 pouces de même génération, soient compatibles avec les carte mères des MacBook Pro Retina 13, au moins pour tester le bon fonctionnement de l'écran ou de la carte mère. Bon à savoir pour un réparateur. Par contre, les même écran 13 pouces ne seront compatibles à 100% qu'avec des écran du même millésime, en quelque sorte... Bref, regardez le tableau:
 
-| 
+
 ### **MacBook Pro Retina 13 pouces**
 
- |
-| --- |
-|  |  |  |  | EMC 2557 | EMC 2672 | EMC 2678 | EMC 2875 | EMC 2835 |
-|  |  |  |  | A1425 | A1502 |
-|  |  |  |  | Late 2012 | Early 2013 | Late 2013 | Mid 2014 | Early 2015 |
-| 13 | EMC 2557 | A1425 | Late 2012 | 100% | 100% | LCD | LCD | \-- |
-| EMC 2672 | Early 2013 | 100% | 100% | LCD | LCD | \-- |
-| EMC 2678 | A1502 | Late 2013 | LCD | LCD | 100% | 100% | \-- |
-| EMC 2875 | Mid 2014 | LCD | LCD | 100% | 100% | \-- |
-| EMC 2835 | Early 2015 | \-- | \-- | \-- | \-- | 100% |
-| 15 | EMC 2512 | A1398 | Mid 2012 | Test | Test | \-- | \-- | \-- |
-| EMC 2673 | Early 2013 | Test | Test | \-- | \-- | \-- |
-| EMC 2674 | Late 2013 | \-- | \-- | Test | Test | \-- |
-| EMC 2876 | Late 2013 | \-- | \-- | Test | Test | \-- |
-| EMC 2745 | Mid 2014 | \-- | \-- | Test | Test | \-- |
-| EMC 2881 | Mid 2014 | \-- | \-- | Test | Test | \-- |
-|  |  | Mid 2015 | \-- | \-- | Test | Test | \-- |
 
- 
+:--- | :---     | :---  | :---       | :---                       | :---                       | :---                       | :---                       | :---                       |
+|           |          |       |            | EMC 2557                   | EMC 2672                   | EMC 2678                   | EMC 2875                   | EMC 2835                   |
+|           |          |       |            | A1425                      |                            | A1502                      |                            |                            |
+|           |          |       |            | Late 2012                  | Early 2013                 | Late 2013                  | Mid 2014                   | Early 2015                 |
+| 13 pouces | EMC 2557 | A1425 | Late 2012  |100%<!--{.has-bg-success}-->|100%<!--{.has-bg-success}-->|LCD<!--{.has-bg-warning}--> |LCD<!--{.has-bg-warning}--> | \--<!--{.has-bg-danger}--> |
+| ^^        | EMC 2672 | ^^    | Early 2013 |100%<!--{.has-bg-success}-->|100%<!--{.has-bg-success}-->|LCD<!--{.has-bg-warning}--> |LCD<!--{.has-bg-warning}--> | \--<!--{.has-bg-danger}--> |
+| ^^        | EMC 2678 | A1502 | Late 2013  |LCD<!--{.has-bg-warning}--> |LCD<!--{.has-bg-warning}--> |100%<!--{.has-bg-success}-->|100%<!--{.has-bg-success}-->| \--<!--{.has-bg-danger}--> |
+| ^^        | EMC 2875 | ^^    | Mid 201    |LCD<!--{.has-bg-warning}--> |LCD<!--{.has-bg-warning}--> |100%<!--{.has-bg-success}-->|100%<!--{.has-bg-success}-->| \--<!--{.has-bg-danger}--> |
+| ^^        | EMC 2835 | ^^    | Early 2015 | \--<!--{.has-bg-danger}--> | \--<!--{.has-bg-danger}--> | \--<!--{.has-bg-danger}--> | \--<!--{.has-bg-danger}--> |100%<!--{.has-bg-success}-->|
+| 15 pouces | EMC 2512 | A1398 | Mid 2012   | Test<!--{.has-bg-info}-->  | Test<!--{.has-bg-info}-->  | \--<!--{.has-bg-danger}--> | \--<!--{.has-bg-danger}--> | \--<!--{.has-bg-danger}--> |
+| ^^        | EMC 2673 | ^^    | Early 2013 | Test<!--{.has-bg-info}-->  | Test<!--{.has-bg-info}-->  | \--<!--{.has-bg-danger}--> |\-- <!--{.has-bg-danger}--> |\--<!--{.has-bg-danger}-->  |
+| ^^        | EMC 2674 | ^^    | Late 2013  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |Test<!--{.has-bg-info}-->   |Test<!--{.has-bg-info}-->   |\--<!--{.has-bg-danger}-->  |
+| ^^        | EMC 2876 | ^^    | Late 2013  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |Test<!--{.has-bg-info}-->   |Test<!--{.has-bg-info}-->   |\--<!--{.has-bg-danger}-->  |
+| ^^        | EMC 2745 | ^^    | Mid 2014   |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |Test<!--{.has-bg-info}-->   |Test<!--{.has-bg-info}-->   |\--<!--{.has-bg-danger}-->  |
+| ^^        | EMC 2881 | ^^    | Mid 2014   |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |Test<!--{.has-bg-info}-->   |Test<!--{.has-bg-info}-->   |\--<!--{.has-bg-danger}-->  |
+| ^^        |  ^^      | ^^    | Mid 2015   |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |Test<!--{.has-bg-info}-->   |Test<!--{.has-bg-info}-->   |\--<!--{.has-bg-danger}-->  |
 
-| 
+
+{.table .is-hoverable}
+<!-- Html attributes add classes to the table: Must be two new lines below table to apply. -->
+
 ### **MacBook Pro Retina 15 pouces**
 
- |
-| --- |
-|  |  |  |  | EMC 2512 | EMC 2673 | EMC 2674 | EMC 2876 | EMC 2745 | EMC 2881 |  |
-|  |  |  |  | A1398 |
-|  |  |  |  | Mid 2012 | Early 2013 | Late 2013 | Late 2013 | Mid 2014 | Mid 2014 | Mid 2015 |
-| 13 | EMC 2557 | A1425 | Late 2012 | Test | Test | \-- | \-- | \-- | \-- | \-- |
-| EMC 2672 | Early 2013 | Test | Test | \-- | \-- | \-- | \-- | \-- |
-| EMC 2678 | A1502 | Late 2013 | \-- | \-- | Test | Test | Test | Test | Test |
-| EMC 2875 | Mid 2014 | \-- | \-- | Test | Test | Test | Test | Test |
-| EMC 2835 | Early 2015 | \-- | \-- | \-- | \-- | \-- | \-- | \-- |
-| 15 | EMC 2512 | A1398 | Mid 2012 | 100% | \-- | \-- | \-- | \-- | \-- | \-- |
-| EMC 2673 | Early 2013 | \-- | 100% | \-- | \-- | \-- | \-- | \-- |
-| EMC 2674 | Late 2013 | \-- | \-- | 100% | \-- | \-- | \-- | \-- |
-| EMC 2876 | Late 2013 | \-- | \-- | \-- | 100% | \-- | \-- | \-- |
-| EMC 2745 | Mid 2014 | \-- | \-- | \-- | \-- | 100% | \-- | \-- |
-| EMC 2881 | Mid 2014 | \-- | \-- | \-- | \-- | \-- | 100% | \-- |
-|  |  | Mid 2015 | \-- | \-- | \-- | \-- | \-- | \-- | 100% |
+:---| :---   |:--- | :---     | :---                       | :---                       | :---                       | :---                       | :---                       | :---                       |  :---                       |
+|          |        |     |          | EMC 2512                   | EMC 2673                   | EMC 2674                   | EMC 2876                   | EMC 2745                   | EMC 2881                   |                             |
+|          |        |     |          | A1398                      |                            |                            |                            |                            |                            |                             |
+|          |        |     |          | Mid 2012                   | Early 2013                 | Late 2013                  | Late 2013                  | Mid 2014                   | Mid 2014                   | Mid 2015                    |
+|13 pouces |EMC 2557|A1425|Late 2012 |Test<!--{.has-bg-info}-->   |Test<!--{.has-bg-info}-->   |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  | \--<!--{.has-bg-danger}-->  |
+|^^        |EMC 2672|^^   |Early 2013|Test<!--{.has-bg-info}-->   |Test<!--{.has-bg-info}-->   |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  | \--<!--{.has-bg-danger}-->  |
+|^^        |EMC 2678|A1502|Late 2013 |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |Test<!--{.has-bg-info}-->   |Test<!--{.has-bg-info}-->   |Test<!--{.has-bg-info}-->   |Test<!--{.has-bg-info}-->   | Test<!--{.has-bg-info}-->   |
+|^^        |EMC 2875|^^   |Mid 2014  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |Test<!--{.has-bg-info}-->   |Test<!--{.has-bg-info}-->   |Test<!--{.has-bg-info}-->   |Test<!--{.has-bg-info}-->   | Test<!--{.has-bg-info}-->   |
+|^^        |EMC 2835|^^   |Early 2015|\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  | \--<!--{.has-bg-danger}-->  |
+|15 pouces |EMC 2512|A1398|Mid 2012  |100%<!--{.has-bg-success}-->|\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  | \--<!--{.has-bg-danger}-->  |
+|^^        |EMC 2673|^^   |Early 2013|\--<!--{.has-bg-danger}-->  |100%<!--{.has-bg-success}-->| \--<!--{.has-bg-danger}--> |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  | \--<!--{.has-bg-danger}-->  |
+|^^        |EMC 2674|^^   |Late 2013 |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |100%<!--{.has-bg-success}-->|\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  | \--<!--{.has-bg-danger}-->  |
+|^^        |EMC 2876|^^   |Late 2013 |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |100%<!--{.has-bg-success}-->|\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  | \--<!--{.has-bg-danger}-->  |
+|^^        |EMC 2745|^^   |Mid 2014  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |100%<!--{.has-bg-success}-->|\--<!--{.has-bg-danger}-->  | \--<!--{.has-bg-danger}-->  |
+|^^        |EMC 2881|^^   |Mid 2014  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |100%<!--{.has-bg-success}-->| \--<!--{.has-bg-danger}-->  |
+|^^        |  ^^    |^^   |Mid 2015  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  |\--<!--{.has-bg-danger}-->  | 100%<!--{.has-bg-success}-->|
+
+
+{.table .is-hoverable}
+<!-- Html attributes add classes to the table: Must be two new lines below table to apply. -->
