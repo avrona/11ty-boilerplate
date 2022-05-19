@@ -214,6 +214,7 @@ eleventyConfig.addFilter('iso8601', (dateObj) => {
   let markdownIt = require("markdown-it");
   let markdownItAttrs = require('markdown-it-attrs');
   let markdownItKbd = require("markdown-it-kbd");
+  let markdownItDecorate = require("markdown-it-decorate");
   let markdownItMultitable = require("markdown-it-multimd-table");
   let markdownItOpts = {
     html: true, // html tag inside source
@@ -223,6 +224,7 @@ eleventyConfig.addFilter('iso8601', (dateObj) => {
   const markdownEngine = markdownIt(markdownItOpts);
   markdownEngine.use(markdownItAttrs);
   markdownEngine.use(markdownItKbd);
+  markdownEngine.use(markdownItDecorate);
   markdownEngine.use(markdownItMultitable,{
     multiline: true, // multimd table multiline
     rowspan: true, // multimd table 
