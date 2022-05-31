@@ -11,7 +11,7 @@ coverImage: 'kb/images/quick_861dw.jpg'
 coverImageAlt: "Station de soudure à air chaud Quick"
 ---
 
-## Station de soudure air chaud
+Si vous recherchez un article plus global sur les outils utilisés pour la réparation, lisez [Carte mère Macbook Pro: les outils indispensables pour les réparer](../../carte-mere-macbook-pro-les-outils-indispensables-pour-les-reparer/)
 
 ## Que choisir, que ne pas choisir ?
 

@@ -86,7 +86,7 @@ C’est indispensable aussi que la panne du fer soit assez fine pour de petits c
 
 Un seul fer Made in China sort du lot, c’est le TS100. Il est assez puissant pour une carte mère, et reste assez fin. Il est également réglable en température et assez stable. Si vous n’avez pas beaucoup de budget, c’est ce qu’il vous faut. Nous ne l'avons pas testé mais avons vu des nombreux tests de pro de la réparation de carte mère Macbook.
 
-La station à air chaud servira principalement à souder et désouder les BGA sur votre carte mère de Macbook. Là aussi, les modèles les moins chers sont moins efficaces. Il faut que le débit d’air soit assez fort et que la machine soit stable en température. La communauté des réparateurs de carte mère ne jure que par la [Quick 861](http://www.quick-global.com/2-lead-free-rework-2.html). D’autres versions sont sortis depuis, avec quelques améliorations. Mais toute la gamme est globalement la même, et de niveau professionnel.
+La [station à air chaud](../kb/station-airchaud/) servira principalement à souder et désouder les BGA sur votre carte mère de Macbook. Là aussi, les modèles les moins chers sont moins efficaces. Il faut que le débit d’air soit assez fort et que la machine soit stable en température. La communauté des réparateurs de carte mère ne jure que par la [Quick 861](http://www.quick-global.com/2-lead-free-rework-2.html). D’autres versions sont sortis depuis, avec quelques améliorations. Mais toute la gamme est globalement la même, et de niveau professionnel.
 
 Faites attention aux contrefaçons, qui commencent, là aussi, à être de plus en plus nombreuses.
 
