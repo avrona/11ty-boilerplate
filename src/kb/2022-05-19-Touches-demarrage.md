@@ -7,7 +7,7 @@ tags:
   - "knowledge base"
   - "premiers pas"
   - "non-classe"
-coverImage: 'kb/images/Mac-hard-drive.jpg'
+coverImage: 'kb/images/2019_16-inch_MacBook_Pro.jpg'
 coverImageAlt: "Disque externe connecté à un MacBook Pro"
 ---
 
