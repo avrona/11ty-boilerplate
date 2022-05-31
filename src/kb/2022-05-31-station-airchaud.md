@@ -1,5 +1,5 @@
 ---
-title: "Quelle station à air chaud"
+title: "Quelle station à air chaud ?"
 subtitle: "Nos conseils pour choisir une station de soudure au ratio performance/prix optimal !"
 date: "2022-05-31"
 modified: "2022-05-31"
