@@ -37,7 +37,7 @@ Pour tous les autres Macs : Déchargez la machine ou débranchez la batterie.
 
 
 ### Réinitialisation la puce T2:
-Voir article dédié: 
+Voir article dédié: [Votre Mac ne démarre pas ? Et si c'était la puce T2](../../puce-T2-DFU-guide/ "Votre Mac ne démarre pas ? Et si c'était la puce T2?")
 
 ### Diagnostic :
 [[Alt &#8997;]] : Utiliser le gestionnaire de démarrage. Les Macs plus récents permettent le démarrage en WiFi et la sélection des volumes NetBoot à partir de cet écran.
