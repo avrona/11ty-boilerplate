@@ -66,10 +66,10 @@ Email: Alex@6337.fr
 
 Par Courrier:
 
-6337 - Alexandre AVRON  
-Générateur 9  
-39 Avenue Sidoine Apollinaire  
-69009 - Lyon  
+6337 SAS
+M. Le Président
+543 Ldt La Grève Blanche
+29880 - Plouguerneau 
 France
 
 ## Informations supplémentaires
