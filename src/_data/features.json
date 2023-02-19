@@ -1,18 +1,18 @@
 {
     "feat": [
       {
-        "title": "RÉPARÉ OU REMBOURSÉ",
-        "text": "Payer pour un devis ou une « recherche de panne » nous parait un peu décalé. Notre principe est simple, vous ne paierez que si votre Macbook est réparé !",
+        "title": "FIRST FEATURE",
+        "text": "This is the first important feature to be put up ! Et veniam cupidatat enim ut id ut tempor veniam ad velit elit.  ",
         "icon":"fa-euro-sign"
       },
       {
-        "title": "ENVOI ET RETOUR INCLUS",
-        "text": "Vous recevrez une étiquette transporteur, avec assurance incluse. Votre Mac bien emballé, il ne vous reste qu’à coller l’étiquette et déposer votre colis en point relais : simplicité, rapidité.",
+        "title": "SECOND FEATURE",
+        "text": "Velit officia Lorem ut et.Dolore nulla commodo ea ullamco ex sit exercitation esse magna velit eiusmod deserunt. Commodo incididunt labore excepteur magna deserunt dolor.",
         "icon": "fa-box"
       },
       {
-        "title": "GARANTIE 180 JOURS",
-        "text": "On sait exactement ce qu’on fait, comment on le fait et d’où viennent nos pièces. C’est pour cela qu’on peut vous garantir nos interventions pendant 180 jours.",
+        "title": "THIRD FEATURE",
+        "text": "Cillum ullamco eiusmod ut nulla velit anim Lorem. Fugiat incididunt sunt veniam exercitation.Velit quis enim eiusmod pariatur adipisicing dolor ad consequat ipsum enim.",
         "icon": "fa-hands-helping"
       }
     ]

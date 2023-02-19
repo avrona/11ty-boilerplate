@@ -22,33 +22,33 @@ eleventyComputed:
     image:
       src: "{{ site.url  + '/' +  site.header_image }}"
     organization:
-      name: 6337 - Réparer l'irréparable
-      legalName: 6337 SAS
-      url: https://www.6337.fr
+      name: 11ty boilerplate
+      legalName: 11ty boilerplate
+      url: https://www.11ty-boilerplate.fr
       logo: "{{ site.url  + '/' +  site.logo }}"
       description: "{{ site.description | safe }}"
       foundingDate: '2020'
       founders:
-      - name: Alex AVRON
+      - name: Owner name
       address:
-        streetAddress: 543 Ldt La Grève Blanche
-        addressLocality: Plouguerneau
-        postalCode: '29880'
+        streetAddress: owner adress
+        addressLocality: owner town
+        postalCode: '88888888'
         addressCountry: France
       contactPoint:
-      - telephone: "+33-4-28-29-49-57"
+      - telephone: "phone"
         contactType: Service Client
         areaServed: FR
         availableLanguage:
         - English
         - French
-      - email: "alex@6337.fr"
+      - email: "john@doe.com"
       sameAs:
-      - https://www.facebook.com/6337.fr/
-      - https://twitter.com/6337mac
-      - https://www.instagram.com/6337atelier/
-      - https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TCswTUrOLjYwYLRSNagwMU8zSU2yMDZMSU62SEoytzKoSLI0NEk1TbZMsjQxNLa0TPZiMTM2NgcAB6oQWw&q=6337&oq=6337&aqs=chrome.2.69i60j69i59j46i175i199j0l2j69i60j69i61l2.3461j0j9&sourceid=chrome&ie=UTF-8#lrd=0x47f4eb831dcc8bb7:0xb914e5c9b941399c,1,,,
-      - https://www.linkedin.com/company/6337fr
+      - https://www.facebook.com/johndoe/
+      - https://twitter.com/johndoe
+      - https://www.instagram.com/johndoe/
+      - https://www.google.com/search?gs_ssp=JOHNDOE
+      - https://www.linkedin.com/company/johndoe
 ---
   
 <!DOCTYPE html>
@@ -82,7 +82,7 @@ eleventyComputed:
   
 </head>
 
-<!-- Matomo -->
+<!-- Matomo tracking analytics -->
 <script>
   var _paq = window._paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -98,17 +98,7 @@ eleventyComputed:
 </script>
 <!-- End Matomo Code -->
 
-<!--  Plausible
-<script async defer data-domain="www.6337.fr" src="https://plausible.6337.fr/js/plausible.js"></script>
-<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-End Plausible Code -->
-
   <body>
-<!-- Google Tag Manager (noscript)
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ8N9Z5"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
- End Google Tag Manager (noscript) -->
-
 
     {% include "partials/structure/site-header.njk" %}
     <main>

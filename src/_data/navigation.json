@@ -5,27 +5,15 @@
         "url": "/"
       },
       {
-        "text": "Réparation",
-        "url": "/prise-en-charge/"
+        "text": "Blog",
+        "url": "/blog/"
       },
       {
-        "text": "FAQ",
-        "url": "/questions-frequentes/"
+        "text": "A propos",
+        "url": "/about/"
       }
     ] ,
     "itemsmore": [
-        {
-          "text": "Blog",
-          "url": "/blog/"
-        },
-        {
-          "text": "Base de connaissances",
-          "url": "/kb"
-        },
-        {
-          "text": "A propos",
-          "url": "/a-propos-de-6337/"
-        },
         {
           "text": "Contact",
           "url": "/contact/"

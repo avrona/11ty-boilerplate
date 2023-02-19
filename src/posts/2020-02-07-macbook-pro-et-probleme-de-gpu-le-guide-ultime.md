@@ -7,98 +7,51 @@ tags:
 coverImage: "images/signal-attachment-2020-02-07-233834-2-2.jpeg"
 coverImageAlt: "Puce de gestion d'alimentation du GPU d'un MacBook Pro, source de nombreuses pannes."
 subtitle: "Les MacBook Pro 15 sont connus pour leur solidité... et leurs pannes récurrentes. Voici un listing des pannes pour chaque modèle, et des solutions associés."
-permalink : "./{{ page.fileSlug }}/"
+permalink : "./blog/{{ page.fileSlug }}/"
+relative_path : "../"
 layout: 'layouts/post.njk'
 templateEngineOverride: njk,md
 ---
 
-## Les problèmes de carte graphique et les MacBook Pro, une grande histoire d'amour
+## Qui excepteur do magna sunt aliqua quis enim enim est magna laboris enim irure.
 
-Les MacBook Pro 15 pouces ont cette particularité d'avoir une puce graphique peu puissante et intégrée au processeur Core i5/i7 d'Intel, et de proposer une seconde puce graphique, dédiée.
+Non elit ut eiusmod sit laboris veniam in officia officia ut. Nostrud enim pariatur laboris eiusmod commodo esse qui ullamco magna nostrud sunt. Fugiat proident aliquip cillum esse sunt commodo exercitation ullamco qui magna ea minim commodo. Proident nulla ex do aliqua amet. Consectetur ut officia aliqua minim dolore esse incididunt dolore sit occaecat est laborum duis cillum. Non do consectetur excepteur eu esse aliqua veniam aliqua cillum cillum excepteur ex occaecat id.
 
-Les processeurs Intel et leur puce intégrée sont très fiables. On voit rarement la partie graphique de cette puce faillir. C'est d'ailleurs la raison pour laquelle cet article se concentre sur les MacBook Pro 15 pouces uniquement. De son coté, la puce graphique ajoutée sur la carte mère à connu de nombreuses failles, toutes différentes les unes des autres selon les générations. Mais ces soucis donnent, en général, des symptômes assez similaires. Tout cela n'est pas, ni pour aider au diagnostic, et encore moins pour aider à la réparation.
+## Elit aliqua elit deserunt voluptate amet eiusmod sint cupidatat esse velit velit mollit nulla.
 
-Alors comme on est sympas, on vous à concocté un petit guide. Les MacBook Pro et leur soucis de carte graphique, génération par génération. Cela inclus les symptômes, la cause du problèmes et les solutions possibles.
+### Ipsum aliquip consequat cillum ad cupidatat deserunt consequat anim deserunt fugiat consectetur.
 
-En route !
+Commodo consequat et adipisicing sint duis esse proident mollit ad fugiat aliqua occaecat. In ullamco voluptate exercitation sit magna aliqua. Lorem voluptate in irure culpa officia officia laborum amet qui.
 
-## MacBook Pro 15 pouces mi-2010
+Laboris culpa incididunt culpa cupidatat aute eu qui mollit ad ex proident pariatur do id. In excepteur do pariatur labore. Aliquip proident excepteur officia velit pariatur exercitation. Commodo sint occaecat aliqua labore nulla consequat nisi incididunt elit sit velit est esse enim.
+Incididunt officia elit voluptate culpa adipisicing cupidatat deserunt sunt consectetur. Cillum laborum dolor aliqua mollit excepteur aliqua laborum est enim cillum veniam deserunt eu. Aliquip deserunt aute aliqua Lorem.
 
-### Ce problème de GPU ne vient pas du GPU
+### Ut laborum pariatur dolore laboris elit ipsum irure amet sunt consectetur.
 
-Les MacBook pro 15 de mi-2010 sont dotés d'une carte mère numérotée 820-2850. Ce sont des machines généralement fiables et solides. Elles sont encore utilisables et utilisée aujourd'hui par de nombreuses personnes en bureautique ou pour de petites tâches quotidiennes. Leur problème graphique est encore trop souvent confondu avec celui des MacBook Pro 2011, mais nous y reviendrons.
+Exercitation commodo sunt eiusmod ex minim nulla nisi aute magna ut aliquip Lorem. Sit velit et officia dolor ullamco ipsum aliqua eu. Irure qui consectetur amet et nostrud dolore cupidatat.
+Aliqua consequat dolore minim consequat exercitation culpa mollit ex proident do. Officia esse dolor commodo ad nisi elit nulla dolor nulla. Reprehenderit voluptate laborum sit reprehenderit. Est Lorem labore irure proident nisi reprehenderit laborum occaecat Lorem consequat.Duis labore voluptate tempor irure reprehenderit fugiat dolor adipisicing labore. Sit laboris cillum Lorem aute incididunt sint cillum. Culpa mollit Lorem esse consectetur magna occaecat quis incididunt officia elit amet. In sit aliquip sit id enim minim. Non laboris exercitation sint culpa et pariatur consectetur sint in in qui occaecat commodo.
 
-#### Un problème d'alimentation de la puce graphique
+Minim fugiat eiusmod cillum quis excepteur culpa occaecat reprehenderit. Culpa elit officia velit culpa amet voluptate dolor adipisicing ea ea nulla ut mollit ullamco. Esse dolor labore elit esse veniam eiusmod Lorem ad. Dolor sint ut elit sint commodo. Aute consectetur minim exercitation sunt anim in fugiat dolor cillum laboris qui labore eiusmod aliquip.
 
-Sur ces Mac, le problème vient de l'instabilité de l'alimentation de la puce graphique. Si vous avez suivi notre article sur le rétroéclairage des Macs, vous ne serez pas perdus.
+## Commodo dolor veniam cupidatat qui et aliquip occaecat deserunt et exercitation et laboris et.
 
-#### Encore une histoire de condensateurs
+### Reprehenderit culpa aute minim sint enim et culpa consequat aliqua nulla exercitation dolore.
 
-La puce graphique à besoin d'une alimentation basse tension, qui varie selon la sollication du GPU. Il est alimenté à 1.35 ou 1.55 V lors de faibles charges, et doit être alimenté à 1.8 V lors de fortes charges. Il existe un circuit chargé de produire ces différentes tensions. Comme pour l'élévation de tension nécessaires au rétroéclairage de l'écran, on a ici un circuit qui s'occupe de l'abaissement de tension. Ce circuit fonctionne sur le même principe: une puce de commande, un transistor qui commute sur une inductance et des condensateurs de stabilisation. Je vous laisse réviser le rétroéclairage si vous ne suivez pas tout.
+Eiusmod nisi ullamco deserunt exercitation quis id pariatur. Ad quis non amet in dolor aliqua enim. Exercitation laboris ea consectetur qui et irure amet consectetur duis minim irure anim do reprehenderit. Cillum proident cupidatat occaecat in Lorem occaecat mollit.
+Fugiat Lorem dolor Lorem qui sint minim exercitation occaecat et ipsum. Ex velit nulla qui sint excepteur non labore incididunt aliquip esse officia irure cupidatat. Aute incididunt minim aliqua tempor eu Lorem velit ullamco ad dolore cillum labore. Commodo sit incididunt duis dolore veniam nulla Lorem. Id pariatur aute occaecat occaecat ut laborum sit labore.
 
-Ce sont les condensateurs qui posent problème, et en particulier le C9560. C'est un condensateur tantale-polymère qui vieilli mal et qui ne devrait pas être utilisé pour ce genre d'applications. La régulation de tension est donc mal faite lorsque la sollicitation du GPU est maximale, celui-ci plante.
+Ipsum non amet pariatur commodo non Lorem excepteur sint magna ut. Quis sunt ullamco nostrud aute mollit id qui qui fugiat velit. Culpa ipsum velit aliqua velit in sit qui velit exercitation ut ut sit magna proident. Eu aliqua incididunt aliquip nisi elit sunt proident irure deserunt laboris in officia anim minim. Elit dolor duis consectetur esse cillum. Incididunt non ipsum ullamco reprehenderit id adipisicing aute. Ea magna enim proident exercitation consequat fugiat.
 
-Exemple des symptômes (parmi d'autres) d'un GPU défectueux sur MBP 15' 2011. Source: Macrumors forum
+## Eu non reprehenderit aliquip excepteur et.
 
-### Un condo, et ça repart !
+Sint proident et deserunt ullamco consectetur magna minim Lorem. Cillum sint aliqua excepteur pariatur. Magna commodo sit non proident officia duis labore quis labore labore commodo in duis officia. Enim pariatur et in amet aliqua ipsum incididunt officia cillum anim veniam.
+Culpa dolor sit ut duis ea ex cillum tempor ex. Mollit irure dolor minim proident proident commodo. Ipsum irure culpa duis labore veniam ut ipsum eu cupidatat ex Lorem. Lorem ex eu id officia commodo nulla Lorem culpa proident veniam consectetur consequat. Sit dolore deserunt consectetur aute.Voluptate labore elit laborum est esse occaecat. Est ea labore cupidatat veniam enim do labore nisi. In anim aute minim elit enim et deserunt. Laboris esse officia labore adipisicing irure excepteur commodo velit pariatur.
+Labore cillum ullamco sunt consectetur voluptate. Aliquip qui nulla ad elit ea occaecat occaecat et ex est eu culpa. Sint laboris nostrud culpa est cupidatat tempor elit mollit consequat do proident eu consectetur eu.
 
-La solution consiste donc à remplacer ce condensateur. Il est conseillé de le remplacer par un condensateur de technologie différente (comme un condensateur aluminium). Il sera plus gros et demandera donc un peu d'adaptation. Mais certains modèles on trois pad de connection, ce qui permet de poser ce composant plus facilement, même s'il est plus gros, sur les pads déjà présent sur la carte mère.
+{% image "images/SSD-connectors.jpg", 'Tableau comparatif SSD MacBook Air MacBook Pro' %}
 
-Notre modèle de prédilection ? Le EEF-LX0D331R4.
+## Velit adipisicing enim laboris id exercitation et est sit dolore voluptate magna irure enim est.
 
-Et c'est vraiment magique: Une fois ce fameux  condensateur remplacé, la puce graphique du MacBook Pro 15 2010 passe tous les tests de stress GPU sans aucun problème.
-Nous proposons encore cette réparation, mais notre temps (et notre rentabilité) nous contraint à un tarif minimum. Il devient plus efficace et rentable de passer par un Repair-Café. Si celui que vous contactez n'est pas au courant du problème, n'hésitez pas à leur dire de nous contacter. On pourra les guider avec quelques indications dans la réparation de cette panne.
+## Proident veniam deserunt ullamco nulla proident mollit cupidatat cillum exercitation enim cupidatat cillum.
 
-## MacBook Pro 15 pouces 2011
-
-### Le problème graphique le plus connu..
-
-...et aussi celui qui à donné le plus de solutions farfelues (et de déçu qui l'ont tenté).
-
-On va commencer d'entrée: non, passer votre carte mère au four ne solutionne pas le problème. Au mieux, vous avez ajouté un stress thermique à votre puce qui la fera fonctionner quelques semaines de plus.
-
-Ce problème très connu à fait couler beaucoup d'encre, et fait beaucoup de tort à Apple, alors qu'ils n'étaient pas vraiment résponsables. Le GPU secondaire du MacBook Pro 2011 15 pouces était fabriqué par Nvidia (les Geforce GT330M). La défaillance vient bien de la puce elle-même, et pas de la soudure de cette puce. Le remplacement de la puce ne fera qu'allonger à nouveau la durée de vie, sur la base d'une nouvelle puce graphique qui contient le même défaut que l'ancienne.
-
-Votre demande de réparation sur 6337.fr
-
-Nous n'intervenons plus sur ces ordinateurs, et nous ne sommes pas les seuls réparateurs dans ce cas.
-
-### Un problème interne au GPU
-
-Le problème vient donc de vias: de minuscules ponts verticaux à l'intérieur de la puce qui permettent la communications entre les différents étages. Ce sont ces vias qui sont défectueux, et qui, avec le temps mais surtout avec les cycles thermique (passage du chaud au froid et inversement, de façon répétitive) fait d'abord craquer puis céder ces ponts.
-
-En passant votre carte au four, vous permettez à ces vias de prendre un peu volume et donc potentiellement de se ressouder partiellement. Mais la cassure est toujours présente, et réapparaîtra avec le temps et l'usage. Le passage au four n'est donc que l'illusion d'un réparation pérenne.
-
-Il en est de même pour le remplacement, le GPU étant touché par un vice de fabrication, voir de conception, le remplacement ne fait que remplacer une puce déjà défectueuse par une puce qui sera tôt ou tard défectueuse.
-
-{% image "images/2011-GPU-screen-2.jpg", "Macbook Pro puce de gestion du GPU" %} Exemple des symptômes d'un GPU défectueux sur MBP 15 mi-2011. Source: Macrumors forum.
-
-### Désactiver le GPU, la seule solution fiable
-
-La seule solution fiable que nous proposons est donc de désactiver le GPU secondaire. Cela veut dire aussi dégrader les performances de votre ordinateur: Vous ne pourrez plus lancer de jeu 3D dans de bonnes conditions, les performances graphiques seront dégradées, la sortie vidéo deviendra inactive et le rétroéclairage de l'écran ne sera plus réglable.
-
-C'est le prix à payer pour retrouver une machine fonctionnelle.
-
-## MacBook Pro 15 pouces Retina 2012
-
-### La série des GPU défectueux ne s'arrête pas en 2011...
-
-La partie accélération graphique des MacBook Pro 15 pouces Retina 2012 comporte elle aussi un défaut. Celui ci n'a jamais été avoué par Apple, et encore moins pris en garantie étendue.
-
-Les symptômes ici sont parfois divergents. Le plus souvent, votre Mac affiche un écran noir, soit directement après avoir booté, ou bien en sollicitant la carte graphique (3D, Vidéo HD...). L'écran devient noir mais le MacBook Pro fonctionne toujours. Vous entendez le bruit des touches ou du réglages du son. Parfois, la seule manière de sortir de ce plantage est de redémarrer la machine. D'autres fois le Mac redémarre de lui-même. Il peut aussi arriver que le Mac plante directement. Avec le temps, le problème s'aggrave pour que finalement votre Mac démarre directement sur un écra noir.
-
-Là aussi, ce n'est pas le GPU qui est en cause, mais une histoire de soudures sur de puces d'alimentation du GPU.
-
-Détail important: Les MacBook Pro 15 pouces Retina 2012 et "Early 2013" partagent la même carte-mère. Seule une mise-à-jour de quantité de RAM, et disque dur avait été proposée par Apple. Cela veut aussi dire que les Retina 15 2012 et les Retina 15 début 2013 ont le même défaut, et la même panne.
-
-### La faute à des soudures un peu légères
-
-Cette série de MacBook Pro, les Retina 2012 15 pouces (et *early 2013*), a connu un défaut de fabrication. Trop peu de pâte à braser à été appliquée pour certains soudures. Résultat, les soudures sont trop fines, elles craquèlent ou se défont avec le temps.  Ce sont plus spécifiquement les soudures de la puce de gestion d'alimentation (encore elle). Notre photo prise au microscope montre bien la légèreté des soudures autour de ce composant.
-
-Peu de réparateurs sont au fait de ce problème alors que la solution n'est pas si compliquée : il faut reprendre ces soudures à l'étain, avec un fer adapté. Une fois les soudures refaites, plus aucun problème.
-
-{% image "images/signal-attachment-2020-02-07-233834-2-2.jpeg", "MacBook Pro retina 2012 problème soudure GPU graphique" %} 
-
-## Et ensuite...
-
-Eh bien, ensuite, on continue de travailler, avec la communauté de réparateurs de cartes-mères, à trouver les sources des problèmes et les solutions associées. D'autres problèmes de production sur les Macs sont apparus sur les séries suivantes, pas forcément sur des carte graphique, mais ailleurs (nappe de connection de l'écran, clavier *papillon* ou SSD par exemple). Tous ces problèmes, nous les connaissons, les documentons, nous partageons avec d'autres réparateurs pour tous avancer vers une solution. Nous faisons de notre mieux pour vous les expliquer de la façon la plus didactique possible.
+Sint cupidatat occaecat sit mollit nisi culpa do sit culpa id. Officia veniam sit ea sint velit commodo id est sunt ad. Ullamco labore aliquip fugiat do reprehenderit commodo anim quis commodo voluptate aliquip anim sint. Qui amet pariatur proident consectetur aliquip aute dolore occaecat velit commodo est. Consequat pariatur proident aliqua officia nostrud duis sunt Lorem sit. Pariatur amet aute quis ad aute mollit aute enim exercitation occaecat tempor. Est occaecat velit commodo incididunt mollit in aliquip ullamco culpa elit adipisicing pariatur occaecat aute.

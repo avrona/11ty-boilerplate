@@ -10,111 +10,51 @@ tags:
   - "non-classe"
 coverImage: 'images/T2.jpg'
 coverImageAlt: "Puce T2 - L'objet du délit"
-permalink : "./{{ page.fileSlug }}/"
+permalink : "./blog/{{ page.fileSlug }}/"
+relative_path : "../"
 layout: 'layouts/post.njk'
 ---
 
 
-## Puce T2: Relancer un Mac qui ne démarre plus
+## Qui excepteur do magna sunt aliqua quis enim enim est magna laboris enim irure.
 
+Non elit ut eiusmod sit laboris veniam in officia officia ut. Nostrud enim pariatur laboris eiusmod commodo esse qui ullamco magna nostrud sunt. Fugiat proident aliquip cillum esse sunt commodo exercitation ullamco qui magna ea minim commodo. Proident nulla ex do aliqua amet. Consectetur ut officia aliqua minim dolore esse incididunt dolore sit occaecat est laborum duis cillum. Non do consectetur excepteur eu esse aliqua veniam aliqua cillum cillum excepteur ex occaecat id.
 
-La puce T2 est la trouvaille sécurité d'Apple. Pour faire simple, c'est une puce pour iPhone, intégrée à la carte-mère des Mac USB-C Intel les plus récents.
-Elle reste constamment en veille, et est en charge du démarrage de très "bas niveau" (réveiller tout le monde lors de l'appui sur le bouton Power), du chiffrage des données, et elle garantit l'intégrité de la ROM et de l'EFI lors du démarrage.
-En gros, elle chiffre les données et bloque tout ce qui n'est pas catholique (ou orthodoxe...), selon Apple, au démarrage.
+## Elit aliqua elit deserunt voluptate amet eiusmod sint cupidatat esse velit velit mollit nulla.
 
-Problème : elle fonctionne elle-même avec un système d'exploitation propre, nommé BridgeOS, qui peut lui aussi buguer. Et quand ça arrive, c'est difficile à diagnostiquer, car tout est bloqué. Votre Mac ne démarre plus du tout, et un réparateur peu au fait des procédures standards peut s'arracher les cheveux et préconiser un remplacement de carte-mère, alors qu'il y a beaucoup plus simple.
+### Ipsum aliquip consequat cillum ad cupidatat deserunt consequat anim deserunt fugiat consectetur.
 
-Reprenons les bases : quels sont les symptômes et comment facilement relancer, ou réinitialiser cette fameuse puce T2 ?
+Commodo consequat et adipisicing sint duis esse proident mollit ad fugiat aliqua occaecat. In ullamco voluptate exercitation sit magna aliqua. Lorem voluptate in irure culpa officia officia laborum amet qui.
 
-### En vrai, un problème de T2, ça donne quoi ?
+Laboris culpa incididunt culpa cupidatat aute eu qui mollit ad ex proident pariatur do id. In excepteur do pariatur labore. Aliquip proident excepteur officia velit pariatur exercitation. Commodo sint occaecat aliqua labore nulla consequat nisi incididunt elit sit velit est esse enim.
+Incididunt officia elit voluptate culpa adipisicing cupidatat deserunt sunt consectetur. Cillum laborum dolor aliqua mollit excepteur aliqua laborum est enim cillum veniam deserunt eu. Aliquip deserunt aute aliqua Lorem.
 
-Quand la puce T2 pose problème, le plus souvent, vous vous retrouvez avec un Mac qui ne démarre plus. Aucun signe de vie. Il semble bien charger la batterie, mais ne démarre pas, même en tentant une combinaison de touches pour forcer tout ça (reset du SMC, reset de la PRAM, extinction forcée...).
-De notre côté, on a pu observer, avec l'arrivée des Mac T2, de nombreux problèmes liés à cela : des Mac arrivés à l'atelier avec un diagnostic de carte-mère en panne, qui ne nécessitaient en fait qu'une simple manipulation pour les remettre en selle.
+### Ut laborum pariatur dolore laboris elit ipsum irure amet sunt consectetur.
 
-La puce T2 peut aussi poser des problèmes de charge, de reboot, ou de sortie HDMI, mais ce sont des choses plus rares, et que nous n'avons encore jamais rencontrées à l'atelier. 
+Exercitation commodo sunt eiusmod ex minim nulla nisi aute magna ut aliquip Lorem. Sit velit et officia dolor ullamco ipsum aliqua eu. Irure qui consectetur amet et nostrud dolore cupidatat.
+Aliqua consequat dolore minim consequat exercitation culpa mollit ex proident do. Officia esse dolor commodo ad nisi elit nulla dolor nulla. Reprehenderit voluptate laborum sit reprehenderit. Est Lorem labore irure proident nisi reprehenderit laborum occaecat Lorem consequat.Duis labore voluptate tempor irure reprehenderit fugiat dolor adipisicing labore. Sit laboris cillum Lorem aute incididunt sint cillum. Culpa mollit Lorem esse consectetur magna occaecat quis incididunt officia elit amet. In sit aliquip sit id enim minim. Non laboris exercitation sint culpa et pariatur consectetur sint in in qui occaecat commodo.
 
-Nous sommes souvent le dernier maillon dans la chaîne de la réparation, et nous prônons avec force l'auto-diagnostic et réparation, quand c'est possible. Ce sont des problèmes que vous rencontrerez peut-être, et pourrez régler à moindre frais, tout seuls "comme des grand⋅e⋅s" !
+Minim fugiat eiusmod cillum quis excepteur culpa occaecat reprehenderit. Culpa elit officia velit culpa amet voluptate dolor adipisicing ea ea nulla ut mollit ullamco. Esse dolor labore elit esse veniam eiusmod Lorem ad. Dolor sint ut elit sint commodo. Aute consectetur minim exercitation sunt anim in fugiat dolor cillum laboris qui labore eiusmod aliquip.
 
-### La puce T2 et son architecture
+## Commodo dolor veniam cupidatat qui et aliquip occaecat deserunt et exercitation et laboris et.
 
-On vous disait que la puce T2 était une puce pour iPhone. Son petit nom en interne est T8012, et c'est une puce A10 très légèrement modifiée.
-Ainsi, elle à son propre OS, appelé BridgeOS, son propre firmware, et doit parfois mettre à jour soit l'un, soit l'autre. Apple à la manie de faire des mises à jour silencieuses, et cela ne loupe pas ici. Vous ne serez pas prévenu⋅e d'une mise à jour firmware ou OS sur la puce T2 de votre Mac. Elle se fera, au choix, sans même vous en avertir, ou au cours d'une mise à jour de l'OS.
+### Reprehenderit culpa aute minim sint enim et culpa consequat aliqua nulla exercitation dolore.
 
-Et si cette mise à jour pose problème... votre Mac tombe en panne. Etant donné qu'il (votre Mac) ne vous a pas prévenu de ce qu'il allait faire, vous ne savez pas pourquoi...
+Eiusmod nisi ullamco deserunt exercitation quis id pariatur. Ad quis non amet in dolor aliqua enim. Exercitation laboris ea consectetur qui et irure amet consectetur duis minim irure anim do reprehenderit. Cillum proident cupidatat occaecat in Lorem occaecat mollit.
+Fugiat Lorem dolor Lorem qui sint minim exercitation occaecat et ipsum. Ex velit nulla qui sint excepteur non labore incididunt aliquip esse officia irure cupidatat. Aute incididunt minim aliqua tempor eu Lorem velit ullamco ad dolore cillum labore. Commodo sit incididunt duis dolore veniam nulla Lorem. Id pariatur aute occaecat occaecat ut laborum sit labore.
 
-Le méthode pour réparer tout ça consiste à mettre votre Mac en mode DFU, comme pouro un iPhone (DFU pour Device Firmware Update).
-Ce mode permet d'accéder à cette puce et de lui proposer une mise à jour ou une réinitilisation. C'est donc ce que nous allons faire.
+Ipsum non amet pariatur commodo non Lorem excepteur sint magna ut. Quis sunt ullamco nostrud aute mollit id qui qui fugiat velit. Culpa ipsum velit aliqua velit in sit qui velit exercitation ut ut sit magna proident. Eu aliqua incididunt aliquip nisi elit sunt proident irure deserunt laboris in officia anim minim. Elit dolor duis consectetur esse cillum. Incididunt non ipsum ullamco reprehenderit id adipisicing aute. Ea magna enim proident exercitation consequat fugiat.
 
-### 1ère étape: Mettre votre Mac en mode DFU
+## Eu non reprehenderit aliquip excepteur et.
 
-Pour relancer la puce T2, il faut d'abord mettre le Mac cible en mode DFU. Pour cela, il vous faut votre ordinateur en panne, que nous appellerons **l'ordinateur P pour Panne**, un second ordinateur avec une version de MacOS la plus récente possible (au moins *BigSur*), que **nous appellerons F pour Fonctionnel**, et un câble pour connecter les deux. Si F est un Mac USB-C, un câble USB-C sera nécessaire, mais a priori, cela ne doit pas forcément être un câble Thunderbolt (avec un éclair dessus) : le câble fourni par Apple avec le chargeur devrait suffire.
+Sint proident et deserunt ullamco consectetur magna minim Lorem. Cillum sint aliqua excepteur pariatur. Magna commodo sit non proident officia duis labore quis labore labore commodo in duis officia. Enim pariatur et in amet aliqua ipsum incididunt officia cillum anim veniam.
+Culpa dolor sit ut duis ea ex cillum tempor ex. Mollit irure dolor minim proident proident commodo. Ipsum irure culpa duis labore veniam ut ipsum eu cupidatat ex Lorem. Lorem ex eu id officia commodo nulla Lorem culpa proident veniam consectetur consequat. Sit dolore deserunt consectetur aute.Voluptate labore elit laborum est esse occaecat. Est ea labore cupidatat veniam enim do labore nisi. In anim aute minim elit enim et deserunt. Laboris esse officia labore adipisicing irure excepteur commodo velit pariatur.
+Labore cillum ullamco sunt consectetur voluptate. Aliquip qui nulla ad elit ea occaecat occaecat et ex est eu culpa. Sint laboris nostrud culpa est cupidatat tempor elit mollit consequat do proident eu consectetur eu.
 
-Il vous faut télécharger l'application *Apple Configurator* sur le MacAppStore sur l'ordinateur F. Elle sera indispensable.
+{% image "images/SSD-connectors.jpg", 'Tableau comparatif SSD MacBook Air MacBook Pro' %}
 
-S'en suit une manipulation digne d'Indiana Jones dans *Les Aventuriers de l'Arche Perdue*. (Les plus anciens d'entre nous auront la référence).
+## Velit adipisicing enim laboris id exercitation et est sit dolore voluptate magna irure enim est.
 
-<div class="columns is-centered">
-<div class="column is-half">
-{% image "images/Raiders-of-the-Lost-Ark.jpg", "Indiana Jones tentant de mettre un Mac en mode DFU." %} 
-</div>
-</div>
+## Proident veniam deserunt ullamco nulla proident mollit cupidatat cillum exercitation enim cupidatat cillum.
 
-Je m'explique:
-
-* Il faut d'abord brancher F (le Mac fonctionnel) sur le port USB-C à gauche et le plus proche de vous (le plus proche du trackpad) du Mac P (en panne). Brancher également un chargeur sur l'un des autres ports, toujours sur le Mac P.
-* Il faut ensuite bien éteindre ce Mac (P). Ma technique consiste à rester appuyé sur le bouton Power et cliquer sur le trackpad. Quand il n'y a plus de son de clic, votre Mac est vraiment éteint. (Oui, le clic est un faux clic, ça pourra faire l'objet d'un autre article).
-
-Ensuite, c'est la que ça se complique. [D'après Apple,](https://support.apple.com/fr-fr/guide/apple-configurator-2/apdebea5be51/mac) il faut, je cite:
-
-1. Appuyez sur le bouton Marche/Veille pendant environ 5 secondes pour éteindre complètement l’ordinateur portable Apple. \[ndlr: le Mac P \].
-2. Branchez le câble USB-C sur le port Thunderbolt frontal qui se trouve sur le côté gauche de l’ordinateur portable Apple. \[ndlr: sur le Mac P \].
-3. Tout en maintenant le bouton Marche/Arrêt enfoncé, appuyez simultanément sur les trois touches suivantes pendant environ 3 secondes :
-	- La touche Majuscule côté droit: [[&#8679;]]
-	- La touche Option de gauche: [[Alt &#8997;]]
-	- La touche Contrôle de gauche: [[ Ctrl ]]
-
-Vu que cela ne nous paraît pas clair, je vous proposer ici notre version de la procédure :
-
-1. Appuyez sur le bouton Marche/Arrêt pendant environ 5 secondes pour éteindre complètement le Mac P.
-2. Branchez le câble USB-C sur le port Thunderbolt côté gauche plus proche du trackpad de l’ordinateur P et lancez l'application *Apple Configurator* sur le Mac F.
-3. Appuyez sur la touche Marche/Arrêt du Mac P pendant 2 à 4 secondes.
-4. Tout en maintenant la touche Marche/Arrêt maintenue, appuyez sur les touches suivantes de P :
-	- Touche Majuscule côté droit: [[&#8679;]]
-	- Touche Option (Alt) de gauche: [[Alt &#8997;]]
-	- Touche Contrôle (Ctrl) de gauche: [[ Ctrl ]]
-5. Maintenez ces touches appuyées, relâchez immédiatement dès que le logo *DFU* s'affiche sur l'ordinateur F, dans l'application *Apple Configurator*. Il est possible que le logo *Recovery* s'affiche, auquel cas maintenez la pression sur ces touches, il devrait disparaître pour afficher un logo *DFU*.
-
-### Relancer ou Restaurer la puce T2
-
-Avertissement: *Relancer* et *restaurer* sont deux actions très différentes. *Restaurer* ou "réinitialiser" revient à effacer la **totalité** des données de votre Mac. **Si vous souhaitez conserver vos données, NE FAITES PAS ÇA !!!**
-
-Nous vous conseillons de tenter de *Relancer* la puce T2, dans un premier temps.
-
-<div class="columns is-centered">
-<div class="column is-half">
-{% image "images/DFU.png", "Le mode DFU dans Apple Configurator. Source: https://www.journaldulapin.com/" %}
-*source: www.lejournaldulapin.com*
-</div>
-</div>
-
-#### Relancer
-
-L'option *Relancer* est un peu cachée, alors que c'est la plus utile (qu'ils sont facétieux ces ingénieurs Apple !!).
-
-Double-cliquez sur l'icône *DFU* de l'application Apple Configurator.
-Vous pourrez ensuite faire un clic-droit, puis choisir "Relancer" dans le sous-menu "Avancées".
-Cette option est également disponible dans le menu "Actions" de la barre de menu.
-
-Un processus se met alors en route. Il inclut le téléchargement de la dernière version de *BridgeOS* et la tentative d'installation sur votre Mac. En cas de succès, vous verez une pomme s'afficher et votre Mac démarrer avant même la fin de ce processus. Si cela dure, c'est mauvais signe. Lors que cela dure plusieurs minutes, cela se termine souvent en erreur...
-Vous pouvez alors tenter une restauration de la puce T2, dernière étape avant de nous confier la machine pour ausculter la carte-mère.
-
-#### Restaurer
-
-*Restaurer* votre puce T2 va effacer toutes les données et vous faire repartir sur des bases saines. Toutes les données de votre Mac seront effacées, et irrécupérables après cette opération.
-Ici, il suffit simplement de cliquer sur *Actions* dans la barre de menu, puis sur *Restaurer*.
-Un dernier message d'avertissement vous indique que perdrez toutes vos données.
-
-### Conclusion
-
-C'est plus rare aujourd'hui, mais lors de la sortie des premiers Mac T2, tous les ""*génies*"" Apple n'étaient pas forcément au parfum de cette procédure. Cela à donné des remplacements de carte-mère inutiles, voire (j'espère pas trop) quelques monstrueux devis, alors que cette solution est assez simple et sans coût.
-C'est plus rare aujourd'hui et Apple devrait vous indiquer ou savoir faire cette opération pour sauver votre Mac suite à une mauvaise mise à jour de BridgeOS ou du firmware de la puce T2.
+Sint cupidatat occaecat sit mollit nisi culpa do sit culpa id. Officia veniam sit ea sint velit commodo id est sunt ad. Ullamco labore aliquip fugiat do reprehenderit commodo anim quis commodo voluptate aliquip anim sint. Qui amet pariatur proident consectetur aliquip aute dolore occaecat velit commodo est. Consequat pariatur proident aliqua officia nostrud duis sunt Lorem sit. Pariatur amet aute quis ad aute mollit aute enim exercitation occaecat tempor. Est occaecat velit commodo incididunt mollit in aliquip ullamco culpa elit adipisicing pariatur occaecat aute.

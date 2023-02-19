@@ -1,5 +1,5 @@
   
-const baseUrl = "https://www.6337.fr";
+const baseUrl = "https://github.com/avrona/11ty-boilerplate";
 
 module.exports = {
 };

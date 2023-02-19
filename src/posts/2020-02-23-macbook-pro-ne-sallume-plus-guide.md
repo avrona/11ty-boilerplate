@@ -7,110 +7,50 @@ tags:
 coverImage: "images/c898ba6fa905ce3486c9d4326f2e4e03.png"
 coverImageAlt: "Vue latérale d'un MacBook pro et de ses connecteurs"
 subtitle: "Un guide pas-à-pas pour pouvoir poser un diagnostic clair et savoir quoi faire ou vers qui se tourner pour réparer un MacBook Pro."
-permalink : "./{{ page.fileSlug }}/"
+permalink : "./blog/{{ page.fileSlug }}/"
+relative_path : "../"
 layout: 'layouts/post.njk'
-formtitle : "Votre Mac ne s'allume toujours pas ?"
-formheader : "Votre devis pour faire réparer votre carte-mère par des experts. Envoi, réparation, retour et garantie incluses !"
 ---
 
-#### Résumé
+## Qui excepteur do magna sunt aliqua quis enim enim est magna laboris enim irure.
 
-- Vérifier si tout est en ordre pour que votre Mac s'allume :
-  - Le chargeur fonctionne (et la prise aussi...), le câble d'alimentation est bien branché...
-  - Est-il vraiment éteint ? Vérifier s'il fait du bruit, si la touche verrouillage-majuscule s'allume, si l'affichage externe fonctionne, augmenter le rétroéclairage..
-- Réinitialiser la PRAM et le SMC
-- Sortir les tournevis... ou nous contacter.
+Non elit ut eiusmod sit laboris veniam in officia officia ut. Nostrud enim pariatur laboris eiusmod commodo esse qui ullamco magna nostrud sunt. Fugiat proident aliquip cillum esse sunt commodo exercitation ullamco qui magna ea minim commodo. Proident nulla ex do aliqua amet. Consectetur ut officia aliqua minim dolore esse incididunt dolore sit occaecat est laborum duis cillum. Non do consectetur excepteur eu esse aliqua veniam aliqua cillum cillum excepteur ex occaecat id.
 
-### Un guide écrit par un réparateur, qui va du plus simple au plus complexe :
+## Elit aliqua elit deserunt voluptate amet eiusmod sint cupidatat esse velit velit mollit nulla.
 
-Ce guide est rédigé par des réparateurs experts, pour des utilisateurs avertis ou d’autres réparateurs. Il sera progressivement de plus en plus complexe et technique. Notre conseil : suivez-le aussi loin que vous pouvez. Passez la main à quelqu’un de mieux équipé quand vous sentez que vous atteignez vos limites. Ne tentez rien si vous ne le sentez pas…
+### Ipsum aliquip consequat cillum ad cupidatat deserunt consequat anim deserunt fugiat consectetur.
 
-## Est-ce que tout est en ordre pour que votre Mac s’allume ?
+Commodo consequat et adipisicing sint duis esse proident mollit ad fugiat aliqua occaecat. In ullamco voluptate exercitation sit magna aliqua. Lorem voluptate in irure culpa officia officia laborum amet qui.
 
-La première étape, c’est de vérifier que tout est en ordre pour que votre Mac s’allume. On commence par le chargeur. La diode du Magsafe s’allume-t-elle en vert ou en orange ? Si oui, c’est que votre chargeur est bien branché et fonctionne, et que votre Mac reconnait le chargeur. Vérifier aussi le câble d'alimentation. Il peut y avoir un simple faux-contact. Si tout va bien jusqu'ici, c’est déjà un bon signe. Si non, il faut essayer un autre chargeur, ou essayer votre chargeur sur un autre Mac, pour le mettre hors de cause.
+Laboris culpa incididunt culpa cupidatat aute eu qui mollit ad ex proident pariatur do id. In excepteur do pariatur labore. Aliquip proident excepteur officia velit pariatur exercitation. Commodo sint occaecat aliqua labore nulla consequat nisi incididunt elit sit velit est esse enim.
+Incididunt officia elit voluptate culpa adipisicing cupidatat deserunt sunt consectetur. Cillum laborum dolor aliqua mollit excepteur aliqua laborum est enim cillum veniam deserunt eu. Aliquip deserunt aute aliqua Lorem.
 
-Si vous avez un MacBook Pro Touchbar, il n’y a plus de diode sur la prise de chargeur. Il va falloir vous équiper pour diagnostiquer votre chargeur. L’alternative la plus simple est d’emprunter le chargeur de votre voisin. Mais si vous voulez vous équiper, il existe des multimètres USB-C. [Nous utilisons celui-ci](https://satechi.net/products/satechi-type-c-power-meter-for-new-macbook-macbook-pro-type-c-devices).
+### Ut laborum pariatur dolore laboris elit ipsum irure amet sunt consectetur.
 
-En branchant cet outil entre votre chargeur et le Mac, il vous indique la tension de charge des MacBook Pro USB-C. Si elle est à 20 Volts (plutôt 19.8 Volts d’ailleurs…) tout est bon. Si la tension est à 5 Volts, c’est mauvais signe : le chargeur n'est pas reconnu, et c'est ce qui fait que votre MacBook Pro ne s'allume plus. Si le chargeur fonctionne bien ailleurs, c’est que c’est un problème de port USB-C : dans ce cas, on vous conseille de faire appel à un réparateur de carte-mère ([comme nous](https://www.6337.fr/prise-en-charge/), par exemple).
+Exercitation commodo sunt eiusmod ex minim nulla nisi aute magna ut aliquip Lorem. Sit velit et officia dolor ullamco ipsum aliqua eu. Irure qui consectetur amet et nostrud dolore cupidatat.
+Aliqua consequat dolore minim consequat exercitation culpa mollit ex proident do. Officia esse dolor commodo ad nisi elit nulla dolor nulla. Reprehenderit voluptate laborum sit reprehenderit. Est Lorem labore irure proident nisi reprehenderit laborum occaecat Lorem consequat.Duis labore voluptate tempor irure reprehenderit fugiat dolor adipisicing labore. Sit laboris cillum Lorem aute incididunt sint cillum. Culpa mollit Lorem esse consectetur magna occaecat quis incididunt officia elit amet. In sit aliquip sit id enim minim. Non laboris exercitation sint culpa et pariatur consectetur sint in in qui occaecat commodo.
 
-## Votre Mac ne s’allume plus, vous en êtes sûr ?
+Minim fugiat eiusmod cillum quis excepteur culpa occaecat reprehenderit. Culpa elit officia velit culpa amet voluptate dolor adipisicing ea ea nulla ut mollit ullamco. Esse dolor labore elit esse veniam eiusmod Lorem ad. Dolor sint ut elit sint commodo. Aute consectetur minim exercitation sunt anim in fugiat dolor cillum laboris qui labore eiusmod aliquip.
 
-Une des premières étapes essentielles est de savoir si votre Mac est bien éteint. Eh oui, peut-être que votre écran est simplement éteint, ou que votre Mac est allumé mais n’affiche rien. Alors vérifiez que votre Mac est allumé :
+## Commodo dolor veniam cupidatat qui et aliquip occaecat deserunt et exercitation et laboris et.
 
-- Fait-il du bruit si vous augmentez le son et tapez sur les touches ?
-- Avez-vous branché un écran externe pour éliminer un possible problème d’écran ?
-- Pouvez-vous pousser le rétroéclairage au maximum ?
-- Avez-vous tenté de passer une lampe de poche (ou le flash de votre portable) au niveau de la pomme transparente derrière l’écran ? (sur le Mac Retina ou précédent).
+### Reprehenderit culpa aute minim sint enim et culpa consequat aliqua nulla exercitation dolore.
 
-Il faut également tenter un appui long sur le bouton d'alimentation de votre Mac, pour le débloquer d’un potentiel plantage avec écran noir et le faire démarrer de nouveau.
+Eiusmod nisi ullamco deserunt exercitation quis id pariatur. Ad quis non amet in dolor aliqua enim. Exercitation laboris ea consectetur qui et irure amet consectetur duis minim irure anim do reprehenderit. Cillum proident cupidatat occaecat in Lorem occaecat mollit.
+Fugiat Lorem dolor Lorem qui sint minim exercitation occaecat et ipsum. Ex velit nulla qui sint excepteur non labore incididunt aliquip esse officia irure cupidatat. Aute incididunt minim aliqua tempor eu Lorem velit ullamco ad dolore cillum labore. Commodo sit incididunt duis dolore veniam nulla Lorem. Id pariatur aute occaecat occaecat ut laborum sit labore.
 
-Si rien de tout cela ne donne de résultats, vous pouvez passer à la suite.
+Ipsum non amet pariatur commodo non Lorem excepteur sint magna ut. Quis sunt ullamco nostrud aute mollit id qui qui fugiat velit. Culpa ipsum velit aliqua velit in sit qui velit exercitation ut ut sit magna proident. Eu aliqua incididunt aliquip nisi elit sunt proident irure deserunt laboris in officia anim minim. Elit dolor duis consectetur esse cillum. Incididunt non ipsum ullamco reprehenderit id adipisicing aute. Ea magna enim proident exercitation consequat fugiat.
 
-## Les classiques : Réinitialiser le SMC
+## Eu non reprehenderit aliquip excepteur et.
 
-Là aussi, on est dans le classique. Le SMC (System Management Control) est une puce qui gère l’allumage, la charge et différents système assez basiques du Mac. Il nécessite parfois une réinitialisation, si ces capteurs sont mal calibrés.
+Sint proident et deserunt ullamco consectetur magna minim Lorem. Cillum sint aliqua excepteur pariatur. Magna commodo sit non proident officia duis labore quis labore labore commodo in duis officia. Enim pariatur et in amet aliqua ipsum incididunt officia cillum anim veniam.
+Culpa dolor sit ut duis ea ex cillum tempor ex. Mollit irure dolor minim proident proident commodo. Ipsum irure culpa duis labore veniam ut ipsum eu cupidatat ex Lorem. Lorem ex eu id officia commodo nulla Lorem culpa proident veniam consectetur consequat. Sit dolore deserunt consectetur aute.Voluptate labore elit laborum est esse occaecat. Est ea labore cupidatat veniam enim do labore nisi. In anim aute minim elit enim et deserunt. Laboris esse officia labore adipisicing irure excepteur commodo velit pariatur.
+Labore cillum ullamco sunt consectetur voluptate. Aliquip qui nulla ad elit ea occaecat occaecat et ex est eu culpa. Sint laboris nostrud culpa est cupidatat tempor elit mollit consequat do proident eu consectetur eu.
 
-La manipulation est la suivante :
+{% image "images/SSD-connectors.jpg", 'Tableau comparatif SSD MacBook Air MacBook Pro' %}
 
-- Sur un Mac avec batterie non-amovible (de 2009 à nos jours)
-    1. Eteignez votre Mac
-    2. Pressez les touches Maj [[&#8679;]] + Control [[ Ctrl ]] + Option [[Alt &#8997;]] du coté gauche de votre clavier et le bouton _Power_ (coté droit) pendant 10 secondes environ
-    3. Relâcher ces touches. Vous devriez voir la lumière de votre chargeur Magsafe passer à l’orange puis revenir au vert.
-    4. Appuyez sur le bouton _Power_ de votre Mac pour le rallumer.
+## Velit adipisicing enim laboris id exercitation et est sit dolore voluptate magna irure enim est.
 
-- Sur un Mac avec une puce de sécurité T2 (MacBook Pro ou Air depuis 2018. Mac Mini depuis 2018, Mac Pro 2019 ou iMac Pro)
-    1. Eteignez votre Mac (en restant appuyé sur le bouton d'alimentation)
-    2. Pressez les touches Control [[ Ctrl ]] + Option [[Alt &#8997;]] du coté gauche de votre clavier et les touches Majuscule [[&#8679;]] + \[_Power\]_ du coté droit, pendant 10 secondes environ
-    3. Relâcher ces touches. Vous devriez voir la lumière de votre chargeur Magsafe passer à l’orange puis revenir au vert.
-    4. Appuyez sur le bouton d'alimentation de votre Mac pour le faire démarrer (en croisant les doigts...)
+## Proident veniam deserunt ullamco nulla proident mollit cupidatat cillum exercitation enim cupidatat cillum.
 
-- Sur un Mac avec batterie amovible (de 2009 ou avant)
-    1. Eteignez votre Mac.
-    2. Retirez la batterie.
-    3. Pressez le bouton d'alimentation pendant 7 secondes environ.
-    4. Remettez la batterie en place.
-    5. Appuyez sur le bouton d'alimentation de votre Mac pour le rallumer.
-
-## Le mode « SMC Bypass » : une solution peu connue pour le diagnostic
-
-Le mode « SMC Bypass » est assez peu connu et donc peu utilisé par les utilisateurs pour les réparateurs. C’est pourtant une solution de diagnostic très efficace, et facile à mettre en place.
-
-Il s’agit de demander à votre MacBook Pro de démarrer sans prendre en compte les signaux captés et les contrôles de certains capteurs du SMC. Parmi ces capteurs, il y a le capteur de température et de vitesse des ventilateurs, ou les capteurs de l’ouverture de l’écran.
-
-En démarrant dans ce mode, si le capteur de l’écran de votre Mac est défaillant, son signal sera ignoré.
-
-Voilà comment démarrer en mode SMC Bypass :
-
-- Éteignez votre Mac et débranchez le chargeur.
-- Appuyez et maintenez le bouton d'alimentation de votre Mac pressé.
-- Tout en maintenant le bouton d’allumage, branchez le chargeur du Mac.
-- Après quelques secondes, relâchez le bouton Power. La diode du Magsafe devrait subrepticement passer de l’orange au vert (ou du vert à l’orange).
-- Allumer votre Mac normalement.
-
-Vous devriez entendre votre Mac démarrer avec les ventilateurs qui tournent au maximum.
-
-Si c’est le cas, votre problème d’allumage du Mac ou d’écran noir vient de la puce du SMC, ou de capteurs venant de celle-ci.
-
-Nous vous conseillons de confier votre Mac à un réparateur indépendant compétent. Le Genius bar d’Apple vous proposera très probablement un coûteux remplacement de carte-mère, alors que celle-ci est réparable par nous ou un de nos confrère capable de réparer des carte-mères.
-
-## Le test d’isolation : Sortez les tournevis !
-
-Ces étapes ne sont à réaliser qui si vous vous sentez à l’aise avec l’idée d’ouvrir votre MacBook Pro et de le diagnostiquer vous-même.
-
-Nous rappelons que pour les étapes de démontage, les tutoriels d’ifixit sont très bien réalisés.
-
-Le test d’isolation consiste à débrancher un à un les différents « périphériques » à l’intérieur de votre Mac. Cela permet d’éliminer et potentiellement d’identifier le fautif.
-
-Il faut donc, dans un premier temps, ouvrir votre Mac, et débrancher la batterie. Vous pouvez démarrer le premier test ici : Une fois la batterie débranchée essayer de brancher la chargeur. Si votre Mac se met en route, c’est que votre batterie est défectueuse et empêche votre Mac de démarrer.
-
-Si votre MacBook Pro ne s’allume toujours pas, il faut continuer.
-
-Selon le modèle et l’année du Mac, vous pourrez retirer la carte Wifi, puis retirer le SSD. Dans chaque cas, tenter de rebrancher le MagSafe. La batterie étant toujours débranchée, vous n’avez pas besoin d’appuyer sur le bouton d'alimentation, votre Mac se lancera de lui-même. Sans SSD, il devrait afficher un point d’interrogation clignotant, au bout d’environ 20 secondes.
-
-Vous pouvez ensuite déconnecter la nappe du trackpad, puis celle du clavier, le connecteur des haut-parleurs (même s’ils ne sont probablement pas en cause), la webcam, et éventuellement la carte fille qui ajoute les connecteurs USB, HDMI et carte SD, selon les modèles.
-
-Oui, il ne reste plus grand-chose dans la carcasse de votre ordinateur... Si là,  votre MacBook Pro ne s’allume toujours pas quand vous branchez votre chargeur, c’est que votre problème vient de la carte-mère.
-
-Il n’y a, là aussi, qu’un réparateur capable de diagnostiquer et réparer une carte mère de MacBook Pro qui pourra vous aider.
-
-Apple ou les Apple Reseller proposeront un remplacement de la carte mère, qui est environ deux fois plus cher que les réparations que nous proposons à 6337.
+Sint cupidatat occaecat sit mollit nisi culpa do sit culpa id. Officia veniam sit ea sint velit commodo id est sunt ad. Ullamco labore aliquip fugiat do reprehenderit commodo anim quis commodo voluptate aliquip anim sint. Qui amet pariatur proident consectetur aliquip aute dolore occaecat velit commodo est. Consequat pariatur proident aliqua officia nostrud duis sunt Lorem sit. Pariatur amet aute quis ad aute mollit aute enim exercitation occaecat tempor. Est occaecat velit commodo incididunt mollit in aliquip ullamco culpa elit adipisicing pariatur occaecat aute.

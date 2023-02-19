@@ -1,64 +1,56 @@
 ---
-title: "Ecran noir sur MacBook Air 11 mi-2014: La solution !"
+title: "Eiusmod nostrud velit quis labore duis non ut aliquip enim occaecat."
 date: "2020-02-19"
 modified: "2020-02-10"
 tags: 
   - "blog"
 coverImage: "images/MacBook-Air-boots-with-black-screen-624x468-1.jpeg"
-coverImageAlt: "Exemple d'écra de MacBook Air avec rétroéclairage en panne."
-subtitle: "Un écran noir ? Et si cela ne venait pas de la carte-mère ? On vous en dit plus sur ce problème rencontré maintes fois, et sur lequel même les 'genius' de l'AppleStore butte parfois... "
-permalink : "./{{ page.fileSlug }}/"
+coverImageAlt: "Excepteur incididunt consequat adipisicing pariatur elit sunt ad esse aute ullamco proident mollit voluptate non."
+subtitle: "Magna tempor fugiat adipisicing aute laborum enim elit nisi et deserunt ad proident do. Esse cillum sint et culpa esse laboris nostrud ad reprehenderit ullamco. Est incididunt cupidatat anim ullamco. In deserunt reprehenderit voluptate adipisicing commodo sit minim. Elit cupidatat sint sint qui consectetur nostrud consectetur. Commodo officia aliquip in magna ex anim. Nostrud duis laboris nulla ea esse nisi pariatur tempor cillum aute ex anim in Lorem."
+permalink : "./blog/{{ page.fileSlug }}/"
+relative_path : "../"
 layout: 'layouts/post.njk'
 ---
 
-## Votre MacBook Air n'a peut-être pas de problèmes de carte-mère
+## Qui excepteur do magna sunt aliqua quis enim enim est magna laboris enim irure.
 
-Et non, même si Apple l'a dit, ce n'est pas (forcément) le cas. Nous avons vu passer plusieurs MacBook Air 11 pouces 2014 avec les même symptômes, et le même solution: Un client nous contact et nous envoie son Mac. Apple l'a diagnostiqué: Carte mère HS. Nous faisons nos tests, et réalisons que la carte-mère marche très bien. Si vous êtes dans ce cas, vous trouverez la marche à suivre pour savoir si vous êtes dans ce cas, et surtout comment vous en sortir seuls, à moindre coût !
+Non elit ut eiusmod sit laboris veniam in officia officia ut. Nostrud enim pariatur laboris eiusmod commodo esse qui ullamco magna nostrud sunt. Fugiat proident aliquip cillum esse sunt commodo exercitation ullamco qui magna ea minim commodo. Proident nulla ex do aliqua amet. Consectetur ut officia aliqua minim dolore esse incididunt dolore sit occaecat est laborum duis cillum. Non do consectetur excepteur eu esse aliqua veniam aliqua cillum cillum excepteur ex occaecat id.
 
-## Les symptômes: Ecran noir au démarrage
+## Elit aliqua elit deserunt voluptate amet eiusmod sint cupidatat esse velit velit mollit nulla.
 
-### A quoi ressemble cet écran noir sur MacBook Air ?
+### Ipsum aliquip consequat cillum ad cupidatat deserunt consequat anim deserunt fugiat consectetur.
 
-Quels sont exactement les symptômes à identifier ? D'abord, nous n'avons vu ce comportement que sur des MacBook Air écran 11 pouces de mi-2014. C'est très spécifique. Ensuite l'ordinateur se comporte de la façon suivante au démarrage:
+Commodo consequat et adipisicing sint duis esse proident mollit ad fugiat aliqua occaecat. In ullamco voluptate exercitation sit magna aliqua. Lorem voluptate in irure culpa officia officia laborum amet qui.
 
-- Après l'appui sur le bouton Power le Mac semble s'allumer
-- On entend le "Dong", accord majeur au démarrage du Mac
-- Le rétroéclairage s'allume, l'écran n'est plus éteint, mais allumé sur un fond noir. Rien ne s'affiche
+Laboris culpa incididunt culpa cupidatat aute eu qui mollit ad ex proident pariatur do id. In excepteur do pariatur labore. Aliquip proident excepteur officia velit pariatur exercitation. Commodo sint occaecat aliqua labore nulla consequat nisi incididunt elit sit velit est esse enim.
+Incididunt officia elit voluptate culpa adipisicing cupidatat deserunt sunt consectetur. Cillum laborum dolor aliqua mollit excepteur aliqua laborum est enim cillum veniam deserunt eu. Aliquip deserunt aute aliqua Lorem.
 
-Et rien de plus ne se passe, impossible d'aller plus loin, aucune touche ne répond et aucun moyen de démarrer sur un disque externe ou sur la partition de récupération (en appuyant sur _Pomme + R)._
+### Ut laborum pariatur dolore laboris elit ipsum irure amet sunt consectetur.
 
-Pourtant l'ordinateur charge bien et répond très bien aux sollicitations d'allumage et d'extinction.
+Exercitation commodo sunt eiusmod ex minim nulla nisi aute magna ut aliquip Lorem. Sit velit et officia dolor ullamco ipsum aliqua eu. Irure qui consectetur amet et nostrud dolore cupidatat.
+Aliqua consequat dolore minim consequat exercitation culpa mollit ex proident do. Officia esse dolor commodo ad nisi elit nulla dolor nulla. Reprehenderit voluptate laborum sit reprehenderit. Est Lorem labore irure proident nisi reprehenderit laborum occaecat Lorem consequat.Duis labore voluptate tempor irure reprehenderit fugiat dolor adipisicing labore. Sit laboris cillum Lorem aute incididunt sint cillum. Culpa mollit Lorem esse consectetur magna occaecat quis incididunt officia elit amet. In sit aliquip sit id enim minim. Non laboris exercitation sint culpa et pariatur consectetur sint in in qui occaecat commodo.
 
-### Apple et son mauvais diagnostic
+Minim fugiat eiusmod cillum quis excepteur culpa occaecat reprehenderit. Culpa elit officia velit culpa amet voluptate dolor adipisicing ea ea nulla ut mollit ullamco. Esse dolor labore elit esse veniam eiusmod Lorem ad. Dolor sint ut elit sint commodo. Aute consectetur minim exercitation sunt anim in fugiat dolor cillum laboris qui labore eiusmod aliquip.
 
-Nos clients qui sont passés par un AppleStore on fait faire le diagnostic de leur machine sur place. Le constat d'Apple est que le carte-mère était fautive, et qu'il fallait la remplacer.
+## Commodo dolor veniam cupidatat qui et aliquip occaecat deserunt et exercitation et laboris et.
 
-Les méthodes de diagnostic d'Apple sont principalement basées sur des logiciels d'analyses. Il y a de moins en moins de test typiques de diagnostics tels que les tests d'isolation (débrancher un à un les éléments pour identifier le fautif) ou des tests visant à remplacer un composant par un autre connu comme fonctionnel. Pourtant il suffit de ça pour identifier la panne.
+### Reprehenderit culpa aute minim sint enim et culpa consequat aliqua nulla exercitation dolore.
 
-## Retirer le SSD et voir votre MacBook Air reprendre vie
+Eiusmod nisi ullamco deserunt exercitation quis id pariatur. Ad quis non amet in dolor aliqua enim. Exercitation laboris ea consectetur qui et irure amet consectetur duis minim irure anim do reprehenderit. Cillum proident cupidatat occaecat in Lorem occaecat mollit.
+Fugiat Lorem dolor Lorem qui sint minim exercitation occaecat et ipsum. Ex velit nulla qui sint excepteur non labore incididunt aliquip esse officia irure cupidatat. Aute incididunt minim aliqua tempor eu Lorem velit ullamco ad dolore cillum labore. Commodo sit incididunt duis dolore veniam nulla Lorem. Id pariatur aute occaecat occaecat ut laborum sit labore.
 
-### Valider le diagnostic par isolation
+Ipsum non amet pariatur commodo non Lorem excepteur sint magna ut. Quis sunt ullamco nostrud aute mollit id qui qui fugiat velit. Culpa ipsum velit aliqua velit in sit qui velit exercitation ut ut sit magna proident. Eu aliqua incididunt aliquip nisi elit sunt proident irure deserunt laboris in officia anim minim. Elit dolor duis consectetur esse cillum. Incididunt non ipsum ullamco reprehenderit id adipisicing aute. Ea magna enim proident exercitation consequat fugiat.
 
-C'est une technique classique de diagnostic technique que l'isolation. Il s'agit de déconnecter les uns après les autres, les éléments déconnectables du système principal pour connaitre le fautif. Si votre maison à les plombs qui saute, vous pouvez éteindre tous les disjoncteurs secondaires, remettre le principal, puis réactiver les disjoncteurs secondaires un à un, jusqu'à ce que les plombs sautent de nouveau. Grâce à ça, vous savez ou est le fautif, et il reste à débrancher chacun des éléments sur ce disjoncteurs pour trouver le coupable (même méthode...). Nous on procède de la même façon: On ouvre le Mac et débranche un élément. On rallume la machine et on voit si le MacBook Air veut bien démarrer.
+## Eu non reprehenderit aliquip excepteur et.
 
-Avec cette méthode, nous avons, dans chacun des trois cas rencontrés pour le moment, identifier le fautif: le SSD. Vous pouvez essayer de faire de même chez vous: Ouvrez votre MacBook Air 11 mi-2014, déconnectez d'abord la batterie, puis retirez le SSD. Rebranchez le Magsafe, allumez le Mac et attendez. Dans nos cas cités ci-dessus, le Mac à affiché un point d'interrogation. Cela veut dire qu'il ne trouve pas de disque de démarrage, mais surtout cela veut dire que la carte-mère à l'air de bien fonctionner.
-
-L'étape suivant à été de brancher un disque externe avec un version neuve et vierge de Mac OS, compatible avec nos MacBook Air mi-2014. Et bien là encore, le Mac à démarré sans problème.
-
-## Pas besoin de changer de Mac, seulement de trouver un nouveau SSD
-
-La réparation devient d'un coup bien plus simple, et surtout bien moins cher. Il vous suffit de trouver le bon SSD. Ce n'est pas pour autant ultra simple. Apple à des formats de SSD bien spécifiques, trouvables uniquement en occasion et il va falloir bien faire le tri. Ne paniquez pas, on vous aide !
-
-Le MacBook Air mi-2014 utilise un SSD compatible avec les mac portables (MacBook Pro retina et MacBook Air) de 2014 à 2016. On les identifient grâce au nombre de contacts: Ils ont 12 contacts, un espace vide, puis 16 contacts, comme sur la photo ci-dessous.
-
-D'ailleurs, c'est encore le meilleur moyen de chercher ces SSD: "Apple SSD 12+16" ou "Apple SSD MacBook Pro Retina".
+Sint proident et deserunt ullamco consectetur magna minim Lorem. Cillum sint aliqua excepteur pariatur. Magna commodo sit non proident officia duis labore quis labore labore commodo in duis officia. Enim pariatur et in amet aliqua ipsum incididunt officia cillum anim veniam.
+Culpa dolor sit ut duis ea ex cillum tempor ex. Mollit irure dolor minim proident proident commodo. Ipsum irure culpa duis labore veniam ut ipsum eu cupidatat ex Lorem. Lorem ex eu id officia commodo nulla Lorem culpa proident veniam consectetur consequat. Sit dolore deserunt consectetur aute.Voluptate labore elit laborum est esse occaecat. Est ea labore cupidatat veniam enim do labore nisi. In anim aute minim elit enim et deserunt. Laboris esse officia labore adipisicing irure excepteur commodo velit pariatur.
+Labore cillum ullamco sunt consectetur voluptate. Aliquip qui nulla ad elit ea occaecat occaecat et ex est eu culpa. Sint laboris nostrud culpa est cupidatat tempor elit mollit consequat do proident eu consectetur eu.
 
 {% image "images/SSD-connectors.jpg", 'Tableau comparatif SSD MacBook Air MacBook Pro' %}
 
-## En conclusion:
+## Velit adipisicing enim laboris id exercitation et est sit dolore voluptate magna irure enim est.
 
-## Faites confiance aux petits réparateurs experts (comme nous...)
+## Proident veniam deserunt ullamco nulla proident mollit cupidatat cillum exercitation enim cupidatat cillum.
 
-Eh oui ! Sur ce genre de pannes, le SAV Apple pêche par ses procédures strictes et son incapacité à sortir du cadre. Il suffirait pourtant de laisser un peu d'initiative aux Genius pour qu'ils arrivent aux même conclusions et conseils que nous.
-
-Nous passons beaucoup de temps à rechercher des pannes diverse, mais surtout à partager avec toute une communauté d'autres réparateurs comme nous. C'est ce qui nous donne accès à des informations ou des réparations que même le fabricant n'a pas. Comme un garagiste de quartier, plus à même de bricoler un truc qui fonctionne qu'un concessionnaire, nous sommes l'alternative.
+Sint cupidatat occaecat sit mollit nisi culpa do sit culpa id. Officia veniam sit ea sint velit commodo id est sunt ad. Ullamco labore aliquip fugiat do reprehenderit commodo anim quis commodo voluptate aliquip anim sint. Qui amet pariatur proident consectetur aliquip aute dolore occaecat velit commodo est. Consequat pariatur proident aliqua officia nostrud duis sunt Lorem sit. Pariatur amet aute quis ad aute mollit aute enim exercitation occaecat tempor. Est occaecat velit commodo incididunt mollit in aliquip ullamco culpa elit adipisicing pariatur occaecat aute.
